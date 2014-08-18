@@ -1,0 +1,37 @@
+R0F1 Un utente può effettuare l'analisi dei file di un gioco multipiattaforma. UC 1
+
+R0F1.1 L'analisi richiede l'inserimento di dati in input. UC 1.1
+
+R0F1.1.1 L'analisi richiede l'inserimento di un percorso assoluto dal quale far partire l'analisi. UC 1.1.1
+
+R0F1.1.2 L'analisi richiede l'inserimento dei nomi delle cartelle identificative di file di piattaforma. UC 1.1.2
+R0F1.1.2.1 Il programma interpreta i nomi delle piattaforme in modo "case-insensitive".
+R01.1.2.2 Il programma richiede l'inserimento dei nomi delle piattaforme come unica stringa utilizzando il carattere ';' come separatore.
+
+R0F1.1.3 L'analisi richiede l'inserimento di un tempo di warning, superato il quale a fine l'analisi verrà segnalato il problema se presente. UC 1.1.3
+R0F1.1.3.1 Il programma accetta in input nella casella dedicata al tempo di warning solamente numeri in formato inglese e con massimo due cifre decimali.
+
+R0F1.1.4 Il programma deve ricordare e pre-inserire i dati della precedente analisi (se esistenti) neigli appositi campi per l'input dei dati, anche se tra un'analisi e la successiva il programma è stato chiuso.
+
+R0F1.2 L'analisi non si avvia se i dati in input non sono corretti.
+
+R0F1.3 Il programma mostra gli eventuali errori sui dati in input all'analisi trovati durante l'avvio dell'analisi. UC 1.3
+R0F1.3.1 Il programma ferma l'avvio dell'analisi se il percorso di base inserito è una stringa nulla.
+R0F1.3.2 Il programma ferma l'avvio dell'analisi se il percorso di base inserito non è nel formato assoluto.
+R0F1.3.3 Il programma ferma l'avvio dell'analisi se il percorso di base inserito non esiste nel file system.
+R0F1.3.4 Il programma ferma l'avvio dell'analisi se il contenuto del percorso di base inserito non è leggibile.
+
+R0F1.4 Il programma permette la visualizzazione dei dati output dell'analisi. UC 1.1.4
+R0F1.4.1 Nell'output dell'analisi è presente ciascun file presente in almeno un cartella di piattaforma.
+R0F1.4.2 Per ciascun file presente nell'output è visibile la data di ultima modifica per ciascuna piattaforma in cui è presente.
+R0F1.4.3 Per ciascun file presente nell'output è indicato il percorso di relativo a partire dal percorso di base inserito in input all'analisi.
+R0F1.4.4 Per ciascun file presente nell'output è indicato il nome del file completo di estensione.
+R0F1.4.5 Per ciascun file presente nell'output è indicata la massima differenza tra le date di ultima modifica delle piattaforme per cui è presente
+R0F1.4.5.1 Se il tempo massimo per ciascuno file è superiore al tempo di warning inserito in input allora questo viene evidenziato come warning.
+R0F1.4.5.2 Il tempo è mostrato nella stessa unità di misura in cui è stato inserito il tempo di warning.
+R0F1.4.6 Il programma permette di aprire il programma per esplorare il file system di defalut del sistema e visualizzare la cartella dove è presente il file.
+
+R0V1 Il programma deve funzionare su Windows 7 SP1 32 e 64 bit.
+
+R0Q1 Viene fornito insieme al programma un piccolo help con la guida alla compilazione e al deploy per sistemi Windows
+R0Q2 Viene fornito un piccolo help che spiega l'utilizzo del programma.

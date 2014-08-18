@@ -1,0 +1,916 @@
+% !TEX encoding = UTF-8
+% !TEX TS-program = pdflatex
+% !TEX root = ../testex
+% !TEX spellcheck = it-IT
+
+%**************************************************************
+\chapter{XML Editor}
+\label{cap:xml-editor}
+%**************************************************************
+
+\intro{In questo capitolo è presente una analisi completa del tool XML Editor}\\
+
+\section{Introduzione}
+
+	\subsection{Premessa}
+		L'engine di un videogioco, se sviluppato secondo una buona architettura, legge da file di configurazione la maggior parte delle informazioni piuttosto di averle scritte direttamente nel codice\footnote{La pratica di scrivere nel gioco le informazioni è comunemente chiamata \textit{Hard-coding}.}. I file di configurazione possono essere poi specializzati per una specifica piattaforma come già visto nel \nameref{cap:multiplatform-file-analyzer}. Il contenuto di questi file può essere estremamente vario, ad esempio sono utilizzati per indicare i percorsi delle pagine dei menu, la descrizione degli oggetti grafici in relazione alle sotto-componenti e alle animazioni. Gli standard prevedono che tali file di configurazione vengano scritti mediante il linguaggio XML.
+
+	\subsection{Lo scopo}
+		Vista l'eterogeneità dei file di configurazione ed del team di sviluppo di un gioco, è possibile che questi siano scritti anche da persone non specializzate (esempio: artisti). Inoltre, è possibile inserire relazioni tra elementi presenti in questi file. Ad esempio, per un oggetto grafico si specifica quali sono gli oggetti attaccati allo scheletro di animazione, elementi che sono definiti solitamente in un altro file di configurazione. Essendo questi caricati a run-time, il debugging diviene decisamente non banale, in quanto non è semplice capire da dove l'errore proviene essendo moltissime le variabili in gioco.\\
+		
+		Il tool si pone l'obbiettivo di rendere la scrittura e il debugging dei file di configurazione XML più semplice e veloce. Innanzitutto fornirà un editor visuale in cui sarà possibile editare in tutti gli aspetti l'XML. Verrà inoltre fornita la possibilità di specificare le relazioni ed eventuali altri file coinvolti, dopodiché il programma sarà in grado di verificare le relazioni nei file aperti e di crearne di nuove tramite un semplice drag \& drop dei nodi destinatari della relazione.
+
+\section{Casi d'uso}
+
+	Per meglio capire e tracciare l'esperienza d'uso che un developer di un gioco avrà con il tool sono stati creati dei diagrammi di casi d'uso gerarchici.\\
+	I diagrammi di casi d'uso fanno parte della famiglia dei diagrammi UML e descrivono le funzionalità offerte dal prodotto così come sono percepite dagli attore che interagiscono con il sistema.\\
+	Ogni caso d'uso ha un codice univoco gerarchico, nella forma:
+	\begin{center} 
+		UC[codice univoco del padre].[codice progressivo di livello]
+	\end{center}
+	\paragrafo Il codice progressivo può includere diversi livelli di gerarchia separati da un punto.
+
+	\subsection{UC 1: Caso d'uso principale}
+		\label{subsec:XEUC1}
+		
+		\begin{figure}[!h] 
+			\centering 
+			%\includegraphics[width=0.9\columnwidth]{tool2/UC1.png} 
+			\caption{Use Case - UC 1: Caso d'uso principale}
+		\end{figure}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve avere tutte le funzionalità a disposizione per editare ed verificare uno o più file XML.
+			\item\textbf{Precondizione}: il developer abbia lanciato il tool sotto un sistema Windows 7 o superiore.
+			\item\textbf{Flusso principale degli eventi}: 
+			\begin{enumerate}
+				\item \textit{l'utente ha la possibilità di:} \textit{creazione di un nuovo file XML} (\hyperref[subsec:XEUC1.1]{UC 1.1});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{apertura di un file XML preesistente} (\hyperref[subsec:XEUC1.2]{UC 1.2});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{editing del file XML correntemente aperto} (\hyperref[subsec:XEUC1.3]{UC 1.3});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{salvare le modifiche di un file modificato} (\hyperref[subsec:XEUC1.4]{UC 1.4});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{editing del filtro sul nome dell'attributo da visualizzare} (\hyperref[subsec:XEUC1.5]{UC 1.5});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{editing dei file associati} (\hyperref[subsec:XEUC1.6]{UC 1.6});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{editing delle relazioni} (\hyperref[subsec:XEUC1.7]{UC 1.7});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{importazione delle relazioni da file} (\hyperref[subsec:XEUC1.8]{UC 1.8});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{esportazione delle relazioni su file} (\hyperref[subsec:XEUC1.9]{UC 1.9});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{avvio del check sulle relazioni} (\hyperref[subsec:XEUC1.10]{UC 1.10});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{visualizzazione del risultato del check sulle relazioni} (\hyperref[subsec:XEUC1.11]{UC 1.11});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{visualizzazione dell'about del programma} (\hyperref[subsec:XEUC1.12]{UC 1.12}).
+				
+			\end{enumerate}
+			\item \textbf{Estensioni}
+			\begin{enumerate}
+				\item\textit{Visualizzazione degli errori occorsi durante l'apertura del file} (\hyperref[subsec:XEUC1.13]{UC 1.13});
+				
+				\item\textit{Visualizzazione degli errori occorsi durante il salvataggio del file} (\hyperref[subsec:XEUC1.14]{UC 1.14});
+				
+				\item\textit{Visualizzazione degli errori occorsi durante l'importazione} (\hyperref[subsec:XEUC1.15]{UC 1.15});
+				
+				\item\textit{Visualizzazione degli errori occorsi durante l'esportazione} (\hyperref[subsec:XEUC1.16]{UC 1.16}).
+			\end{enumerate}
+			\item\textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dal developer.
+		\end{itemize}
+
+	\subsection{UC 1.1: Creazione di un nuovo file XML}
+		\label{subsec:XEUC1.1}
+	
+		\begin{figure}[!h] 
+			\centering 
+			%\includegraphics[width=0.9\columnwidth]{tool2/UC1-1.png} 
+			\caption{Use Case - UC 1.1: Creazione di un nuovo file XML}
+		\end{figure}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter creare un nuovo file XML.
+			\item\textbf{Precondizione}: il developer ha lanciato il tool sotto un sistema Windows 7 o superiore.
+			\item\textbf{Flusso principale degli eventi}: 
+			\begin{enumerate}
+				\item\textit{Inserimento del percorso dove memorizzare il nuovo XML} (\hyperref[subsec:XEUC1.1.1]{UC 1.1.1});
+				\item\textit{Inserimento del nome del file del nuovo XML} (\hyperref[subsec:XEUC1.1.2]{UC 1.1.2}).
+			\end{enumerate}
+			\item\textbf{Postcondizione}: il sistema ha creato un nuovo file XML in memoria, esso sarà salvato su disco solo nel momento in cui l'utente lo salverà. Il sistema chiude il lavoro corrente e apre il nuovo file creato.
+		\end{itemize}
+		
+	\subsection{UC 1.1.1: Inserimento del percorso dove memorizzare il nuovo XML}
+		\label{subsec:XEUC1.1.1}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter inserire il percorso dove memorizzare su disco il nuovo file XML.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per creare un nuovo file XML.
+			\item\textbf{Scenario principale}: il developer sceglie il percorso dove memorizzare il nuovo file XML.
+			\item\textbf{Postcondizione}: il sistema ha memorizzato il percorso dove salvare il nuovo file XML.
+		\end{itemize}
+		
+	\subsection{UC 1.1.2: Inserimento del nome del file del nuovo XML}
+		\label{subsec:XEUC1.1.2}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter inserire il nome del nuovo file XML.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per creare un nuovo file XML.
+			\item\textbf{Scenario principale}: il developer inserisce il nome del nuovo file XML.
+			\item\textbf{Postcondizione}: il sistema ha memorizzato il nome del nuovo file XML.
+		\end{itemize}
+		
+	\subsection{UC 1.2: Apertura di un file XML preesistente}
+		\label{subsec:XEUC1.2}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter aprire un file XML preesistente.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per aprire un file XML.
+			\item\textbf{Scenario principale}: il developer inserisce il percorso ed il nome del file XML da aprire.
+			\item\textbf{Postcondizione}: il sistema ha chiuso il lavoro precedentemente aperto e l'ha sostituito con il file XML selezionato. Se il file era stato precedentemente aperto ed erano stati settati alcuni file associati allora anche quei file saranno aperti.
+		\end{itemize}
+		
+	\subsection{UC 1.3 Editing del file XML correntemente aperto}
+		\label{subsec:XEUC1.3}
+		
+		\begin{figure}[!h] 
+			\centering 
+			%\includegraphics[width=0.9\columnwidth]{tool2/UC1-3.png} 
+			\caption{Use Case - UC 1.3 Editing del file XML correntemente aperto}
+		\end{figure}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter editare il file XML correntemente visualizzato.
+			\item\textbf{Precondizione}: il developer abbia aperto con successo almeno un file XML.
+			\item\textbf{Flusso principale degli eventi}: 
+			\begin{enumerate}
+				\item \textit{l'utente ha la possibilità di:} \textit{visualizzazione del nodo riferito dal nodo selezionato} (\hyperref[subsec:XEUC1.3.1]{UC 1.3.1});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{aggiunta di un nuovo nodo figlio al nodo selezionato} (\hyperref[subsec:XEUC1.3.3]{UC 1.3.3});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{editing del nodo selezionato} (\hyperref[subsec:XEUC1.3.4]{UC 1.3.4});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{duplicazione del nodo selezionato} (\hyperref[subsec:XEUC1.3.5]{UC 1.3.5});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{copia del nodo selezionato} (\hyperref[subsec:XEUC1.3.6]{UC 1.3.6});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{incollare il nodo precedentemente copiato} (\hyperref[subsec:XEUC1.3.7]{UC 1.3.7});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{rimozione del nodo selezionato} (\hyperref[subsec:XEUC1.3.8]{UC 1.3.8});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{rimozione di tutti i nodi figli del nodo selezionato} (\hyperref[subsec:XEUC1.3.9]{UC 1.3.9});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{istanziazione di una nuova relazione} (\hyperref[subsec:XEUC1.3.10]{UC 1.3.10});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{annullamento dell'ultima modifica eseguita} (\hyperref[subsec:XEUC1.3.12]{UC 1.3.12});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{ripristino dell'ultima modifica annullata} (\hyperref[subsec:XEUC1.3.13]{UC 1.3.13}).
+				
+			\end{enumerate}
+			\item \textbf{Estensioni}
+			\begin{enumerate}
+				\item\textit{Visualizzazione degli errori occorsi durante la ricerca del nodo riferito} (\hyperref[subsec:XEUC1.3.2]{UC 1.3.2});
+				
+				\item\textit{Visualizzazione degli errori occorsi durante l'istanziazione di una nuova relazione} (\hyperref[subsec:XEUC1.16]{UC 1.3.11}).
+			\end{enumerate}
+			\item\textbf{Postcondizione}: il sistema ha modificato la versione caricata in memoria del file XML modificato.
+		\end{itemize}
+		
+	\subsection{UC 1.3.1 Visualizzazione del nodo riferito dal nodo selezionato}
+		\label{subsec:XEUC1.3.1}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer visualizza il nodo destinatario della relazione che ha il nodo selezionato come punto di partenza.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per seguire la relazione.
+			\item\textbf{Scenario principale}: il developer visualizza il nodo destinatario della relazione.
+			\item\textbf{Postcondizione}: il sistema ha selezionato ed espanso l'albero fino al nodo destinatario della relazione. Se sono presenti più nodi destinazione o più relazioni da seguire viene sempre usata quella inserita precedentemente nel sistema.
+		\end{itemize}
+		
+	\subsection{UC 1.3.2 Visualizzazione degli errori occorsi durante la ricerca del nodo riferito}
+		\label{subsec:XEUC1.3.2}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: si è verificato uno dei seguenti errori durante la ricerca del nodo destinazione:
+			\begin{itemize}
+				\item non esiste nessuna relazione per cui il nodo selezionato è riconoscibile come nodo partenza di una relazione;
+				\item non esiste nessun nodo di destinazione.
+			\end{itemize}
+			\item\textbf{Precondizione}: il developer ha avviato l'azione per mostrare il nodo destinatario della relazione.
+			\item\textbf{Scenario principale}: viene fornita una spiegazione dell'errore commesso e come risolverlo.
+			\item\textbf{Postcondizione}: l'errore commesso è stato visualizzato e spiegato, non viene visualizzato nessun nodo destinazione.
+		\end{itemize}
+		
+	\subsection{UC 1.3.3 Aggiunta di un nuovo nodo figlio al nodo selezionato}
+		\label{subsec:XEUC1.3.3}
+			
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: viene aggiunto un nuovo nodo vuoto come figlio del nodo correttamente selezionato.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione aggiungere un nuovo nodo come figlio del nodo correttamente visualizzato.
+			\item\textbf{Scenario principale}: il developer inserisce il tag name del nuovo nodo.
+			\item\textbf{Postcondizione}: il sistema ha selezionato il nodo ed espanso l'albero fino al nuovo nodo creato.
+		\end{itemize}
+		
+	\subsection{UC 1.3.4 Editing del nodo selezionato}
+		\label{subsec:XEUC1.3.4}
+		
+		\begin{figure}[!h] 
+			\centering 
+			%\includegraphics[width=0.9\columnwidth]{tool2/UC1-3-4.png} 
+			\caption{Use Case - UC 1.3.4 Editing del nodo selezionato}
+		\end{figure}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter editare il file XML correntemente visualizzato.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per modificare l'elemento correntemente selezionato.
+			\item\textbf{Flusso principale degli eventi}: 
+			\begin{enumerate}
+				\item \textit{l'utente ha la possibilità di:} \textit{modifica del valore dell'elemento} (\hyperref[subsec:XEUC1.3.4.1]{UC 1.3.4.1});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{inserimento di un nuovo attributo} (\hyperref[subsec:XEUC1.3.4.2]{UC 1.3.4.2});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{modifica di un attributo esistente} (\hyperref[subsec:XEUC1.3.4.3]{UC 1.3.4.3});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{rimozione di un attributo esistente} (\hyperref[subsec:XEUC1.3.4.4]{UC 1.3.4}).
+				
+			\end{enumerate}
+			\item\textbf{Postcondizione}: il sistema ha modificato la versione caricata in memoria del file XML modificato.
+		\end{itemize}
+		
+	\subsection{UC 1.3.4.1 Modifica del valore dell'elemento}
+		\label{subsec:XEUC1.3.4.1}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: il developer può modificare il valore dell'elemento.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione aggiungere per modificare un elemento.
+			\item\textbf{Scenario principale}: il developer inserisce il nuovo value.
+			\item\textbf{Postcondizione}: il sistema ha modificato il valore dell'elemento.
+		\end{itemize}
+		
+	\subsection{UC 1.3.4.2 Inserimento di un nuovo attributo}
+		\label{subsec:XEUC1.3.4.2}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: il developer può aggiungere un attributo all'elemento.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione aggiungere per modificare un elemento.
+			\item\textbf{Scenario principale}: il developer inserisce il nome del nuovo attributo ed il corrispettivo valore.
+			\item\textbf{Postcondizione}: il sistema ha aggiunto un nuovo attributo con il nome ed il valore inseriti dal developer.
+		\end{itemize}
+		
+	\subsection{UC 1.3.4.3 Modifica di un attributo esistente}
+		\label{subsec:XEUC1.3.4.3}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: il developer può modificare il valore e/o il nome di un attributo precedentemente inserito.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione aggiungere per modificare un elemento.
+			\item\textbf{Scenario principale}: il developer inserisce il nome e/o il valore dell'attributo da modificare.
+			\item\textbf{Postcondizione}: il sistema ha modificato l'attributo selezionato con i dati inseriti dal developer.
+		\end{itemize}
+		
+	\subsection{UC 1.3.4.4 Rimozione di un attributo esistente}
+		\label{subsec:XEUC1.3.4.4}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: il developer può eliminare un attributo precedentemente inserito.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione aggiungere per modificare un elemento.
+			\item\textbf{Scenario principale}: il developer seleziona l'attributo da eliminare.
+			\item\textbf{Postcondizione}: il sistema ha eliminato l'attributo selezionato dal developer.
+		\end{itemize}
+		
+	\subsection{UC 1.3.5 Duplicazione del nodo selezionato}
+		\label{subsec:XEUC1.3.5}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: viene aggiunta al padre del nodo selezionato una copia profonda di questo.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione di duplicazione di un nodo.
+			\item\textbf{Scenario principale}: il developer seleziona il nodo da duplicare.
+			\item\textbf{Postcondizione}: il sistema ha aggiunto al padre del nodo selezionato una copia profonda di tale nodo. Inoltre ha espanso l'albero fino al nuovo nodo creato.
+		\end{itemize}
+		
+	\subsection{UC 1.3.6 Copia del nodo selezionato}
+		\label{subsec:XEUC1.3.6}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: viene fatta una copia profonda del nodo selezionato e conservata in memoria, pronta per essere incollata.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione di copia di un nodo.
+			\item\textbf{Scenario principale}: il developer seleziona il nodo che intende copia.
+			\item\textbf{Postcondizione}: il sistema ha memorizzato in memoria una copia profonda del nodo selezionato.
+		\end{itemize}
+		
+	\subsection{UC 1.3.7 Incollare il nodo precedentemente copiato}
+		\label{subsec:XEUC1.3.7}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: viene aggiunto come figlio del nodo correttamente selezionato il nodo precedentemente copiato.
+			\item\textbf{Precondizione}: il developer richiede di copiare il nodo precedentemente copiato.
+			\item\textbf{Scenario principale}: il developer seleziona il nodo destinazione che conterrà il nuovo nodo.
+			\item\textbf{Postcondizione}: il sistema ha aggiunto come figlio del nodo destinazione il nodo precedentemente copiato. Inoltre ha selezionato ed espanso l'albero fino al nuovo nodo aggiunto.
+		\end{itemize}
+		
+	\subsection{UC 1.3.8 Rimozione del nodo selezionato}
+		\label{subsec:XEUC1.3.8}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: viene rimosso il nodo correntemente selezionato.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione di rimozione di un nodo.
+			\item\textbf{Scenario principale}: il developer abbia selezionato il nodo da rimuovere.
+			\item\textbf{Postcondizione}: il sistema ha rimosso il nodo selezionato.
+		\end{itemize}
+		
+	\subsection{UC 1.3.9 Rimozione di tutti i nodi figli del nodo selezionato}
+		\label{subsec:XEUC1.3.9}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: vengono rimossi tutti i nodi figli del nodo correntemente selezionato.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per rimuovere tutti i nodi figli.
+			\item\textbf{Scenario principale}: il developer seleziona il nodo di cui si vuole rimuovere tutti i figli.
+			\item\textbf{Postcondizione}: il sistema ha rimosso tutti i nodi del nodo attualmente selezionato.
+		\end{itemize}
+		
+	\subsection{UC 1.3.10 Istanziazione di una nuova relazione}
+		\label{subsec:XEUC1.3.10}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: vengono creati in automatico tutti i nodi necessari per creare una relazione tra i nodi partenza selezionati e il nodo destinatario scelto.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per creare in automatico una relazione.
+			\item\textbf{Scenario principale}: il developer seleziona uno o più nodi e successivamente sceglie il nodo che riferirà i nodi precedentemente selezionati.
+			\item\textbf{Postcondizione}: il sistema ha creato tutti i nodi necessari ad esplicitare le relazioni richieste.
+		\end{itemize}
+		
+	\subsection{UC 1.3.11 Visualizzazione degli errori occorsi durante l'istanziazione di una nuova relazione}
+		\label{subsec:XEUC1.3.11}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: si è verificato uno dei seguenti errori durante l'istanziazione di una relazione:
+			\begin{itemize}
+				\item non esiste nessuna relazione per cui il nodo selezionato è riconoscibile come nodo partenza di una relazione;
+				\item sono stati selezionati come nodi destinazione nodi non riconoscibili come destinazione di una relazione.
+				\item non esiste nessun percorso di relazioni che lega il nodo partenza con il nodo destinazione selezionati;
+				\item sono stati selezionati come nodi destinazione nodi di tipi differenti.
+			\end{itemize}.
+			\item\textbf{Precondizione}: il developer ha selezionato l'azione per creare una nuova relazione e specificato gli elementi da coinvolgere.
+			\item\textbf{Scenario principale}: viene fornita una spiegazione dell'errore commesso e come risolverlo.
+			\item\textbf{Postcondizione}: l'errore commesso è stato visualizzato e spiegato, non viene eseguita nessuna modifica al file XML.
+		\end{itemize}
+		
+	\subsection{UC 1.3.12 Annullamento dell'ultima modifica eseguita}
+		\label{subsec:XEUC1.3.12}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: viene annullata l'ultima modifica e ripristinato lo stato precedente del file.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per annullare l'ultima modifica ed è stata effettuata almeno una modifica al file XML.
+			\item\textbf{Scenario principale}: viene ripristinato lo stato del file precedente alla modifica.
+			\item\textbf{Postcondizione}: il sistema ha ripristinato lo stato del file prima dell'ultima azione di modifica.
+		\end{itemize}
+		
+	\subsection{UC 1.3.13 Ripristino dell'ultima modifica annullata}
+		\label{subsec:XEUC1.3.13}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: viene ripristinata l'ultima modifica annullata.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per ripristinare l'ultima modifica annullata ed è stata annullata almeno una modifica al file XML.
+			\item\textbf{Scenario principale}: viene ripristinata l'ultima modifica annullata.
+			\item\textbf{Postcondizione}: il sistema ha ripristinato lo stato del file prima dell'ultima azione di annullamento eseguita.
+		\end{itemize}
+		
+	\subsection{UC 1.4 Salvare le modifiche di un file modificato}
+		\label{subsec:XEUC1.4}
+			
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter salvare le modifiche effettuate su un file XML precedentemente aperto.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per salvare un file XML e abbia almeno un file aperto e modificato.
+			\item\textbf{Scenario principale}: viene salvato il file XML modificato.
+			\item\textbf{Postcondizione}: il sistema ha salvato su disco le modifiche apportate al file XML.
+		\end{itemize}
+		
+	\subsection{UC 1.5 Editing del filtro sul nome dell'attributo da visualizzare}
+		\label{subsec:XEUC1.5}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter modificare il filtro che seleziona l'attributo cui valore è mostrato nell'albero rappresentante il file XML.
+			\item\textbf{Precondizione}: il developer abbia lanciato il tool sotto un sistema Windows 7 o superiore.
+			\item\textbf{Scenario principale}: il developer inserisce il nuovo filtro.
+			\item\textbf{Postcondizione}: il sistema ha salvato il nuovo filtro e ha aggiornato la visualizzazione di tutti i file aperti.
+		\end{itemize}
+		
+	\subsection{UC 1.6 Editing dei file associati}
+		\label{subsec:XEUC1.6}
+		
+		\begin{figure}[!h] 
+			\centering 
+			%\includegraphics[width=0.9\columnwidth]{tool2/UC1-6.png} 
+			\caption{Use Case - UC 1.6 Editing dei file associati}
+		\end{figure}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter aggiungere e rimuovere i file associati.
+			\item\textbf{Precondizione}: il developer ha caricato correttamente un file XML.
+			\item\textbf{Flusso principale degli eventi}: 
+			\begin{enumerate}
+				\item \textit{l'utente ha la possibilità di:} \textit{aggiunta di un nuovo file associato} (\hyperref[subsec:XEUC1.6.1]{UC 1.6.1});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{rimozione di un file precedentemente associato} (\hyperref[subsec:XEUC1.6.2]{UC1.6.2}).
+				
+			\end{enumerate}
+			\item\textbf{Postcondizione}: il sistema ha modificato i file associati del file XML principale attualmente aperto.
+		\end{itemize}
+		
+	\subsection{UC 1.6.1 Aggiunta di un nuovo file associato}
+		\label{subsec:XEUC1.6.1}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter aggiungere un nuovo file associato al corrente file principale.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione di modifica dei file associati.
+			\item\textbf{Scenario principale}: il developer inserisce il percorso ed il nome del nuovo file associato.
+			\item\textbf{Postcondizione}: il sistema ha salvato il nuovo file associato lo carica.
+		\end{itemize}
+		
+	\subsection{UC 1.6.2 Rimozione di un file precedentemente associato}
+		\label{subsec:XEUC1.6.2}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter rimuovere un file associato dal corrente file principale.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione di modifica dei file associati.
+			\item\textbf{Scenario principale}: il developer seleziona il file da rimuovere.
+			\item\textbf{Postcondizione}: il sistema ha rimosso il file selezionato. La copia in memoria del file non è stata eliminata.
+		\end{itemize}
+		
+	\subsection{UC 1.7 Editing delle relazioni}
+		\label{subsec:XEUC1.7}
+		
+		\begin{figure}[!h] 
+			\centering 
+			%\includegraphics[width=0.9\columnwidth]{tool2/UC1-7.png} 
+			\caption{Use Case - UC 1.7 Editing delle relazioni}
+		\end{figure}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter editare le relazioni presenti.
+			\item\textbf{Precondizione}: il developer ha lanciato il tool sotto un sistema Windows 7 o superiore.
+			\item\textbf{Flusso principale degli eventi}: 
+			\begin{enumerate}
+				\item \textit{l'utente ha la possibilità di:} \textit{inserimento di una nuova relazione} (\hyperref[subsec:XEUC1.7.1]{UC 1.7.1});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{modifica di una relazione precedentemente inserita} (\hyperref[subsec:XEUC1.7.2]{UC1.7.2});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{rimozione di una relazione precedentemente inserita} (\hyperref[subsec:XEUC1.7.3]{UC1.7.3}).
+				
+			\end{enumerate}
+			\item\textbf{Postcondizione}: il sistema ha modificato le relazione come desiderato dall'utente.
+		\end{itemize}
+		
+	\subsection{UC 1.7.1 Inserimento di una nuova relazione}
+		\label{subsec:XEUC1.7.1}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter aggiungere una nuova relazione.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione di modifica delle relazioni.
+			\item\textbf{Scenario principale}: il developer inserisce tutte le informazioni necessarie alla creazione di una relazione.
+			\item\textbf{Postcondizione}: il sistema ha memorizzato la nuova relazione.
+		\end{itemize}
+		
+	\subsection{UC 1.7.2 Modifica di una relazione precedentemente inserita}
+		\label{subsec:XEUC1.7.2}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter modificare una relazione precedentemente inserita.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione di modifica delle relazioni e la relazione da modificare.
+			\item\textbf{Scenario principale}: il developer inserisce tutte le informazioni che vuole modificare della relazione.
+			\item\textbf{Postcondizione}: il sistema ha memorizzato i cambiamenti nella relazione selezionata.
+		\end{itemize}
+		
+	\subsection{UC 1.7.3 Rimozione di una relazione precedentemente inserita}
+		\label{subsec:XEUC1.6.3}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter rimuovere una relazione.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione di modifica delle relazioni.
+			\item\textbf{Scenario principale}: il developer seleziona la relazione da rimuovere.
+			\item\textbf{Postcondizione}: il sistema ha rimosso la relazione selezionata.
+		\end{itemize}
+		
+	\subsection{UC 1.8 Importazione delle relazioni da file}
+		\label{subsec:XEUC1.8}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter importare e sostituire le relazioni correnti con le relazione contenute in un file di configurazione precedentemente esportato.
+			\item\textbf{Precondizione}: il developer ha selezionato l'azione per importare le relazioni da un file.
+			\item\textbf{Scenario principale}: il developer inserisce il percorso ed il nome del file contenente le relazioni.
+			\item\textbf{Postcondizione}: il sistema ha rimosso tutte le precedenti relazioni e le ha sostituite con tutte quelle presenti nel file.
+		\end{itemize}
+		
+	\subsection{UC 1.9 Esportazione delle relazioni su file}
+		\label{subsec:XEUC1.9}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter esportare le relazioni attualmente inserite su file.
+			\item\textbf{Precondizione}: il developer ha selezionato l'azione per esportare le relazioni su file.
+			\item\textbf{Scenario principale}: il developer inserisce il percorso ed il nome del file dove esportare le relazioni.
+			\item\textbf{Postcondizione}: il sistema esportato le relazioni nel file selezionato.
+		\end{itemize}
+		
+	\subsection{UC 1.10 Avvio del check sulle relazioni}
+		\label{subsec:XEUC1.10}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter verificare la consistenza delle relazioni presenti nel file principale e in tutti i file associati sulla base delle relazioni inserite.
+			\item\textbf{Precondizione}: il developer ha selezionato l'azione per verificare la consistenza delle relazioni. Almeno un file XML deve essere stato aperto con successo.
+			\item\textbf{Scenario principale}: il developer seleziona l'azione per effettuare il check delle relazioni.
+			\item\textbf{Postcondizione}: il sistema ha verificato le relazioni nel file principale e in tutti gli associati.
+		\end{itemize}
+		
+	\subsection{UC 1.11 Visualizzazione del risultato del check sulle relazioni}
+		\label{subsec:XEUC1.11}
+		
+		\begin{figure}[!h] 
+			\centering 
+			%\includegraphics[width=0.9\columnwidth]{tool2/UC1-11.png} 
+			\caption{Use Case - UC 1.11 Visualizzazione del risultato del check sulle relazioni}
+		\end{figure}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve visualizzare l'esito del check sulle relazioni.
+			\item\textbf{Precondizione}: il developer ha avviato il check sulle relazioni e quest'ultimo è terminato.
+			\item\textbf{Flusso principale degli eventi}: 
+			\begin{enumerate}
+				\item \textit{l'utente ha la possibilità di:} \textit{visualizzazione degli errori} (\hyperref[subsec:XEUC1.11.1]{UC 1.11.1});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{selezione dei filtri sulle categorie di errori da visualizzare} (\hyperref[subsec:XEUC1.11.2]{UC1.11.2});
+				
+				\item \textit{l'utente ha la possibilità di:} \textit{visualizzazione dell'elemento causa dell'errore nell'albero XML} (\hyperref[subsec:XEUC1.11.3]{UC1.11.3}).
+				
+			\end{enumerate}
+			\item\textbf{Postcondizione}: il sistema ha permesso la visualizzazione dei risultati del check sulle relazioni.
+		\end{itemize}
+		
+	\subsection{UC 1.11.1 Visualizzazione degli errori}
+		\label{subsec:XEUC1.11.1}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter l'esito della verifica delle relazioni.
+			\item\textbf{Precondizione}: il developer ha avviato il check sulle relazioni e quest'ultimo è terminato.
+			\item\textbf{Scenario principale}: viene visualizzato per ogni errore: la severità, la tipologia, la descrizione, il nome del file in cui l'errore è stato trovato.
+			\item\textbf{Postcondizione}: il sistema ha visualizzato l'output della verifica delle relazioni.
+		\end{itemize}
+		
+	\subsection{UC 1.11.2 Selezione dei filtri sulle categorie di errori da visualizzare}
+		\label{subsec:XEUC1.11.2}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter selezionare i filtri sulla severità degli errori.
+			\item\textbf{Precondizione}: il developer ha avviato il check sulle relazioni e quest'ultimo è terminato.
+			\item\textbf{Scenario principale}: il developer seleziona per ogni categoria di severità se desidera visualizzare gli errori di quella categoria.
+			\item\textbf{Postcondizione}: la visualizzazione viene aggiornata e vengono mostrati solo gli errori per il quale corrispettivo filtro di severità è attivo.
+		\end{itemize}
+		
+	\subsection{UC 1.11.3 Visualizzazione dell'elemento causa dell'errore nell'albero XML}
+		\label{subsec:XEUC1.11.3}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter visualizzare l'elemento causa dell'errore nel suo albero XML di appartenenza.
+			\item\textbf{Precondizione}: il developer ha avviato il check sulle relazioni seleziona l'azione per mostrare l'elemento causa dell'errore.
+			\item\textbf{Scenario principale}: il developer seleziona l'azione per visualizzare il nodo causa dell'errore nel suo albero di appartenenza.
+			\item\textbf{Postcondizione}: il sistema ha visualizzato il nodo nel contesto del suo albero di appartenenza.
+		\end{itemize}
+		
+	\subsection{UC 1.12 Visualizzazione dell'about del programma}
+		\label{subsec:XEUC1.12}
+		
+		\begin{itemize}
+			\item\textbf{Attori}: developer.
+			\item\textbf{Descrizione}: un developer deve poter visualizzare la finestra about del programma.
+			\item\textbf{Precondizione}: il developer abbia selezionato l'azione per visualizzare la finestra about del programma.
+			\item\textbf{Scenario principale}: il developer visualizza l'about sul programma.
+			\item\textbf{Postcondizione}: il sistema ha mostrato la finestra about del programma.
+		\end{itemize}
+		
+	\subsection{UC 1.13 Visualizzazione degli errori occorsi durante l'apertura del file}
+		\label{subsec:XEUC1.13}
+		
+		\begin{itemize}
+			\item\textbf{Descrizione}: si è verificato uno dei seguenti errori durante l'apertura di un file XML:
+			\begin{itemize}
+				\item il percorso inserito non è valido;
+				\item il file indicato non esiste;
+				\item il file indicato non è leggibile;
+				\item si è verificato un errore non gestito durante l'apertura del file;
+				\item il parser XML ha trovato un errore sintattico nel file XML.
+			\end{itemize}
+			\item\textbf{Precondizione}: il developer ha selezionato l'azione per aprire un file esistente e abbia inserito il percorso ed il nome del file.
+			\item\textbf{Scenario principale}: viene fornita una spiegazione dell'errore commesso e come risolverlo.
+			\item\textbf{Postcondizione}: l'errore commesso è stato visualizzato e spiegato, il file XML non è stato aperto. Il precedente lavoro è stato chiuso.
+		\end{itemize}
+		
+	\subsection{UC 1.14 Visualizzazione degli errori occorsi durante il salvataggio del file}
+		\label{subsec:XEUC1.14}
+		
+		\begin{itemize}
+			\item\textbf{Descrizione}: si è verificato uno dei seguenti errori durante il salvataggio su disco di un file XML:
+			\begin{itemize}
+				\item il file indicato non è scrivibile;
+				\item si è verificato un errore non gestito durante l'apertura in scrittura del file.
+			\end{itemize}
+			\item\textbf{Precondizione}: il developer ha selezionato l'azione per il salvataggio del file modificato.
+			\item\textbf{Scenario principale}: viene fornita una spiegazione dell'errore commesso e come risolverlo.
+			\item\textbf{Postcondizione}: l'errore commesso è stato visualizzato e spiegato, il file XML non è stato salvato. Il precedente lavoro non è stato perso.
+		\end{itemize}
+		
+	\subsection{UC 1.15 Visualizzazione degli errori occorsi durante l'importazione}
+		\label{subsec:XEUC1.15}
+		
+		\begin{itemize}
+			\item\textbf{Descrizione}: si è verificato uno dei seguenti errori durante l'importazione delle relazioni:
+			\begin{itemize}
+				\item il percorso inserito non è valido;
+				\item il file indicato non esiste;
+				\item il file indicato non è leggibile;
+				\item si è verificato un errore non gestito durante l'apertura del file;
+				\item il parser XML ha trovato un errore sintattico nel file.
+			\end{itemize}
+			\item\textbf{Precondizione}: il developer ha selezionato l'azione per l'importazione delle relazioni da filee ha inserito un percorso ed il nome del file.
+			\item\textbf{Scenario principale}: viene fornita una spiegazione dell'errore commesso e come risolverlo.
+			\item\textbf{Postcondizione}: l'errore commesso è stato visualizzato e spiegato, le relazioni non sono state importate. Le precedenti relazioni non sono state eliminate.
+		\end{itemize}
+		
+	\subsection{UC 1.16 Visualizzazione degli errori occorsi durante l'esportazione}
+		\label{subsec:XEUC1.16}
+		
+		\begin{itemize}
+			\item\textbf{Descrizione}: si è verificato uno dei seguenti errori durante l'esportazione delle relazioni su un nuovo file:
+			\begin{itemize}
+				\item il file indicato non è scrivibile;
+				\item si è verificato un errore non gestito durante l'apertura in scrittura del file.
+			\end{itemize}
+			\item\textbf{Precondizione}: il developer ha selezionato l'azione per l'esportazione delle relazioni su file.
+			\item\textbf{Scenario principale}: viene fornita una spiegazione dell'errore commesso e come risolverlo.
+			\item\textbf{Postcondizione}: l'errore commesso è stato visualizzato e spiegato, le relazioni non sono state esportate.
+		\end{itemize}
+
+
+\section{Tracciamento dei requisiti}
+	Partendo dai casi d'uso si è provveduto a stilare una precisa analisi dei requisiti per il tool in questione. I requisiti trovati sono stati inoltre tracciati in relazione al caso d'uso di origine.\\
+	
+	Di seguito vengono riportati tutti i requisiti individuati. Per essere più leggibili verranno separati in tabelle a seconda della loro categoria. Di ogni requisito verranno indicati: tipologia, importanza e provenienza.\\
+	I requisiti dovranno essere classificati per tipo e importanza e utilizzeranno la seguente sintassi:
+	\begin{center}
+		R[Importanza][Tipo][Codice]
+	\end{center}
+	\begin{itemize}
+		\item \textbf{Importanza}: può assumere solo uno fra i seguenti valori:
+		\begin{itemize}
+			\item \textit{0}: requisito obbligatorio;
+			\item \textit{1}: requisito desiderabile;
+			\item \textit{2}: requisito opzionale.
+		\end{itemize}
+		\item \textbf{Tipo}: pu\`{o} assumere solo uno fra i seguenti valori:
+		\begin{itemize}
+			\item  \textit{F}: funzionale;
+			\item  \textit{Q}: di qualità;
+			\item  \textit{P}: prestazionale;
+			\item  \textit{V}: vincolo.
+		\end{itemize}
+		\item \textbf{Codice}: è il codice gerarchico univoco di ogni vincolo espresso in numeri (esempio: 1.3.2).
+	\end{itemize}
+
+	Per ogni requisito vengono inoltre specificati:
+	\begin{itemize}
+		\item \textbf{descrizione}: breve ma completa ed il \underline{meno} ambigua possibile;
+		\item \textbf{fonte}: pu\`{o} essere soltanto una o pi\`{u} tra le seguenti:
+		\begin{itemize}
+			\item \textit{caso d'uso}: il requisito \`{e} stato estrapolato da un caso d'uso. In questo caso va indicato il codice univoco del caso d'uso. \`{E} possibile indicare come fonte pi\`{u} di un caso d'uso.
+			\item \textit{interno}: è stato ritenuto giusto aggiungere questo requisito per completezza.
+			\item \textit{tutor aziendale}: il requisito è stato espressamente richiesto dal tutor aziendale.
+		\end{itemize}
+	\end{itemize}
+
+\subsection{Requisiti funzionali}
+\begin{center}
+	\begin{longtable}{p{4.2cm}!{\color{white}\vrule width 0.5mm}p{6cm}!{\color{white}\vrule width 0.5mm}p{2.5cm}!{\color{white}\vrule width 0.5mm}}
+		\rowcolor{headcolor}\textcolor{white}{\textbf{Requisito}}&\textcolor{white}{\textbf{Descrizione}}&\textcolor{white}{\textbf{Fonti}}\\
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F1}{R0F1} & Un utente può creare un nuovo file XML. & \hyperref[subsec:XEUC1.1]{UC 1.1}\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F1.1}{R0F1.1} & La creazione di un nuovo file XML richiede l'inserimento del percorso dove memorizzarlo. & \hyperref[subsec:XEUC1.1.1]{UC 1.1.1}\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F1.2}{R0F1.2} & La creazione di un nuovo file XML richiede l'inserimento del nome del file. & \hyperref[subsec:XEUC1.1.2]{UC 1.1.2}\\
+		
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F2}{R0F2} & Un utente può aprire un file XML preesistente. & \hyperref[subsec:XEUC1.2]{UC 1.2}\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F2.1}{R0F2.1} & L'apertura di file XML richiede l'inserimento del percorso dove recuperarlo. & \hyperref[subsec:XEUC1.2]{UC 1.2}\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{R0F2.2}{R0F2.2} & L'apertura di file XML richiede l'inserimento del nome del file da aprire. & \hyperref[subsec:XEUC1.2]{UC 1.2}\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{R0F2.3}{R0F2.3} & Se prima dell'apertura di un file XML l'utente ha delle modifiche non salvate su qualche file, il sistema, per ogni file, chiede all'utente se cancellare l'azione, salvare o scartare le modifiche al lavoro precedente. & \hyperref[subsec:XEUC1.2]{UC 1.2}\\
+		
+		
+		%todo requisiti derivati da uc 1.3
+			\rowcolor{row1}\hspace{2mm}\hypertarget{R0F3.todo}{R0F3.todo} & Quando viene effettuata una modifica ad un file XML, viene aggiunto il carattere \sq{*} alla fine del nome per indicare all'utente il nuovo stato del file. & \hyperref[subsec:XEUC1.2]{UC 1.2}\\
+		
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F4}{R0F4} & Un utente può salvare le modifiche effettuata ad un file XML. & \hyperref[subsec:XEUC1.4]{UC 1.4}\\
+		
+			\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F4.1}{R0F4.1} & Il programma permette di salvare solo un file su cui sono state apportate modifiche. & \hyperref[subsec:XEUC1.4]{UC 1.4}\\
+			
+			\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F4.1}{R0F4.1} & Il programma permette di salvare solo un file su cui sono state apportate modifiche. & \hyperref[subsec:XEUC1.4]{UC 1.4}\\
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F5}{R0F5} & Un utente può modificare il filtro utilizzato per selezionare l'attributo il cui valore viene mostrato nell'albero per rappresentare l'elemento. & \hyperref[subsec:XEUC1.5]{UC 1.5}\\
+			
+			\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F5.1}{R0F5.1} & Il valore inserito dall'utente viene memorizzato nel registro di sistema e ripristinato ad ogni apertura del programma. & \hyperref[subsec:XEUC1.5]{UC 1.5}\\
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F13}{R0F13} & Il programma mostra gli eventuali errori occorsi durante l'apertura di un file XML. & \hyperref[subsec:XEUC1.13]{UC 1.13}\\
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F14}{R0F14} & Il programma mostra gli eventuali errori occorsi durante il salvataggio di un file XML. & \hyperref[subsec:XEUC1.14]{UC 1.14}\\
+		
+		\hline
+		\caption{Requisiti funzionali}
+	\end{longtable}
+\end{center}
+
+\subsection{Requisiti di qualità}
+\begin{center}
+	\begin{longtable}{p{4.2cm}!{\color{white}\vrule width 0.5mm}p{6cm}!{\color{white}\vrule width 0.5mm}p{2.5cm}!{\color{white}\vrule width 0.5mm}}
+		\rowcolor{headcolor}\textcolor{white}{\textbf{Requisito}}&\textcolor{white}{\textbf{Descrizione}}&\textcolor{white}{\textbf{Fonti}}\\
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{R0Q1}{R0Q1} & Viene fornito insieme al programma un l'help con la guida alla compilazione e al deploy per sistemi Windows. & Tutor interno\\
+		
+		\rowcolor{row2}\hspace{0mm}\hypertarget{R0Q2}{R0Q2} & Viene fornito un l'help che spiega come utilizzare il programma. & Tutor interno\\
+		
+		\hline
+		\caption{Requisiti di vincolo}
+	\end{longtable}
+\end{center}
+
+\subsection{Requisiti di vincolo}
+\begin{center}
+	\begin{longtable}{p{4.2cm}!{\color{white}\vrule width 0.5mm}p{6cm}!{\color{white}\vrule width 0.5mm}p{2.5cm}!{\color{white}\vrule width 0.5mm}}
+		\rowcolor{headcolor}\textcolor{white}{\textbf{Requisito}}&\textcolor{white}{\textbf{Descrizione}}&\textcolor{white}{\textbf{Fonti}}\\
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{R0V1}{R0V1} & Il programma deve funzionare su Windows 7 SP1 32 e 64 bit. & Tutor interno\\
+		
+		\rowcolor{row2}\hspace{0mm}\hypertarget{R0V2}{R0V2} & Il programma deve essere scritto utilizzando il linguaggio C++ 98. & Tutor interno\\
+		
+		\hline
+		\caption{Requisiti di vincolo}
+	\end{longtable}
+\end{center}
+
+\section{Tecnologie e strumenti}
+Di seguito viene fornita una panoramica delle tecnologie e strumenti utilizzati per lo sviluppo di XML Editor\textsl{}.
+
+	\subsection{Qt Framework}
+		Per lo sviluppo del tool è stato usato, come per Multiplatform File Analyzer, Qt Framework versione 5.3.1.\\
+		In particolare è stata usata la libreria per costruire le interfacce grafiche, la libreria per accedere al file system e leggere/scrivere file e la libreria per effettuare il parsing dei file XML.
+	
+	\subsection{Qt Creator}
+		Come IDE per lo sviluppo ci si è affidati a Qt Creator 3.1.2. IDE semplice e performante che si integra perfettamente con il mondo Qt, offrendo addirittura la consultazione veloce della documentazione direttamente nell'IDE.
+	
+	\section{Ciclo di vita del software}
+		XML Editor è stato sviluppato seguendo un modello di ciclo di vita incrementale. È stato deciso di fornire due incrementi. Nel primo sono state inserite tutte le funzionalità per la visualizzazione dei file, la gestione dei file associati e le relazioni (inclusa la verifica). Nel secondo incremento sono state aggiunte alla base già consolidate le funzionalità di editing dei file. Ad ogni incremento è seguito un rilascio del software.
+
+\section{Progettazione}
+	Il software è stato progettato per offrire una semplice espandibilità, allo scopo la strutturazione generale segue il collaudato Design Pattern \textit{MVC}, dove trovano luogo i seguenti pacchetti: \texttt{controller}, \texttt{view} e \texttt{data}. È inoltre presente il pacchetto \texttt{core} in cui è inserita l'implementazione degli algoritmi di business del tool, ad esempio l'algoritmo che esegue l'analisi.\\
+	
+	Il pacchetto core è implementato con il Design Pattern \textit{Strategy} allo scopo di permettere una facile estensione o sostituzione dell'algoritmo che esegue l'analisi, anche a run-time.\\
+	
+	Per permettere una facile e veloce connessione tra gli stati descritti dall'\textit{MVC} è stato adottato il Design Pattern \textit{Observer}, implementato nell'omonimo pacchetto \textit{observer}.\\
+	
+	È stato scelto di utilizzare il Design Pattern \textit{Strategy} per rendere modificabile facilmente l'implementazione dell'algoritmo che effettua l'analisi, all'interno del pacchetto \texttt{core}.\\
+	
+	È stato inoltre cercato di utilizzare le classi del Framework Qt in modo isolato alle sole parti strettamente necessarie, ovvero la GUI e l'analisi del file system. Questo allo scopo di rendere il tool slegato dalle implementazioni specifiche, in favore di una più semplice espandibilità.
+
+	\subsection{Diagramma delle classi}
+		Di seguito è presente il diagramma delle classi espresso tramite il formalismo UML 2.0. Nel diagramma è inoltre possibile vedere le principali dipendenza verso le classi del Framework Qt.
+
+		\begin{figure}[!h] 
+			\centering 
+			\includegraphics[width=0.98\columnwidth]{tool1/Tool-1-Diagramma-Classi.png} 
+			\caption{Diagramma delle classi di Multiplatform File Analyzer}
+		\end{figure}
+
+\newpage
+
+\subsection{Pacchetto controller}
+Il pacchetto è composto dalla sola classe \texttt{Controller} che svolge il compito di controllore del sistema. È questo il solo pacchetto utilizzato dall funzione \texttt{main}.
+
+\subsubsection{Classe Controller}
+La classe \texttt{Controller} si occupa di avviare il sistema. Essa provvede ad allocare tutti gli oggetti necessari e al relativo rilascio al termine del programma. Inoltre seleziona la view e la connette con le classi che rappresentano i dati. Infine raccoglie i comandi utente provenienti dalla view e li esegue grazie al pacchetto \texttt{core}.
+
+\subsection{Pacchetto observer}
+Questo pacchetto rappresenta l'implementazione del Design Pattern \textit{Observer} ed è stato utilizzato per tenere aggiornata la view al cambiamento dei dati.
+
+\subsubsection{Interfaccia IObserver}
+\texttt{IObserver} è l'interfaccia che rappresenta gli oggetti che osservano le modifiche di altri oggetti. Essa contiene il metodo virtuale puro \texttt{Update} che i soggetti osservati invocano per segnalare il fatto che sono stati modificati e che quindi un aggiornamento è necessario. Le classi concrete che avranno la necessità di osservare un soggetto deriveranno da \texttt{IObserver} implementando il metodo \texttt{Update}.
+
+\subsubsection{Classe Subject}
+La classe \texttt{Subject} rappresenta un soggetto che può essere osservato. Essa contiene il codice necessario per notificare tutti gli osservatori dell'avvenuto cambiamento. Mantiene inoltre una lista degli osservatori da notificare, i quali possono iscriversi se desiderano ricevere la notifica, oppure rimuoversi se non è più necessario ricevere aggiornamenti. Le classi che devono essere osservate deriveranno da questa.
+
+\subsection{Pacchetto data}
+Il pacchetto \texttt{data} contiene tutte le classi che rappresentano i dati di business del programma. Allo scopo di rendere il programma eseguibile anche su un semplice terminale e quindi disaccoppiato dal mondo Qt, le classi di dati sono state implementate con la Standard Template Library (STL), piuttosto che le classi collezione offerte dal framework in uso.
+
+\subsubsection{Classe InputData}
+La classe \texttt{InputData} raccoglie tutti i dati che sono di input all'analisi. Contiene quindi il percorso di partenza, i nomi delle piattaforme ed il tempo di warning. È questa classe che si occupa della trasformazione della stringa contenente tutte le piattaforme in un \texttt{Vector}.
+
+\subsubsection{Classe FileOccurrence}
+La classe \texttt{FileOccurrence} rappresenta un file trovato in almeno una cartella di piattaforma durante l'analisi. Per il file trovato, la classe contiene il percorso assoluto, il nome, tutte le piattaforme in cui è stato trovato e, per ciascuna, la data di ultima modifica. 
+
+\subsubsection{ResultData}
+La classe \texttt{ResultData} contiene tutti i dati presenti come output di una analisi. Contiene quindi una collezione di \texttt{FileOccurrence} e tutti i dati di input all'analisi.\\
+Essa deriva dalla classe \texttt{Subject} per permettere ad un osservatore, tipicamente un elemento dell View, di aggiornarsi al variare dei risultati. Permettendo di mostrare i risultati dell'analisi in modo interattivo durante l'inserimento di ogni nuovo \texttt{FileOccurence} trovato.
+
+\subsection{Pacchetto view}
+Questo pacchetto si occupa delle interfacce utente, derivando e personalizzando le classi offerte dal Framework Qt.
+
+\subsubsection{Iterfaccia IView}
+\texttt{IView} è una classe astratta che rappresenta una generica view.
+
+\subsubsection{Classe ViewMainWindow}
+La classe \texttt{ViewMainWindow} implementa \texttt{IView} tramite una finestra. Eredita e specializza la classe \texttt{QMainWindow} di Qt. Raccoglie i comandi utente e ne delega l'esecuzione al controller.
+
+\subsubsection{Classe ResultWidgetBase}
+La classe astratta \texttt{ResultWidgetBase} rappresenta un generico widget integrabile in una interfaccia grafica che sfrutta le classi del Framework Qt per la visualizzazione dell'output dell'analisi.
+
+\subsubsection{Classe ResultTableWIdget}
+La classe \texttt{ResultWidget} implementa la classe base astratta \texttt{ResultWidgetBase} mostrando l'output dell'analisi in forma tabellare, dedicando una riga a ciascun file trovato.
+
+\subsection{Core}
+Il pacchetto si occupa della realizzazione dell'analisi e di tutti gli algoritmi di business del tool. Utilizza il Design Pattern \textit{Strategy} per l'organizzazione delle classe contenute.
+
+\subsubsection{Interfaccia ICoreMultiplatformFileAnalyzer}
+\texttt{ICoreMultiplatformFileAnalyzer} rappresenta l'algoritmo di business del programma, ovvero quello che effettua l'analisi e riempie un'istanza della classe \texttt{ResultData} con il risultato.
+
+\subsubsection{Classe QtCoreMultiplatformFIleAnalyzer}
+La classe \texttt{QtCoreMultiplatformFIleAnalyzer} implementa l'interfaccia\\ \texttt{ICoreMultiplatformFileAnalyzer} utilizzando il Framework Qt per esplorare il file system.
+
+\section{Codifica}
+Tutto il codice del tool è stato pubblicato sulla piattaforma GitHub, accedibile tramite il seguente indirizzo: \url{https://github.com/Mauxx91/Multiplatform-File-Analyzer}. Tutto il codice è disponibile gratuitamente sotto licenza GNU GPL v3\footnote{Un'approfondimento sulla licenza può essere trovato al seguente indirizzo: \url{http://www.gnu.org/copyleft/gpl.html}.}\\
+
+Tutto il codice è stato scritto in lingua inglese, compresi i commenti, dei quali si è cercato di scriverne il più possibile.
+La codifica ha seguito alcune convenzioni della famosa notazione Ungherese. Di seguito sono elencati i formalismi utilizzati nel codice:
+
+\begin{itemize}
+	\item \textbf{prefissi:}
+	\begin{itemize}
+		\item \textbf{m}: usato per le variabili membro (esempio: \texttt{m\_keyName});
+		\item \textbf{p}: usato per le variabili puntatore (esempio: \texttt{m\_pkeyNameList});
+		\item \textbf{o}: usato per le variabili input alla funzione che sono usate come output (esempio: \texttt{o\_foundKeys});
+		\item \textbf{I}: usato per le classi interfacce (esempio: \texttt{IObserver}).
+	\end{itemize}
+	\item \textbf{suffissi:}
+	\begin{itemize}
+		\item \textbf{Base}: usato per le classi astratte (esempio: \texttt{ResultWidgetBase});
+	\end{itemize}
+	\item \textbf{capitalizzazione:}
+	\begin{itemize}
+		\item \textbf{variabili e parametri}: iniziano sempre in minuscolo e usano una lettera minuscola per ogni parola (esempio: \texttt{m\_parentWidget}, \texttt{returnValue});
+		\item \textbf{macro ed enum}: completamente in maiuscolo con le diverse parole separate dal carattere \sq{\_} (esempio: \texttt{UPDATE\_CODE});
+		\item \textbf{classi, funzioni e metodi}: iniziano sempre in maiuscolo e ogni parola diversa parte in maiuscolo (esempio: \texttt{FileOccurrence});
+	\end{itemize}
+\end{itemize}
+
+todo -> include del codice o no?
+
+\section{Conclusioni}
+Tutti i requisiti sono stati soddisfatti come pianificato e nei tempi prestabiliti.\\
+La realizzazione del tool ha messo di fronte lo studente a una problematica reale presente durante lo sviluppo di giochi multipiattaforma. Contemporaneamente gli ha permesso di interfacciarsi ai comuni problemi legati alla manutenzione dei moltissimi file presenti nei grandi progetti, lasciandogli la libertà di progettare e realizzare una soluzione.\\
+Lo studente ha inoltre approfondito le tematiche della creazione di interfacce usabili e degli algoritmi per l'esplorazione del file system.

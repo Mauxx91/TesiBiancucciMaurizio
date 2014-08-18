@@ -1,0 +1,295 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {italian}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduzione}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}L'azienda}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}L'idea}{1}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Organizzazione del testo}{1}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Processi e metodologie}{3}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Processo sviluppo prodotto}{3}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Descrizione dello stage}{5}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduzione al progetto}{5}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{5}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{5}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Pianificazione}{5}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Multiplatform File Analyzer}{7}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Introduzione}{7}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Premessa}{7}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Lo scopo}{7}{subsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Casi d'uso}{7}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}UC 1: Caso d'uso principale}{8}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}UC 1.1: Analisi dei file di un gioco multipiattaforma}{8}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}UC 1.1.1: Inserimento dei dati in input all'analisi}{10}{subsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}UC 1.1.1.1: Inserimento percorso radice dei file da analizzare}{10}{subsection.4.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.5}UC 1.1.1.2 Inserimento dei nomi delle cartelle delle piattaforme}{10}{subsection.4.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.6}UC 1.1.1.3 Inserimento del warning time}{10}{subsection.4.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.7}UC 1.1.2 Avvio dell'analisi}{11}{subsection.4.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.8}UC 1.1.3 Visualizzazione errori sui dati in input}{11}{subsection.4.2.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.9}UC 1.1.4 Visualizzazione dei risultati dell'analisi}{11}{subsection.4.2.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.10}UC 1.1.4.1 Visualizzazione di tutti i file presenti in almeno una cartella di piataforma}{12}{subsection.4.2.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.11}UC 1.1.4.2 Visualizzazione del percorso per il file visualizzato}{13}{subsection.4.2.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.12}UC 1.1.4.3 Per ogni file visualizzato, visualizzazione del tempo di ultima modifica per ogni piattaforma per cui \IeC {\`e} presente}{13}{subsection.4.2.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.13}UC 1.1.4.4 Per ogni file visualizzato, visualizzazione della massima differenza fra i tempi di ultima modifica delle piattaforme in cui \IeC {\`e} presente}{13}{subsection.4.2.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.14}UC 1.1.4.5 Visualizzazione dei file che hanno la massima differenza fra i tempi di ultima modifica delle piattaforme in cui \IeC {\`e} presente, maggiore del tempo di warning}{14}{subsection.4.2.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.15}UC 1.1.4.6 L'utente pu\IeC {\`o} aprire l'explorer del sistema operativo per visualizzare dove questo si trovi}{14}{subsection.4.2.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Tracciamento dei requisiti}{14}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Requisiti funzionali}{15}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Requisiti di qualit\IeC {\`a}}{17}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Requisiti di vincolo}{17}{subsection.4.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Tecnologie e strumenti}{17}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Qt Framework}{17}{subsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.2}Qt Creator}{18}{subsection.4.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Ciclo di vita del software}{18}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Progettazione}{18}{section.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.1}Diagramma delle classi}{18}{subsection.4.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.2}Pacchetto controller}{20}{subsection.4.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe Controller}{20}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.3}Pacchetto observer}{20}{subsection.4.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Interfaccia IObserver}{20}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe Subject}{20}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.4}Pacchetto data}{20}{subsection.4.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe InputData}{20}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe FileOccurrence}{20}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ResultData}{21}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.5}Pacchetto view}{21}{subsection.4.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Iterfaccia IView}{21}{section*.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe ViewMainWindow}{21}{section*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe ResultWidgetBase}{21}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe ResultTableWIdget}{21}{section*.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.6}Core}{21}{subsection.4.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Interfaccia ICoreMultiplatformFileAnalyzer}{21}{section*.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe QtCoreMultiplatformFIleAnalyzer}{21}{section*.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Codifica}{21}{section.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.8}Conclusioni}{22}{section.4.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}XML Editor}{23}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Introduzione}{23}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Premessa}{23}{subsection.5.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}Lo scopo}{23}{subsection.5.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Casi d'uso}{23}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}UC 1: Caso d'uso principale}{24}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}UC 1.1: Creazione di un nuovo file XML}{25}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}UC 1.1.1: Inserimento del percorso dove memorizzare il nuovo XML}{25}{subsection.5.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.4}UC 1.1.2: Inserimento del nome del file del nuovo XML}{25}{subsection.5.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.5}UC 1.2: Apertura di un file XML preesistente}{25}{subsection.5.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.6}UC 1.3 Editing del file XML correntemente aperto}{26}{subsection.5.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.7}UC 1.3.1 Visualizzazione del nodo riferito dal nodo selezionato}{27}{subsection.5.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.8}UC 1.3.2 Visualizzazione degli errori occorsi durante la ricerca del nodo riferito}{27}{subsection.5.2.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.9}UC 1.3.3 Aggiunta di un nuovo nodo figlio al nodo selezionato}{27}{subsection.5.2.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.10}UC 1.3.4 Editing del nodo selezionato}{28}{subsection.5.2.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.11}UC 1.3.4.1 Modifica del valore dell'elemento}{28}{subsection.5.2.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.12}UC 1.3.4.2 Inserimento di un nuovo attributo}{28}{subsection.5.2.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.13}UC 1.3.4.3 Modifica di un attributo esistente}{28}{subsection.5.2.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.14}UC 1.3.4.4 Rimozione di un attributo esistente}{29}{subsection.5.2.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.15}UC 1.3.5 Duplicazione del nodo selezionato}{29}{subsection.5.2.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.16}UC 1.3.6 Copia del nodo selezionato}{29}{subsection.5.2.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.17}UC 1.3.7 Incollare il nodo precedentemente copiato}{29}{subsection.5.2.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.18}UC 1.3.8 Rimozione del nodo selezionato}{30}{subsection.5.2.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.19}UC 1.3.9 Rimozione di tutti i nodi figli del nodo selezionato}{30}{subsection.5.2.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.20}UC 1.3.10 Istanziazione di una nuova relazione}{30}{subsection.5.2.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.21}UC 1.3.11 Visualizzazione degli errori occorsi durante l'istanziazione di una nuova relazione}{30}{subsection.5.2.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.22}UC 1.3.12 Annullamento dell'ultima modifica eseguita}{31}{subsection.5.2.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.23}UC 1.3.13 Ripristino dell'ultima modifica annullata}{31}{subsection.5.2.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.24}UC 1.4: Apertura di un file XML preesistente}{31}{subsection.5.2.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.25}UC 1.5 Editing del filtro sul nome dell'attributo da visualizzare}{32}{subsection.5.2.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.26}UC 1.6 Editing dei file associati}{32}{subsection.5.2.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.27}UC 1.6.1 Aggiunta di un nuovo file associato}{32}{subsection.5.2.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.28}UC 1.6.2 Rimozione di un file precedentemente associato}{33}{subsection.5.2.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.29}UC 1.7 Editing delle relazioni}{33}{subsection.5.2.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.30}UC 1.7.1 Inserimento di una nuova relazione}{33}{subsection.5.2.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.31}UC 1.7.2 Modifica di una relazione precedentemente inserita}{34}{subsection.5.2.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.32}UC 1.7.3 Rimozione di una relazione precedentemente inserita}{34}{subsection.5.2.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.33}UC 1.8 Importazione delle relazioni da file}{34}{subsection.5.2.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.34}UC 1.9 Esportazione delle relazioni su file}{34}{subsection.5.2.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.35}UC 1.10 Avvio del check sulle relazioni}{35}{subsection.5.2.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.36}UC 1.11 Visualizzazione del risultato del check sulle relazioni}{35}{subsection.5.2.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.37}UC 1.11.1 Visualizzazione degli errori}{35}{subsection.5.2.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.38}UC 1.11.2 Selezione dei filtri sulle categorie di errori da visualizzare}{36}{subsection.5.2.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.39}UC 1.11.3 Visualizzazione dell'elemento causa dell'errore nell'albero XML}{36}{subsection.5.2.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.40}UC 1.12 Visualizzazione dell'about sul programma}{36}{subsection.5.2.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.41}UC 1.13 Visualizzazione degli errori occorsi durante l'apertura del file}{36}{subsection.5.2.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.42}UC 1.14 Visualizzazione degli errori occorsi durante il salvataggio del file}{37}{subsection.5.2.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.43}UC 1.15 Visualizzazione degli errori occorsi durante l'importazione}{37}{subsection.5.2.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.44}UC 1.16 Visualizzazione degli errori occorsi durante l'esportazione}{37}{subsection.5.2.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Tracciamento dei requisiti}{38}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Requisiti funzionali}{39}{subsection.5.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}Requisiti di qualit\IeC {\`a}}{40}{subsection.5.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.3}Requisiti di vincolo}{41}{subsection.5.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Tecnologie e strumenti}{41}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}Qt Framework}{41}{subsection.5.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Qt Creator}{41}{subsection.5.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Ciclo di vita del software}{41}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Progettazione}{41}{section.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.1}Diagramma delle classi}{42}{subsection.5.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.2}Pacchetto controller}{44}{subsection.5.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe Controller}{44}{section*.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.3}Pacchetto observer}{44}{subsection.5.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Interfaccia IObserver}{44}{section*.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe Subject}{44}{section*.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.4}Pacchetto data}{44}{subsection.5.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe InputData}{44}{section*.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe FileOccurrence}{44}{section*.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ResultData}{45}{section*.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.5}Pacchetto view}{45}{subsection.5.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Iterfaccia IView}{45}{section*.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe ViewMainWindow}{45}{section*.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe ResultWidgetBase}{45}{section*.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe ResultTableWIdget}{45}{section*.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.6}Core}{45}{subsection.5.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Interfaccia ICoreMultiplatformFileAnalyzer}{45}{section*.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe QtCoreMultiplatformFIleAnalyzer}{45}{section*.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.7}Codifica}{45}{section.5.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.8}Conclusioni}{46}{section.5.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{47}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusioni}{49}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{49}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{49}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{49}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Valutazione personale}{49}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendice A}{51}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{55}{appendix*.50}
