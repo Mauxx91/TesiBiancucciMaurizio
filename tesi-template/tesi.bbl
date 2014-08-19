@@ -1,0 +1,31 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{site:milestone}{online}{}
+  \field{sortinit}{M}
+  \field{title}{Milestone Home Page}
+  \verb{url}
+  \verb http://milestone.it/azienda/chi-siamo/
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

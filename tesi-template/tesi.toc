@@ -294,4 +294,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Appendice A}{51}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{55}{appendix*.50}
+\contentsline {chapter}{Glossario}{53}{section*.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{55}{appendix*.52}

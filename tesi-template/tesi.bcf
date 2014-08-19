@@ -294,6 +294,8 @@
     <bcf:datasource type="file" datatype="bibtex">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey>site:milestone</bcf:citekey>
+    <bcf:citekey>site:milestone</bcf:citekey>
     <bcf:citekey>*</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
