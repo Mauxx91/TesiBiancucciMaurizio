@@ -8,47 +8,55 @@
 \label{cap:introduzione}
 %**************************************************************
 
-Introduzione al contesto applicativo.\\
+%**************************************************************
+\section{Descrizione dell'azienda}
 
-\noindent Esempio di utilizzo di un termine nel glossario \\
-\gls{api}. \\
+Milestone S.r.l. (MI) nasce a Milano nel 1996, e ancora oggi rappresenta la più grande realtà italiana impegnata nello sviluppo di videogiochi per console e PC. L'azienda è riconosciuta a livello mondiale come uno dei migliori team di sviluppo nel settore racing, sia asfalto che off-road, sia motociclismo che automobilismo.\\
 
-\noindent Esempio di citazione in linea \\
-\cite{site:agile-manifesto}. \\
+Fra i suoi titoli più importanti si vuol ricordare \dq{SCAR - Squadra Corse Alfa Romeo}, \dq{MXGP}, \dq{WRC 4 Word Rally Championship}, \dq{la serie Superbike}, \dq{la serie MotoGP}. Tutti sviluppati sotto licenze ufficiali.\\
 
-\noindent Esempio di citazione nel pie' di pagina \\
-citazione\footcite{womak:lean-thinking} \\
+Al momento la casa è impegnata nella sfida dello sviluppo sulle nuove console, affrontando la sfida delle nuove tecnologie, cercando al contempo di mantenere lo stesso ritmo produttivo. 
 
 %**************************************************************
-\section{L'azienda}
+\section{Motivazioni all'attivazione dello stage}
 
-Descrizione dell'azienda.
+Lo stage nasce dall'esigenza dell'azienda, in fase di forte espansione, di aumentare il proprio personale, investendo quindi in formazione di figure Junior da inserire successivamente in pianta stabile nell'organico dell'azienda.\\
+
+Vista la sempre crescente realisticità grafica dei videogame, l'azienda cerca figure da inserire all'interno del team di programmazione 3D.
 
 %**************************************************************
-\section{L'idea}
+\section{Obiettivi dello stage}
 
-Introduzione all'idea dello stage.
+L'obiettivo dello stage è quello di inserire lo studente all'interno del team di programmazione 3D e fargli assaggiare le sfide con cui il team si confronta quotidianamente.\\
+
+Lo stage prevede quindi di introdurre lo studente ai problemi affrontati chiedendogli di: analizzare, progettare e implementare dei tool di supporto allo scopo di velocizzare il lavoro dell'intero team.\\
+
+La seconda parte dello stage prevede lo studio ad alto livello del funzionamento di un engine di gioco, in particolare i flussi presenti nel settore di pertinenza del team. Seguito dalla progettazione ed implementazione di alcune funzionalità grafiche di debug. È prevista la possibilità, in fase di progettazione di attuare del refactoring sul codice di debug grafico già presente, allo scopo di una maggiore manutenibiltà ed estendibilità futura.
+
+%**************************************************************
+\section{Scopo del documento}
+
+Il presente documento ha lo scopo di presentare gli esisti delle attività sostenute dallo studente durante il periodo di stage sostenuto presso Milestone S.r.l.\\
+
+\begin{itemize}
+	\item Nel capitolo \hyperref[cap:flussi-aziendali]{2} verranno presentati i flussi di lavoro aziendali che portano un videogame da essere una semplice idea a diventare un prodotto maturo e finito pronto alla vendita. Particolare attenzione verrà dedicata alle responsabilità del team di programmazione 3D.
+	
+	\item Nel capito \hyperref[cap:engine-di-gioco]{3} verrà discussa la struttura ad alto livello di un engine di gioco.
+	
+	\item Nel capitolo \hyperref[cap:multiplatform-file-analyzer]{4} si presenterà il tool Multiplatform File Analyzer, analizzandolo approfonditamente tutti gli aspetti.
+	
+	\item Nel capitolo \hyperref[cap:xml-editor]{5} verrà presentato il tool XML Editor, del quale sarà fornita una profonda analisi a partire dall'analisi dei requisiti alla progettazione.
+\end{itemize}
 
 %**************************************************************
 \section{Organizzazione del testo}
 
-\begin{description}
-    \item[{\hyperref[cap:processi-metodologie]{Il secondo capitolo}}] descrive ...
-    
-    \item[{\hyperref[cap:descrizione-stage]{Il terzo capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:analisi-requisiti]{Il quarto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:progettazione-codifica]{Il quinto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:verifica-validazione]{Il sesto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:conclusioni]{Nel settimo capitolo}}] descrive ...
-\end{description}
+Per tutte le parole e le sequenze di parole in italico seguite dal carattere "g" a pedice, è presente un piccolo approfondimento nel Glossario in Appendice.
 
-Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
-\begin{itemize}
-	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
-	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{parola}\glsfirstoccur;
-	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \emph{corsivo}.
-\end{itemize}
+%**************************************************************
+\section{Nota sul codice prodotto}
+
+Il codice dei tool sviluppati, in accordo con l'azienda sono stati pubblicati sulla piattaforma \hyperref{https://github.com/}{}{}{GitHub}\footnote{Si invita il lettore a guardare nei capitoli  e 5 sotto la sezione codice, verificare se e la sezione corretta, gli indirizzi dove reperire il codice) sotto licenza GNU GPL v3.}.
+(todo mettere lo stesso link presente durante la spiegazione della licenza nei capitoli) (todo glossarizzare)\\
+
+Riguardo il codice sviluppato all'interno dell'engine di gioco, è stato inserito il minimo necessario per permettere al lettore di comprendere e al contempo non rivelare informazioni sensibili dell'azienda. Tutto il codice di gioco presente all'interno di questo documento è materiale protetto da copyright appartenente a Milestone S.r.l. ed è pubblicato sotto autorizzazione. Ogni riproduzione è severamente vietata, ogni richiesta di ulteriore documentazione va recapitata direttamente a Milestone S.r.l.

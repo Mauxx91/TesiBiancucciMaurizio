@@ -4,25 +4,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduzione}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}L'azienda}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}Descrizione dell'azienda}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}L'idea}{1}{section.1.2}
+\contentsline {section}{\numberline {1.2}Motivazioni all'attivazione dello stage}{1}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Organizzazione del testo}{1}{section.1.3}
+\contentsline {section}{\numberline {1.3}Obiettivi dello stage}{1}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Processi e metodologie}{3}{chapter.2}
+\contentsline {section}{\numberline {1.4}Scopo del documento}{2}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Processo sviluppo prodotto}{3}{section.2.1}
+\contentsline {section}{\numberline {1.5}Organizzazione del testo}{2}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Descrizione dello stage}{5}{chapter.3}
+\contentsline {section}{\numberline {1.6}Nota sul codice prodotto}{2}{section.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduzione al progetto}{5}{section.3.1}
+\contentsline {chapter}{\numberline {2}Flussi aziendali}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{5}{section.3.2}
+\contentsline {section}{\numberline {2.1}Milestone S.r.l. nel mercato}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{5}{section.3.3}
+\contentsline {section}{\numberline {2.2}Pirateria}{3}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Pianificazione}{5}{section.3.4}
+\contentsline {section}{\numberline {2.3}Suddivisione della forza lavoro}{3}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Engine di gioco}{5}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Multiplatform File Analyzer}{7}{chapter.4}
 \defcounter {refsection}{0}\relax 
@@ -150,7 +152,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.9}UC 1.3.3 Aggiunta di un nuovo nodo figlio al nodo selezionato}{27}{subsection.5.2.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.10}UC 1.3.4 Editing del nodo selezionato}{28}{subsection.5.2.10}
+\contentsline {subsection}{\numberline {5.2.10}UC 1.3.4 Editing del nodo selezionato}{27}{subsection.5.2.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.11}UC 1.3.4.1 Modifica del valore dell'elemento}{28}{subsection.5.2.11}
 \defcounter {refsection}{0}\relax 
@@ -178,7 +180,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.23}UC 1.3.13 Ripristino dell'ultima modifica annullata}{31}{subsection.5.2.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.24}UC 1.4: Apertura di un file XML preesistente}{31}{subsection.5.2.24}
+\contentsline {subsection}{\numberline {5.2.24}UC 1.4 Salvare le modifiche di un file modificato}{31}{subsection.5.2.24}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.25}UC 1.5 Editing del filtro sul nome dell'attributo da visualizzare}{32}{subsection.5.2.25}
 \defcounter {refsection}{0}\relax 
@@ -210,7 +212,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.39}UC 1.11.3 Visualizzazione dell'elemento causa dell'errore nell'albero XML}{36}{subsection.5.2.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.40}UC 1.12 Visualizzazione dell'about sul programma}{36}{subsection.5.2.40}
+\contentsline {subsection}{\numberline {5.2.40}UC 1.12 Visualizzazione dell'about del programma}{36}{subsection.5.2.40}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.41}UC 1.13 Visualizzazione degli errori occorsi durante l'apertura del file}{36}{subsection.5.2.41}
 \defcounter {refsection}{0}\relax 
@@ -226,11 +228,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.2}Requisiti di qualit\IeC {\`a}}{40}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Requisiti di vincolo}{41}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.3}Requisiti di vincolo}{40}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Tecnologie e strumenti}{41}{section.5.4}
+\contentsline {section}{\numberline {5.4}Tecnologie e strumenti}{40}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Qt Framework}{41}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.1}Qt Framework}{40}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.2}Qt Creator}{41}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
@@ -238,45 +240,45 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.6}Progettazione}{41}{section.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.1}Diagramma delle classi}{42}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.1}Diagramma delle classi}{41}{subsection.5.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.2}Pacchetto controller}{44}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.2}Pacchetto controller}{43}{subsection.5.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe Controller}{44}{section*.38}
+\contentsline {subsubsection}{Classe Controller}{43}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.3}Pacchetto observer}{44}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.3}Pacchetto observer}{43}{subsection.5.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Interfaccia IObserver}{44}{section*.39}
+\contentsline {subsubsection}{Interfaccia IObserver}{43}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe Subject}{44}{section*.40}
+\contentsline {subsubsection}{Classe Subject}{43}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.4}Pacchetto data}{44}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.4}Pacchetto data}{43}{subsection.5.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe InputData}{44}{section*.41}
+\contentsline {subsubsection}{Classe InputData}{43}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe FileOccurrence}{44}{section*.42}
+\contentsline {subsubsection}{Classe FileOccurrence}{43}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ResultData}{45}{section*.43}
+\contentsline {subsubsection}{ResultData}{44}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.5}Pacchetto view}{45}{subsection.5.6.5}
+\contentsline {subsection}{\numberline {5.6.5}Pacchetto view}{44}{subsection.5.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Iterfaccia IView}{45}{section*.44}
+\contentsline {subsubsection}{Iterfaccia IView}{44}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ViewMainWindow}{45}{section*.45}
+\contentsline {subsubsection}{Classe ViewMainWindow}{44}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ResultWidgetBase}{45}{section*.46}
+\contentsline {subsubsection}{Classe ResultWidgetBase}{44}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ResultTableWIdget}{45}{section*.47}
+\contentsline {subsubsection}{Classe ResultTableWIdget}{44}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.6}Core}{45}{subsection.5.6.6}
+\contentsline {subsection}{\numberline {5.6.6}Core}{44}{subsection.5.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Interfaccia ICoreMultiplatformFileAnalyzer}{45}{section*.48}
+\contentsline {subsubsection}{Interfaccia ICoreMultiplatformFileAnalyzer}{44}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe QtCoreMultiplatformFIleAnalyzer}{45}{section*.49}
+\contentsline {subsubsection}{Classe QtCoreMultiplatformFIleAnalyzer}{44}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Codifica}{45}{section.5.7}
+\contentsline {section}{\numberline {5.7}Codifica}{44}{section.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.8}Conclusioni}{46}{section.5.8}
+\contentsline {section}{\numberline {5.8}Conclusioni}{45}{section.5.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Verifica e validazione}{47}{chapter.6}
 \defcounter {refsection}{0}\relax 
