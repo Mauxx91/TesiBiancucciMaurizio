@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.5)  19 AUG 2014 11:27
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.5)  21 AUG 2014 12:43
 entering extended mode
 **tesi.tex
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.tex
@@ -424,6 +424,161 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
 \BKM@id=\count99
 ))
+("C:\Program Files (x86)\MiKTeX\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+("C:\Program Files (x86)\MiKTeX\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("C:\Program Files (x86)\MiKTeX\tex\latex\base\ts1enc.dfu"
+File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
 ("C:\Program Files (x86)\MiKTeX\tex\latex\caption\caption.sty"
 Package: caption 2012/02/19 v3.2f Customizing captions (AR)
 
@@ -1049,34 +1204,42 @@ Package biblatex Info: ... file 'italian.lbx' found.
 File: italian.lbx 2011/11/13 v1.7 biblatex localization
 )
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 113.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 113.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 115.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 115.
 
 
 ("C:\Program Files (x86)\MiKTeX\tex\generic\babel\lgrcmr.fd"
 File: lgrcmr.fd 2008/06/17 v2.3 Greek Computer Modern
 )
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 115.
+
+
+("C:\Program Files (x86)\MiKTeX\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 115.
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring ON on input line 113.
-LaTeX Info: Redefining \ref on input line 113.
-LaTeX Info: Redefining \pageref on input line 113.
-LaTeX Info: Redefining \nameref on input line 113.
-LaTeX Info: Redefining \Ref on input line 113.
+Package hyperref Info: Link coloring ON on input line 115.
+LaTeX Info: Redefining \ref on input line 115.
+LaTeX Info: Redefining \pageref on input line 115.
+LaTeX Info: Redefining \nameref on input line 115.
+LaTeX Info: Redefining \Ref on input line 115.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
@@ -1103,7 +1266,7 @@ Package caption Info: End \AtBeginDocument code.
 \everyMPtoPDFconversion=\toks36
 )
 \c@lstlisting=\count308
-LaTeX Info: Redefining \microtypecontext on input line 113.
+LaTeX Info: Redefining \microtypecontext on input line 115.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1136,8 +1299,8 @@ Package biblatex Warning: Data encoding is 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tesi.bbl' found.
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.bbl)
-Package biblatex Info: Reference section=0 on input line 113.
-Package biblatex Info: Reference segment=0 on input line 113.
+Package biblatex Info: Reference section=0 on input line 115.
+Package biblatex Info: Reference segment=0 on input line 115.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1188,14 +1351,7 @@ Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 32.
 {C:/Users/Stefano/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/
 Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/logo-unipd.jpg>])
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\inizio-fine/colophon.t
-ex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
- ("C:\Program Files (x86)\MiKTeX\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
-)
+ex)
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\inizio-fine/dedica.tex
 [2
 
@@ -1234,7 +1390,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 199.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 197.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -1243,7 +1399,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10])
+[10]
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 315.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11])
 \tf@toc=\write7
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
@@ -1256,12 +1424,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11] (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.lof)
+[12] (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.lof)
 \tf@lof=\write8
 
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.lot)
 \tf@lot=\write9
- [12
+ [13
+
+]
+[14
 
 ])
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\capitoli/capitolo-1.te
@@ -1299,7 +1470,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
 
 
-
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
@@ -1330,17 +1500,369 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 Capitolo 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 24--24
+$\T1/cmtt/m/n/8 workshops / technicalrequirementschecklists / Technical % 20Req
+uirements % 20Checklist %$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
+
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 42.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 62.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 84.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 105.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 117.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 139.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 165.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+("C:\Program Files (x86)\MiKTeX\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+("C:\Program Files (x86)\MiKTeX\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+("C:\Program Files (x86)\MiKTeX\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+)
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 189.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 244.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
 )
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\capitoli/capitolo-3.te
-x [3
+x
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 7.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
-] [4
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13] [14
 
 ]
 Capitolo 3.
 )
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\capitoli/capitolo-4.te
-x [5] [6
+x [15] [16
 
 ]
 Capitolo 4.
@@ -1352,14 +1874,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[7] <immagini/tool1/UC1.png, id=437, 335.3328pt x 166.7028pt>
+[17] <immagini/tool1/UC1.png, id=669, 335.3328pt x 166.7028pt>
 File: immagini/tool1/UC1.png Graphic file (type png)
 
 <use immagini/tool1/UC1.png>
 Package pdftex.def Info: immagini/tool1/UC1.png used on input line 38.
 (pdftex.def)             Requested size: 332.89499pt x 165.4992pt.
 
-<immagini/tool1/UC1-1.png, id=440, 435.5472pt x 447.5922pt>
+<immagini/tool1/UC1-1.png, id=672, 435.5472pt x 447.5922pt>
 File: immagini/tool1/UC1-1.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1.png>
@@ -1369,7 +1891,7 @@ Package pdftex.def Info: immagini/tool1/UC1-1.png used on input line 58.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool1/UC1-1-1.png, id=445, 445.665pt x 297.0297pt>
+<immagini/tool1/UC1-1-1.png, id=677, 445.665pt x 297.0297pt>
 File: immagini/tool1/UC1-1-1.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1-1.png>
@@ -1390,8 +1912,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <C:/Users/Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/UC1.
-png>]
+[18 <C:/Users/Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/UC1
+.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
@@ -1406,9 +1928,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <C:/Users/Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/UC1-
-1.png> <C:/Users/Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/
-UC1-1-1.png>]
+[19 <C:/Users/Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/UC1
+-1.png> <C:/Users/Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/tool1
+/UC1-1-1.png>]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 132.
@@ -1420,7 +1942,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10] <immagini/tool1/UC1-1-4.png, id=472, 445.665pt x 658.3797pt>
+[20] <immagini/tool1/UC1-1-4.png, id=702, 445.665pt x 658.3797pt>
 File: immagini/tool1/UC1-1-4.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1-4.png>
@@ -1441,7 +1963,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[21]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 198.
@@ -1453,7 +1975,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <C:/Users/Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/UC1
+[22 <C:/Users/Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/UC1
 -1-4.png
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Stefano/Documents/GitHub/TesiMau/te
@@ -1471,7 +1993,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
@@ -1487,7 +2009,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[24]
 Overfull \hbox (31.73192pt too wide) in alignment at lines 296--340
  [] [] [] 
  []
@@ -1508,7 +2030,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
+[25]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 351.
@@ -1520,7 +2042,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[26]
 Overfull \hbox (31.73192pt too wide) in alignment at lines 356--365
  [] [] [] 
  []
@@ -1551,7 +2073,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
@@ -1572,7 +2094,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 402--403
  []
 
 
-<immagini/tool1/Tool-1-Diagramma-Classi.png, id=563, 678.6153pt x 1100.1903pt>
+<immagini/tool1/Tool-1-Diagramma-Classi.png, id=793, 678.6153pt x 1100.1903pt>
 File: immagini/tool1/Tool-1-Diagramma-Classi.png Graphic file (type png)
 
 <use immagini/tool1/Tool-1-Diagramma-Classi.png>
@@ -1594,7 +2116,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
+[28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
@@ -1609,7 +2131,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19 <C:/Users/Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/Too
+[29 <C:/Users/Stefano/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/Too
 l-1-Diagramma-Classi.png>]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
@@ -1622,7 +2144,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 470--471
 
  []
@@ -1638,7 +2160,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21])
+[31])
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\capitoli/capitolo-5.te
 x
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
@@ -1652,7 +2174,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
+[32]
 Capitolo 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
@@ -1664,7 +2186,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-[23
+[33
 
 ]
 
@@ -1681,7 +2203,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]
+[34]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 138.
@@ -1693,7 +2215,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
+[35]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 195.
@@ -1705,7 +2227,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
+[36]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 236.
@@ -1717,7 +2239,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27]
+[37]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 289.
@@ -1729,7 +2251,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28]
+[38]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 336.
@@ -1741,7 +2263,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
+[39]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 374.
@@ -1753,7 +2275,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]
+[40]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 418.
@@ -1765,7 +2287,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
+[41]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 464.
@@ -1777,9 +2299,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32]
+[42]
 
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.3' on page 33 undefined on input
+LaTeX Warning: Hyper reference `subsec:XEUC1.7.3' on page 43 undefined on input
  line 486.
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
@@ -1793,7 +2315,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]
+[43]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 552.
@@ -1805,7 +2327,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]
+[44]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 600.
@@ -1817,7 +2339,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
+[45]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 641.
@@ -1829,7 +2351,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]
+[46]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 686.
@@ -1841,29 +2363,54 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 691--692
 
  []
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 759--759
-[]|\T1/cmr/m/n/10 (+20) Il va-lo-re in-se-ri-to dal-l'u-ten-te vie-ne
+Underfull \hbox (badness 1009) in paragraph at lines 766--766
+[]|\T1/cmr/m/n/10 (+20) Un uten-te può mo-di-fi-ca-re il va-lo-re
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 759--759
-\T1/cmr/m/n/10 (+20) e ri-pri-sti-na-to ad ogni aper-tu-ra del
+Overfull \hbox (31.73192pt too wide) in alignment at lines 728--771
+ [] [] [] 
  []
 
 
-Overfull \hbox (31.73192pt too wide) in alignment at lines 728--767
+Underfull \hbox (badness 5331) in paragraph at lines 786--786
+[]|\T1/cmr/m/n/10 (+20) Un uten-te può in-col-la-re il no-do
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 792--792
+[]|\T1/cmr/m/n/10 (+20) Un uten-te può ri-muo-ve-re tut-ti i
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 794--794
+[]|\T1/cmr/m/n/10 (+20) Un uten-te può ri-muo-ve-re tut-ti i
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 805--805
+[]|\T1/cmr/m/n/10 (+20) Un uten-te può an-nul-la-re l'ul-ti-ma
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 807--807
+[]|\T1/cmr/m/n/10 (+20) Un uten-te può ri-pri-sti-na-re l'ul-ti-ma
+ []
+
+
+Overfull \hbox (31.73192pt too wide) in alignment at lines 771--815
  [] [] [] 
  []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 767.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 815.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -1872,10 +2419,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]
+[48]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 767.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 815.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -1884,26 +2431,169 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39pdfTeX warning (ext4): destination with the same identifier (name{XER0F4.1})
+[49pdfTeX warning (ext4): destination with the same identifier (name{XER0F3.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.767 	\end{longtable}
+l.815 
+      ]
+Underfull \hbox (badness 3250) in paragraph at lines 822--822
+[]|\T1/cmr/m/n/10 (+20) Il va-lo-re in-se-ri-to dal-l'u-ten-te vie-ne
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 822--822
+\T1/cmr/m/n/10 (+20) e ri-pri-sti-na-to ad ogni aper-tu-ra del
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 828--828
+[]|\T1/cmr/m/n/10 (+20) Un uten-te può ri-muo-ve-re un fi-le
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 834--834
+[]|\T1/cmr/m/n/10 (+20) Un uten-te può edi-ta-re il da-ta-ba-se
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 834--834
+\T1/cmr/m/n/10 (+20) dei ti-pi di re-la-zio-ni co-no-sciu-te dal
+ []
+
+
+LaTeX Warning: Hyper reference `subsec:XEUC1.7.3' on page 50 undefined on input
+ line 851.
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 853--853
+[]|\T1/cmr/m/n/10 (+20) Il pro-gram-ma sal-va au-to-ma-ti-ca-men-
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 853--853
+\T1/cmr/m/n/10 (+20) mo-di-fi-che ap-por-ta-te al da-ta-ba-se di
+ []
+
+
+Overfull \hbox (31.73192pt too wide) in alignment at lines 815--856
+ [] [] [] 
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 856.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50pdfTeX warning (ext4): destination with the same identifier (name{XER0F3.8})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.856 
+      pdfTeX warning (ext4): destination with the same identifier (name{XER0F3.
+10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.856 
+      ]
+Underfull \hbox (badness 4084) in paragraph at lines 858--858
+[]|\T1/cmr/m/n/10 (+20) Un uten-te può im-por-ta-re un set
+ []
+
+
+Underfull \hbox (badness 2318) in paragraph at lines 858--858
+\T1/cmr/m/n/10 (+20) di re-la-zio-ni pre-sen-ti in un fi-le di
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 862--862
+[]|\T1/cmr/m/n/10 (+20) Il pro-gram-ma im-por-ta le re-la-zio-ni
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 862--862
+\T1/cmr/m/n/10 (+20) con-te-nu-te, eli-mi-nan-do tut-te quel-le
+ []
+
+
+Overfull \hbox (31.73192pt too wide) in alignment at lines 856--900
+ [] [] [] 
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 900.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51pdfTeX warning (ext4): destination with the same identifier (name{XER0F4.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.900 
+      ]
+Overfull \hbox (31.73192pt too wide) in alignment at lines 900--905
+ [] [] [] 
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 905.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 905.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53pdfTeX warning (ext4): destination with the same identifier (name{XER0F8.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.905 	\end{longtable}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{XER0F8.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.905 	\end{longtable}
                       ]pdfTeX warning (ext4): destination with the same identif
 ier (name{R0Q1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.775 ...row1}\hspace{0mm}\hypertarget{R0Q1}{R0Q1}
+l.913 ...row1}\hspace{0mm}\hypertarget{R0Q1}{R0Q1}
                                                    & Viene fornito insieme a...
-pdfTeX warning (ext4): destination with the same identifier (name{R0Q2}) has be
-en already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.777 ...row2}\hspace{0mm}\hypertarget{R0Q2}{R0Q2}
-                                                   & Viene fornito un l'help...
 
-Overfull \hbox (31.73192pt too wide) in alignment at lines 772--781
+Overfull \hbox (31.73192pt too wide) in alignment at lines 910--917
  [] [] [] 
  []
 
@@ -1911,10 +2601,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{R0V1}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.789 ...row1}\hspace{0mm}\hypertarget{R0V1}{R0V1}
+l.925 ...row1}\hspace{0mm}\hypertarget{R0V1}{R0V1}
                                                    & Il programma deve funzi...
 
-Underfull \hbox (badness 4726) in paragraph at lines 789--789
+Underfull \hbox (badness 4726) in paragraph at lines 925--925
 []|\T1/cmr/m/n/10 (+20) Il pro-gram-ma de-ve fun-zio-na-re su
  []
 
@@ -1922,21 +2612,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{R0V2}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.791 ...row2}\hspace{0mm}\hypertarget{R0V2}{R0V2}
+l.927 ...row2}\hspace{0mm}\hypertarget{R0V2}{R0V2}
                                                    & Il programma deve esser...
 
-Underfull \hbox (badness 5893) in paragraph at lines 791--791
+Underfull \hbox (badness 5893) in paragraph at lines 927--927
 []|\T1/cmr/m/n/10 (+20) Il pro-gram-ma de-ve es-se-re scrit-to
  []
 
 
-Overfull \hbox (31.73192pt too wide) in alignment at lines 786--795
+Overfull \hbox (31.73192pt too wide) in alignment at lines 922--931
  [] [] [] 
  []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 804.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 937.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -1945,30 +2635,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 812--813
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 948--949
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 814--815
+Underfull \hbox (badness 10000) in paragraph at lines 950--951
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 816--817
+Underfull \hbox (badness 10000) in paragraph at lines 952--953
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--819
+Underfull \hbox (badness 10000) in paragraph at lines 954--955
 
  []
 
+
+Underfull \vbox (badness 1521) has occurred while \output is active []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 960.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
 File: immagini/tool1/Tool-1-Diagramma-Classi.png Graphic file (type png)
-<use immagini/tool1/Tool-1-Diagramma-Classi.png>
+ <use immagini/tool1/Tool-1-Diagramma-Classi.png>
 Package pdftex.def Info: immagini/tool1/Tool-1-Diagramma-Classi.png used on inp
-ut line 827.
+ut line 963.
 (pdftex.def)             Requested size: 362.48653pt x 587.68109pt.
 
 
@@ -1976,7 +2682,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 831.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 967.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -1985,13 +2691,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
+[56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 836.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 972.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -2000,10 +2706,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42]
+[57]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 860.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 996.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -2012,14 +2718,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 886--887
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 1022--1023
 
  []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 887.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 1023.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -2028,7 +2734,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44])
+[59])
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\capitoli/capitolo-6.te
 x
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
@@ -2042,31 +2748,67 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45] [46
-
-]
+[60]
 Capitolo 6.
 )
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\capitoli/capitolo-7.te
-x [47] [48
+x [61
+
+] [62
 
 ]
 Capitolo 7.
 )
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\capitoli/capitolo-A.te
-x [49] [50
+x [63] [64
 
 ]
 Appendice A.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 10.
-) [51] [52
+) [65] [66
 
 ] (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.gls
-[53
+[67
 
 
-]) (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.acr)
+]
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 50.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[68]
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 74.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[69]
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 97.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70]) (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.acr)
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\inizio-fine/bibliograf
 ia.tex
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
@@ -2080,57 +2822,69 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[54]) [55
+[71] [72
 
+])
+Overfull \hbox (13.85643pt too wide) in paragraph at lines 148--148
+[][]\T1/cmr/m/it/10 (-20) Approfondimento TRC\T1/cmr/m/n/10 (-20) . 2014. \T1/c
+mr/m/sc/10 (-20) url\T1/cmr/m/n/10 (-20) : [][]$\T1/cmtt/m/n/10 http : / / rese
+arch . ncl . ac . uk / game / mastersdegree /$
+ []
+
+[73
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
  (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 146.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 148.
 
 
 LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'tesi.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
  ) 
 Here is how much of TeX's memory you used:
- 19986 strings out of 494045
- 314646 string characters out of 3147575
- 658735 words of memory out of 3000000
- 22292 multiletter control sequences out of 15000+200000
- 33446 words of font info for 138 fonts, out of 3000000 for 9000
+ 21867 strings out of 494045
+ 343233 string characters out of 3147575
+ 776376 words of memory out of 3000000
+ 23942 multiletter control sequences out of 15000+200000
+ 35776 words of font info for 152 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
- 61i,16n,122p,1300b,2340s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/P
-rogram Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
- Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfbx0900.pfb><C:/Program Files 
-(x86)/MiKTeX/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Program Files (x86)/M
-iKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files (x86)/MiKTeX/f
-onts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files (x86)/MiKTeX/fonts/ty
-pe1/public/cm-super/sfbx1728.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/pub
-lic/cm-super/sfbx2074.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-
-super/sfbx2488.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/s
-fcc1000.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfcc1200
-.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfcc1440.pfb><C
-:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Progr
-am Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program File
-s (x86)/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files (x86)
-/MiKTeX/fonts/type1/public/cm-super/sfrm0900.pfb><C:/Program Files (x86)/MiKTeX
-/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files (x86)/MiKTeX/fonts/
-type1/public/cm-super/sfrm1200.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/p
-ublic/cm-super/sfsi1000.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/c
-m-super/sfsl1000.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super
-/sfsl1200.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfti08
-00.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfti1000.pfb>
-<C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb><C:/Pro
-gram Files (x86)/MiKTeX/fonts/type1/public/cm-super/sftt0800.pfb><C:/Program Fi
-les (x86)/MiKTeX/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (67 pages, 1765080 bytes).
+ 61i,16n,122p,1300b,2348s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/P
+rogram Files (x86)/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program
+ Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+ (x86)/MiKTeX/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program Fil
+es (x86)/MiKTeX/fonts/type1/public/cm-super/sfbx0900.pfb><C:/Program Files (x86
+)/MiKTeX/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Program Files (x86)/MiKTe
+X/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files (x86)/MiKTeX/fonts
+/type1/public/cm-super/sfbx1440.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/
+public/cm-super/sfbx1728.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/
+cm-super/sfbx2074.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-supe
+r/sfbx2488.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfcc0
+800.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfcc1000.pfb
+><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfcc1200.pfb><C:/Pr
+ogram Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfcc1440.pfb><C:/Program F
+iles (x86)/MiKTeX/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program Files (x
+86)/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program Files (x86)/MiK
+TeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files (x86)/MiKTeX/fon
+ts/type1/public/cm-super/sfrm0900.pfb><C:/Program Files (x86)/MiKTeX/fonts/type
+1/public/cm-super/sfrm1000.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/publi
+c/cm-super/sfrm1200.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-su
+per/sfsi1000.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfs
+l1000.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfsl1200.p
+fb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfti0800.pfb><C:/
+Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfti1000.pfb><C:/Program
+ Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files 
+(x86)/MiKTeX/fonts/type1/public/cm-super/sftt0800.pfb><C:/Program Files (x86)/M
+iKTeX/fonts/type1/public/cm-super/sftt0900.pfb><C:/Program Files (x86)/MiKTeX/f
+onts/type1/public/cm-super/sftt1000.pfb>
+Output written on tesi.pdf (87 pages, 1976983 bytes).
 PDF statistics:
- 1455 PDF objects out of 1728 (max. 8388607)
- 367 named destinations out of 1000 (max. 500000)
- 41519 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2015 PDF objects out of 2073 (max. 8388607)
+ 559 named destinations out of 1000 (max. 500000)
+ 44655 words of extra memory for PDF output out of 51595 (max. 10000000)
 

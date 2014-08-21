@@ -16,6 +16,46 @@
   {}
 \endgroup
 
+\entry{site:accordo-namc-bandai}{online}{}
+  \field{sortinit}{A}
+  \field{title}{Accordo Namc Bandai}
+  \verb{url}
+  \verb http://motogpvideogame.com/wp-content/uploads/MOTO-GP14-announcement_v4
+  \verb .pdf
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{site:approfondimento-game-testing}{online}{}
+  \field{sortinit}{A}
+  \field{title}{Approfondimento game testing}
+  \verb{url}
+  \verb http://en.wikipedia.org/wiki/Game_testing
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{site:approfondimento-TRC}{online}{}
+  \field{sortinit}{A}
+  \field{title}{Approfondimento TRC}
+  \verb{url}
+  \verb http://research.ncl.ac.uk/game/mastersdegree/workshops/technicalrequire
+  \verb mentschecklists/Technical%20Requirements%20Checklist%20Workshop.pdf
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{site:the-use-of-lua-in-real-applications}{online}{}
+  \field{sortinit}{L}
+  \field{note}{Riferimento al capitolo \dq{\textit{The use of Lua in real
+  applications}}}
+  \field{title}{Lua SPE paper}
+  \verb{url}
+  \verb http://www.lua.org/spe.html
+  \endverb
+  \field{year}{2014}
+\endentry
+
 \entry{site:milestone}{online}{}
   \field{sortinit}{M}
   \field{title}{Milestone Home Page}
