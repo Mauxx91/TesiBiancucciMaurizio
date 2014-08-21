@@ -55,6 +55,7 @@
 % Impostazioni di glossaries
 %**************************************************************
 \input{glossario} % database di termini
+\newcommand{\gloss}[1]{\textit{\gls{#1}}\ped{|\textit{g}|}}
 \makeglossaries
 
 
@@ -90,7 +91,7 @@
     %nesting=true,
     %frenchlinks,
     urlcolor=webbrown,
-    linkcolor=RoyalBlue,
+    linkcolor=black,
     citecolor=webgreen,
     %pagecolor=RoyalBlue,
     %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,
@@ -189,8 +190,6 @@
 \newcommand{\sectionname}{sezione}
 \addto\captionsitalian{\renewcommand{\figurename}{figura}
                        \renewcommand{\tablename}{tabella}}
-
-\newcommand{\gloss}{\ped{\it g}}
 
 \newcommand{\intro}[1]{\emph{\textsf{#1}}}
 
