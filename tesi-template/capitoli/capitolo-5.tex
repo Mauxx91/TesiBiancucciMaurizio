@@ -941,81 +941,142 @@ Di seguito viene fornita una panoramica delle tecnologie e strumenti utilizzati 
 		XML Editor è stato sviluppato seguendo un modello di ciclo di vita incrementale. È stato deciso di fornire due incrementi. Nel primo sono state inserite tutte le funzionalità per la visualizzazione dei file, la gestione dei file associati e le relazioni (inclusa la verifica). Nel secondo incremento sono state aggiunte alla base già consolidate le funzionalità di editing dei file. Ad ogni incremento è seguito un rilascio del software.
 
 \section{Progettazione}
-	Il software è stato progettato per offrire una semplice espandibilità, allo scopo la strutturazione generale segue il collaudato Design Pattern \textit{MVC}, dove trovano luogo i seguenti pacchetti: \texttt{controller}, \texttt{view} e \texttt{data}. È inoltre presente il pacchetto \texttt{core} in cui è inserita l'implementazione degli algoritmi di business del tool, ad esempio l'algoritmo che esegue l'analisi.\\
+	Questo software a differenza di Multiplatform File Analyzer, è stato sviluppato secondo il pattern Model-View (todo bibliografica http://qt-project.org/doc/qt-5/model-view-programming.html) ideato dagli ingegneri di Qt e sul quale si basa tutto il loro framework. La scelta è stata fatta ragionando sui risultati ottenuti durante lo sviluppo del precedente tool. In esso le esigenze erano diverse, ad esempio la possibilità di poterlo usare da riga comando forzava la scelta verso MVC e la maggior disaccoppiazione possibile dalle classi di Qt. Essendo invece questo un editor visuale, che si sarebbe andato a basare proprio sul meccanismo di model-view per gestire ad esempio l'abero XML, si è deciso di sperimentare questo pattern per l'intero sistema. Per lo stagista, questa è la prima volta che si affaccia a questo pattern architetturale ed il suo utilizzo porterà sicuramente una maggior esperienza nella progettazione, permettendogli di valutare pro e contro rispetto al classico MVC.
+
+	La strutturazione generale di alto livello segue quindi il design presentato dal pattern model-view, puntando ad inserire nelle view di competenza le logiche di gestione che, nel mondo MVC, sarebbero appartenute al controller.
 	
-	Il pacchetto core è implementato con il Design Pattern \textit{Strategy} allo scopo di permettere una facile estensione o sostituzione dell'algoritmo che esegue l'analisi, anche a run-time.\\
+	I pacchetti in cui il software è stato partizionato sono i seguenti: 
+	\begin{itemize}
+		\item \texttt{command}: contenente le classi che partecipano all'omonimo design pattern;
+		\item\texttt{core}: contenente le classi che implementano il pattern \textit{Strategy} per la relalizzazione del controllo sulle relazioni;
+		\item\texttt{data}: a cui appartengono le classi di gestione dei dati;
+		\item\texttt{observer}: implementazione dell'omonimo design pattern;
+		\item\texttt{view}: le classi di visualizzazione del sistema che contengono anche le logiche di controllo.
+	\end{itemize}
 	
-	Per permettere una facile e veloce connessione tra gli stati descritti dall'\textit{MVC} è stato adottato il Design Pattern \textit{Observer}, implementato nell'omonimo pacchetto \textit{observer}.\\
+	Per permettere una facile e veloce connessione tra gli strati è stato adottato il Design Pattern \textit{Observer}, implementato nell'omonimo pacchetto \textit{observer}.\\
 	
 	È stato scelto di utilizzare il Design Pattern \textit{Strategy} per rendere modificabile facilmente l'implementazione dell'algoritmo che effettua l'analisi, all'interno del pacchetto \texttt{core}.\\
 	
-	È stato inoltre cercato di utilizzare le classi del Framework Qt in modo isolato alle sole parti strettamente necessarie, ovvero la GUI e l'analisi del file system. Questo allo scopo di rendere il tool slegato dalle implementazioni specifiche, in favore di una più semplice espandibilità.
+	A differenza del precedente tool, qui il framework Qt è stato usato a tutto tondo ovunque, senza circoscriverne l'uso.
 
-	\subsection{Diagramma delle classi}
-		Di seguito è presente il diagramma delle classi espresso tramite il formalismo UML 2.0. Nel diagramma è inoltre possibile vedere le principali dipendenza verso le classi del Framework Qt.
-
+	\subsection{Diagrammi delle classi}
+		Vista la vastità del software è stato impossibile creare un diagramma che contenesse contemporaneamente tutte le classi e le relazioni. Sono stati quindi creati due diagramma che permettono di visualizzare due punti importanti dell'architettura. Tutti i diagrammi presenti rispettano il formalismo UML 2.0.
+		
+		\subsubsection{Data-Model-View diagram}
+			In questo diagramma è possibile visualizzare l'integrazione delle classi model-view di Qt utilizzate per la visualizzazione dell'albero XML a partire dalla classe di dati. È inoltre presente la logica per il costante aggiornamento della visualizzazione al cambiamento dei dati.
+		
 		\begin{figure}[!h] 
 			\centering 
-			\includegraphics[width=0.98\columnwidth]{tool1/Tool-1-Diagramma-Classi.png} 
-			\caption{Diagramma delle classi di Multiplatform File Analyzer}
+			%\includegraphics[width=0.98\columnwidth]{tool2/diagramma1.png} 
+			\caption{Diagramma dell'integrazione delle classi model-view di Qt per la visualizzazione dell'albero XML.}
+		\end{figure}
+		
+		\subsubsection{XML editin diagram}
+		In questo diagramma è possibile visualizzare l'implementazione del design pattern \textit{command} usato per gestire l'editing dei file XML. È possibile notare la presenza del design pattern \textit{composite}, inserito allo scopo di permettere la creazione di azioni che si comportassero come singole unità, ma contenessero una aggregazione di azioni base. Un esempio di utilizzo è l'istanziazione automatica di una nuova relazione, la quale crea una singola azione \texttt{XmlEditCommandAggregator} che però esegue tutti i passi intermedi necessari. È a questo punto possibile annullare l'instanzione con un'unica invocazione del metodo \texttt{Undo} dell'invoker.
+		
+		\begin{figure}[!h] 
+			\centering 
+			%\includegraphics[width=0.98\columnwidth]{tool2/diagramma2.png} 
+			\caption{Diagramma delle classi usate per l'editing dei file XML.}
 		\end{figure}
 
 \newpage
 
-\subsection{Pacchetto controller}
-Il pacchetto è composto dalla sola classe \texttt{Controller} che svolge il compito di controllore del sistema. È questo il solo pacchetto utilizzato dall funzione \texttt{main}.
-
-\subsubsection{Classe Controller}
-La classe \texttt{Controller} si occupa di avviare il sistema. Essa provvede ad allocare tutti gli oggetti necessari e al relativo rilascio al termine del programma. Inoltre seleziona la view e la connette con le classi che rappresentano i dati. Infine raccoglie i comandi utente provenienti dalla view e li esegue grazie al pacchetto \texttt{core}.
-
 \subsection{Pacchetto observer}
 Questo pacchetto rappresenta l'implementazione del Design Pattern \textit{Observer} ed è stato utilizzato per tenere aggiornata la view al cambiamento dei dati.
 
-\subsubsection{Interfaccia IObserver}
-\texttt{IObserver} è l'interfaccia che rappresenta gli oggetti che osservano le modifiche di altri oggetti. Essa contiene il metodo virtuale puro \texttt{Update} che i soggetti osservati invocano per segnalare il fatto che sono stati modificati e che quindi un aggiornamento è necessario. Le classi concrete che avranno la necessità di osservare un soggetto deriveranno da \texttt{IObserver} implementando il metodo \texttt{Update}.
+	\subsubsection{Interfaccia IObserver}
+		\texttt{IObserver} è l'interfaccia che rappresenta gli oggetti che osservano le modifiche di altri oggetti. Essa contiene il metodo virtuale puro \texttt{Update} che i soggetti osservati invocano per segnalare il fatto che sono stati modificati e che quindi un aggiornamento è necessario. Le classi concrete che avranno la necessità di osservare un soggetto deriveranno da \texttt{IObserver} implementando il metodo \texttt{Update}.
 
-\subsubsection{Classe Subject}
-La classe \texttt{Subject} rappresenta un soggetto che può essere osservato. Essa contiene il codice necessario per notificare tutti gli osservatori dell'avvenuto cambiamento. Mantiene inoltre una lista degli osservatori da notificare, i quali possono iscriversi se desiderano ricevere la notifica, oppure rimuoversi se non è più necessario ricevere aggiornamenti. Le classi che devono essere osservate deriveranno da questa.
+	\subsubsection{Classe Subject}
+		La classe \texttt{Subject} rappresenta un soggetto che può essere osservato. Essa contiene il codice necessario per notificare tutti gli osservatori dell'avvenuto cambiamento. Mantiene inoltre una lista degli osservatori da notificare, i quali possono iscriversi se desiderano ricevere la notifica, oppure rimuoversi se non è più necessario ricevere aggiornamenti. Le classi che devono essere osservate deriveranno da questa.
 
 \subsection{Pacchetto data}
-Il pacchetto \texttt{data} contiene tutte le classi che rappresentano i dati di business del programma. Allo scopo di rendere il programma eseguibile anche su un semplice terminale e quindi disaccoppiato dal mondo Qt, le classi di dati sono state implementate con la Standard Template Library (STL), piuttosto che le classi collezione offerte dal framework in uso.
+	Il pacchetto \texttt{data} contiene tutte le classi che rappresentano i dati di business del programma. Come classi aggreazione di base sono state scelte quelle offerte dal framework Qt per la loro maggiore integrazione e l'ampio set di funzionalità offerto.
 
-\subsubsection{Classe InputData}
-La classe \texttt{InputData} raccoglie tutti i dati che sono di input all'analisi. Contiene quindi il percorso di partenza, i nomi delle piattaforme ed il tempo di warning. È questa classe che si occupa della trasformazione della stringa contenente tutte le piattaforme in un \texttt{Vector}.
+	\subsubsection{Classe AssociatedFiles}
+		La classe \texttt{AssociatedFiles} raccoglie tutti i nomi ed i percorsi dei file associati ad un main file. È sua la responsabiltà di mantenere la persistenza di queste informazioni tramite la lettura e scrittura nel registro di sistema.
+	
+	\subsubsection{Classe AttributeNameTagCollapse}
+		La classe \texttt{AttributeNameTagCollapse} contiene il filtro sull'attributo da visualizzare nell'albero XML. È sua la responsabiltà di mantenere la persistenza di questa informazioni tramite la lettura e scrittura nel registro di sistema.
+		
+	\subsubsection{Classe XmlDocument}
+		La classe \texttt{XmlDocument} rappresenta un file XML aperto nel programma. Ne gestisce la lettura/scrittura su disco e l'effettiva implementazione dell'editing dell'XML.
 
-\subsubsection{Classe FileOccurrence}
-La classe \texttt{FileOccurrence} rappresenta un file trovato in almeno una cartella di piattaforma durante l'analisi. Per il file trovato, la classe contiene il percorso assoluto, il nome, tutte le piattaforme in cui è stato trovato e, per ciascuna, la data di ultima modifica. 
+	\subsubsection{Classe XmlRelation}
+		La classe \texttt{XmlRelation} rappresenta un prototipo di relazione, contenendo tutti i dati necessari.
+		
+	\subsubsection{Classe XmlRelationCollection}
+		La classe \texttt{XmlRelationCollection} funge da contenitore per la gestione del set di relazioni cui il programma è a conoscenza.
 
-\subsubsection{ResultData}
-La classe \texttt{ResultData} contiene tutti i dati presenti come output di una analisi. Contiene quindi una collezione di \texttt{FileOccurrence} e tutti i dati di input all'analisi.\\
-Essa deriva dalla classe \texttt{Subject} per permettere ad un osservatore, tipicamente un elemento dell View, di aggiornarsi al variare dei risultati. Permettendo di mostrare i risultati dell'analisi in modo interattivo durante l'inserimento di ogni nuovo \texttt{FileOccurence} trovato.
-
-\subsection{Pacchetto view}
-Questo pacchetto si occupa delle interfacce utente, derivando e personalizzando le classi offerte dal Framework Qt.
-
-\subsubsection{Iterfaccia IView}
-\texttt{IView} è una classe astratta che rappresenta una generica view.
-
-\subsubsection{Classe ViewMainWindow}
-La classe \texttt{ViewMainWindow} implementa \texttt{IView} tramite una finestra. Eredita e specializza la classe \texttt{QMainWindow} di Qt. Raccoglie i comandi utente e ne delega l'esecuzione al controller.
-
-\subsubsection{Classe ResultWidgetBase}
-La classe astratta \texttt{ResultWidgetBase} rappresenta un generico widget integrabile in una interfaccia grafica che sfrutta le classi del Framework Qt per la visualizzazione dell'output dell'analisi.
-
-\subsubsection{Classe ResultTableWIdget}
-La classe \texttt{ResultWidget} implementa la classe base astratta \texttt{ResultWidgetBase} mostrando l'output dell'analisi in forma tabellare, dedicando una riga a ciascun file trovato.
+	\subsubsection{Classe XmlRelationError}
+		La classe \texttt{XmlRelation} rappresenta un errore trovato durante l'analisi di consistenza delle relazioni sulla base dei prototipi conosciuti. Contiene tutte le informazioni dell'errore, le quali saranno mostrate all'utente. È qui presente la logica che compone la stringa descrittiva dell'errore.
+		
+	\subsubsection{Classe XmlTreeModel}
+		La classe \texttt{XmlTreeModel} rappresenta un modello osservabile da una classe view del framework Qt. Estende le classi \texttt{QStandardItemModel} e \texttt{Subject}. Essa osserva tramite il pattern \textit{observer} la classe \texttt{XmlDocument} e trasforma il documento XML in un modello visualizzabile dalla classe \texttt{DraggableTreeView}. La classe è un'implementazione del design pattern \textit{Adapter}.
+		
+	\subsubsection{Classe XmlTreeItem}
+		La classe \texttt{XmlTreeItem} estende un classico item del model Qt (\texttt{QStandardItem}) inserendo i dati aggiuntivi necessari alla corretta visualizzazione.
 
 \subsection{Core}
-Il pacchetto si occupa della realizzazione dell'analisi e di tutti gli algoritmi di business del tool. Utilizza il Design Pattern \textit{Strategy} per l'organizzazione delle classe contenute.
+	Il pacchetto si occupa della realizzazione dell'analisi e verifica delle relazioni. Utilizza il Design Pattern \textit{Strategy} per l'organizzazione delle classe contenute.
 
-\subsubsection{Interfaccia ICoreMultiplatformFileAnalyzer}
-\texttt{ICoreMultiplatformFileAnalyzer} rappresenta l'algoritmo di business del programma, ovvero quello che effettua l'analisi e riempie un'istanza della classe \texttt{ResultData} con il risultato.
+	\subsubsection{Classe XmlRelationCheckerCoreBase}
+		\texttt{ICoreMultiplatformFileAnalyzer} rappresenta l'algoritmo di che effettua l'analisi delle relazioni e ritorna una collazione di \texttt{XmlRelationError} con gli errori trovati.
+	
+	\subsubsection{Classe XmlRelationCheckerCoreImpl}
+		La classe \texttt{QtCoreMultiplatformFIleAnalyzer} concretizza la base astratta \texttt{XmlRelationCheckerCoreBase} implementando gli algoritmi che effettuano l'analisi dei file verificando la consistenza delle relazioni.
 
-\subsubsection{Classe QtCoreMultiplatformFIleAnalyzer}
-La classe \texttt{QtCoreMultiplatformFIleAnalyzer} implementa l'interfaccia\\ \texttt{ICoreMultiplatformFileAnalyzer} utilizzando il Framework Qt per esplorare il file system.
+\subsection{Pacchetto command}
+Il pacchetto si occupa della gestione delle operazioni di editing dei file XML. Utilizza il Design Pattern \textit{Command} per l'organizzazione delle classe contenute.
+
+	\subsubsection{Classe XmlEditCommandBase}
+		\texttt{XmlEditCommandBase} è una classe astratta che rappresenta una operazione eseguibile su un file XML. Mantiene il puntatore al documento XML da editare che verrà usato dalle sottoclassi concrete.
+		
+	\subsubsection{Classe XmlEditCommandInvoker}
+		\texttt{XmlEditCommandInvoker} è la classe che esegue realmente le operazioni mantendo uno storico di ciò che è stato effettuato offrendo quindi le funzionalità di \texttt{Undo} e \texttt{Redo}
+
+	\subsubsection{Classe XmlEditCommandAggregator}
+		\texttt{XmlEditCommandAggregator} è la classe che implementa il design pattern \textit{Command} permettendo l'uso di più comandi come fossero uno singolo.
+		
+	\subsubsection{Classe XmlEditCommandAddAttribute}
+		\texttt{XmlEditCommandAggregator} è la classe che implementa il comando di aggiunta di un attributo. Essa mantiene lo stato allo scopo di poter eseguire l'azione di \texttt{Undo}. Per la reale implementazione dell'operazione che essa rappresenta si base sui metodi esposti dalla classe \texttt{XmlDocument}.
+		
+	\subsubsection{Classe XmlEditCommandAddChildNode}
+		\texttt{XmlEditCommandAddChildNode} è la classe che implementa il comando di aggiunta di nuovo nodo vuoto. Essa mantiene lo stato allo scopo di poter eseguire l'azione di \texttt{Undo}. Per la reale implementazione dell'operazione che essa rappresenta si base sui metodi esposti dalla classe \texttt{XmlDocument}.
+		
+	\subsubsection{Classe XmlEditCommandAddExistentChildNode}
+		\texttt{XmlEditCommandAddExistentChildNode} è la classe che implementa il comando di aggiunta di un nodo a partire dalla copia di un nodo precedentemente esistente. Essa mantiene lo stato allo scopo di poter eseguire l'azione di \texttt{Undo}. Per la reale implementazione dell'operazione che essa rappresenta si base sui metodi esposti dalla classe \texttt{XmlDocument}.
+
+	\subsubsection{Classe XmlEditCommandDeleteAllChildNode}
+		\texttt{XmlEditCommandDeleteAllChildNode} è la classe che implementa il comando di rimozione di tutti i nodi discendenti di un elemento. Essa mantiene lo stato allo scopo di poter eseguire l'azione di \texttt{Undo}. Per la reale implementazione dell'operazione che essa rappresenta si base sui metodi esposti dalla classe \texttt{XmlDocument}.
+			
+	\subsubsection{Classe XmlEditCommandDeleteNode}
+		\texttt{XmlEditCommandDeleteNode} è la classe che implementa il comando di eliminazione di un attributo e tutti i suoi discendenti. Essa mantiene lo stato allo scopo di poter eseguire l'azione di \texttt{Undo}. Per la reale implementazione dell'operazione che essa rappresenta si base sui metodi esposti dalla classe \texttt{XmlDocument}.
+		
+	\subsubsection{Classe XmlEditCommandEditAttribute}
+		\texttt{XmlEditCommandEditAttribute} è la classe che implementa il comando di editing di un attributo. Essa mantiene lo stato allo scopo di poter eseguire l'azione di \texttt{Undo}. Per la reale implementazione dell'operazione che essa rappresenta si base sui metodi esposti dalla classe \texttt{XmlDocument}.
+		
+	\subsubsection{Classe XmlEditCommandRemoveAttribute}
+		\texttt{XmlEditCommandRemoveAttribute} è la classe che implementa il comando di rimozione di un attributo. Essa mantiene lo stato allo scopo di poter eseguire l'azione di \texttt{Undo}. Per la reale implementazione dell'operazione che essa rappresenta si base sui metodi esposti dalla classe \texttt{XmlDocument}.
+		
+	\subsubsection{Classe XmlEditCommandSetNodeValue}
+		\texttt{XmlEditCommandSetNodeValue} è la classe che implementa il comando di editing del valore di un elemento. Essa mantiene lo stato allo scopo di poter eseguire l'azione di \texttt{Undo}. Per la reale implementazione dell'operazione che essa rappresenta si base sui metodi esposti dalla classe \texttt{XmlDocument}.
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Codifica}
-Tutto il codice del tool è stato pubblicato sulla piattaforma GitHub, accedibile tramite il seguente indirizzo: \url{https://github.com/Mauxx91/Multiplatform-File-Analyzer}. Tutto il codice è disponibile gratuitamente sotto licenza GNU GPL v3\footnote{Un'approfondimento sulla licenza può essere trovato al seguente indirizzo: \url{http://www.gnu.org/copyleft/gpl.html}.}\\
+Tutto il codice del tool è stato pubblicato sulla piattaforma GitHub, accedibile tramite il seguente indirizzo: \url{https://github.com/Mauxx91/XML-Editor}. Tutto il codice è disponibile gratuitamente sotto licenza GNU GPL v3\footnote{Un'approfondimento sulla licenza può essere trovato al seguente indirizzo: \url{http://www.gnu.org/copyleft/gpl.html}.}\\
 
 Tutto il codice è stato scritto in lingua inglese, compresi i commenti, dei quali si è cercato di scriverne il più possibile.
 La codifica ha seguito alcune convenzioni della famosa notazione Ungherese. Di seguito sono elencati i formalismi utilizzati nel codice:
@@ -1043,6 +1104,5 @@ La codifica ha seguito alcune convenzioni della famosa notazione Ungherese. Di s
 todo -> include del codice o no?
 
 \section{Conclusioni}
-Tutti i requisiti sono stati soddisfatti come pianificato e nei tempi prestabiliti.\\
-La realizzazione del tool ha messo di fronte lo studente a una problematica reale presente durante lo sviluppo di giochi multipiattaforma. Contemporaneamente gli ha permesso di interfacciarsi ai comuni problemi legati alla manutenzione dei moltissimi file presenti nei grandi progetti, lasciandogli la libertà di progettare e realizzare una soluzione.\\
-Lo studente ha inoltre approfondito le tematiche della creazione di interfacce usabili e degli algoritmi per l'esplorazione del file system.
+Tutti i requisiti sono stati soddisfatti come pianificato ma, il secondo incremento comprendente le funzionalità di editing è stata completata con 10 ore di ritardo sulla pianificazione iniziale. 
+la realizzazione di questo tool ha permesso allo studente di conoscere davvero approfonditamente il framework Qt ed implementare un tool di buona utilità anche all'esterno dell'azienda. L'utilizzo del nuovo design pattern architetturale model-view si è rivelato davvero adatto allo sviluppo di sistemi di questa tipologia, dimostrandosi una valida alternativa a MVC.
