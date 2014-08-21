@@ -186,7 +186,7 @@ Un altro esempio di utilizzo del Beholder, molto usato dal team 3D, è l'esposiz
 
 L'utilizzo dei metadati all'interno del codice avviene tramite un set di macro definite in GEM. Un facile esempio di utilizzo è il seguente.\\
 
-\begin{lstlisting}[language = C++]
+\begin{lstlisting}[style=maurizio-code]
 	class Dog
 	{
 	public:
@@ -198,7 +198,7 @@ L'utilizzo dei metadati all'interno del codice avviene tramite un set di macro d
 
 		// events
 		TypedEvent<> OnFall;
-		TypedEvent<GString> OnDie;
+		TypedEvent< GString > OnDie;
 
 	private:
 		int m_age;
@@ -208,7 +208,7 @@ L'utilizzo dei metadati all'interno del codice avviene tramite un set di macro d
 
 Di seguito è presente il codice per eseguire l'esposizione di tutta la classe nei metadati.
 
-\begin{lstlisting}[language = C++]
+\begin{lstlisting}[style=maurizio-code]
 	META_BEGIN_CLASS( Dog )
 	
 	META_BEGIN_PROPERTIES

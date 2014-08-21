@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.5)  21 AUG 2014 12:43
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.5)  21 AUG 2014 13:46
 entering extended mode
 **tesi.tex
 (C:\Users\Stefano\Documents\GitHub\TesiMau\tesi-template\tesi.tex
@@ -2847,10 +2847,10 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
  ) 
 Here is how much of TeX's memory you used:
- 21867 strings out of 494045
- 343233 string characters out of 3147575
- 776376 words of memory out of 3000000
- 23942 multiletter control sequences out of 15000+200000
+ 21891 strings out of 494045
+ 343649 string characters out of 3147575
+ 778312 words of memory out of 3000000
+ 23966 multiletter control sequences out of 15000+200000
  35776 words of font info for 152 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
  61i,16n,122p,1300b,2348s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2882,7 +2882,7 @@ Program Files (x86)/MiKTeX/fonts/type1/public/cm-super/sfti1000.pfb><C:/Program
 (x86)/MiKTeX/fonts/type1/public/cm-super/sftt0800.pfb><C:/Program Files (x86)/M
 iKTeX/fonts/type1/public/cm-super/sftt0900.pfb><C:/Program Files (x86)/MiKTeX/f
 onts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (87 pages, 1976983 bytes).
+Output written on tesi.pdf (87 pages, 1976901 bytes).
 PDF statistics:
  2015 PDF objects out of 2073 (max. 8388607)
  559 named destinations out of 1000 (max. 500000)

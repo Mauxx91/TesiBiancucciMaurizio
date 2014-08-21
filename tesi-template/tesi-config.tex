@@ -118,7 +118,7 @@
 %**************************************************************
 \lstset{
     language=[LaTeX]Tex,%C++,
-    keywordstyle=\color{RoyalBlue}, %\bfseries,
+    keywordstyle=\color{KeywordColor}, %\bfseries,
     basicstyle=\small\ttfamily,
     %identifierstyle=\color{NavyBlue},
     commentstyle=\color{Green}\ttfamily,
@@ -133,13 +133,45 @@
     frame=single
 } 
 
+\lstdefinestyle{maurizio-code}{
+	language = C++,
+	commentstyle = \ttfamily\color{CommentColor},
+	keywordstyle={[2]\ttfamily\color{MacroColor}},
+	keywordstyle={[3]\ttfamily\color{TypeColor}},
+	morekeywords={[2]
+		META\_BEGIN\_CLASS,
+		META\_BEGIN\_PROPERTIES,
+		META\_NAMED\_PROPERTY,
+		META\_END\_PROPERTIES,
+		META\_BEGIN\_ACTIONS,
+		META\_ACTION,
+		META\_END\_ACTIONS,
+		META\_BEGIN\_EVENTS,
+		META\_EVENT,
+		META\_END\_EVENTS,
+		META\_END\_CLASS,
+		ENABLE\_METADATA
+	},
+	morekeywords={[3]
+		void,
+		int,
+		float,
+		TypedEvent,
+		GString
+	},
+	stringstyle=\ttfamily\color{StringColor}
+}
 
 %**************************************************************
 % Impostazioni di xcolor
 %**************************************************************
 \definecolor{webgreen}{rgb}{0,.5,0}
 \definecolor{webbrown}{rgb}{.6,0,0}
-
+\definecolor{KeywordColor}{RGB}{86,156,214}
+\definecolor{TypeColor}{RGB}{78,201,176}
+\definecolor{MacroColor}{RGB}{189,99,197}
+\definecolor{StringColor}{RGB}{214,157,133}
+\definecolor{CommentColor}{RGB}{96,139,78}
 
 %**************************************************************
 % Altro
