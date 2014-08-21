@@ -256,60 +256,124 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.6}Progettazione}{55}{section.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.1}Diagramma delle classi}{55}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.1}Diagrammi delle classi}{56}{subsection.5.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.2}Pacchetto controller}{57}{subsection.5.6.2}
+\contentsline {subsubsection}{Data-Model-View diagram}{56}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe Controller}{57}{section*.41}
+\contentsline {subsubsection}{XML editin diagram}{56}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.3}Pacchetto observer}{57}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.2}Pacchetto observer}{57}{subsection.5.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Interfaccia IObserver}{57}{section*.42}
+\contentsline {subsubsection}{Interfaccia IObserver}{57}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe Subject}{57}{section*.43}
+\contentsline {subsubsection}{Classe Subject}{57}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.4}Pacchetto data}{57}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.3}Pacchetto data}{57}{subsection.5.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe InputData}{57}{section*.44}
+\contentsline {subsubsection}{Classe AssociatedFiles}{57}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe FileOccurrence}{57}{section*.45}
+\contentsline {subsubsection}{Classe AttributeNameTagCollapse}{57}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ResultData}{58}{section*.46}
+\contentsline {subsubsection}{Classe XmlDocument}{57}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.5}Pacchetto view}{58}{subsection.5.6.5}
+\contentsline {subsubsection}{Classe XmlRelation}{57}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Iterfaccia IView}{58}{section*.47}
+\contentsline {subsubsection}{Classe XmlRelationCollection}{57}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ViewMainWindow}{58}{section*.48}
+\contentsline {subsubsection}{Classe XmlRelationError}{58}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ResultWidgetBase}{58}{section*.49}
+\contentsline {subsubsection}{Classe XmlTreeModel}{58}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ResultTableWIdget}{58}{section*.50}
+\contentsline {subsubsection}{Classe XmlTreeItem}{58}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.6}Core}{58}{subsection.5.6.6}
+\contentsline {subsection}{\numberline {5.6.4}Core}{58}{subsection.5.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Interfaccia ICoreMultiplatformFileAnalyzer}{58}{section*.51}
+\contentsline {subsubsection}{Classe XmlRelationCheckerCoreBase}{58}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe QtCoreMultiplatformFIleAnalyzer}{58}{section*.52}
+\contentsline {subsubsection}{Classe XmlRelationCheckerCoreImpl}{58}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Codifica}{58}{section.5.7}
+\contentsline {subsection}{\numberline {5.6.5}Pacchetto command}{58}{subsection.5.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.8}Conclusioni}{59}{section.5.8}
+\contentsline {subsubsection}{Classe XmlEditCommandBase}{58}{section*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{61}{chapter.6}
+\contentsline {subsubsection}{Classe XmlEditCommandInvoker}{58}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{63}{chapter.7}
+\contentsline {subsubsection}{Classe XmlEditCommandAggregator}{58}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{63}{section.7.1}
+\contentsline {subsubsection}{Classe XmlEditCommandAddAttribute}{59}{section*.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{63}{section.7.2}
+\contentsline {subsubsection}{Classe XmlEditCommandAddChildNode}{59}{section*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{63}{section.7.3}
+\contentsline {subsubsection}{Classe XmlEditCommandAddExistentChildNode}{59}{section*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Valutazione personale}{63}{section.7.4}
+\contentsline {subsubsection}{Classe XmlEditCommandDeleteAllChildNode}{59}{section*.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{65}{appendix.A}
+\contentsline {subsubsection}{Classe XmlEditCommandDeleteNode}{59}{section*.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossario}{67}{section*.53}
+\contentsline {subsubsection}{Classe XmlEditCommandEditAttribute}{59}{section*.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{73}{appendix*.55}
+\contentsline {subsubsection}{Classe XmlEditCommandRemoveAttribute}{59}{section*.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe XmlEditCommandSetNodeValue}{59}{section*.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.6}Pacchetto view}{60}{subsection.5.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe MainWindowView}{60}{section*.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogAddModifyRelation}{60}{section*.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogAssociatedFilesBase}{60}{section*.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogAssociatedFilesForm}{60}{section*.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogEditAttributeNameTagCollapseBase}{60}{section*.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogEditAttributeNameTagCollapse}{60}{section*.72}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogEditNodeBase}{60}{section*.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogEditNodeTable}{60}{section*.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogInputFileNameBase}{60}{section*.75}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogInputFileNameForm}{60}{section*.76}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogInputStringBase}{61}{section*.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogInputStringForm}{61}{section*.78}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogXmlRelationManagementBase}{61}{section*.79}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DialogXmlRelationManagementTable}{61}{section*.80}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe ViewXmlRelationErrorsBase}{61}{section*.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe ViewXmlRelationErrorsTable}{61}{section*.82}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe DraggableTreeView}{61}{section*.83}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe XmlViewBase}{61}{section*.84}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Classe XmlViewTree}{61}{section*.85}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.7}Codifica}{61}{section.5.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.8}Conclusioni}{62}{section.5.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{63}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusioni}{65}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{65}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{65}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{65}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Valutazione personale}{65}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendice A}{67}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Glossario}{69}{section*.86}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{75}{appendix*.88}
