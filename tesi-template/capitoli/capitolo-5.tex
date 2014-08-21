@@ -1064,16 +1064,66 @@ Il pacchetto si occupa della gestione delle operazioni di editing dei file XML. 
 	\subsubsection{Classe XmlEditCommandSetNodeValue}
 		\texttt{XmlEditCommandSetNodeValue} è la classe che implementa il comando di editing del valore di un elemento. Essa mantiene lo stato allo scopo di poter eseguire l'azione di \texttt{Undo}. Per la reale implementazione dell'operazione che essa rappresenta si base sui metodi esposti dalla classe \texttt{XmlDocument}.
 
+\subsection{Pacchetto view}
+	Il pacchetto si occupa del diplay dell'interfaccia utente e della gestione della logica di controllo del software.
+	
+	\subsubsection{Classe MainWindowView}
+		La classe \texttt{MainWindowView} eredita e specializza la classe \texttt{QMainWindow} di Qt. Essa è il cuore della logica del programma. Raccoglie e organizza i comandi utente di base, delegando l'esecuzione alle altri componenti del pacchetto.
+		
+	\subsubsection{Classe DialogAddModifyRelation}
+		La classe \texttt{DialogAddModifyRelation} è una dialog creata allo scopo di permettere l'inserimento dei parametri che caratterizzano una relazione da parte dell'utente.
+		
+	\subsubsection{Classe DialogAssociatedFilesBase}
+		La classe \texttt{DialogAssociatedFilesBase} è una base astratta di una finestra di dialog che permette all'utente di gestire i file associati al main file correntemente aperto.
+		
+	\subsubsection{Classe DialogAssociatedFilesForm}
+		La classe \texttt{DialogAssociatedFilesForm} concretizza la base astratta \texttt{DialogAssociatedFilesBase} creando un'interefaccia atta alla gestione dei file associati.
+		
+	\subsubsection{Classe DialogEditAttributeNameTagCollapseBase}
+		La classe \texttt{DialogEditAttributeNameTagCollapseBase} è una base astratta di una finestra di dialog che permette all'utente di gestire il filtro sull'attributo da visualizzare nell'albero XML.
+	
+	\subsubsection{Classe DialogEditAttributeNameTagCollapse}
+		La classe \texttt{DialogEditAttributeNameTagCollapse} concretizza la base astratta \texttt{DialogEditAttributeNameTagCollapseBase} creando un'interefaccia atta alla modifica del filtro sull'attributo da visualizzare nell'albero XML.
 
+	\subsubsection{Classe DialogEditNodeBase}
+		La classe \texttt{DialogEditNodeBase} è una base astratta di una finestra di dialog che permette all'utente di editare un nodo XML.
+		
+	\subsubsection{Classe DialogEditNodeTable}
+		La classe \texttt{DialogEditNodeTable} concretizza la base astratta \texttt{DialogEditNodeBase} creando un'interefaccia atta all'editing del valore del nodo e di tutti i suoi attributi.
 
+	\subsubsection{Classe DialogInputFileNameBase}
+		La classe \texttt{DialogEditNodeBase} è una base astratta di una finestra di dialog che permette all'utente di inserire il percorso ed il nome di un file.
+	
+	\subsubsection{Classe DialogInputFileNameForm}
+		La classe \texttt{DialogInputFileNameForm} concretizza la base astratta \texttt{DialogInputFileNameBase} creando un'interefaccia atta all'inserimento di un percorso ed un nome di file. Offre la possibilità di esplorare il file system per un più agevole inserimento. Questa classe è usata per acquisire il file da dove importare o verso dove esportare le relazioni.
 
+	\subsubsection{Classe DialogInputStringBase}
+		La classe \texttt{DialogInputStringBase} è una base astratta di una finestra di dialog che permette all'utente di inserire una stringa.
+		
+	\subsubsection{Classe DialogInputStringForm}
+		La classe \texttt{DialogInputStringForm} concretizza la base astratta \texttt{DialogInputStringBase} creando un'interefaccia atta all'inserimento di una stringa da parte dell'utente.
+	
+	\subsubsection{Classe DialogXmlRelationManagementBase}
+	La classe \texttt{DialogXmlRelationManagementBase} è una base astratta di una finestra di dialog che permette all'utente di gestire il database di relazioni.
+	
+	\subsubsection{Classe DialogXmlRelationManagementTable}
+	La classe \texttt{DialogXmlRelationManagementTable} concretizza la base astratta \texttt{DialogXmlRelationManagementBase} creando un'interefaccia atta alla gestione delle relazioni, visualizzate sotto forma tabellare.
 
+	\subsubsection{Classe ViewXmlRelationErrorsBase}
+		La classe \texttt{ViewXmlRelationErrorsBase} è una base astratta di una finestra di dialog che permette all'utente di visualizzare il risultato del controllo di consistenza delle relazioni.
+		
+	\subsubsection{Classe ViewXmlRelationErrorsTable}
+		La classe \texttt{ViewXmlRelationErrorsTable} concretizza la base astratta \texttt{ViewXmlRelationErrorsBase} creando un'interefaccia tabellare per la visualizzazione dei risultati sul check delle relazioni.
 
-
-
-
-
-
+	\subsubsection{Classe DraggableTreeView}
+		La classe \texttt{DraggableTreeView} deriva dalla classe \texttt{QTreeView} del framework Qt. Essa è quindi in grado di visualizzare la classe model \texttt{XmlTreeModel} nella quale abilita il drag \& drop per l'istanziazione automatica. È sua responsabilità l'invocazione dei command tramite l'invoker.
+	
+	
+	\subsubsection{Classe XmlViewBase}
+		La classe \texttt{XmlViewBase} è una base astratta di un widget per la visualizzazione di file XML.
+	
+	\subsubsection{Classe XmlViewTree}
+		La classe \texttt{XmlViewTree} concretizza la base astratta \texttt{XmlViewBase} creando un widget che mostra un file XML sotto forma di albero.
 
 \section{Codifica}
 Tutto il codice del tool è stato pubblicato sulla piattaforma GitHub, accedibile tramite il seguente indirizzo: \url{https://github.com/Mauxx91/XML-Editor}. Tutto il codice è disponibile gratuitamente sotto licenza GNU GPL v3\footnote{Un'approfondimento sulla licenza può essere trovato al seguente indirizzo: \url{http://www.gnu.org/copyleft/gpl.html}.}\\
