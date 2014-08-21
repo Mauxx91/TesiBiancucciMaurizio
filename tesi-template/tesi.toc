@@ -246,7 +246,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.3}Requisiti di vincolo}{54}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Tecnologie e strumenti}{55}{section.5.4}
+\contentsline {section}{\numberline {5.4}Tecnologie e strumenti}{54}{section.5.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.1}Qt Framework}{55}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
@@ -256,45 +256,45 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.6}Progettazione}{55}{section.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.1}Diagramma delle classi}{56}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.1}Diagramma delle classi}{55}{subsection.5.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.2}Pacchetto controller}{58}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.2}Pacchetto controller}{57}{subsection.5.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe Controller}{58}{section*.41}
+\contentsline {subsubsection}{Classe Controller}{57}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.3}Pacchetto observer}{58}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.3}Pacchetto observer}{57}{subsection.5.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Interfaccia IObserver}{58}{section*.42}
+\contentsline {subsubsection}{Interfaccia IObserver}{57}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe Subject}{58}{section*.43}
+\contentsline {subsubsection}{Classe Subject}{57}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.4}Pacchetto data}{58}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.4}Pacchetto data}{57}{subsection.5.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe InputData}{58}{section*.44}
+\contentsline {subsubsection}{Classe InputData}{57}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe FileOccurrence}{58}{section*.45}
+\contentsline {subsubsection}{Classe FileOccurrence}{57}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ResultData}{59}{section*.46}
+\contentsline {subsubsection}{ResultData}{58}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.5}Pacchetto view}{59}{subsection.5.6.5}
+\contentsline {subsection}{\numberline {5.6.5}Pacchetto view}{58}{subsection.5.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Iterfaccia IView}{59}{section*.47}
+\contentsline {subsubsection}{Iterfaccia IView}{58}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ViewMainWindow}{59}{section*.48}
+\contentsline {subsubsection}{Classe ViewMainWindow}{58}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ResultWidgetBase}{59}{section*.49}
+\contentsline {subsubsection}{Classe ResultWidgetBase}{58}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ResultTableWIdget}{59}{section*.50}
+\contentsline {subsubsection}{Classe ResultTableWIdget}{58}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.6}Core}{59}{subsection.5.6.6}
+\contentsline {subsection}{\numberline {5.6.6}Core}{58}{subsection.5.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Interfaccia ICoreMultiplatformFileAnalyzer}{59}{section*.51}
+\contentsline {subsubsection}{Interfaccia ICoreMultiplatformFileAnalyzer}{58}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe QtCoreMultiplatformFIleAnalyzer}{59}{section*.52}
+\contentsline {subsubsection}{Classe QtCoreMultiplatformFIleAnalyzer}{58}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Codifica}{59}{section.5.7}
+\contentsline {section}{\numberline {5.7}Codifica}{58}{section.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.8}Conclusioni}{60}{section.5.8}
+\contentsline {section}{\numberline {5.8}Conclusioni}{59}{section.5.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Verifica e validazione}{61}{chapter.6}
 \defcounter {refsection}{0}\relax 
