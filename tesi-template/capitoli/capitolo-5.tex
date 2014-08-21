@@ -733,7 +733,10 @@
 			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F1.1}{R0F1.1} & La creazione di un nuovo file XML richiede l'inserimento del percorso dove memorizzarlo. & \hyperref[subsec:XEUC1.1.1]{UC 1.1.1}\\
 		
 			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F1.2}{R0F1.2} & La creazione di un nuovo file XML richiede l'inserimento del nome del file. & \hyperref[subsec:XEUC1.1.2]{UC 1.1.2}\\
-		
+			
+			
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F1.3}{R0F1.3} & Se il file inserito è già presente nel sistema, il contenuto verrà sovrascritto solo nel momento del primo salvataggio. & Interno\\
+			
 		
 		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F2}{R0F2} & Un utente può aprire un file XML preesistente. & \hyperref[subsec:XEUC1.2]{UC 1.2}\\
 		
@@ -743,9 +746,69 @@
 		
 			\rowcolor{row1}\hspace{2mm}\hypertarget{R0F2.3}{R0F2.3} & Se prima dell'apertura di un file XML l'utente ha delle modifiche non salvate su qualche file, il sistema, per ogni file, chiede all'utente se cancellare l'azione, salvare o scartare le modifiche al lavoro precedente. & \hyperref[subsec:XEUC1.2]{UC 1.2}\\
 		
-		
-		%todo requisiti derivati da uc 1.3
-			\rowcolor{row1}\hspace{2mm}\hypertarget{R0F3.todo}{R0F3.todo} & Quando viene effettuata una modifica ad un file XML, viene aggiunto il carattere \sq{*} alla fine del nome per indicare all'utente il nuovo stato del file. & \hyperref[subsec:XEUC1.2]{UC 1.2}\\
+	
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F3}{R0F3} & Un utente può editare un file XML correntemente aperto e visualizzato. & \hyperref[subsec:XEUC1.3]{UC 1.3}\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.1}{R0F3.1} & Un utente può selezionare e visualizzare l'elemento riferito da un elemento. & \hyperref[subsec:XEUC1.3.1]{UC 1.3.1}\\
+	
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.1.1}{R0F3.1.1} & Deve esistere una relazione nel database ed essere istanziata correttamente nell'XML. & Interno\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.2}{R0F3.2} & Il programma mostra gli eventuali errori occorsi durante la ricerca del nodo destinazione della relazione. & \hyperref[subsec:XEUC1.3.2]{UC 1.3.2}\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.2}{R0F3.2} & Il programma mostra gli eventuali errori occorsi durante la ricerca del nodo destinazione della relazione. & \hyperref[subsec:XEUC1.3.2]{UC 1.3.2}\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.3}{R0F3.3} & Un utente può inserire un nuovo nodo figlio ad un elemento. & \hyperref[subsec:XEUC1.3.3]{UC 1.3.3}\\
+			
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.3.1}{R0F3.3.1} & Il programma apre automaticamente la schermata di editing del nuovo nodo inserito. & Tutor interno\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.4}{R0F3.4} & Un utente può modificare un nodo dell'albero XML. & \hyperref[subsec:XEUC1.3.4]{UC 1.3.4}\\
+			
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.4.1}{R0F3.4.1} & Un utente può modificare il valore dell'elemento. & \hyperref[subsec:XEUC1.3.4.1]{UC 1.3.4.1}\\
+	
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.4.2}{R0F3.4.2} & Un utente può appendere un nuovo attributo all'elemento. & \hyperref[subsec:XEUC1.3.4.2]{UC 1.3.4.2}\\
+	
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.4.3}{R0F3.4.3} & Un utente può modificare un attributo esistente. & \hyperref[subsec:XEUC1.3.4.3]{UC 1.3.4.3}\\
+	
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.4.4}{R0F3.4.4} & Un utente può rimuovere un attributo esistente. & \hyperref[subsec:XEUC1.3.4.4]{UC 1.3.4.4}\\
+	
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.4.5}{R0F3.4.5} & Il programma blocca il salvataggio se l'utente ha inserito due attributi con lo stesso nome. & Interno\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.5}{R0F3.5} & Un utente può duplicare un nodo, inserendo la copia come fratello del nodo copiato. & \hyperref[subsec:XEUC1.3.5]{UC 1.3.5}\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.6}{R0F3.6} & Un utente può copiare un nodo e tenerlo pronto per essere incollato in un momento successivo. & \hyperref[subsec:XEUC1.3.6]{UC 1.3.6}\\
+				
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.6.1}{R0F3.6.1} & Il programma mantiene un solo nodo copiato alla volta. & Interno\\
+	
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.6.2}{R0F3.6.2} & Ogni nuovo nodo copiato sostituisce quelli precedenti. & Interno\\
+	
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.6.3}{R0F3.6.3} & Se il nodo origine della copia e viene modificato, la copia rimane immutata. & Interno\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.7}{R0F3.7} & Un utente può incollare il nodo precedentemente copiato. & \hyperref[subsec:XEUC1.3.7]{UC 1.3.7}\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.8}{R0F3.8} & Un utente può rimuovere un nodo. & \hyperref[subsec:XEUC1.3.8]{UC 1.3.8}\\
+				
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.8}{R0F3.8} & Quando il programma rimuove un nodo, vengono rimossi anche tutti i nodi discendenti. & Interno\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.9}{R0F3.9} & Un utente può rimuovere tutti i discendenti di un nodo. & \hyperref[subsec:XEUC1.3.9]{UC 1.3.9}\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.10}{R0F3.10} & Un utente può rimuovere tutti i discendenti di un nodo. & \hyperref[subsec:XEUC1.3.10]{UC 1.3.10}\\
+			
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.10}{R0F3.10} & Un utente può instanziare un nuova relazione in automatico, senza dover creare manualmente gli elementi necessari. & \hyperref[subsec:XEUC1.3.10]{UC 1.3.10}\\
+			
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.10.1}{R0F3.10.1} & Affiché l'operazione avvenga con successo è necessario che sia presente un percorso di relazioni che consente di effettuare l'operazione. & Interno\\
+	
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F3.10.2}{R0F3.10.2} & Se il percorso di relazioni contiene più di un elemento, allora il programma creerà dei nodi intermedi per completare l'operazione. & Interno\\
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.11}{R0F3.11} & Il programma mostra gli eventuali errori occorsi durante l'instazione automatica di una relazione. & \hyperref[subsec:XEUC1.3.11]{UC 1.3.11}\\
+	
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.12}{R0F3.12} & Un utente può annullare l'ultima modifica effettuata. & \hyperref[subsec:XEUC1.3.12]{UC 1.3.12}\\
+			
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F3.13}{R0F3.13} & Un utente può ripristinare l'ultima modifica annullata. & \hyperref[subsec:XEUC1.3.13]{UC 1.3.13}\\
+	
+	
+	
+			\rowcolor{row1}\hspace{2mm}\hypertarget{R0F3.14}{R0F3.14} & Quando viene effettuata una modifica ad un file XML, viene aggiunto il carattere \sq{*} alla fine del nome per indicare all'utente il nuovo stato del file. & Interno\\
 		
 		
 		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F4}{R0F4} & Un utente può salvare le modifiche effettuata ad un file XML. & \hyperref[subsec:XEUC1.4]{UC 1.4}\\
@@ -757,10 +820,85 @@
 		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F5}{R0F5} & Un utente può modificare il filtro utilizzato per selezionare l'attributo il cui valore viene mostrato nell'albero per rappresentare l'elemento. & \hyperref[subsec:XEUC1.5]{UC 1.5}\\
 			
 			\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F5.1}{R0F5.1} & Il valore inserito dall'utente viene memorizzato nel registro di sistema e ripristinato ad ogni apertura del programma. & \hyperref[subsec:XEUC1.5]{UC 1.5}\\
+			
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F6}{R0F6} & Un utente può modificare i file associati al file correntemente aperto. & \hyperref[subsec:XEUC1.6]{UC 1.6}\\
+			
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F6.1}{R0F6.1} & Un utente può aggiungere un nuovo file associato. & \hyperref[subsec:XEUC1.6.1]{UC 1.6.1}\\
+				
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F6.2}{R0F6.2} & Un utente può rimuovere un file associato precedentemente inserito. & \hyperref[subsec:XEUC1.6.2]{UC 1.6.2}\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F6.3}{R0F6.3} & Il programma, in fase di salvataggio delle modifiche applicate ai file associati, non permette il salvataggio se tutti i file associati inseriti non sono tutti differenti fra loro. & \hyperref[subsec:XEUC1.6]{Interno}\\
+			
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F6.4}{R0F6.4} & Il programma quando salva le modifiche ai file associati, chiude automaticamente quelli rimossi e apre i nuovi inseriti. & Interno\\	
+			
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F7}{R0F7} & Un utente può editare il database dei tipi di relazioni conosciute dal programma. & \hyperref[subsec:XEUC1.7]{UC 1.7}\\
+			
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F7.1}{R0F7.1} & Un utente può inserire un nuovo tipo di relazione. & \hyperref[subsec:XEUC1.7.1]{UC 1.7.1}\\
+			
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F7.1.1}{R0F7.1.1} & L'aggiunta di una nuova relazione richiede l'inserimento del nome del tag origine della relazione. & \hyperref[subsec:XEUC1.7.1]{UC 1.7.1}\\
+				
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F7.1.2}{R0F7.1.2} & L'aggiunta di una nuova relazione richiede l'inserimento del nome del tag figlio origine della relazione, elemento in cui in un attributo sarà contenuta la chiave dell'elemento destinazione. & \hyperref[subsec:XEUC1.7.1]{UC 1.7.1}\\
+					
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F7.1.3}{R0F7.1.3} & L'aggiunta di una nuova relazione richiede l'inserimento del nome dell'attributo in è contenuta la chiave dell'elemento destinazione. & \hyperref[subsec:XEUC1.7.1]{UC 1.7.1}\\
+					
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F7.1.4}{R0F7.1.4} & L'aggiunta di una nuova relazione richiede l'inserimento del nome del tag destinatario della relazione. & \hyperref[subsec:XEUC1.7.1]{UC 1.7.1}\\
+						
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F7.1.5}{R0F7.1.5} & L'aggiunta di una nuova relazione richiede l'inserimento del nome dell'attributo, nell'elemento destizione, in cui è presente la chiave identificativa. & \hyperref[subsec:XEUC1.7.1]{UC 1.7.1}\\	
+				
+			
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F7.2}{R0F7.2} & Un utente può modificare tutti i parametri di una relazione precedentemente inserita. & \hyperref[subsec:XEUC1.7.2]{UC 1.7.2}\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F7.3}{R0F7.3} & Un utente può eliminare una relazione precedentemente inserita. & \hyperref[subsec:XEUC1.7.3]{UC 1.7.3}\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F7.4}{R0F7.4} & Il programma salva automaticamente, su file di configurazione XML, le modifiche apportate al database di relazioni. & Tutor interno\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F7.5}{R0F7.5} & Il programma ricarica automaticamente, da file di configurazione XML, il set di relazioni precedentemente presenti nell'ultimo utilizzo del programma. & Tutor interno\\
+			
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F8}{R0F8} & Un utente può importare un set di relazioni presenti in un file di configurazione. & \hyperref[subsec:XEUC1.8]{UC 1.8}\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F8.1}{R0F8.1} & L'importazione richiede che l'utente inserisca il percorso ed il nome del file di configurazione contenente i dati desiderati. & \hyperref[subsec:XEUC1.8]{UC 1.8}\\
+			
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F8.1}{R0F8.1} & Il programma importa le relazioni contenute, eliminando tutte quelle precedentemente presenti nel database. & Interno\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F8.1}{R0F8.1} & Il programma salva le nuove relazioni nel file di configurazione sostituendo tutte le precedenti. & Interno\\
+			
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F9}{R0F9} & Un utente può esportare tutte le relazione attualmete inserite in un file di configurazione esterno. & \hyperref[subsec:XEUC1.9]{UC 1.9}\\
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F9.1}{R0F9.1} & L'esportazione richiede che l'utente inserisca il percorso ed il nome del file di configurazione destinazione. & \hyperref[subsec:XEUC1.9]{UC 1.9}\\
+			
+				\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F9.1.1}{R0F9.1.1} & Se il file di destinazione non esiste verrà creato. & Interno\\
+		
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F10}{R0F10} & Un utente può avviare il controllo di consistenza delle relazioni sulla base del set di relazioni conosciute dal programma su tutti i file correntemente aperti. & \hyperref[subsec:XEUC1.10]{UC 1.10}\\
+			
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F11}{R0F11} & Un utente può visualizzare i risultati del controllo di consistenza delle relazioni effettuato sulla base del set di relazioni conosciute dal programma. & \hyperref[subsec:XEUC1.11]{UC 1.11}\\
+			
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F11.1}{R0F11.1} & Un utente può visualizzare l'elenco degli errori riscontrati durante l'analisi. & \hyperref[subsec:XEUC1.11.1]{UC 1.11.1}\\
+			
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F11.1.1}{R0F11.1.1} & Il programma mostra per ogni errore la tipologia di questo. & \hyperref[subsec:XEUC1.11.1]{UC 1.11.1}\\
+				
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F11.1.2}{R0F11.1.2} & Il programma mostra per ogni errore la serevità di questo. & \hyperref[subsec:XEUC1.11.1]{UC 1.11.1}\\
+				
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F11.1.3}{R0F11.1.3} & Il programma mostra per ogni errore una descrizione testuale di questo. & \hyperref[subsec:XEUC1.11.1]{UC 1.11.1}\\
+				
+				\rowcolor{row1}\hspace{4mm}\hypertarget{XER0F11.1.4}{R0F11.1.4} & Il programma mostra per ogni errore il nome del file nel quale è stato riscontrato. & \hyperref[subsec:XEUC1.11.1]{UC 1.11.1}\\
+		
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F11.2}{R0F11.2} & Un utente può selezionare un filtro che permette di nascondere o mostrare ogni categoria di errori. & \hyperref[subsec:XEUC1.11.2]{UC 1.11.2}\\
+			
+			\rowcolor{row1}\hspace{2mm}\hypertarget{XER0F11.3}{R0F11.3} & Un utente può decidere di visualizzare, all'interno dell'albero XML, l'elemento a cui l'errore si riferisce. & \hyperref[subsec:XEUC1.11.3]{UC 1.11.3}\\
+		
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F12}{R0F12} & Un utente può visualizzare la finestra di about sul programma. & \hyperref[subsec:XEUC1.12]{UC 1.12}\\
+		
 		
 		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F13}{R0F13} & Il programma mostra gli eventuali errori occorsi durante l'apertura di un file XML. & \hyperref[subsec:XEUC1.13]{UC 1.13}\\
 		
 		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F14}{R0F14} & Il programma mostra gli eventuali errori occorsi durante il salvataggio di un file XML. & \hyperref[subsec:XEUC1.14]{UC 1.14}\\
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F15}{R0F15} & Il programma mostra gli eventuali errori occorsi durante l'importazione di un set di relazioni. & \hyperref[subsec:XEUC1.15]{UC 1.15}\\
+		
+		\rowcolor{row1}\hspace{0mm}\hypertarget{XER0F16}{R0F16} & Il programma mostra gli eventuali errori occorsi durante l'esportazione di un set di relazioni. & \hyperref[subsec:XEUC1.16]{UC 1.16}\\
 		
 		\hline
 		\caption{Requisiti funzionali}
@@ -773,8 +911,6 @@
 		\rowcolor{headcolor}\textcolor{white}{\textbf{Requisito}}&\textcolor{white}{\textbf{Descrizione}}&\textcolor{white}{\textbf{Fonti}}\\
 		
 		\rowcolor{row1}\hspace{0mm}\hypertarget{R0Q1}{R0Q1} & Viene fornito insieme al programma un l'help con la guida alla compilazione e al deploy per sistemi Windows. & Tutor interno\\
-		
-		\rowcolor{row2}\hspace{0mm}\hypertarget{R0Q2}{R0Q2} & Viene fornito un l'help che spiega come utilizzare il programma. & Tutor interno\\
 		
 		\hline
 		\caption{Requisiti di vincolo}
