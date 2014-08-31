@@ -38,7 +38,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.10}Norme di codifica}{12}{section.2.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.11}Asset e Log}{13}{section.2.11}
+\contentsline {section}{\numberline {2.11}Assert e Log}{13}{section.2.11}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Engine di gioco}{15}{chapter.3}
 \defcounter {refsection}{0}\relax 
