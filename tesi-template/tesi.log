@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  31 AUG 2014 23:15
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  31 AUG 2014 23:28
 entering extended mode
 **tesi.tex
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.tex
@@ -2956,7 +2956,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
 Here is how much of TeX's memory you used:
  21847 strings out of 494045
  342178 string characters out of 3148375
- 741453 words of memory out of 3000000
+ 741487 words of memory out of 3000000
  23889 multiletter control sequences out of 15000+200000
  37080 words of font info for 150 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
@@ -2991,7 +2991,7 @@ er/sfsl1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti07
 KTeX 2.9/fonts/type1/public/cm-super/sftt0800.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/cm-super/sftt0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (91 pages, 3361326 bytes).
+Output written on tesi.pdf (91 pages, 3361388 bytes).
 PDF statistics:
  2088 PDF objects out of 2487 (max. 8388607)
  590 named destinations out of 1000 (max. 500000)
