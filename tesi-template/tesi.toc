@@ -360,7 +360,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.8}Conclusioni}{65}{section.5.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{67}{chapter.6}
+\contentsline {chapter}{\numberline {6}Funzionalit\IeC {\`a} di disegno di elementi grafici 3D a scopo di debug}{67}{chapter.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Conclusioni}{69}{chapter.7}
 \defcounter {refsection}{0}\relax 

@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  27 AUG 2014 22:51
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  31 AUG 2014 21:04
 entering extended mode
-**tesi
+**tesi.tex
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
@@ -1199,42 +1199,42 @@ Package biblatex Info: ... file 'italian.lbx' found.
 File: italian.lbx 2011/11/13 v1.7 biblatex localization
 )
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 117.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 117.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 107.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 107.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\lgrcmr.fd"
 File: lgrcmr.fd 2008/06/17 v2.3 Greek Computer Modern
 )
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 117.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 107.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    ... okay on input line 107.
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring ON on input line 117.
-LaTeX Info: Redefining \ref on input line 117.
-LaTeX Info: Redefining \pageref on input line 117.
-LaTeX Info: Redefining \nameref on input line 117.
-LaTeX Info: Redefining \Ref on input line 117.
+Package hyperref Info: Link coloring ON on input line 107.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
+LaTeX Info: Redefining \Ref on input line 107.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
@@ -1261,7 +1261,7 @@ Package caption Info: End \AtBeginDocument code.
 \everyMPtoPDFconversion=\toks36
 )
 \c@lstlisting=\count308
-LaTeX Info: Redefining \microtypecontext on input line 117.
+LaTeX Info: Redefining \microtypecontext on input line 107.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1292,10 +1292,11 @@ Package biblatex Warning: Data encoding is 'utf8'.
 (biblatex)                Use backend=biber.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'tesi.bbl' not found.
-No file tesi.bbl.
-Package biblatex Info: Reference section=0 on input line 117.
-Package biblatex Info: Reference segment=0 on input line 117.
+Package biblatex Info: ... file 'tesi.bbl' found.
+(C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.bbl)
+Package biblatex Info: Reference section=0 on input line 107.
+Package biblatex Info: Reference segment=0 on input line 107.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1446,9 +1447,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 tex
 Capitolo 1.
 
-LaTeX Warning: Citation 'site:milestone' on page 1 undefined on input line 14.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
@@ -1485,11 +1483,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 59.
+(Font)              <8> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 59.
+(Font)              <6> on input line 63.
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
@@ -1520,10 +1518,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
  []
 
 
-LaTeX Warning: Citation 'site:accordo-namco-bandai' on page 3 undefined on inpu
-t line 18.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
@@ -1537,14 +1531,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
-
-
-LaTeX Warning: Citation 'site:approfondimento-TRC' on page 3 undefined on input
- line 24.
-
-
-LaTeX Warning: Citation 'site:approfondimento-game-testing' on page 3 undefined
- on input line 24.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
@@ -1738,14 +1724,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--121
  []
 
 
-LaTeX Warning: Citation 'inbook:game-coding-complete' on page 9 undefined on in
-put line 122.
-
-
-LaTeX Warning: Citation 'site:lua-paper' on page 9 undefined on input line 122.
-
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
@@ -1905,14 +1883,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[17] <immagini/tool1/UC1.png, id=657, 335.3328pt x 166.7028pt>
+[17] <immagini/tool1/UC1.png, id=670, 335.3328pt x 166.7028pt>
 File: immagini/tool1/UC1.png Graphic file (type png)
 
 <use immagini/tool1/UC1.png>
 Package pdftex.def Info: immagini/tool1/UC1.png used on input line 38.
 (pdftex.def)             Requested size: 332.89499pt x 165.4992pt.
 
-<immagini/tool1/UC1-1.png, id=660, 435.5472pt x 447.5922pt>
+<immagini/tool1/UC1-1.png, id=673, 435.5472pt x 447.5922pt>
 File: immagini/tool1/UC1-1.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1.png>
@@ -1922,7 +1900,7 @@ Package pdftex.def Info: immagini/tool1/UC1-1.png used on input line 58.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool1/UC1-1-1.png, id=665, 445.665pt x 297.0297pt>
+<immagini/tool1/UC1-1-1.png, id=678, 445.665pt x 297.0297pt>
 File: immagini/tool1/UC1-1-1.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1-1.png>
@@ -1973,7 +1951,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20] <immagini/tool1/UC1-1-4.png, id=690, 445.665pt x 658.3797pt>
+[20] <immagini/tool1/UC1-1-4.png, id=703, 445.665pt x 658.3797pt>
 File: immagini/tool1/UC1-1-4.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1-4.png>
@@ -2009,9 +1987,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [22 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/U
 C1-1-4.png
 
-pdfTeX warning: pdflatex (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi
--template/immagini/tool1/UC1-1-4.png): large interlaced PNG might cause out of 
-memory (use non-interlaced PNG to fix this)
+pdfTeX warning: pdflatex.exe (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/
+tesi-template/immagini/tool1/UC1-1-4.png): large interlaced PNG might cause out
+ of memory (use non-interlaced PNG to fix this)
 >]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
@@ -2125,7 +2103,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 402--403
  []
 
 
-<immagini/tool1/Tool-1-Diagramma-Classi.png, id=781, 678.6153pt x 1100.1903pt>
+<immagini/tool1/Tool-1-Diagramma-Classi.png, id=794, 678.6153pt x 1100.1903pt>
 File: immagini/tool1/Tool-1-Diagramma-Classi.png Graphic file (type png)
 
 <use immagini/tool1/Tool-1-Diagramma-Classi.png>
@@ -2219,7 +2197,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
 [33
 
-] <immagini/tool2/UC1.png, id=828, 748.7172pt x 869.1672pt>
+] <immagini/tool2/UC1.png, id=841, 748.7172pt x 869.1672pt>
 File: immagini/tool2/UC1.png Graphic file (type png)
 
 <use immagini/tool2/UC1.png>
@@ -2239,10 +2217,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [34 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/U
 C1.png
 
-pdfTeX warning: pdflatex (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi
--template/immagini/tool2/UC1.png): large interlaced PNG might cause out of memo
-ry (use non-interlaced PNG to fix this)
->] <immagini/tool2/UC1-1.png, id=849, 405.4347pt x 166.7028pt>
+pdfTeX warning: pdflatex.exe (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/
+tesi-template/immagini/tool2/UC1.png): large interlaced PNG might cause out of 
+memory (use non-interlaced PNG to fix this)
+>] <immagini/tool2/UC1-1.png, id=862, 405.4347pt x 166.7028pt>
 File: immagini/tool2/UC1-1.png Graphic file (type png)
 
 <use immagini/tool2/UC1-1.png>
@@ -2260,7 +2238,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [35 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/U
-C1-1.png>] <immagini/tool2/UC1-3.png, id=877, 616.2222pt x 819.06pt>
+C1-1.png>] <immagini/tool2/UC1-3.png, id=890, 616.2222pt x 819.06pt>
 File: immagini/tool2/UC1-3.png Graphic file (type png)
 
 <use immagini/tool2/UC1-3.png>
@@ -2296,9 +2274,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [37 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/U
 C1-3.png
 
-pdfTeX warning: pdflatex (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi
--template/immagini/tool2/UC1-3.png): large interlaced PNG might cause out of me
-mory (use non-interlaced PNG to fix this)
+pdfTeX warning: pdflatex.exe (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/
+tesi-template/immagini/tool2/UC1-3.png): large interlaced PNG might cause out o
+f memory (use non-interlaced PNG to fix this)
 >]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
@@ -2311,7 +2289,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38] <immagini/tool2/UC1-3-4.png, id=923, 405.4347pt x 287.1528pt>
+[38] <immagini/tool2/UC1-3-4.png, id=936, 405.4347pt x 287.1528pt>
 File: immagini/tool2/UC1-3-4.png Graphic file (type png)
 
 <use immagini/tool2/UC1-3-4.png>
@@ -2365,7 +2343,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42] <immagini/tool2/UC1-6.png, id=950, 405.4347pt x 186.6975pt>
+[42] <immagini/tool2/UC1-6.png, id=963, 405.4347pt x 186.6975pt>
 File: immagini/tool2/UC1-6.png Graphic file (type png)
 
 <use immagini/tool2/UC1-6.png>
@@ -2399,7 +2377,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [44 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/U
-C1-6.png>] <immagini/tool2/UC1-7.png, id=963, 385.44pt x 246.9225pt>
+C1-6.png>] <immagini/tool2/UC1-7.png, id=976, 385.44pt x 246.9225pt>
 File: immagini/tool2/UC1-7.png Graphic file (type png)
 
 <use immagini/tool2/UC1-7.png>
@@ -2429,7 +2407,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46] <immagini/tool2/UC1-11.png, id=978, 375.3222pt x 236.8047pt>
+[46] <immagini/tool2/UC1-11.png, id=991, 375.3222pt x 236.8047pt>
 File: immagini/tool2/UC1-11.png Graphic file (type png)
 
 <use immagini/tool2/UC1-11.png>
@@ -2738,7 +2716,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[57] <immagini/tool2/diagramma1.png, id=1166, 598.1547pt x 437.7153pt>
+[57] <immagini/tool2/diagramma1.png, id=1179, 598.1547pt x 437.7153pt>
 File: immagini/tool2/diagramma1.png Graphic file (type png)
 
 <use immagini/tool2/diagramma1.png>
@@ -2758,10 +2736,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [58 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/d
 iagramma1.png
 
-pdfTeX warning: pdflatex (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi
--template/immagini/tool2/diagramma1.png): large interlaced PNG might cause out 
-of memory (use non-interlaced PNG to fix this)
->] <immagini/tool2/diagramma2.png, id=1174, 718.6047pt x 758.835pt>
+pdfTeX warning: pdflatex.exe (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/
+tesi-template/immagini/tool2/diagramma1.png): large interlaced PNG might cause 
+out of memory (use non-interlaced PNG to fix this)
+>] <immagini/tool2/diagramma2.png, id=1187, 718.6047pt x 758.835pt>
 File: immagini/tool2/diagramma2.png Graphic file (type png)
 
 <use immagini/tool2/diagramma2.png>
@@ -2781,9 +2759,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [59 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/d
 iagramma2.png
 
-pdfTeX warning: pdflatex (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi
--template/immagini/tool2/diagramma2.png): large interlaced PNG might cause out 
-of memory (use non-interlaced PNG to fix this)
+pdfTeX warning: pdflatex.exe (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/
+tesi-template/immagini/tool2/diagramma2.png): large interlaced PNG might cause 
+out of memory (use non-interlaced PNG to fix this)
 >]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
@@ -2925,8 +2903,6 @@ tex [69] [70
 
 ]
 Appendice A.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 10.
 ) [71] [72
 
 ] (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.gls [73
@@ -2961,40 +2937,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [75] [76
 
 ])
-
-LaTeX Warning: Empty bibliography on input line 21.
-
-
-LaTeX Warning: Empty bibliography on input line 21.
+Overfull \hbox (20.14775pt too wide) in paragraph at lines 140--140
+$\T1/cmtt/m/n/10 mastersdegree / workshops / technicalrequirementschecklists / 
+Technical %$
+ []
 
 [77
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
  (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 150.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                tesi
-(biblatex)                and rerun LaTeX afterwards.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 140.
 Package logreq Info: Writing requests to 'tesi.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
- 21836 strings out of 494045
- 341687 string characters out of 3148375
- 741283 words of memory out of 3000000
- 23878 multiletter control sequences out of 15000+200000
- 38870 words of font info for 156 fonts, out of 3000000 for 9000
+ 21847 strings out of 494045
+ 342178 string characters out of 3148375
+ 741447 words of memory out of 3000000
+ 23889 multiletter control sequences out of 15000+200000
+ 37080 words of font info for 150 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
- 61i,16n,122p,1296b,3116s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,16n,122p,1300b,3116s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Pro
 gram Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
@@ -3002,34 +2968,32 @@ X 2.9/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/cm-super/sfbi0700.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/cm-super/sfbi1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/cm-super/sfbx0700.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm
--super/sfbx0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sf
-bx0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1000.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/cm-super/sfcc1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
-uper/sfcc1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc
-1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0900.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/cm-super/sfsi1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
-er/sfsl1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsl12
-00.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti0700.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti0800.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/cm-super/sftt0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/cm-super/sftt0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/cm-super/sftt1000.pfb>
-Output written on C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/tes
-i.pdf (91 pages, 3368879 bytes).
+-super/sfbx0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sf
+bx1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/cm-super/sfcc1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/cm-super/sfcc1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
+uper/sfcc1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm
+0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0900.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/cm-super/sfsi1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/cm-super/sfsl1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
+er/sfsl1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti07
+00.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti0800.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/cm-super/sftt0800.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/cm-super/sftt0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/cm-super/sftt1000.pfb>
+Output written on tesi.pdf (91 pages, 3361309 bytes).
 PDF statistics:
- 2061 PDF objects out of 2073 (max. 8388607)
- 584 named destinations out of 1000 (max. 500000)
- 45212 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 2088 PDF objects out of 2487 (max. 8388607)
+ 590 named destinations out of 1000 (max. 500000)
+ 42652 words of extra memory for PDF output out of 42996 (max. 10000000)
 
