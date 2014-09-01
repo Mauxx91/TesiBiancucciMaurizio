@@ -930,18 +930,18 @@
 \section{Tecnologie e strumenti}
 Di seguito viene fornita una panoramica delle tecnologie e strumenti utilizzati per lo sviluppo di XML Editor\textsl{}.
 
-	\subsection{Qt\textregistered Framework}
-		Per lo sviluppo del tool è stato usato, come per Multiplatform File Analyzer, Qt\textregistered Framework versione 5.3.1.\\
+	\subsection{Qt\textsuperscript{\textregistered} Framework}
+		Per lo sviluppo del tool è stato usato, come per Multiplatform File Analyzer, Qt\textsuperscript{\textregistered} Framework versione 5.3.1.\\
 		In particolare è stata usata la libreria per costruire le interfacce grafiche, la libreria per accedere al file system e leggere/scrivere file e la libreria per effettuare il parsing dei file XML.
 	
-	\subsection{Qt\textregistered Creator}
-		Come IDE per lo sviluppo ci si è affidati a Qt\textregistered Creator 3.1.2. IDE semplice e performante che si integra perfettamente con il mondo Qt\textregistered, offrendo addirittura la consultazione veloce della documentazione direttamente nell'IDE.
+	\subsection{Qt\textsuperscript{\textregistered} Creator}
+		Come IDE per lo sviluppo ci si è affidati a Qt\textsuperscript{\textregistered} Creator 3.1.2. IDE semplice e performante che si integra perfettamente con il mondo Qt\textsuperscript{\textregistered}, offrendo addirittura la consultazione veloce della documentazione direttamente nell'IDE.
 	
 	\section{Ciclo di vita del software}
 		XML Editor è stato sviluppato seguendo un modello di ciclo di vita incrementale. È stato deciso di fornire due incrementi. Nel primo sono state inserite tutte le funzionalità per la visualizzazione dei file, la gestione dei file associati e le relazioni (inclusa la verifica). Nel secondo incremento sono state aggiunte alla base già consolidate le funzionalità di editing dei file. Ad ogni incremento è seguito un rilascio del software.
 
 \section{Progettazione}
-	Questo software a differenza di Multiplatform File Analyzer, è stato sviluppato secondo il pattern Model-View (todo bibliografica http://qt-project.org/doc/qt-5/model-view-programming.html) ideato dagli ingegneri di Qt\textregistered e sul quale si basa tutto il loro framework. La scelta è stata fatta ragionando sui risultati ottenuti durante lo sviluppo del precedente tool. In esso le esigenze erano diverse, ad esempio la possibilità di poterlo usare da riga comando forzava la scelta verso MVC e il maggior disaccoppiamento possibile dalle classi di Qt\textregistered. Essendo invece questo un editor visuale, che si sarebbe andato a basare proprio sul meccanismo di model-view per gestire ad esempio l'albero XML, si è deciso di sperimentare questo pattern per l'intero sistema. Per lo stagista, questa è la prima volta che si affaccia a questo pattern architetturale ed il suo utilizzo porterà sicuramente una maggior esperienza nella progettazione, permettendogli di valutare pro e contro rispetto al classico MVC.
+	Questo software a differenza di Multiplatform File Analyzer, è stato sviluppato secondo il pattern Model-View (todo bibliografica http://qt-project.org/doc/qt-5/model-view-programming.html) ideato dagli ingegneri di Qt\textsuperscript{\textregistered} e sul quale si basa tutto il loro framework. La scelta è stata fatta ragionando sui risultati ottenuti durante lo sviluppo del precedente tool. In esso le esigenze erano diverse, ad esempio la possibilità di poterlo usare da riga comando forzava la scelta verso MVC e il maggior disaccoppiamento possibile dalle classi di Qt\textsuperscript{\textregistered}. Essendo invece questo un editor visuale, che si sarebbe andato a basare proprio sul meccanismo di model-view per gestire ad esempio l'albero XML, si è deciso di sperimentare questo pattern per l'intero sistema. Per lo stagista, questa è la prima volta che si affaccia a questo pattern architetturale ed il suo utilizzo porterà sicuramente una maggior esperienza nella progettazione, permettendogli di valutare pro e contro rispetto al classico MVC.
 
 	La strutturazione generale di alto livello segue quindi il design presentato dal pattern model-view, puntando ad inserire nelle view di competenza le logiche di gestione che, nel mondo MVC, sarebbero appartenute al controller.
 	
@@ -958,18 +958,18 @@ Di seguito viene fornita una panoramica delle tecnologie e strumenti utilizzati 
 	
 	È stato scelto di utilizzare il Design Pattern \textit{Strategy} per rendere modificabile facilmente l'implementazione dell'algoritmo che effettua l'analisi, all'interno del pacchetto \texttt{core}.\\
 	
-	A differenza del precedente tool, qui il framework Qt\textregistered è stato usato a tutto tondo ovunque, senza circoscriverne l'uso.
+	A differenza del precedente tool, qui il framework Qt\textsuperscript{\textregistered} è stato usato a tutto tondo ovunque, senza circoscriverne l'uso.
 
 	\subsection{Diagrammi delle classi}
 		Vista la vastità del software è stato impossibile creare un diagramma che contenesse contemporaneamente tutte le classi e le relazioni. Sono stati quindi creati due diagramma che permettono di visualizzare due punti importanti dell'architettura. Tutti i diagrammi presenti rispettano il formalismo UML 2.0.
 		
 		\subsubsection{Data-Model-View diagram}
-			In questo diagramma è possibile visualizzare l'integrazione delle classi model-view di Qt\textregistered utilizzate per la visualizzazione dell'albero XML a partire dalla classe di dati. È inoltre presente la logica per il costante aggiornamento della visualizzazione al cambiamento dei dati.
+			In questo diagramma è possibile visualizzare l'integrazione delle classi model-view di Qt\textsuperscript{\textregistered} utilizzate per la visualizzazione dell'albero XML a partire dalla classe di dati. È inoltre presente la logica per il costante aggiornamento della visualizzazione al cambiamento dei dati.
 		
 		\begin{figure}[!h] 
 			\centering 
 			\includegraphics[width=0.98\columnwidth]{tool2/diagramma1.png} 
-			\caption{Diagramma dell'integrazione delle classi model-view di Qt\textregistered per la visualizzazione dell'albero XML.}
+			\caption{Diagramma dell'integrazione delle classi model-view di Qt\textsuperscript{\textregistered} per la visualizzazione dell'albero XML.}
 		\end{figure}
 		
 		\subsubsection{XML editing diagram}
@@ -993,7 +993,7 @@ Questo pacchetto rappresenta l'implementazione del Design Pattern \textit{Observ
 		La classe \texttt{Subject} rappresenta un soggetto che può essere osservato. Essa contiene il codice necessario per notificare tutti gli osservatori dell'avvenuto cambiamento. Mantiene inoltre una lista degli osservatori da notificare, i quali possono iscriversi se desiderano ricevere la notifica, oppure rimuoversi se non è più necessario ricevere aggiornamenti. Le classi che devono essere osservate deriveranno da questa.
 
 \subsection{Pacchetto data}
-	Il pacchetto \texttt{data} contiene tutte le classi che rappresentano i dati di business del programma. Come classi aggregazione di base sono state scelte quelle offerte dal framework Qt\textregistered per la loro maggiore integrazione e l'ampio set di funzionalità offerto.
+	Il pacchetto \texttt{data} contiene tutte le classi che rappresentano i dati di business del programma. Come classi aggregazione di base sono state scelte quelle offerte dal framework Qt\textsuperscript{\textregistered} per la loro maggiore integrazione e l'ampio set di funzionalità offerto.
 
 	\subsubsection{Classe AssociatedFiles}
 		La classe \texttt{AssociatedFiles} raccoglie tutti i nomi ed i percorsi dei file associati ad un main file. È sua la responsabilità di mantenere la persistenza di queste informazioni tramite la lettura e scrittura nel registro di sistema.
@@ -1014,10 +1014,10 @@ Questo pacchetto rappresenta l'implementazione del Design Pattern \textit{Observ
 		La classe \texttt{XmlRelationError} rappresenta un errore trovato durante l'analisi di consistenza delle relazioni sulla base dei prototipi conosciuti. Contiene tutte le informazioni dell'errore, le quali saranno mostrate all'utente. È qui presente la logica che compone la stringa descrittiva dell'errore.
 		
 	\subsubsection{Classe XmlTreeModel}
-		La classe \texttt{XmlTreeModel} rappresenta un modello osservabile da una classe view del framework Qt\textregistered. Estende le classi \texttt{QStandardItemModel} e \texttt{Subject}. Essa osserva tramite il pattern \textit{observer} la classe \texttt{XmlDocument} e trasforma il documento XML in un modello visualizzabile dalla classe \texttt{DraggableTreeView}. La classe è un'implementazione del design pattern \textit{Adapter}.
+		La classe \texttt{XmlTreeModel} rappresenta un modello osservabile da una classe view del framework Qt\textsuperscript{\textregistered}. Estende le classi \texttt{QStandardItemModel} e \texttt{Subject}. Essa osserva tramite il pattern \textit{observer} la classe \texttt{XmlDocument} e trasforma il documento XML in un modello visualizzabile dalla classe \texttt{DraggableTreeView}. La classe è un'implementazione del design pattern \textit{Adapter}.
 		
 	\subsubsection{Classe XmlTreeItem}
-		La classe \texttt{XmlTreeItem} estende un classico item del model Qt\textregistered (\texttt{QStandardItem}) inserendo i dati aggiuntivi necessari alla corretta visualizzazione.
+		La classe \texttt{XmlTreeItem} estende un classico item del model Qt\textsuperscript{\textregistered} (\texttt{QStandardItem}) inserendo i dati aggiuntivi necessari alla corretta visualizzazione.
 
 \subsection{Core}
 	Il pacchetto si occupa della realizzazione dell'analisi e verifica delle relazioni. Utilizza il Design Pattern \textit{Strategy} per l'organizzazione delle classe contenute.
@@ -1068,7 +1068,7 @@ Il pacchetto si occupa della gestione delle operazioni di editing dei file XML. 
 	Il pacchetto si occupa del display dell'interfaccia utente e della gestione della logica di controllo del software.
 	
 	\subsubsection{Classe MainWindowView}
-		La classe \texttt{MainWindowView} eredita e specializza la classe \texttt{QMainWindow} di Qt\textregistered. Essa è il cuore della logica del programma. Raccoglie e organizza i comandi utente di base, delegando l'esecuzione alle altri componenti del pacchetto.
+		La classe \texttt{MainWindowView} eredita e specializza la classe \texttt{QMainWindow} di Qt\textsuperscript{\textregistered}. Essa è il cuore della logica del programma. Raccoglie e organizza i comandi utente di base, delegando l'esecuzione alle altri componenti del pacchetto.
 		
 	\subsubsection{Classe DialogAddModifyRelation}
 		La classe \texttt{DialogAddModifyRelation} è una dialog creata allo scopo di permettere l'inserimento dei parametri che caratterizzano una relazione da parte dell'utente.
@@ -1116,7 +1116,7 @@ Il pacchetto si occupa della gestione delle operazioni di editing dei file XML. 
 		La classe \texttt{ViewXmlRelationErrorsTable} concretizza la base astratta \texttt{ViewXmlRelationErrorsBase} creando un'interfaccia tabellare per la visualizzazione dei risultati sul check delle relazioni.
 
 	\subsubsection{Classe DraggableTreeView}
-		La classe \texttt{DraggableTreeView} deriva dalla classe \texttt{QTreeView} del framework Qt\textregistered. Essa è quindi in grado di visualizzare la classe model \texttt{XmlTreeModel} nella quale abilita il drag \& drop per l'istanziazione automatica. È sua responsabilità l'invocazione dei command tramite l'invoker.
+		La classe \texttt{DraggableTreeView} deriva dalla classe \texttt{QTreeView} del framework Qt\textsuperscript{\textregistered}. Essa è quindi in grado di visualizzare la classe model \texttt{XmlTreeModel} nella quale abilita il drag \& drop per l'istanziazione automatica. È sua responsabilità l'invocazione dei command tramite l'invoker.
 	
 	
 	\subsubsection{Classe XmlViewBase}
@@ -1126,7 +1126,7 @@ Il pacchetto si occupa della gestione delle operazioni di editing dei file XML. 
 		La classe \texttt{XmlViewTree} concretizza la base astratta \texttt{XmlViewBase} creando un widget che mostra un file XML sotto forma di albero.
 
 \section{Codifica}
-Tutto il codice del tool è stato pubblicato sulla piattaforma GitHub\textregistered, accedibile tramite il seguente indirizzo: \url{https://github.com/Mauxx91/XML-Editor}. Tutto il codice è disponibile gratuitamente sotto licenza GNU GPL v3\footnote{Un approfondimento sulla licenza può essere trovato al seguente indirizzo: \url{http://www.gnu.org/copyleft/gpl.html}.}\\
+Tutto il codice del tool è stato pubblicato sulla piattaforma GitHub\textsuperscript{\textregistered}, accedibile tramite il seguente indirizzo: \url{https://github.com/Mauxx91/XML-Editor}. Tutto il codice è disponibile gratuitamente sotto licenza GNU GPL v3\footnote{Un approfondimento sulla licenza può essere trovato al seguente indirizzo: \url{http://www.gnu.org/copyleft/gpl.html}.}\\
 
 Tutto il codice è stato scritto in lingua inglese, compresi i commenti, dei quali si è cercato di scriverne il più possibile.
 La codifica ha seguito alcune convenzioni della famosa notazione Ungherese. Di seguito sono elencati i formalismi utilizzati nel codice:
@@ -1155,4 +1155,4 @@ todo -> include del codice o no?
 
 \section{Conclusioni}
 Tutti i requisiti sono stati soddisfatti come pianificato ma, il secondo incremento comprendente le funzionalità di editing è stata completata con 10 ore di ritardo sulla pianificazione iniziale. 
-la realizzazione di questo tool ha permesso allo studente di conoscere davvero approfonditamente il framework Qt\textregistered ed implementare un tool di buona utilità anche all'esterno dell'azienda. L'utilizzo del nuovo design pattern architetturale model-view si è rivelato davvero adatto allo sviluppo di sistemi di questa tipologia, dimostrandosi una valida alternativa a MVC.
+la realizzazione di questo tool ha permesso allo studente di conoscere davvero approfonditamente il framework Qt\textsuperscript{\textregistered} ed implementare un tool di buona utilità anche all'esterno dell'azienda. L'utilizzo del nuovo design pattern architetturale model-view si è rivelato davvero adatto allo sviluppo di sistemi di questa tipologia, dimostrandosi una valida alternativa a MVC.

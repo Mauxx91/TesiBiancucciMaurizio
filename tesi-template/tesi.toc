@@ -70,7 +70,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.9}UC 1.1.4 Visualizzazione dei risultati dell'analisi}{21}{subsection.4.2.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.10}UC 1.1.4.1 Visualizzazione di tutti i file presenti in almeno una cartella di piataforma}{22}{subsection.4.2.10}
+\contentsline {subsection}{\numberline {4.2.10}UC 1.1.4.1 Visualizzazione di tutti i file presenti in almeno una cartella di piattaforma}{22}{subsection.4.2.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.11}UC 1.1.4.2 Visualizzazione del percorso per il file visualizzato}{23}{subsection.4.2.11}
 \defcounter {refsection}{0}\relax 
@@ -92,9 +92,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Tecnologie e strumenti}{27}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Qt Framework}{27}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Qt\textsuperscript {\textregistered } Framework}{27}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Qt Creator}{28}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Qt\textsuperscript {\textregistered } Creator}{28}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.5}Ciclo di vita del software}{28}{section.4.5}
 \defcounter {refsection}{0}\relax 
@@ -122,7 +122,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.6.5}Pacchetto view}{31}{subsection.4.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Iterfaccia IView}{31}{section*.27}
+\contentsline {subsubsection}{Interfaccia IView}{31}{section*.27}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Classe ViewMainWindow}{31}{section*.28}
 \defcounter {refsection}{0}\relax 
@@ -248,9 +248,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.4}Tecnologie e strumenti}{56}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Qt Framework}{57}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.1}Qt\textsuperscript {\textregistered } Framework}{57}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Qt Creator}{57}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.2}Qt\textsuperscript {\textregistered } Creator}{57}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.5}Ciclo di vita del software}{57}{section.5.5}
 \defcounter {refsection}{0}\relax 
@@ -376,4 +376,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Glossario}{73}{section*.86}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{77}{appendix*.88}
+\contentsline {chapter}{Bibliografia}{75}{appendix*.88}
