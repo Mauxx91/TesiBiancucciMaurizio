@@ -24,25 +24,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Diagramma delle classi di Multiplatform File Analyzer\relax }}{29}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Screenshot di Multiplatform File Analyzer nel quale si pu\IeC {\`o} osservare la segnalazione di errori sui dati in input all'analisi\relax }}{32}{figure.caption.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Screenshot di Multiplatform File Analyzer nel quale si pu\IeC {\`o} osservare la presentazione dei risultati dell'analisi\relax }}{33}{figure.caption.33}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Use Case - UC 1: Caso d'uso principale\relax }}{34}{figure.caption.32}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Use Case - UC 1: Caso d'uso principale\relax }}{36}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Use Case - UC 1.1: Creazione di un nuovo file XML\relax }}{35}{figure.caption.33}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Use Case - UC 1.1: Creazione di un nuovo file XML\relax }}{37}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Use Case - UC 1.3 Editing del file XML correntemente aperto\relax }}{37}{figure.caption.34}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Use Case - UC 1.3 Editing del file XML correntemente aperto\relax }}{39}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Use Case - UC 1.3.4 Editing del nodo selezionato\relax }}{39}{figure.caption.35}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Use Case - UC 1.3.4 Editing del nodo selezionato\relax }}{41}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Use Case - UC 1.6 Editing dei file associati\relax }}{44}{figure.caption.36}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Use Case - UC 1.6 Editing dei file associati\relax }}{46}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Use Case - UC 1.7 Editing delle relazioni\relax }}{45}{figure.caption.37}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Use Case - UC 1.7 Editing delle relazioni\relax }}{47}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Use Case - UC 1.11 Visualizzazione del risultato del check sulle relazioni\relax }}{47}{figure.caption.38}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Use Case - UC 1.11 Visualizzazione del risultato del check sulle relazioni\relax }}{49}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagramma dell'integrazione delle classi model-view di Qt\textsuperscript {\textregistered } per la visualizzazione dell'albero XML.\relax }}{58}{figure.caption.40}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagramma dell'integrazione delle classi model-view di Qt\textsuperscript {\textregistered } per la visualizzazione dell'albero XML.\relax }}{60}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagramma delle classi usate per l'editing dei file XML.\relax }}{59}{figure.caption.42}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagramma delle classi usate per l'editing dei file XML.\relax }}{61}{figure.caption.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog di edit di un nodo dell'albero XML\relax }}{67}{figure.caption.87}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la visualizzazione dei file XML come alberi\relax }}{68}{figure.caption.88}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che chiede all'utente come procedere dopo il drag \& drop di un file da Windows\relax }}{69}{figure.caption.89}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che permette l'editing dei file associati\relax }}{69}{figure.caption.90}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che permette l'editing delle relazioni\relax }}{70}{figure.caption.91}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che permette la visualizzazione dell'esito del risultato del check delle relazioni\relax }}{70}{figure.caption.92}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

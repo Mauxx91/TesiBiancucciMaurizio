@@ -138,248 +138,252 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.7}Codifica}{31}{section.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Conclusioni}{32}{section.4.8}
+\contentsline {section}{\numberline {4.8}Uso pratico}{32}{section.4.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}XML Editor}{33}{chapter.5}
+\contentsline {section}{\numberline {4.9}Conclusioni}{33}{section.4.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Introduzione}{33}{section.5.1}
+\contentsline {chapter}{\numberline {5}XML Editor}{35}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Premessa}{33}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.1}Introduzione}{35}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Lo scopo}{33}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.1}Premessa}{35}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Casi d'uso}{33}{section.5.2}
+\contentsline {subsection}{\numberline {5.1.2}Lo scopo}{35}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}UC 1: Caso d'uso principale}{34}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.2}Casi d'uso}{35}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}UC 1.1: Creazione di un nuovo file XML}{35}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.1}UC 1: Caso d'uso principale}{36}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}UC 1.1.1: Inserimento del percorso dove memorizzare il nuovo XML}{36}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.2}UC 1.1: Creazione di un nuovo file XML}{37}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}UC 1.1.2: Inserimento del nome del file del nuovo XML}{36}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.3}UC 1.1.1: Inserimento del percorso dove memorizzare il nuovo XML}{38}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.5}UC 1.2: Apertura di un file XML preesistente}{36}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.4}UC 1.1.2: Inserimento del nome del file del nuovo XML}{38}{subsection.5.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.6}UC 1.3 Editing del file XML correntemente aperto}{36}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.5}UC 1.2: Apertura di un file XML preesistente}{38}{subsection.5.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.7}UC 1.3.1 Visualizzazione del nodo riferito dal nodo selezionato}{38}{subsection.5.2.7}
+\contentsline {subsection}{\numberline {5.2.6}UC 1.3 Editing del file XML correntemente aperto}{38}{subsection.5.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.8}UC 1.3.2 Visualizzazione degli errori occorsi durante la ricerca del nodo riferito}{38}{subsection.5.2.8}
+\contentsline {subsection}{\numberline {5.2.7}UC 1.3.1 Visualizzazione del nodo riferito dal nodo selezionato}{40}{subsection.5.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.9}UC 1.3.3 Aggiunta di un nuovo nodo figlio al nodo selezionato}{39}{subsection.5.2.9}
+\contentsline {subsection}{\numberline {5.2.8}UC 1.3.2 Visualizzazione degli errori occorsi durante la ricerca del nodo riferito}{40}{subsection.5.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.10}UC 1.3.4 Editing del nodo selezionato}{39}{subsection.5.2.10}
+\contentsline {subsection}{\numberline {5.2.9}UC 1.3.3 Aggiunta di un nuovo nodo figlio al nodo selezionato}{41}{subsection.5.2.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.11}UC 1.3.4.1 Modifica del valore dell'elemento}{40}{subsection.5.2.11}
+\contentsline {subsection}{\numberline {5.2.10}UC 1.3.4 Editing del nodo selezionato}{41}{subsection.5.2.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.12}UC 1.3.4.2 Inserimento di un nuovo attributo}{40}{subsection.5.2.12}
+\contentsline {subsection}{\numberline {5.2.11}UC 1.3.4.1 Modifica del valore dell'elemento}{42}{subsection.5.2.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.13}UC 1.3.4.3 Modifica di un attributo esistente}{40}{subsection.5.2.13}
+\contentsline {subsection}{\numberline {5.2.12}UC 1.3.4.2 Inserimento di un nuovo attributo}{42}{subsection.5.2.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.14}UC 1.3.4.4 Rimozione di un attributo esistente}{40}{subsection.5.2.14}
+\contentsline {subsection}{\numberline {5.2.13}UC 1.3.4.3 Modifica di un attributo esistente}{42}{subsection.5.2.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.15}UC 1.3.5 Duplicazione del nodo selezionato}{41}{subsection.5.2.15}
+\contentsline {subsection}{\numberline {5.2.14}UC 1.3.4.4 Rimozione di un attributo esistente}{42}{subsection.5.2.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.16}UC 1.3.6 Copia del nodo selezionato}{41}{subsection.5.2.16}
+\contentsline {subsection}{\numberline {5.2.15}UC 1.3.5 Duplicazione del nodo selezionato}{43}{subsection.5.2.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.17}UC 1.3.7 Incollare il nodo precedentemente copiato}{41}{subsection.5.2.17}
+\contentsline {subsection}{\numberline {5.2.16}UC 1.3.6 Copia del nodo selezionato}{43}{subsection.5.2.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.18}UC 1.3.8 Rimozione del nodo selezionato}{41}{subsection.5.2.18}
+\contentsline {subsection}{\numberline {5.2.17}UC 1.3.7 Incollare il nodo precedentemente copiato}{43}{subsection.5.2.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.19}UC 1.3.9 Rimozione di tutti i nodi figli del nodo selezionato}{42}{subsection.5.2.19}
+\contentsline {subsection}{\numberline {5.2.18}UC 1.3.8 Rimozione del nodo selezionato}{43}{subsection.5.2.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.20}UC 1.3.10 Istanziazione di una nuova relazione}{42}{subsection.5.2.20}
+\contentsline {subsection}{\numberline {5.2.19}UC 1.3.9 Rimozione di tutti i nodi figli del nodo selezionato}{44}{subsection.5.2.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.21}UC 1.3.11 Visualizzazione degli errori occorsi durante l'istanziazione di una nuova relazione}{42}{subsection.5.2.21}
+\contentsline {subsection}{\numberline {5.2.20}UC 1.3.10 Istanziazione di una nuova relazione}{44}{subsection.5.2.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.22}UC 1.3.12 Annullamento dell'ultima modifica eseguita}{43}{subsection.5.2.22}
+\contentsline {subsection}{\numberline {5.2.21}UC 1.3.11 Visualizzazione degli errori occorsi durante l'istanziazione di una nuova relazione}{44}{subsection.5.2.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.23}UC 1.3.13 Ripristino dell'ultima modifica annullata}{43}{subsection.5.2.23}
+\contentsline {subsection}{\numberline {5.2.22}UC 1.3.12 Annullamento dell'ultima modifica eseguita}{45}{subsection.5.2.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.24}UC 1.4 Salvare le modifiche di un file modificato}{43}{subsection.5.2.24}
+\contentsline {subsection}{\numberline {5.2.23}UC 1.3.13 Ripristino dell'ultima modifica annullata}{45}{subsection.5.2.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.25}UC 1.5 Editing del filtro sul nome dell'attributo da visualizzare}{43}{subsection.5.2.25}
+\contentsline {subsection}{\numberline {5.2.24}UC 1.4 Salvare le modifiche di un file modificato}{45}{subsection.5.2.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.26}UC 1.6 Editing dei file associati}{44}{subsection.5.2.26}
+\contentsline {subsection}{\numberline {5.2.25}UC 1.5 Editing del filtro sul nome dell'attributo da visualizzare}{45}{subsection.5.2.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.27}UC 1.6.1 Aggiunta di un nuovo file associato}{44}{subsection.5.2.27}
+\contentsline {subsection}{\numberline {5.2.26}UC 1.6 Editing dei file associati}{46}{subsection.5.2.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.28}UC 1.6.2 Rimozione di un file precedentemente associato}{44}{subsection.5.2.28}
+\contentsline {subsection}{\numberline {5.2.27}UC 1.6.1 Aggiunta di un nuovo file associato}{46}{subsection.5.2.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.29}UC 1.7 Editing delle relazioni}{45}{subsection.5.2.29}
+\contentsline {subsection}{\numberline {5.2.28}UC 1.6.2 Rimozione di un file precedentemente associato}{46}{subsection.5.2.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.30}UC 1.7.1 Inserimento di una nuova relazione}{45}{subsection.5.2.30}
+\contentsline {subsection}{\numberline {5.2.29}UC 1.7 Editing delle relazioni}{47}{subsection.5.2.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.31}UC 1.7.2 Modifica di una relazione precedentemente inserita}{46}{subsection.5.2.31}
+\contentsline {subsection}{\numberline {5.2.30}UC 1.7.1 Inserimento di una nuova relazione}{47}{subsection.5.2.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.32}UC 1.7.3 Rimozione di una relazione precedentemente inserita}{46}{subsection.5.2.32}
+\contentsline {subsection}{\numberline {5.2.31}UC 1.7.2 Modifica di una relazione precedentemente inserita}{48}{subsection.5.2.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.33}UC 1.8 Importazione delle relazioni da file}{46}{subsection.5.2.33}
+\contentsline {subsection}{\numberline {5.2.32}UC 1.7.3 Rimozione di una relazione precedentemente inserita}{48}{subsection.5.2.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.34}UC 1.9 Esportazione delle relazioni su file}{46}{subsection.5.2.34}
+\contentsline {subsection}{\numberline {5.2.33}UC 1.8 Importazione delle relazioni da file}{48}{subsection.5.2.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.35}UC 1.10 Avvio del check sulle relazioni}{47}{subsection.5.2.35}
+\contentsline {subsection}{\numberline {5.2.34}UC 1.9 Esportazione delle relazioni su file}{48}{subsection.5.2.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.36}UC 1.11 Visualizzazione del risultato del check sulle relazioni}{47}{subsection.5.2.36}
+\contentsline {subsection}{\numberline {5.2.35}UC 1.10 Avvio del check sulle relazioni}{49}{subsection.5.2.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.37}UC 1.11.1 Visualizzazione degli errori}{48}{subsection.5.2.37}
+\contentsline {subsection}{\numberline {5.2.36}UC 1.11 Visualizzazione del risultato del check sulle relazioni}{49}{subsection.5.2.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.38}UC 1.11.2 Selezione dei filtri sulle categorie di errori da visualizzare}{48}{subsection.5.2.38}
+\contentsline {subsection}{\numberline {5.2.37}UC 1.11.1 Visualizzazione degli errori}{50}{subsection.5.2.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.39}UC 1.11.3 Visualizzazione dell'elemento causa dell'errore nell'albero XML}{48}{subsection.5.2.39}
+\contentsline {subsection}{\numberline {5.2.38}UC 1.11.2 Selezione dei filtri sulle categorie di errori da visualizzare}{50}{subsection.5.2.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.40}UC 1.12 Visualizzazione dell'about del programma}{48}{subsection.5.2.40}
+\contentsline {subsection}{\numberline {5.2.39}UC 1.11.3 Visualizzazione dell'elemento causa dell'errore nell'albero XML}{50}{subsection.5.2.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.41}UC 1.13 Visualizzazione degli errori occorsi durante l'apertura del file}{49}{subsection.5.2.41}
+\contentsline {subsection}{\numberline {5.2.40}UC 1.12 Visualizzazione dell'about del programma}{50}{subsection.5.2.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.42}UC 1.14 Visualizzazione degli errori occorsi durante il salvataggio del file}{49}{subsection.5.2.42}
+\contentsline {subsection}{\numberline {5.2.41}UC 1.13 Visualizzazione degli errori occorsi durante l'apertura del file}{51}{subsection.5.2.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.43}UC 1.15 Visualizzazione degli errori occorsi durante l'importazione}{49}{subsection.5.2.43}
+\contentsline {subsection}{\numberline {5.2.42}UC 1.14 Visualizzazione degli errori occorsi durante il salvataggio del file}{51}{subsection.5.2.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.44}UC 1.16 Visualizzazione degli errori occorsi durante l'esportazione}{50}{subsection.5.2.44}
+\contentsline {subsection}{\numberline {5.2.43}UC 1.15 Visualizzazione degli errori occorsi durante l'importazione}{51}{subsection.5.2.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Tracciamento dei requisiti}{50}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.44}UC 1.16 Visualizzazione degli errori occorsi durante l'esportazione}{52}{subsection.5.2.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Requisiti funzionali}{51}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.3}Tracciamento dei requisiti}{52}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Requisiti di qualit\IeC {\`a}}{56}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.1}Requisiti funzionali}{53}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Requisiti di vincolo}{56}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.2}Requisiti di qualit\IeC {\`a}}{58}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Tecnologie e strumenti}{56}{section.5.4}
+\contentsline {subsection}{\numberline {5.3.3}Requisiti di vincolo}{58}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Qt\textsuperscript {\textregistered } Framework}{57}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.4}Tecnologie e strumenti}{58}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Qt\textsuperscript {\textregistered } Creator}{57}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.1}Qt\textsuperscript {\textregistered } Framework}{59}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Ciclo di vita del software}{57}{section.5.5}
+\contentsline {subsection}{\numberline {5.4.2}Qt\textsuperscript {\textregistered } Creator}{59}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Progettazione}{57}{section.5.6}
+\contentsline {section}{\numberline {5.5}Ciclo di vita del software}{59}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.1}Diagrammi delle classi}{58}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.6}Progettazione}{59}{section.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Data-Model-View diagram}{58}{section*.39}
+\contentsline {subsection}{\numberline {5.6.1}Diagrammi delle classi}{60}{subsection.5.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{XML editing diagram}{58}{section*.41}
+\contentsline {subsubsection}{Data-Model-View diagram}{60}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.2}Pacchetto observer}{60}{subsection.5.6.2}
+\contentsline {subsubsection}{XML editing diagram}{60}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Interfaccia IObserver}{60}{section*.43}
+\contentsline {subsection}{\numberline {5.6.2}Pacchetto observer}{62}{subsection.5.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe Subject}{60}{section*.44}
+\contentsline {subsubsection}{Interfaccia IObserver}{62}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.3}Pacchetto data}{60}{subsection.5.6.3}
+\contentsline {subsubsection}{Classe Subject}{62}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe AssociatedFiles}{60}{section*.45}
+\contentsline {subsection}{\numberline {5.6.3}Pacchetto data}{62}{subsection.5.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe AttributeNameTagCollapse}{60}{section*.46}
+\contentsline {subsubsection}{Classe AssociatedFiles}{62}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlDocument}{60}{section*.47}
+\contentsline {subsubsection}{Classe AttributeNameTagCollapse}{62}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlRelation}{60}{section*.48}
+\contentsline {subsubsection}{Classe XmlDocument}{62}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlRelationCollection}{60}{section*.49}
+\contentsline {subsubsection}{Classe XmlRelation}{62}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlRelationError}{61}{section*.50}
+\contentsline {subsubsection}{Classe XmlRelationCollection}{62}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlTreeModel}{61}{section*.51}
+\contentsline {subsubsection}{Classe XmlRelationError}{63}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlTreeItem}{61}{section*.52}
+\contentsline {subsubsection}{Classe XmlTreeModel}{63}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.4}Core}{61}{subsection.5.6.4}
+\contentsline {subsubsection}{Classe XmlTreeItem}{63}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlRelationCheckerCoreBase}{61}{section*.53}
+\contentsline {subsection}{\numberline {5.6.4}Core}{63}{subsection.5.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlRelationCheckerCoreImpl}{61}{section*.54}
+\contentsline {subsubsection}{Classe XmlRelationCheckerCoreBase}{63}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.5}Pacchetto command}{61}{subsection.5.6.5}
+\contentsline {subsubsection}{Classe XmlRelationCheckerCoreImpl}{63}{section*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandBase}{61}{section*.55}
+\contentsline {subsection}{\numberline {5.6.5}Pacchetto command}{63}{subsection.5.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandInvoker}{61}{section*.56}
+\contentsline {subsubsection}{Classe XmlEditCommandBase}{63}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandAggregator}{61}{section*.57}
+\contentsline {subsubsection}{Classe XmlEditCommandInvoker}{63}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandAddAttribute}{62}{section*.58}
+\contentsline {subsubsection}{Classe XmlEditCommandAggregator}{63}{section*.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandAddChildNode}{62}{section*.59}
+\contentsline {subsubsection}{Classe XmlEditCommandAddAttribute}{64}{section*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandAddExistentChildNode}{62}{section*.60}
+\contentsline {subsubsection}{Classe XmlEditCommandAddChildNode}{64}{section*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandDeleteAllChildNode}{62}{section*.61}
+\contentsline {subsubsection}{Classe XmlEditCommandAddExistentChildNode}{64}{section*.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandDeleteNode}{62}{section*.62}
+\contentsline {subsubsection}{Classe XmlEditCommandDeleteAllChildNode}{64}{section*.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandEditAttribute}{62}{section*.63}
+\contentsline {subsubsection}{Classe XmlEditCommandDeleteNode}{64}{section*.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandRemoveAttribute}{62}{section*.64}
+\contentsline {subsubsection}{Classe XmlEditCommandEditAttribute}{64}{section*.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlEditCommandSetNodeValue}{62}{section*.65}
+\contentsline {subsubsection}{Classe XmlEditCommandRemoveAttribute}{64}{section*.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.6}Pacchetto view}{63}{subsection.5.6.6}
+\contentsline {subsubsection}{Classe XmlEditCommandSetNodeValue}{64}{section*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe MainWindowView}{63}{section*.66}
+\contentsline {subsection}{\numberline {5.6.6}Pacchetto view}{65}{subsection.5.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogAddModifyRelation}{63}{section*.67}
+\contentsline {subsubsection}{Classe MainWindowView}{65}{section*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogAssociatedFilesBase}{63}{section*.68}
+\contentsline {subsubsection}{Classe DialogAddModifyRelation}{65}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogAssociatedFilesForm}{63}{section*.69}
+\contentsline {subsubsection}{Classe DialogAssociatedFilesBase}{65}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogEditAttributeNameTagCollapseBase}{63}{section*.70}
+\contentsline {subsubsection}{Classe DialogAssociatedFilesForm}{65}{section*.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogEditAttributeNameTagCollapse}{63}{section*.71}
+\contentsline {subsubsection}{Classe DialogEditAttributeNameTagCollapseBase}{65}{section*.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogEditNodeBase}{63}{section*.72}
+\contentsline {subsubsection}{Classe DialogEditAttributeNameTagCollapse}{65}{section*.73}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogEditNodeTable}{63}{section*.73}
+\contentsline {subsubsection}{Classe DialogEditNodeBase}{65}{section*.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogInputFileNameBase}{63}{section*.74}
+\contentsline {subsubsection}{Classe DialogEditNodeTable}{65}{section*.75}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogInputFileNameForm}{63}{section*.75}
+\contentsline {subsubsection}{Classe DialogInputFileNameBase}{65}{section*.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogInputStringBase}{64}{section*.76}
+\contentsline {subsubsection}{Classe DialogInputFileNameForm}{65}{section*.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogInputStringForm}{64}{section*.77}
+\contentsline {subsubsection}{Classe DialogInputStringBase}{66}{section*.78}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogXmlRelationManagementBase}{64}{section*.78}
+\contentsline {subsubsection}{Classe DialogInputStringForm}{66}{section*.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DialogXmlRelationManagementTable}{64}{section*.79}
+\contentsline {subsubsection}{Classe DialogXmlRelationManagementBase}{66}{section*.80}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ViewXmlRelationErrorsBase}{64}{section*.80}
+\contentsline {subsubsection}{Classe DialogXmlRelationManagementTable}{66}{section*.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe ViewXmlRelationErrorsTable}{64}{section*.81}
+\contentsline {subsubsection}{Classe ViewXmlRelationErrorsBase}{66}{section*.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe DraggableTreeView}{64}{section*.82}
+\contentsline {subsubsection}{Classe ViewXmlRelationErrorsTable}{66}{section*.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlViewBase}{64}{section*.83}
+\contentsline {subsubsection}{Classe DraggableTreeView}{66}{section*.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classe XmlViewTree}{64}{section*.84}
+\contentsline {subsubsection}{Classe XmlViewBase}{66}{section*.85}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Codifica}{64}{section.5.7}
+\contentsline {subsubsection}{Classe XmlViewTree}{66}{section*.86}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.8}Conclusioni}{65}{section.5.8}
+\contentsline {section}{\numberline {5.7}Codifica}{66}{section.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Funzionalit\IeC {\`a} di disegno di elementi grafici 3D a scopo di debug}{67}{chapter.6}
+\contentsline {section}{\numberline {5.8}Uso pratico}{67}{section.5.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Stampa dei livelli di LOD di moto e piloti}{67}{section.6.1}
+\contentsline {section}{\numberline {5.9}Conclusioni}{70}{section.5.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Rifattorizzazione della gerarchia di stampa}{69}{section.6.2}
+\contentsline {chapter}{\numberline {6}Funzionalit\IeC {\`a} di disegno di elementi grafici 3D a scopo di debug}{71}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Stampa del nome degli spazi di riferimento}{70}{section.6.3}
+\contentsline {section}{\numberline {6.1}Stampa dei livelli di LOD di moto e piloti}{71}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{73}{chapter.7}
+\contentsline {section}{\numberline {6.2}Rifattorizzazione della gerarchia di stampa}{73}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{73}{section.7.1}
+\contentsline {section}{\numberline {6.3}Stampa del nome degli spazi di riferimento}{74}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{73}{section.7.2}
+\contentsline {chapter}{\numberline {7}Conclusioni}{77}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{73}{section.7.3}
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{77}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Valutazione personale}{73}{section.7.4}
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{77}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{75}{appendix.A}
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{77}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossario}{77}{section*.85}
+\contentsline {section}{\numberline {7.4}Valutazione personale}{77}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{79}{appendix*.87}
+\contentsline {chapter}{\numberline {A}Appendice A}{79}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Glossario}{81}{section*.93}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{83}{appendix*.95}
