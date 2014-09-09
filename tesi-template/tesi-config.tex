@@ -120,9 +120,9 @@
 %**************************************************************
 \lstset{
     language=[Visual]C++,
-    keywordstyle=\fontfamily{Inconsolata}\color{KeywordColor}, %\bfseries,
-    basicstyle=\fontfamily{Inconsolata}\small,
-    commentstyle=\fontfamily{Inconsolata}\color{Green},
+    keywordstyle=\ttfamily\color{KeywordColor}, %\bfseries,
+    basicstyle=\ttfamily\small,
+    commentstyle=\ttfamily\color{Green},
     numbers=none, %left,%
     numberstyle=\scriptsize, %\tiny
     stepnumber=5,
@@ -130,15 +130,17 @@
     showstringspaces=false,
     breaklines=true,
     frameround=ftff,
-    frame=single
+    frame=single,
+    tabsize = 4,
+    literate={\ \ }{{\ }}1
 } 
 
 \lstdefinestyle{maurizio-code}{
 	language =[Visual]C++,
-	commentstyle = \fontfamily{Inconsolata}\color{CommentColor},
-	keywordstyle={[2]\fontfamily{Inconsolata}\color{MacroColor}},
-	keywordstyle={[3]\fontfamily{Inconsolata}\color{TypeColor}},
-	keywordstyle={[4]\fontfamily{Inconsolata}\color{StaticColor}},
+	commentstyle = \ttfamily\color{CommentColor},
+	keywordstyle={[2]\ttfamily\color{MacroColor}},
+	keywordstyle={[3]\ttfamily\color{TypeColor}},
+	keywordstyle={[4]\ttfamily\color{StaticColor}},
 	morekeywords={[2]
 		META\_BEGIN\_CLASS,
 		META\_BEGIN\_PROPERTIES,

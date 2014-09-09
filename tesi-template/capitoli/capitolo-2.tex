@@ -189,46 +189,46 @@ L'utilizzo dei metadati all'interno del codice avviene tramite un set di macro d
 \newpage
 
 \begin{lstlisting}[style=maurizio-code]
-	class Dog
-	{
-	public:
-		ENABLE_METADATA;
+class Dog
+{
+public:
+	ENABLE_METADATA;
 
-		// methods
-		void Walk();
-		void Jump();
+	// methods
+	void Walk();
+	void Jump();
 
-		// events
-		TypedEvent<> OnFall;
-		TypedEvent< GString > OnDie;
+	// events
+	TypedEvent<> OnFall;
+	TypedEvent< GString > OnDie;
 
-	private:
-		int m_age;
-		float m_weight;
-	};
+private:
+	int m_age;
+	float m_weight;
+};
 \end{lstlisting}
 
 Di seguito è presente il codice per eseguire l'esposizione di tutta la classe nei metadati.
 
 \begin{lstlisting}[style=maurizio-code]
-	META_BEGIN_CLASS( Dog )
-	
-	META_BEGIN_PROPERTIES
-	META_NAMED_PROPERTY("Age", m_age),
-	META_NAMED_PROPERTY("Weight", m_weight)
-	META_END_PROPERTIES
-	
-	META_BEGIN_ACTIONS
-	META_ACTION( Walk ),
-	META_ACTION( Jump ),
-	META_END_ACTIONS
-	
-	META_BEGIN_EVENTS
-	META_EVENT( OnFall ),
-	META_EVENT( OnDie ),
-	META_END_EVENTS
-	
-	META_END_CLASS
+META_BEGIN_CLASS( Dog )
+
+META_BEGIN_PROPERTIES
+META_NAMED_PROPERTY("Age", m_age),
+META_NAMED_PROPERTY("Weight", m_weight)
+META_END_PROPERTIES
+
+META_BEGIN_ACTIONS
+META_ACTION( Walk ),
+META_ACTION( Jump ),
+META_END_ACTIONS
+
+META_BEGIN_EVENTS
+META_EVENT( OnFall ),
+META_EVENT( OnDie ),
+META_END_EVENTS
+
+META_END_CLASS
 \end{lstlisting}
 
 \section{Norme di codifica}
