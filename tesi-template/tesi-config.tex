@@ -119,12 +119,10 @@
 % Impostazioni di listings
 %**************************************************************
 \lstset{
-    language=[LaTeX]Tex,%C++,
-    keywordstyle=\color{KeywordColor}, %\bfseries,
-    basicstyle=\small\ttfamily,
-    %identifierstyle=\color{NavyBlue},
-    commentstyle=\color{Green}\ttfamily,
-    stringstyle=\rmfamily,
+    language=[Visual]C++,
+    keywordstyle=\fontfamily{Inconsolata}\color{KeywordColor}, %\bfseries,
+    basicstyle=\fontfamily{Inconsolata}\small,
+    commentstyle=\fontfamily{Inconsolata}\color{Green},
     numbers=none, %left,%
     numberstyle=\scriptsize, %\tiny
     stepnumber=5,
@@ -136,10 +134,11 @@
 } 
 
 \lstdefinestyle{maurizio-code}{
-	language = C++,
-	commentstyle = \ttfamily\color{CommentColor},
-	keywordstyle={[2]\ttfamily\color{MacroColor}},
-	keywordstyle={[3]\ttfamily\color{TypeColor}},
+	language =[Visual]C++,
+	commentstyle = \fontfamily{Inconsolata}\color{CommentColor},
+	keywordstyle={[2]\fontfamily{Inconsolata}\color{MacroColor}},
+	keywordstyle={[3]\fontfamily{Inconsolata}\color{TypeColor}},
+	keywordstyle={[4]\fontfamily{Inconsolata}\color{StaticColor}},
 	morekeywords={[2]
 		META\_BEGIN\_CLASS,
 		META\_BEGIN\_PROPERTIES,
@@ -159,9 +158,27 @@
 		int,
 		float,
 		TypedEvent,
-		GString
+		GString,
+		CCamera,
+		GVector3,
+		GUInt,
+		GInt,
+		LodSelectionModule,
+		CWorld,
+		GraphicComponentInfo,
+		FixedString256,
+		GVector2,
+		DebugTextDrawer,
+		GemScreenLogger,
+		DebugTextDrawer,
+		DebugTextDrawer3DPoint,
+		Config
 	},
-	stringstyle=\ttfamily\color{StringColor}
+	morekeywords={[4]
+		Create,
+		GetInstance
+	},
+	stringstyle=\fontfamily{Inconsolata}\color{StringColor}
 }
 
 %**************************************************************
@@ -174,6 +191,7 @@
 \definecolor{MacroColor}{RGB}{189,99,197}
 \definecolor{StringColor}{RGB}{214,157,133}
 \definecolor{CommentColor}{RGB}{96,139,78}
+\definecolor{StaticColor}{RGB}{189,99,197}
 
 %**************************************************************
 % Altro

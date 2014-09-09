@@ -7,3 +7,145 @@
 \chapter{Funzionalità di disegno di elementi grafici 3D a scopo di debug}
 \label{cap:game}
 %**************************************************************
+
+Lo studente è stato chiamato ad effettuare un refactor ed implementare nuove funzionalità di disegno di oggetti 3D in game a scopo di debug. Le modifiche sono state apportate al gioco MotoGP 14, delle quali alcune sono state portate a MXGP HD.\\
+
+Si è reso necessario dapprima un'analisi del codice allo scopo di individuare i flussi di interesse e localizzare le vecchie implementazioni su cui effettuare un refactor e sfruttare come base per l'implementazione delle nuove.\\
+
+\section{Stampa dei livelli di LOD di moto e piloti}
+
+In gioco esistono dei moduli grafici che implementano logiche di gestione degli actor di gioco. In particolare esistono due moduli che gestiscono il calcolo dei livelli di \gloss{LOD} per le moto ed i piloti.\\
+
+Esistono principalmente due modi per calcolare i livelli di LOD degli oggetti in una scena 3D. Il primo e più semplice è quello che calcola semplicemente la distanza fra la camera e l'oggetto 3D e scala i livelli secondo una generica funzione (la quale può cambiare a seconda delle tipologie di oggetti o particolari esigenze). Il secondo metodo invece consiste nel calcolare la quantità di pixel occupati dall'oggetto in relazione alla finestra di disegno. Essendo l'oggetto 3D potenzialmente formato da migliaia di poligoni il calcolo della superficie occupata richiederebbe più tempo di quello guadagnato scalando i livelli di dettaglio, allora si usa solitamente un'approssimazione, ad esempio calcolando la superficie della bounding sphere.\\
+
+In MotoGP 14 i moduli che gestiscono i livelli di LOD per moto e piloti sono due istanze della classe \texttt{LodSelectionModule}. Essa fornisce, attivabile da beholder, la funzionalità di stampa dei livelli di LOD correnti di moto e piloti visibili al momento in pista. Il problema è che questo modulo stampava in posizioni errate dello schermo le scritte. L'obbiettivo era quello di avere la stampa dell'informazione affiancata al pilota allo scopo di rendere più agevole e veloce il debug e il tuning per ogni piattaforma dell'algoritmo di scelta del LOD.\\
+
+//todo inserire screen vecchia stampa dei lod
+
+Inizialmente è stata quindi creata una funzione che trasformasse il punto 3D indicante la posizione dello scene actor, in un punto 2D relativo alle coordinate della finestra di gioco.\\
+
+\begin{lstlisting}[style=maurizio-code]
+void GetScreenPosition(const CCamera* poCamera, GVector3& o_position) const
+{
+	//todo ricreare la mia versione di questa vergognosa merda di funzione
+	//ricordo che la trasformazione projection mappa lo schermo tra -1 e 1
+	
+	GVector3 cameraPos = poCamera->GetWorldMatrix().GetTranslation();
+	
+	static GUInt halfHeight = (poCamera->GetViewport().m_uiHeight)/2;
+	static GUInt halfWidth = (poCamera->GetViewport().m_uiWidth) /2;
+	
+	GVector3 pPosition = m_pBehavioutInput->GetMatrix().GetTranslation();
+	
+	pPosition.TransformPoint(poCamera->GetViewMatrix());
+	pPosition.TransformPoint(poCamera->GetProjMatrix());
+	pPosition.x = (halfWidth * (pPosition.x) + halfWidth);
+	pPosition.y = halfHeight* (-1*pPosition.y) + halfHeight;
+	
+	GInt yOffset = 0;
+	if (m_pGraphicComponent->GetClassId() == GCLib::g_uiCLSID_GRAPHIC_COMPONENT_VEHICLE )
+	{
+		yOffset = -150;
+	}
+	
+	o_position = pPosition;
+	o_position.y += yOffset;
+}
+\end{lstlisting}
+
+La funzione \texttt{GetScreenPosition} procede a calcolare le stesse trasformazioni che esegue la GPU per trasformare ogni pixel dell'oggetto nella scena 3D in un'immagine 2D. (todo link al libro delle directx 11 capitolo che spiega queste cose, todo biblio).\\
+
+L'ultima trasformazione ottiene le coordinate x e y dello schermo nello spazio -1, 1. Si procede quindi a trasformarle in coordinate relative allo spazio della finestra di gioco (ad esempio 1366x768 px).\\
+
+Analizzando più approfonditamente il codice si è successivamente scoperto la presenza di un metodo della classe \texttt{CCamera} che faceva esattamente la stessa cosa di questo. Si è quindi provveduto a scartare questa implementazione (seppur corretta) ed usare quella già presente allo scopo di evitare inutili duplicazioni di codice.\\
+
+Di seguito è presente la funzione che lancia il disegno del LOD attivo per ogni oggetto gestito dall'istanza della classe.\\
+
+\begin{lstlisting}[style=maurizio-code]
+void LodSelectionModule::PrintLodDebugInformation(CWorld* iWorld, GraphicComponentInfo* i_pComponentInfo )
+{
+	for (GUInt camIdx = 0; camIdx < m_pWorld->GetNumberOfCameras(); ++camIdx)
+	{
+		FixedString256 text;
+		i_pComponentInfo->LodToString(camIdx, text);
+		
+		GVector2 screenPosition;
+		iWorld->GetCurrentCamera(camIdx)->ProjectPoint(i_pComponentInfo->m_pBehavioutInput->GetMatrix().GetTranslation(), screenPosition);
+		
+		DebugTextDrawer::GetInstance()->AppendLog(text.c_str(), screenPosition.x, screenPosition.y);
+	}
+}
+\end{lstlisting}
+
+Come si può facilmente capire dal codice l'invocazione del metodo \texttt{LodToString} compone la stringa che verrà stampata affianco all'oggetto 3D. Si è modificato tale metodo in modo tale che scrivesse come prima informazione il LOD e poi il nome dello scene actor. Questo perché se l'oggetto e nella parte destra della finestra e ha un nome lungo si corre il rischio che l'informazione più importante finisca fuori dal bordo e non sia visibile.
+
+//todo inserire screenshot della nuova stampa dei lod
+
+//todo vedere se parlare anche dell'aggiunta del nome corretto del pilota come era stato fatto per la moto
+
+\section{Rifattorizzazione della gerarchia di stampa}
+
+Sempre prestando attenzione all'ultimo metodo (todo al metodo tot link ecc basta k si capisca) si nota che la stampa a video della stringa è affidata alla classe singleton \texttt{DebugTextDrawer}. Inizialmente era gestita dalla classe \texttt{LodModuleDebug}, la quale aveva un nome completamente diverso dal compito che svolgeva. Indagando sulle origini di tale classe si è scoperto che questa era stata letteralmente copiata e incollata da un'altra classe (\texttt{GemScreenLogger}) che gestiva la stampa di stringhe, seppur in maniera leggermente diversa. Quest'ultima le gestiva in stile terminale, conservando e ristampando le ultime entry inserite e gestendo i casi il testo sfora dallo schermo mandandolo a capo piuttosto che rimanga non visibile.\\
+
+Avendo le due classi la maggior parte del codice in comune, si è provveduto ad effettuare un refactor\footnote{Per la refactoring sono state seguite le linee guida spiegate nel libro del refactoring todo biblio} creando una base astratta (\texttt{UI\_GemScreenTextBase}) dalla quale entrambe derivano e concretizzano implementando i metodi astratti. La classe \texttt{LodModuleDebug} è stata quindi rinominata in \texttt{DebugTextDrawer} per meglio rispettare il suo compito.\\
+
+//todo immagine che mostra il diagramma UML della nuova gerarchia
+
+//Todo approfondire la trattazione della gerarchia ed eventualmente mettere un po di codice e dove vengono inizializzati
+
+Le principali differenze nel codice sono che una teneva n stringhe e ne stampava a sempre le ultime m. Mentre l'altra classe ogni frame stampava tutte le stringhe e le scartava, rendendo necessario che ad ogni frame vengano aggiunte nuove stringhe. Questo permette di aggiornare le stringhe e la posizione ad ogni frame. Perfetto per stampare il LOD di una moto in movimento.\\
+
+Come si nota dal diagramma (link diagramma) todo nome classe derivano da \texttt{DebugWorldElement}, classe che rappresenta uno scene actor che può essere inserito in un world, il quale chiamerà la draw per ogni oggetto presente in esso.\\
+
+Le istanze vengono infatti durante la fasi di inizializzazione inserite nel mondo di debug fatto apposta per contenere oggetti di questo tipo. Solitamente nel resto del gioco, sono presenti implementazioni più specifiche di World che permettono quindi di fare assunzioni sugli oggetti presenti e quindi procedere con ottimizzazioni. In MotoGP 14 sono presenti ad esempio il \texttt{MenuWorld} ed il \texttt{GameWorld}, che gestiscono rispettivamente il mondo visibile nel menu ed il mondo visibile durante una gara, permettendone un disegno efficiente.\\
+
+Di seguito è presente lo spezzone di codice che inizializza gli oggetti citati in fase di avvio del gioco:
+
+\begin{lstlisting}[style=maurizio-code]
+UI::GemScreenLogger::Create();
+debugWorld->AddElement( UI::GemScreenLogger::GetInstance() );
+
+GraphicModule::DebugTextDrawer::Create();
+GraphicModule::DebugTextDrawer::Config config;
+config.m_fontName = "Linotype Univers 430 Regular20"; //"ZZapDefaultFont"; alternativa funzionante
+config.m_alphaValue = 255;
+config.m_timeBeforeFade = 500;
+config.m_includeContext = false;
+config.m_includeSourceFile = false;
+config.m_timestamp = false;
+GraphicModule::DebugTextDrawer::GetInstance()->Init();
+GraphicModule::DebugTextDrawer::GetInstance()->SetConfig( config );
+debugWorld->AddElement( GraphicModule::DebugTextDrawer::GetInstance() );
+
+GraphicModule::DebugTextDrawer3DPoint::Create();
+GraphicModule::DebugTextDrawer3DPoint::GetInstance()->Init();
+config.m_timeBeforeFade = 9999999999;
+GraphicModule::DebugTextDrawer3DPoint::GetInstance()->SetConfig( config );
+debugWorld->AddElement( GraphicModule::DebugTextDrawer3DPoint::GetInstance() );
+\end{lstlisting}
+
+La classe \texttt{DebugTextDrawer3DPoint} verrà trattata successivamente nella sezione tot (todo link).\\
+
+Si è poi provveduto ad esporre nel Beholder una variabile membro per ogni istanza della classe \texttt{LodSelectionModule} che permette di attivare e disattivare la stampa di del LOD attivo.\\
+
+//todo inserire screen del beholder e della nuove stampe in gioco
+
+\section{Stampa del nome degli spazi di riferimento}
+
+Una funzionalità già presente era quella di stampa degli assi di riferimento degli oggetti presenti nella scena 3D e dell'asse origine del mondo. L'obbiettivo qui è stato l'inserimento della stampa del nome dell'oggetto affianco al disegno dell'asse allo scopo di poterli riconoscere fra loro. Per realizzare questa funzionalità di è proceduto alla creazione della classe \texttt{DebugTextDrawer3DPoint}. Essa deriva da \texttt{DebugTextDrawer} della quale specializza semplicemente l'inserimento della stringa, allo scopo di poter continuare a disegnare il testo nella corretta posizione (che può cambiare) senza dover chiamare il disegno della stringa ogni frame. In questo modo si può attivare da Beholder il disegno degli assi tramite un'azione.\\
+
+//todo inserimento dell'immagine che mostra dove nel beholder so può lanciare il disegno degli assi
+
+L'appesa del log richiede quindi la camera attualmente attiva e un riferimento alla matrice che contiene la posizione 3D dell'oggetto. La classe quindi ogni frame provvede ad effettuare grazie alla camera e la matrice al calcolo del giusto punto 2D e poi si affida alle funzioni di disegno della classe base. In questo modo l'oggetto o la telecamera possono muoversi ma il punto verrà automaticamente aggiornato ogni frame.
+
+//todo include del codice significativo della classe
+
+//todo del metodo che disegna l'asse e il nome dell'oggetto
+
+Lo studente ha provveduto quindi a individuare i punti del codice in cui erano presenti le chiamate di disegno degli assi allo scopo di implementare la nuova funzionalità, scoprendo che il codice per disegnarli era duplicato molteplici volte.\\
+
+Si è proceduto quindi ad eseguire un refactoring creando una classe specializzata nel disegno di assi con l'etichetta del nome dell'oggetto, la classe \texttt{DebugAxisDrawer}.\\
+
+//todo include del codice della classe DebugTextDrawer
+
+Essa provvede a incapsulare la funzione che si occupa del disegno degli assi e, eseguendo il codice necessario a ottenere la telecamera attiva, a lanciare lo stampa del nome dell'oggetto. La funzionalità di disegno degli assi è lanciata durante un particolare stato in cui le geometrie disegnate, una volta eseguito il submit, vengono renderizzate ogni frame senza necessariamente richiederne la rappresentazione ad ogni frame. Stessa cosa per il testo associato grazie alla classe \texttt{DebugTextDrawer3DPoint}.
