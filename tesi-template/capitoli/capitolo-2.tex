@@ -63,12 +63,12 @@ Il team di QA ha il compito di scovare e segnalare tutti i \gloss{bug} presenti 
 
 La procedura prevede che il personale del QA segnali il bug scovato e tutti i dettagli per riconoscerlo e riprodurlo, inoltre ne assegna la risoluzione al team di programmazione più pertinente. A questo punto il team leader che riceve il bug decide a chi assegnarlo all'interno del proprio team, seguendo la regola di assegnarlo alla persona che si suppone possa risolverlo nel minor tempo possibile. È prevista la possibilità che il team leader riassegni il bug ad un altro reparto, ma solo se il team di QA abbia sbagliato oppure se la risoluzione avverrà più velocemente dal nuovo team. La direzione tiene traccia di questi \dq{rimbalzi} allo scopo di evitare che il principio di minimo tempo di risoluzione non venga mai meno. Un'ulteriore possibilità è che il team leader, insieme alla direzione, valuti la risoluzione dell'errore di non importanza strategica. A questo punto il bug non verrà mai risolto. Quando il reparto di programmazione segnala un bug come risolto, il team QA si assicura che il buco sia stato davvero risolto, altrimenti la procedura ricomincia d'accapo.\\
 
-\begin{figure}
-	\centering
-	%\includegraphics{screenshot mantis}
-	\caption{Screenshot di MantisBT}
-	\label{fig:screenshot-mantis}
-\end{figure}
+%\begin{figure} %Non ho lo screenshot di mantis
+%	\centering
+%	%\includegraphics{screenshot mantis}
+%	\caption{Screenshot di MantisBT}
+%	\label{fig:screenshot-mantis}
+%\end{figure}
 
 Il reparto di sviluppo si divide in 3 reparti: programmazione, artist e game design. Il reparto di artist è quello che si occupa della creazione degli asset per i giochi. I game designer sono coloro che ideano i giochi e decidono come saranno. Essi descrivono dettagliatamente tutti i contenuti, i flussi e le feature che vorrebbero avere in un gioco. Dopodiché i team di programmazione, gli artist e la direzione stimano il tempo necessario e nel caso tagliano qualche contenuto.\\
 
@@ -84,12 +84,12 @@ Il reparto di ricerca e sviluppo si occupa dello sviluppo dell'engine grafico, r
 
 L'organizzazione dei task per ciascun impiegato è gestita tramite il tool \gloss{Microsoft Project}\footnote{\url{http://office.microsoft.com/en-001/project/}}. Come già spiegato la cura dei task è gestita gerarchicamente dai team leader che assegnano al proprio team.\\
 
-\begin{figure}
-	\centering
-	%\includegraphics{screenshot microsoft project}
-	\caption{Screenshot di Microsoft Project}
-	\label{fig:screenshot-microsoft-project}
-\end{figure}
+%\begin{figure} %Non ho lo screenshot
+%	\centering
+%	%\includegraphics{screenshot microsoft project}
+%	\caption{Screenshot di Microsoft Project}
+%	\label{fig:screenshot-microsoft-project}
+%\end{figure}
 
 Il team dove lo stagista è stato inserito è il team 3D, il quale, ad alto livello, utilizza l'engine grafico per disegnare le scene del gioco. Verrà maggiormente approfondito il ruolo del team successivamente alla spiegazione delle fasi di sviluppo di un videogame in Milestone S.r.l.\footnote{Si veda la sezione \ref{sec:ruolo-3D-programmer-workflow}.}
 
@@ -123,13 +123,20 @@ I World si dividono in ambienti di gara e non. Negli ambienti non di gara il tea
 
 Ultimo ma non meno importante compito, è la gestione degli ambienti di gara. In essi il team gestisce il collegamento degli oggetti 3D con la simulazione fisica, la quale evolve i parametri degli oggetti di gioco. Tramite questi parametri si richiede l'esecuzione dell'animazione, la quale aggiorna i parametri visibili degli oggetti 3D, ad esempio la posizione.\\
 
-Per eseguire le animazioni il team utilizza il middleware EMotion FX 4\footnote{\url{http://www.mysticgd.com/website/index.php?id=17}} , il quale dato il blend tree sviluppato dagli artisti, esegue le animazioni sugli oggetti 3D. Gli artisti, in Milestone, sviluppano i blend tree tramite il tool EMotion Studio fornito dalla stessa casa.
+Per eseguire le animazioni il team utilizza il middleware EMotion FX 4\footnote{\url{http://www.mysticgd.com/website/index.php?id=17}} , il quale dato il blend tree sviluppato dagli artisti, esegue in real time le animazioni sugli oggetti 3D. Gli artisti, in Milestone, sviluppano i blend tree tramite il tool EMotion Studio fornito dalla stessa casa.
 
-\begin{figure}
+\begin{figure}[!h]
 	\centering
-	%\includegraphics{screenshot emotion studio}
-	\caption{Screenshot di EMotion Studio}
-	\label{fig:screenshot-emotion-studio}
+	\includegraphics[width=1.0\columnwidth]{game/emotionStudioSkeleton.png}
+	\caption{Screenshot di EMotion Studio durante la visualizzazione dello skeleton di animazione di un meccanico in T-pose}
+	\label{fig:screenshot-emotion-studio-1}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{game/emotionStudioHierarchy.png}
+	\caption{Screenshot di EMotion Studio durante la visualizzazione della gerarchia dei bone di animazione dello skeleton di un meccanico}
+	\label{fig:screenshot-emotion-studio-1}
 \end{figure}
 
 \section{Configuration e data Management}
@@ -185,8 +192,6 @@ Tutti i metadati presenti sono esposti via rete, solo nei target debug e release
 Un altro esempio di utilizzo del Beholder, molto usato dal team 3D, è l'esposizione di funzioni attivabili direttamente dall'interfaccia grafica di quest'ultimo. Le più usate sono quelle per disegnare geometrie di debug, quali ad esempio gli assi di origine degli spazi di riferimento degli oggetti presenti nelle scene 3D.\\
 
 L'utilizzo dei metadati all'interno del codice avviene tramite un set di macro definite in GEM. Un facile esempio di utilizzo è il seguente.
-
-\newpage
 
 \begin{lstlisting}[style=maurizio-code]
 class Dog
