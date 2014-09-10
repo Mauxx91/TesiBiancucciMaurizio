@@ -288,7 +288,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Classe XmlTreeItem}{63}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.4}Core}{63}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.4}Core}{64}{subsection.5.6.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Classe XmlRelationCheckerCoreBase}{64}{section*.55}
 \defcounter {refsection}{0}\relax 

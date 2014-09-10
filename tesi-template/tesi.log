@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  9 SEP 2014 17:30
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  10 SEP 2014 16:50
 entering extended mode
 **tesi.tex
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.tex
@@ -2903,16 +2903,24 @@ File: immagini/tool2/diagramma1.png Graphic file (type png)
 
 <use immagini/tool2/diagramma1.png>
 Package pdftex.def Info: immagini/tool2/diagramma1.png used on input line 972.
-(pdftex.def)             Requested size: 362.48653pt x 265.2694pt.
+(pdftex.def)             Requested size: 406.87666pt x 297.756pt.
+
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 972--973
+ []| [] 
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 973.
-
 <immagini/tool2/diagramma2.png, id=1231, 718.6047pt x 758.835pt>
 File: immagini/tool2/diagramma2.png Graphic file (type png)
 
 <use immagini/tool2/diagramma2.png>
 Package pdftex.def Info: immagini/tool2/diagramma2.png used on input line 981.
-(pdftex.def)             Requested size: 362.48653pt x 382.77444pt.
+(pdftex.def)             Requested size: 406.87666pt x 429.65732pt.
+
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 981--982
+ []| [] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2937,7 +2945,7 @@ out of memory (use non-interlaced PNG to fix this)
 >]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 998.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 995.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -2955,7 +2963,7 @@ out of memory (use non-interlaced PNG to fix this)
 >]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 1029.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 1026.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -3451,7 +3459,7 @@ MiKTeX 2.9/fonts/type1/public/cm-super/sfti0700.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/cm-super/sfti0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (99 pages, 3962812 bytes).
+Output written on tesi.pdf (99 pages, 3962732 bytes).
 PDF statistics:
  2197 PDF objects out of 2487 (max. 8388607)
  674 named destinations out of 1000 (max. 500000)
