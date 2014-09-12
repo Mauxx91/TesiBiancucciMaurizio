@@ -181,4 +181,26 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	\caption{Screenshot di MotoGP 14 in cui nel main menu è possibile vedere gli assi dei punti in cui viene ancorata la camera e la stampa del nome corrispondente}
 \end{figure}
 
+\section{Vista gerarchica dei world nel Beholder}
+	Nel Beholder è possibile visualizzare tutte le risorse grafiche presenti nel \texttt{ResourcesManager}. Questa classe gestisce il caricamento e lo scaricamento in memoria di tutte le risorse grafiche utilizzate per costruire le scene 3D del gioco. Essa utilizza la strategia di reference couting per sapere quando un oggetto diviene inutilizzato e può essere quindi scaricato. Essa contiene quindi una collezione di world in cui sono presenti le varie risorse (mesh, texture, animazioni, ecc..). Per ogni tipo di risorsa presente nel word nel Beholder viene presentata come lista piatta. È possibile invece che queste risorse siano imparentate fra di loro, formando ad esempio delle gerarchie di oggetti 3D.\\
+	
+	\begin{figure}[h!] 
+		\centering 
+		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/beholderResourceManagerView.png} 
+		\caption{Screenshot del Beholder in cui è possibile visualizzare la versione a lista piatta sopra e la versione ad albero sotto per la bike 306}
+	\end{figure}
+	
+	Si è proceduto quindi a creare una versione ad albero per la categoria degli Object3D presenti nel world.\\
+	
+	Il contenuto del \texttt{ResourcesManager} è esposto nel Beholder tramite la classe \texttt{ResourcesManagerDebug} in cui si concentrano le modifiche effettuate per poter offrire la nuova funzionalità.
+	
+	Di seguito vengono riportati alcune sezioni del codice della classe significative per la nuova funzionalità inserita.
+	
+	\lstinputlisting[style=maurizio-code]{code/ResourcesManagerDebug_new.h}
+	
+	\lstinputlisting[style=maurizio-code]{code/ResourcesManagerDebug_new.cpp}
+	
+	\lstinputlisting[style=maurizio-code]{code/ResourcesManagerDebug_newMetadata.cpp}
 
+\section{Disegno degli scheletri di animazione}
+	
