@@ -153,7 +153,11 @@
 		META\_EVENT,
 		META\_END\_EVENTS,
 		META\_END\_CLASS,
-		ENABLE\_METADATA
+		ENABLE\_METADATA,
+		CLSID\_MENUWORLD,
+		CLSID\_GAMEWORLD,
+		eWORLD\_ENABLE\_RENDER,
+		eWORLD\_ENABLE\_ALL
 	},
 	morekeywords={[3]
 		void,
@@ -163,8 +167,10 @@
 		GString,
 		CCamera,
 		GVector3,
+		GUInt32,
 		GUInt,
 		GInt,
+		GColor,
 		LodSelectionModule,
 		CWorld,
 		GraphicComponentInfo,
@@ -174,11 +180,17 @@
 		GemScreenLogger,
 		DebugTextDrawer,
 		DebugTextDrawer3DPoint,
-		Config
+		Config,
+		DebugAxisDrawer,
+		CEngine,
+		GMatrix,
+		CWorldManager,
+		CML\_DrawVector
 	},
 	morekeywords={[4]
 		Create,
-		GetInstance
+		GetInstance,
+		DrawVector
 	},
 	stringstyle=\fontfamily{Inconsolata}\color{StringColor}
 }
