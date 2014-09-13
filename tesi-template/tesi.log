@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  12 SEP 2014 15:24
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  13 SEP 2014 16:41
 entering extended mode
 **tesi.tex
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.tex
@@ -3714,7 +3714,125 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[91]))
+[91])
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
+
+ []
+
+
+Underfull \vbox (badness 1354) has occurred while \output is active []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 216.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+
+(C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\code/SkeletonDebugDr
+awer.h
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 29.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[93])
+(C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\code/SkeletonDebugDr
+awer.cpp
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 46.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[94]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 95.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[95])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 230.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[96])
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\capitoli/capitolo-7.
 tex
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
@@ -3728,19 +3846,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[92]
-Capitolo 7.
-)
-(C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\capitoli/capitolo-A.
-tex [93
-
-] [94
+[97] [98
 
 ]
-Appendice A.
-) [95] [96
+Capitolo 7.
+) [99] [100
 
-] (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.gls [97
+]
+(C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.gls [101
 
 
 ]
@@ -3764,13 +3877,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[98])
+[102])
 Overfull \hbox (3.74478pt too wide) in paragraph at lines 142--142
 $\T1/fi4/m/n/10 mastersdegree / workshops / technicalrequirementschecklists / T
 echnical %$
  []
 
-[99
+[103
 
 
 ]
@@ -3787,15 +3900,18 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 23112 strings out of 494045
- 363396 string characters out of 3148375
+ 23417 strings out of 494045
+ 368592 string characters out of 3148375
  913514 words of memory out of 3000000
- 24464 multiletter control sequences out of 15000+200000
- 42781 words of font info for 172 fonts, out of 3000000 for 9000
+ 24580 multiletter control sequences out of 15000+200000
+ 42899 words of font info for 174 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
  71i,16n,143p,1518b,2980s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{glo:LOD} has been referenced but does not exist, 
 replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.A} has been referenced but does not exist,
+ replaced by a fixed one
 
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Prog
 ram Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Program Files
@@ -3828,9 +3944,9 @@ MiKTeX 2.9/fonts/type1/public/cm-super/sfti0700.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/cm-super/sfti0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (113 pages, 9617281 bytes).
+Output written on tesi.pdf (117 pages, 9661185 bytes).
 PDF statistics:
- 2944 PDF objects out of 2984 (max. 8388607)
- 1232 named destinations out of 1440 (max. 500000)
- 50990 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 3178 PDF objects out of 3580 (max. 8388607)
+ 1415 named destinations out of 1440 (max. 500000)
+ 50982 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -376,18 +376,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.5}Disegno degli scheletri di animazione}{92}{section.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{93}{chapter.7}
+\contentsline {chapter}{\numberline {7}Conclusioni}{99}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{93}{section.7.1}
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{99}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{93}{section.7.2}
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{99}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{93}{section.7.3}
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{99}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Valutazione personale}{93}{section.7.4}
+\contentsline {section}{\numberline {7.4}Valutazione personale}{99}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{95}{appendix.A}
+\contentsline {chapter}{Glossario}{101}{section*.101}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossario}{97}{section*.101}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{99}{appendix*.103}
+\contentsline {chapter}{Bibliografia}{103}{appendix*.103}
