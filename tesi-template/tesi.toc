@@ -386,6 +386,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.4}Valutazione personale}{99}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossario}{101}{section*.103}
+\contentsline {chapter}{Glossario}{101}{section*.105}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{103}{appendix*.105}
+\contentsline {chapter}{Bibliografia}{103}{appendix*.107}

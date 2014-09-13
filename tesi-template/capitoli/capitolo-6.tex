@@ -8,7 +8,7 @@
 \label{cap:game}
 %**************************************************************
 
-Lo studente è stato chiamato ad effettuare un refactor\footnote{Per effettuare refactor sono state seguite le linee guida spiegate nel libro del refactoring todo biblio} ed implementare nuove funzionalità di disegno di oggetti 3D in game a scopo di debug. Le modifiche sono state apportate al gioco MotoGP 14, delle quali alcune sono state portate a MXGP HD.\\
+Lo studente è stato chiamato ad effettuare un refactor\footnote{Per effettuare refactor sono state seguite le linee guida spiegate in \cite{inbook:refactoring-book}.} ed implementare nuove funzionalità di disegno di oggetti 3D in game a scopo di debug. Le modifiche sono state apportate al gioco MotoGP 14, delle quali alcune sono state portate a MXGP HD.\\
 
 Si è reso necessario dapprima un'analisi del codice allo scopo di individuare i flussi di interesse e localizzare le vecchie implementazioni su cui effettuare un refactor e sfruttare come base per l'implementazione delle nuove.\\
 
@@ -57,13 +57,13 @@ void GetScreenPosition(const CCamera* i_pCamera, GVector3& o_position) const
 }
 \end{lstlisting}
 ~\\
-La funzione \texttt{GetScreenPosition} procede a calcolare le stesse trasformazioni che esegue la GPU per trasformare ogni pixel dell'oggetto nella scena 3D in un'immagine 2D. \footnote{todo link al libro delle directx 11 capitolo che spiega queste cose, todo biblio.}. Si ottengono quindi le coordinate x e y dello schermo nello spazio -1, 1. Si procede quindi a trasformarle in coordinate relative allo spazio della finestra di gioco (ad esempio 1366x768 px).\\
+La funzione \texttt{GetScreenPosition} procede a calcolare le stesse trasformazioni che esegue la GPU per trasformare ogni pixel dell'oggetto nella scena 3D in un'immagine 2D\footnote{Il lettore potrà trovare un approfondimento in \cite[chp.~5]{inbook:directx-book}.}. Si ottengono quindi le coordinate x e y dello schermo nello spazio -1, 1. Si procede quindi a trasformarle in coordinate relative allo spazio della finestra di gioco (ad esempio 1366x768 px).\\
 
 Con un'analisi più approfondita del codice si è successivamente scoperto la presenza di un metodo della classe \texttt{CCamera} che produceva esattamente gli stessi risultati. Si è quindi provveduto a scartare questa implementazione (seppur corretta) ed usare quella già presente allo scopo di evitare inutili duplicazioni di codice.\\
 
-Di seguito è presente la funzione della classe \texttt{LodSelectionModule} che lancia il disegno del LOD attivo per ogni oggetto gestito dall'istanza della classe.\\
+Di seguito è presente la funzione della classe \texttt{LodSelectionModule} che lancia il disegno del LOD attivo. Questa funzione è lanciata per ogni oggetto gestito dalla classe.\\
 
-\begin{lstlisting}[style=maurizio-code]
+\begin{lstlisting}[style=maurizio-code, caption=Metodo per la stampa del LOD corrente, label={code:printloddebuginformation}]
 void LodSelectionModule::PrintLodDebugInformation(CWorld* iWorld, GraphicComponentInfo* i_pComponentInfo )
 {
 	//Foreach active camera
@@ -109,12 +109,14 @@ Si è poi provveduto ad esporre nel Beholder una variabile membro per ogni istan
 
 \section{Rifattorizzazione della gerarchia di stampa}
 
-Prestando attenzione al meotodo \texttt{PrintLodDebugInformation}(todo al metodo tot link ecc basta k si capisca) si può notare che la stampa a video della stringa è affidata alla classe singleton \texttt{DebugTextDrawer}. Inizialmente la stampa era affidata in gestione alla classe \texttt{LodModuleDebug}, la quale aveva un nome completamente diverso dal compito che svolgeva. Indagando sulle origini di tale classe si è scoperto che questa era stata originata dal copia e incolla della classe \texttt{GemScreenLogger}, la quale gestiva la stampa di stringhe in stile terminale, conservando e ristampando le ultime entry inserite e gestendo gli \dq{a capo} e non permettendo sovrapposizioni del testo.\\
+Prestando attenzione al metodo \texttt{PrintLodDebugInformation} presente nel listato \ref{code:printloddebuginformation} si può notare che la stampa a video della stringa è affidata alla classe singleton \texttt{DebugTextDrawer}. Inizialmente la stampa era affidata in gestione alla classe \texttt{LodModuleDebug}, la quale aveva un nome completamente diverso dal compito che svolgeva. Indagando sulle origini di tale classe si è scoperto che questa era stata originata dal copia e incolla della classe \texttt{GemScreenLogger}, la quale gestiva la stampa di stringhe in stile terminale, conservando e ristampando le ultime entry inserite e gestendo gli \dq{a capo} e non permettendo sovrapposizioni del testo.\\
 
 Avendo le due classi la maggior parte del codice in comune, si è provveduto ad effettuare un refactor creando una base astratta \texttt{UI\_GemScreenTextBase} dalla quale entrambe derivano e concretizzano implementando i metodi astratti. La classe \texttt{LodModuleDebug} è stata inoltre rinominata in \texttt{DebugTextDrawer} per meglio rispecchiare le sue funzionalità e rendere il codice più comprensibile.\\
 
 //todo immagine che mostra il diagramma UML della nuova gerarchia
 //Todo approfondire la trattazione della gerarchia ed eventualmente mettere un po di codice e dove vengono inizializzati\\
+
+La classe \texttt{DebugTextDrawer3DPoint} verrà trattata successivamente nella sezione \ref{sec:stampa-del-nome-degli-spazi-di-riferimento}.\\
 
 Le differenze fra le due classi si mostra anche nei loro scenari di utilizzo. \texttt{GemScreenLogger} accetta dei log e continua a stamparli indipendentemente dai frame. \texttt{DebugTextDrawer} invece, ad ogni frame, stampa tutte le stringhe che possiede e le scarta, non stampandole più al frame successivo. Questo impone quindi che l'inserimento delle scritte sia costante e presente ad ogni frame. Questa caratteristica si adatta perfettamente alla stampa dei LOD, in quanto la posizione su schermo e la stessa informazione varia ad ogni frame e necessita di un costante aggiornamento.\\ 
 
@@ -147,9 +149,8 @@ GraphicModule::DebugTextDrawer3DPoint::GetInstance()->SetConfig( config );
 debugWorld->AddElement( GraphicModule::DebugTextDrawer3DPoint::GetInstance() );
 \end{lstlisting}
 
-La classe \texttt{DebugTextDrawer3DPoint} verrà trattata successivamente nella sezione tot (todo link).\\
-
 \section{Stampa del nome degli spazi di riferimento}
+\label{sec:stampa-del-nome-degli-spazi-di-riferimento}
 
 Una funzionalità già presente è la stampa degli assi di riferimento degli oggetti presenti nella scena 3D e dell'asse origine del mondo. L'obbiettivo quindi è stato l'inserimento della stampa del nome dell'oggetto affianco al disegno dell'asse allo scopo di poterli riconoscere fra loro quando se ne disegnano più d'uno. Per realizzare questa funzionalità si è proceduto alla creazione della classe \texttt{DebugTextDrawer3DPoint}. Essa deriva da \texttt{DebugTextDrawer} della quale specializza semplicemente l'inserimento della stringa, allo scopo di poter continuare a disegnare il testo nella corretta posizione (che può cambiare) senza dover chiamare il disegno della stringa ogni frame. Il disegno degli assi è attivato dal Beholder da diversi contesti.\\
 
@@ -206,16 +207,17 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	
 	Allo scopo di permettere agli artisti di affinare le animazioni scheletrali dei personaggi e permettere al team 3D un più rapido debug, è stato deciso di aggiungere al gioco la funzionalità di disegno dello scheletro di animazione degli oggetti animati.\\
 	
-	Come visibile in figura (todo link all'immagine qui sotto) lo scheletro di animazione è composto da un'insieme di bone (ossa) organizzati gerarchicamente: se il padre viene mosso, il movimento e trasmesso a tutta la prole. Un modo efficiente di memorizzare lo scheletro è tramite una palette di matrici \footnote{Nella grafica 3D una matrice 4x4 è un modo efficiente di memorizzare una posizione oppure una trasformazione in termini di traslazione, rotazione e scale.} che rappresentano la posizione dei joint (estremi esterni di un bone) che compongono lo scheletro. È inoltre necessaria una lista che permetta di sapere come è organizzata la gerarchia dei joint per permettere la ricostruzione dello scheletro\footnote{Esistono metodi di memorizzazione più efficienti utilizzando strutture dati avanzate ma, visto che solitamente lo scheletro viene sempre scorso linearmente e i bone vengono raramente rimossi o aggiunti, questa è una delle implementazioni più usate nella computer grafica.}.\\
+	Come visibile in figura \ref{fig:SkeletonTerminology} lo scheletro di animazione è composto da un'insieme di bone (ossa) organizzati gerarchicamente: se il padre viene mosso, il movimento e trasmesso a tutta la prole. Un modo efficiente di memorizzare lo scheletro è tramite una palette di matrici \footnote{Nella grafica 3D una matrice 4x4 è un modo efficiente di memorizzare una posizione oppure una trasformazione in termini di traslazione, rotazione e scale. Un approfondimento è disponibile in \cite[chp.~3]{inbook:directx-book}} che rappresentano la posizione dei joint (estremi esterni di un bone) che compongono lo scheletro. È inoltre necessaria una lista che permetta di sapere come è organizzata la gerarchia dei joint per permettere la ricostruzione dello scheletro\footnote{Esistono metodi di memorizzazione più efficienti utilizzando strutture dati avanzate ma, visto che solitamente lo scheletro viene sempre scorso linearmente e i bone vengono raramente rimossi o aggiunti, questa è una delle implementazioni più usate nella computer grafica.}.\\
 	
 	\begin{figure}[h!] 
-		\centering 
-		\includegraphics[width=0.8\columnwidth]{game/SkeletonTerminology.jpg} 
-		\caption{Una sintesi della terminologia appena introdotta}
+		\centering
+		\includegraphics[width=0.8\columnwidth]{game/SkeletonTerminology.jpg}
+		\caption{Una sintesi della terminologia appena introdotta. Tratto da \cite{site:skeleton-terminoligy}}
+		\label{fig:SkeletonTerminology}
 	\end{figure}
 	
 	
-	Si procede quindi ad animare\footnote{Si consiglia al lettore appassionato (todo il capitolo tot del libro delle directx che spiega i quaternioni) in cui è presente una breve introduzione alla matematica dei quaternioni utilizzata per queste applicazioni.} lo scheletro di animazione tramite la fisica o con delle pose fisse precalcolate dagli artisti, oppure con il blend tree calcolato tramite il middleware Emotion Studio (todo R trademark).\\
+	Si procede quindi ad animare\footnote{Si consiglia al lettore appassionato \cite[chp.~24, 25]{inbook:directx-book} in cui è presente una breve introduzione alla matematica dei quaternioni, l'animazione scheletrale e lo skinning.} lo scheletro di animazione tramite la fisica o con delle pose fisse precalcolate dagli artisti, oppure con il blend tree calcolato tramite il middleware Emotion Fx.\\
 	
 	Il passo successivo è modificare la mesh dell'oggetto per rispecchiare l'animazione dello skeleton, questa procedura è detta Skinning. Un modo semplice per effettuarla è assegnare ad ogni vertice della mesh un massimo di 4 bone che potranno influenzarne la posizione. Si procede quindi (solitamente su GPU durante la fase di Vertex Shader) a calcolare un'interpolazione sulla trasformazione della posizione del vertice effettuando una media pesata fra i bone assegnati. La trasformazione risultante viene quindi applicata alla posizione originale del vertice.\\
 	
@@ -237,18 +239,18 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	
 	\lstinputlisting[style=maurizio-code]{code/SkeletonDebugDrawer.cpp}
 	~\\
-	La rappresentazione interna dello scheletro organizzata come spiegato prima, permette quindi di utilizzare lo scheletro efficientemente minimizzando le moltiplicazioni tra matrici. L'algoritmo di disegno procede quindi ricorsivamente, con un approccio top-down, a calcolare l'effettiva posizione del joint corrente applicando la trasformazione del padre. In questo modo si evitano la ripetizione della stessa operazione che sarebbe emersa in un approccio bottom-up.
+	La rappresentazione interna dello scheletro organizzata come spiegato prima, permette quindi di utilizzare lo scheletro efficientemente minimizzando le moltiplicazioni tra matrici. L'algoritmo di disegno procede quindi ricorsivamente, con un approccio top-down, a calcolare l'effettiva posizione del joint corrente applicando la trasformazione del padre. In questo modo si evitano la ripetizione della stessa operazione che sarebbe emersa in un approccio bottom-up.\\
 	
 	\begin{figure}[h!] 
 		\centering 
-		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/BeholderActivateRiderSkeleton.png} 
-		\caption{Screenshot del Beholder in cui è possibile visualizzare dove è permesso attivare e disattivare il disegno dello skeleton del rider todo dire che è preso da http://www.wazim.com/Collada\_Tutorial\_1.htm}
+		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/skeletonRider1.png} 
+		\caption{Screenshot n. 1 del disegno dello skeleton del rider}
 	\end{figure}
 	
 	\begin{figure}[h!] 
 		\centering 
-		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/BeholderActivateRiderSkeleton.png} 
-		\caption{Screenshot del Beholder in cui è possibile visualizzare dove è permesso attivare e disattivare il disegno dello skeleton del rider}
+		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/skeletonRider2.png} 
+		\caption{Screenshot n. 2 del disegno dello skeleton del rider}
 	\end{figure}
 	
 	Spiegazione estensione presente su resourcesmanagerdebug per il disegno di tutto cio che è animato
