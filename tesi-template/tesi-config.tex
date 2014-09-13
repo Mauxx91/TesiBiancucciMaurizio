@@ -166,7 +166,11 @@
 		eWORLD\_ENABLE\_ALL,
 		GTRUE,
 		GFALSE,
-		CLSID\_ANIMATEDMODEL3D
+		CLSID\_ANIMATEDMODEL3D,
+		GEM\_ASSERT,
+		NULL,
+		CLSID\_SKINCONTROLLER,
+		g\_uiCLSID\_BUFFER\_CONTROLLER
 	},
 	morekeywords={[3]
 		void,
@@ -177,7 +181,9 @@
 		CCamera,
 		GVector3,
 		GUInt32,
+		GUInt8,
 		GUInt64,
+		GReal,
 		GUInt,
 		GInt,
 		GColor,
@@ -213,12 +219,23 @@
 		CObject3d,
 		CObjects3dManager,
 		uintptr\_t,
-		uint32\_t
+		uint32\_t,
+		SkeletonDebugDrawer,
+		CSkeleton,
+		BufferController,
+		RiderAnimationsBehaviour,
+		Children,
+		const\_iterator
 	},
 	morekeywords={[4]
 		Create,
 		GetInstance,
-		DrawVector
+		DrawVector,
+		DrawSkeleton,
+		DrawEMFXSkeleton,
+		DrawPoint,
+		GetJointLocalMatrix,
+		GetJointColor
 	},
 	stringstyle=\fontfamily{Inconsolata}\color{StringColor}
 }

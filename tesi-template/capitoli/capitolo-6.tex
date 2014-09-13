@@ -208,10 +208,14 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	
 	Come visibile in figura (todo link all'immagine qui sotto) lo scheletro di animazione è composto da un'insieme di bone (ossa) organizzati gerarchicamente: se il padre viene mosso, il movimento e trasmesso a tutta la prole. Un modo efficiente di memorizzare lo scheletro è tramite una palette di matrici \footnote{Nella grafica 3D una matrice 4x4 è un modo efficiente di memorizzare una posizione oppure una trasformazione in termini di traslazione, rotazione e scale.} che rappresentano la posizione dei joint (estremi esterni di un bone) che compongono lo scheletro. È inoltre necessaria una lista che permetta di sapere come è organizzata la gerarchia dei joint per permettere la ricostruzione dello scheletro\footnote{Esistono metodi di memorizzazione più efficienti utilizzando strutture dati avanzate ma, visto che solitamente lo scheletro viene sempre scorso linearmente e i bone vengono raramente rimossi o aggiunti, questa è una delle implementazioni più usate nella computer grafica.}.\\
 	
-	Si procede quindi ad animare\footnote{Si consiglia al lettore appassionato (todo il capitolo tot del libro delle directx che spiega i quaternioni) in cui è presente una breve introduzione alla matematica dei quaternioni utilizzata per queste applicazioni.} lo scheletro di animazione tramite la fisica o con delle pose fisse precalcolate dagli artisti, oppure con il blend tree calcolato tramite il middleware Emotion Studio (todo R trademark).\\
+	\begin{figure}[h!] 
+		\centering 
+		\includegraphics[width=0.8\columnwidth]{game/SkeletonTerminology.jpg} 
+		\caption{Una sintesi della terminologia appena introdotta}
+	\end{figure}
 	
-	//Spiegare come funziona una versione base dell'algoritmo di skinning
-	//todo screenshot animazione scheletrale\\
+	
+	Si procede quindi ad animare\footnote{Si consiglia al lettore appassionato (todo il capitolo tot del libro delle directx che spiega i quaternioni) in cui è presente una breve introduzione alla matematica dei quaternioni utilizzata per queste applicazioni.} lo scheletro di animazione tramite la fisica o con delle pose fisse precalcolate dagli artisti, oppure con il blend tree calcolato tramite il middleware Emotion Studio (todo R trademark).\\
 	
 	Il passo successivo è modificare la mesh dell'oggetto per rispecchiare l'animazione dello skeleton, questa procedura è detta Skinning. Un modo semplice per effettuarla è assegnare ad ogni vertice della mesh un massimo di 4 bone che potranno influenzarne la posizione. Si procede quindi (solitamente su GPU durante la fase di Vertex Shader) a calcolare un'interpolazione sulla trasformazione della posizione del vertice effettuando una media pesata fra i bone assegnati. La trasformazione risultante viene quindi applicata alla posizione originale del vertice.\\
 	
@@ -219,7 +223,11 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 
 	La prima modifica è stata l'esposizione nel Beholder di una variabile di membro di quella classe che permettesse di attivare/disattivare il disegno di debug a run-time.\\
 	
-	//todo screenshot del Beholder dove attiva e disattiva il disegno dei rider\\
+	\begin{figure}[h!] 
+		\centering 
+		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/BeholderActivateRiderSkeleton.png} 
+		\caption{Screenshot del Beholder in cui è possibile visualizzare dove è permesso attivare e disattivare il disegno dello skeleton del rider}
+	\end{figure}
 	
 	Successivamente si è proceduto ad affinare e ottimizzare l'algoritmo di disegno, estrapolandolo e portandolo in una classe specializzata nel solo disegno di uno skeleton: \texttt{SkeletonDebugDrawer}.\\
 	
@@ -228,7 +236,19 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	\lstinputlisting[style=maurizio-code]{code/SkeletonDebugDrawer.h}
 	
 	\lstinputlisting[style=maurizio-code]{code/SkeletonDebugDrawer.cpp}
-	
+	~\\
 	La rappresentazione interna dello scheletro organizzata come spiegato prima, permette quindi di utilizzare lo scheletro efficientemente minimizzando le moltiplicazioni tra matrici. L'algoritmo di disegno procede quindi ricorsivamente, con un approccio top-down, a calcolare l'effettiva posizione del joint corrente applicando la trasformazione del padre. In questo modo si evitano la ripetizione della stessa operazione che sarebbe emersa in un approccio bottom-up.
+	
+	\begin{figure}[h!] 
+		\centering 
+		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/BeholderActivateRiderSkeleton.png} 
+		\caption{Screenshot del Beholder in cui è possibile visualizzare dove è permesso attivare e disattivare il disegno dello skeleton del rider todo dire che è preso da http://www.wazim.com/Collada\_Tutorial\_1.htm}
+	\end{figure}
+	
+	\begin{figure}[h!] 
+		\centering 
+		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/BeholderActivateRiderSkeleton.png} 
+		\caption{Screenshot del Beholder in cui è possibile visualizzare dove è permesso attivare e disattivare il disegno dello skeleton del rider}
+	\end{figure}
 	
 	Spiegazione estensione presente su resourcesmanagerdebug per il disegno di tutto cio che è animato
