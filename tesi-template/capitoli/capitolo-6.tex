@@ -38,7 +38,7 @@ Si parla di tuning dell'algoritmo per ciascuna piattaforma poiché, avendo carat
 
 Per risolvere il problema è stata inizialmente è stata quindi creata una funzione che trasformasse il punto 3D indicante la posizione dello scene actor, in un punto 2D relativo alle coordinate della finestra di gioco. Punto con il quale si procedeva con la stampa dell'informazione. Viene di seguito riportata la funzione creata.\\
 
-\begin{lstlisting}[style=maurizio-code]
+\begin{lstlisting}[style=maurizio-code, caption=Metodo per la trasformazione di un punto 3D in un punto 2D della finestra di gioco rispetto la telecamera corrente, label={code:getScreenPosition}]
 void GetScreenPosition(const CCamera* i_pCamera, GVector3& o_position) const
 {	
 	//Tranform to the homogeneous clip space
@@ -126,7 +126,7 @@ Le istanze delle classi concrete della gerarchia vengono, durante la fasi di ini
 
 Di seguito è presente la sezione di codice che inizializza gli oggetti della gerarchia in fase di avvio del gioco:
 
-\begin{lstlisting}[style=maurizio-code]
+\begin{lstlisting}[style=maurizio-code, caption=Inizializzazione delle classi responsabili della stampa di testo, label={code:initTextClasses}]
 UI::GemScreenLogger::Create();
 debugWorld->AddElement( UI::GemScreenLogger::GetInstance() );
 
@@ -172,9 +172,9 @@ Essa provvede a incapsulare la funzione che si occupa del disegno degli assi e, 
 
 Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 
-\lstinputlisting[style=maurizio-code]{code/DebugAxisDrawer.h}
+\lstinputlisting[style=maurizio-code, caption=DebugAxisDrawer.h, label={code:DebugAxisDrawer-h}]{code/DebugAxisDrawer.h}
 
-\lstinputlisting[style=maurizio-code]{code/DebugAxisDrawer.cpp}
+\lstinputlisting[style=maurizio-code, caption=DebugAxisDrawer.cpp, label={code:DebugAxisDrawer-cpp}]{code/DebugAxisDrawer.cpp}
 
 \begin{figure}[h!] 
 	\centering 
@@ -189,6 +189,7 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 		\centering 
 		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/beholderResourceManagerView.png} 
 		\caption{Screenshot del Beholder in cui è possibile visualizzare la versione a lista piatta sopra e la versione ad albero sotto per la bike 306}
+		\label{fig:resource-manager-tree-view}
 	\end{figure}
 	
 	Si è proceduto quindi a creare una versione ad albero per la categoria degli Object3D presenti nel world.\\
@@ -197,11 +198,11 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	
 	Di seguito vengono riportati alcune sezioni del codice della classe significative per la nuova funzionalità inserita.
 	
-	\lstinputlisting[style=maurizio-code]{code/ResourcesManagerDebug_new.h}
+	\lstinputlisting[style=maurizio-code, caption=ResourcesManagerDebug.h, label={code:ResourcesManagerDebug-h}]{code/ResourcesManagerDebug_new.h}
 	
-	\lstinputlisting[style=maurizio-code]{code/ResourcesManagerDebug_new.cpp}
+	\lstinputlisting[style=maurizio-code, caption=ResourcesManagerDebug.cpp, label={code:ResourcesManagerDebug-cpp}]{code/ResourcesManagerDebug_new.cpp}
 	
-	\lstinputlisting[style=maurizio-code]{code/ResourcesManagerDebug_newMetadata.cpp}
+	\lstinputlisting[style=maurizio-code, caption=ResourcesManagerDebug\_Metadata.cpp, label={code:ResourcesManagerDebug-Metadata-cpp}]{code/ResourcesManagerDebug_newMetadata.cpp}
 
 \section{Disegno degli scheletri di animazione}
 	
@@ -235,9 +236,9 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	
 	Di seguito è presente il codice della classe \texttt{SkeletonDebugDrawer}.
 	
-	\lstinputlisting[style=maurizio-code]{code/SkeletonDebugDrawer.h}
+	\lstinputlisting[style=maurizio-code, caption=SkeletonDebugDrawer.h, label={code:SkeletonDebugDrawer-h}]{code/SkeletonDebugDrawer.h}
 	
-	\lstinputlisting[style=maurizio-code]{code/SkeletonDebugDrawer.cpp}
+	\lstinputlisting[style=maurizio-code, caption=SkeletonDebugDrawer.cpp, label={code:SkeletonDebugDrawer-cpp}]{code/SkeletonDebugDrawer.cpp}
 	~\\
 	La rappresentazione interna dello scheletro organizzata come spiegato prima, permette quindi di utilizzare lo scheletro efficientemente minimizzando le moltiplicazioni tra matrici. L'algoritmo di disegno procede quindi ricorsivamente, con un approccio top-down, a calcolare l'effettiva posizione del joint corrente applicando la trasformazione del padre. In questo modo si evitano la ripetizione della stessa operazione che sarebbe emersa in un approccio bottom-up.\\
 	
@@ -253,4 +254,32 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 		\caption{Screenshot n. 2 del disegno dello skeleton del rider}
 	\end{figure}
 	
-	Spiegazione estensione presente su resourcesmanagerdebug per il disegno di tutto cio che è animato
+	Un altro obbiettivo era quello di disegnare lo scheletro di animazione non solo del rider corrente ma, di un qualsiasi oggetto animato.\\
+	
+	Per soddisfare questo obbiettivo si è ricorsi al \texttt{ResourcesManagerDebug}. Esso contenendo tutti gli oggetti era il posto corretto da cui partire. Per ogni \texttt{CObject3d} si è proceduto a valutare se era un oggetto animato e nel caso, permettere all'utente tramite Beholder di lanciare il disegno dello scheletro.\\
+	
+	Per capire se un oggetto è animato si è ricorsi ad un dynamic\_cast da \texttt{CObject3d} a \texttt{CAnimated3dModel}, sottoclasse che rappresenta gli oggetti 3d anche animati. Nel codice il dynamic\_cast è stato poi sostituito con un più veloce confronto tra ClassID.\\
+	
+	Per gli oggetti animati è stato quindi inserito nel Beholder la possibilità di lanciarne il disegno dello scheletro. Essendo il disegno dello scheletro un'azione da compiere ad ogni frame, vista la sua continua modifica, si è proceduto a creare la classe \texttt{SkeletonDebugDrawerManager}. Essa permette di aggiungere un oggetto il cui scheletro verrà disegnato ogni frame. Permette inoltre di mettere in pausa il disegno oppure di fermare definitivamente il disegno.\\
+	
+	Come già accennato tutte queste funzionalità sono disponibili da Beholder, in particolare per ogni oggetto visualizzato nel Beholder tramite il \texttt{ResourcesManagerDebug} è presente una proprietà che indica (true o false) se l'oggetto è animato, e quindi è possibile disegnarne lo scheletro.\\
+	
+	In figura \ref{fig:resource-manager-tree-view} è visibile sulla destra le proprietà di un oggetto 3D, tra le quali \texttt{isAnimated}. In alto a sinistra invece ci sono le azioni disponibili, tra le quali il disegno dello scheletro. Azione che verrà davvero eseguita solo se l'oggetto è animato.
+	
+	\begin{figure}[h!] 
+		\centering 
+		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/SkeletonDebugDrawerManagerinBeholder.png} 
+		\caption{Screenshot del Beholder in cui è visibile lo \texttt{SkeletonDebugDrawerManager}}
+	\end{figure}
+	
+	\begin{figure}[h!] 
+		\centering 
+		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/mechanicSkeleton.png} 
+		\caption{Screenshot di MotoGP 14 in cui è stato attivato il disegno degli scheletri di animazione di 2 meccanici}
+	\end{figure}
+	
+	Di seguito è presente il codice della classe \texttt{SkeletonDebugDrawerManager}.
+	
+	\lstinputlisting[style=maurizio-code, caption=SkeletonDebugDrawerManager.h, label={code:SkeletonDebugDrawerManager-h}]{code/SkeletonDebugDrawerManager.h}
+	
+	\lstinputlisting[style=maurizio-code, caption=SkeletonDebugDrawerManager.cpp, label={code:SkeletonDebugDrawerManager-cpp}]{code/SkeletonDebugDrawerManager.cpp}
