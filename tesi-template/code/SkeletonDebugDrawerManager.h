@@ -1,7 +1,7 @@
 #ifndef SKELETON_DEBUG_DRAWER_MANAGER_H
 #define SKELETON_DEBUG_DRAWER_MANAGER_H
 
-class SkeletonDebugDrawerManager : public UI::DebugWorldElement
+class SkeletonDebugDrawerManager : public DebugWorldElement
 {
 private:
 	SkeletonDebugDrawerManager();

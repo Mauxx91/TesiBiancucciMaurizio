@@ -143,6 +143,13 @@ Per eseguire le animazioni il team utilizza il middleware EMotion FX 4\footnote{
 
 Il software di versionamento utilizzato in Milestone è \gloss{Perforce}\footnote{Per il lettore appassionato è disponibile una semplice ma efficacie introduzione a Perforce\textsuperscript{\textregistered} al seguente link: \url{http://www.perforce.com/perforce/doc.current/manuals/intro/intro.pdf}}, che recentemente ha rimpiazzato \gloss{Alienbrain}. Un punto di forza che distingue Perforce\textsuperscript{\textregistered} dagli altri software di versionamento sono gli Stream. Questi sono dei branch intelligenti, in altre parole, al posto di effettuare una copia vera e propria per creare un branch, come fanno ad esempio Git\textsuperscript{\textregistered} ed SVN\textsuperscript{\textregistered}, qui sono gestiti interamente in termini di \gloss{delta} rispetto al branch master. Altra particolarità e la modalità di commit su shelve (scaffale). Tale modalità permette di eseguire il commit (check-in in Perforce\textsuperscript{\textregistered}) su uno spazio personale. Questo significa che un altro programmatore quando eseguirà la get (pull in Git\textsuperscript{\textregistered}, update in SVN\textsuperscript{\textregistered}) non otterrà la versione in shelve. Dovrà manualmente richiederla per poterla avere. Questa modalità risulta molto utile ad esempio per eseguire il commit di alcune modifiche che non sono ancora state testate, oppure sono una soluzione alternativa in attesa di approvazione.
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{game/perforce.png}
+	\caption{Screenshot di Perforce}
+	\label{fig:perforce}
+\end{figure}
+
 \section{Asset}
 \label{sec:asset}
 
@@ -193,7 +200,7 @@ Un altro esempio di utilizzo del Beholder, molto usato dal team 3D, è l'esposiz
 
 L'utilizzo dei metadati all'interno del codice avviene tramite un set di macro definite in GEM. Un facile esempio di utilizzo è il seguente.
 
-\begin{lstlisting}[style=maurizio-code]
+\begin{lstlisting}[style=maurizio-code, caption=Dog.h, label={code:metadata-example-h}]
 class Dog
 {
 public:
@@ -215,7 +222,7 @@ private:
 
 Di seguito è presente il codice per eseguire l'esposizione di tutta la classe nei metadati.
 
-\begin{lstlisting}[style=maurizio-code]
+\begin{lstlisting}[style=maurizio-code, caption=Dog.cpp, label={code:metadata-example-cpp}]
 META_BEGIN_CLASS( Dog )
 
 META_BEGIN_PROPERTIES

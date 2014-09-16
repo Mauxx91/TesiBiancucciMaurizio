@@ -172,7 +172,9 @@
 		GEM\_ASSERT,
 		NULL,
 		CLSID\_SKINCONTROLLER,
-		g\_uiCLSID\_BUFFER\_CONTROLLER
+		g\_uiCLSID\_BUFFER\_CONTROLLER,
+		SKELETON\_DEBUG\_DRAWER\_MANAGER\_H,
+		GEM\_NEW
 	},
 	morekeywords={[3]
 		void,
@@ -227,7 +229,13 @@
 		BufferController,
 		RiderAnimationsBehaviour,
 		Children,
-		const\_iterator
+		const\_iterator,
+		SkeletonDebugDrawerManager,
+		DebugWorldElement,
+		ObjectDrawedInfo,
+		CAnimatedModel3d,
+		DrawParams,
+		CML\_MetadataRegistry
 	},
 	morekeywords={[4]
 		Create,
@@ -237,7 +245,10 @@
 		DrawEMFXSkeleton,
 		DrawPoint,
 		GetJointLocalMatrix,
-		GetJointColor
+		GetJointColor,
+		s\_instance,
+		AddEntry,
+		iterator
 	},
 	stringstyle=\fontfamily{Inconsolata}\color{StringColor}
 }
