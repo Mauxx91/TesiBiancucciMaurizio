@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  16 SEP 2014 12:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  16 SEP 2014 14:55
 entering extended mode
 **tesi.tex
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.tex
@@ -1144,18 +1144,6 @@ Package: inconsolata 2009/11/28 Inconsolata
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi-dati.tex)
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi-config.tex
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\glossario.tex)
-Runaway argument?
-{ name=Texture, text=texture, sort=Texture, description={Nella conosc\ETC.
-! File ended while scanning use of \newglossaryentry.
-<inserted text> 
-                \par 
-l.59 \input{glossario}
-                       % database di termini
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
 \glo@main@file=\write5
 Package glossaries Info: Writing glossary file tesi.glo on input line 62.
 \glo@acronym@file=\write6
@@ -1169,6 +1157,7 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 107.
 
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 107.
 Package hyperref Info: Option `hypertexnames' set `true' on input line 107.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
@@ -1194,7 +1183,11 @@ Package biblatex Info: ... file 'italian.lbx' found.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\italian.lbx"
 File: italian.lbx 2011/11/13 v1.7 biblatex localization
 )
-(C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.aux)
+(C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.aux
+
+LaTeX Warning: Label `fig:screenshot-emotion-studio-1' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
 LaTeX Font Info:    ... okay on input line 109.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
@@ -1210,8 +1203,7 @@ LaTeX Font Info:    ... okay on input line 109.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 109.
 LaTeX Font Info:    Try loading font information for LGR+cmr on input line 109.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\lgrcmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\lgrcmr.fd"
 File: lgrcmr.fd 2008/06/17 v2.3 Greek Computer Modern
 )
 LaTeX Font Info:    ... okay on input line 109.
@@ -1370,25 +1362,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\inizio-fine/indici.t
 ex [7] [8
 
-]
+] (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
-\tf@toc=\write7
 [9
 
 ]
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 197.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
-Package hyperref Warning: old lof file detected, not used; run LaTeX again.
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 383.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11])
+\tf@toc=\write7
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 14.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12] (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.lof
+[13
+
+]
+LaTeX Font Info:    Try loading font information for T1+fi4 on input line 93.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\inconsolata\t1fi4.fd"
+File: t1fi4.fd 2009/05/28 T1/Inconsolata
+)
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `T1/fi4/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `T1/fi4/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+)
 \tf@lof=\write8
 
-Package hyperref Warning: old lot file detected, not used; run LaTeX again.
-
+(C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.lot)
 \tf@lot=\write9
-[10
-
-])
+ [14])
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\capitoli/capitolo-1.
 tex
 Capitolo 1.
@@ -1402,10 +1440,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 23.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 23.
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
@@ -1432,42 +1466,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
 
 ]
-
-LaTeX Warning: Hyper reference `cap:milestone' on page 2 undefined on input lin
-e 42.
-
-
-LaTeX Warning: Hyper reference `cap:engine-di-gioco' on page 2 undefined on inp
-ut line 44.
-
-
-LaTeX Warning: Hyper reference `cap:multiplatform-file-analyzer' on page 2 unde
-fined on input line 46.
-
-
-LaTeX Warning: Hyper reference `cap:xml-editor' on page 2 undefined on input li
-ne 48.
-
-
-LaTeX Warning: Hyper reference `cap:game' on page 2 undefined on input line 50.
-
-
-
-LaTeX Warning: Hyper reference `cap:conclusioni' on page 2 undefined on input l
-ine 52.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 63.
-
-LaTeX Warning: Hyper reference `cap:multiplatform-file-analyzer' on page 2 unde
-fined on input line 63.
-
-
-LaTeX Warning: Hyper reference `cap:xml-editor' on page 2 undefined on input li
-ne 63.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
@@ -1522,10 +1524,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 [3
 
 ]
-LaTeX Font Info:    Try loading font information for T1+fi4 on input line 32.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\inconsolata\t1fi4.fd"
-File: t1fi4.fd 2009/05/28 T1/Inconsolata
-)
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `T1/fi4/m/n/8'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1670,10 +1668,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-
-LaTeX Warning: Reference `sec:ruolo-3D-programmer-workflow' on page 7 undefined
- on input line 94.
-
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 105.
@@ -1686,19 +1680,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-
-! Package glossaries Error: Glossary entry `texture' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114 ...ss{mesh}. Come saranno le \gloss{texture}
-                                                   e molto altro. Fissata la...
-
-You need to define a glossary entry before you can use it.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
@@ -1707,18 +1688,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
-
-
-! Package glossaries Error: Glossary entry `XML' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.118 ...lestone scritto in linguaggio \gloss{XML}
-                                                  , in cui Ã¨ scritto come r...
-
-You need to define a glossary entry before you can use it.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 118--119
@@ -1742,19 +1711,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-
-! Package glossaries Error: Glossary entry `LUA' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.122 ...secondo utilizza degli script \gloss{LUA}
-                                                  \footnote{Per maggiori app...
-
-You need to define a glossary entry before you can use it.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
@@ -1764,7 +1720,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-<immagini/game/emotionStudioSkeleton.png, id=221, 731.73375pt x 635.976pt>
+<immagini/game/emotionStudioSkeleton.png, id=606, 731.73375pt x 635.976pt>
 File: immagini/game/emotionStudioSkeleton.png Graphic file (type png)
 
 <use immagini/game/emotionStudioSkeleton.png>
@@ -1772,16 +1728,33 @@ Package pdftex.def Info: immagini/game/emotionStudioSkeleton.png used on input
 line 130.
 (pdftex.def)             Requested size: 369.88583pt x 321.48073pt.
 
-<immagini/game/emotionStudioHierarchy.png, id=223, 423.984pt x 511.9125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<immagini/game/emotionStudioHierarchy.png, id=608, 423.984pt x 511.9125pt>
 File: immagini/game/emotionStudioHierarchy.png Graphic file (type png)
 
 <use immagini/game/emotionStudioHierarchy.png>
 Package pdftex.def Info: immagini/game/emotionStudioHierarchy.png used on input
  line 137.
 (pdftex.def)             Requested size: 369.88583pt x 446.61006pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<immagini/game/perforce.png, id=614, 855.195pt x 715.17188pt>
+File: immagini/game/perforce.png Graphic file (type png)
+
+<use immagini/game/perforce.png>
+Package pdftex.def Info: immagini/game/perforce.png used on input line 148.
+(pdftex.def)             Requested size: 369.88583pt x 309.3185pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
- <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 140.
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 161.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -1790,47 +1763,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/emo
-tionStudioSkeleton.png>]
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
-! Package glossaries Error: Glossary entry `Perforce' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.144 ...ilizzato in Milestone Ã¨ \gloss{Perforce}
-                                                  \footnote{Per il lettore a...
-
-You need to define a glossary entry before you can use it.
+ []
 
 
-! Package glossaries Error: Glossary entry `Alienbrain' has not been defined.
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.144 ...temente ha rimpiazzato \gloss{Alienbrain}
-                                                  . Un punto di forza che di...
-
-You need to define a glossary entry before you can use it.
+ []
 
 
-! Package glossaries Error: Glossary entry `delta' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.144 ...i interamente in termini di \gloss{delta}
-                                                   rispetto al branch master...
-
-You need to define a glossary entry before you can use it.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
+
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 145.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 170.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -1840,35 +1789,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/em
-otionStudioHierarchy.png>]
-<immagini/game/perforce.png, id=248, 855.195pt x 715.17188pt>
-File: immagini/game/perforce.png Graphic file (type png)
-
-<use immagini/game/perforce.png>
-Package pdftex.def Info: immagini/game/perforce.png used on input line 148.
-(pdftex.def)             Requested size: 369.88583pt x 309.3185pt.
-
-
-! Package glossaries Error: Glossary entry `serializzazione' has not been defin
-ed.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.159 ...te compressione e \gloss{serializzazione}
-                                                   (se ad esempio il formato...
-
-You need to define a glossary entry before you can use it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
+otionStudioSkeleton.png>]
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
-<use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 165.
+ <use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 175.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -1877,39 +1801,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/pe
-rforce.png>]
-
-! Package glossaries Error: Glossary entry `sistema di integrazione continua' h
-as not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 ... \gloss{sistema di integrazione continua}
-                                                   che ogni notte procede a ...
-
-You need to define a glossary entry before you can use it.
-
-
-! Package glossaries Error: Glossary entry `build' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 ...notte procede a eseguire le \gloss{build}
-                                                   di tutti gli asset aggior...
-
-You need to define a glossary entry before you can use it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-
+[11 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/em
+otionStudioHierarchy.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
@@ -1930,11 +1823,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]
-
-LaTeX Warning: Reference `sec:asset' on page 13 undefined on input line 189.
-
-
+[12 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/pe
+rforce.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
@@ -1956,12 +1846,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 203.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `T1/fi4/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `T1/fi4/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `T1/fi4/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2037,18 +1921,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[19] <immagini/tool1/UC1.png, id=360, 335.3328pt x 166.7028pt>
+[19] <immagini/tool1/UC1.png, id=745, 335.3328pt x 166.7028pt>
 File: immagini/tool1/UC1.png Graphic file (type png)
 
 <use immagini/tool1/UC1.png>
 Package pdftex.def Info: immagini/tool1/UC1.png used on input line 38.
 (pdftex.def)             Requested size: 258.91895pt x 128.72273pt.
 
-
-LaTeX Warning: Hyper reference `subsec:UC1.1' on page 20 undefined on input lin
-e 48.
-
-<immagini/tool1/UC1-1.png, id=361, 435.5472pt x 447.5922pt>
+<immagini/tool1/UC1-1.png, id=747, 435.5472pt x 447.5922pt>
 File: immagini/tool1/UC1-1.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1.png>
@@ -2058,23 +1938,7 @@ Package pdftex.def Info: immagini/tool1/UC1-1.png used on input line 58.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1' on page 20 undefined on input l
-ine 68.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.2' on page 20 undefined on input l
-ine 69.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4' on page 20 undefined on input l
-ine 70.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.3' on page 20 undefined on input l
-ine 74.
-
-<immagini/tool1/UC1-1-1.png, id=362, 445.665pt x 297.0297pt>
+<immagini/tool1/UC1-1-1.png, id=752, 445.665pt x 297.0297pt>
 File: immagini/tool1/UC1-1-1.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1-1.png>
@@ -2093,20 +1957,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [20 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/U
 C1.png>]
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1.1' on page 21 undefined on input
- line 94.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1.2' on page 21 undefined on input
- line 95.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1.3' on page 21 undefined on input
- line 96.
-
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
-<use immagini/logo-unipd.jpg>
+ <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 101.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
@@ -2130,7 +1982,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/U
-C1-1-1.png>] <immagini/tool1/UC1-1-4.png, id=394, 445.665pt x 658.3797pt>
+C1-1-1.png>] <immagini/tool1/UC1-1-4.png, id=777, 445.665pt x 658.3797pt>
 File: immagini/tool1/UC1-1-4.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1-4.png>
@@ -2139,30 +1991,6 @@ Package pdftex.def Info: immagini/tool1/UC1-1-4.png used on input line 165.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.1' on page 23 undefined on input
- line 175.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.2' on page 23 undefined on input
- line 177.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.3' on page 23 undefined on input
- line 179.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.4' on page 23 undefined on input
- line 181.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.5' on page 23 undefined on input
- line 183.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.6' on page 23 undefined on input
- line 185.
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
@@ -2225,98 +2053,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [26]
-
-LaTeX Warning: Hyper reference `subsec:UC1.1' on page 27 undefined on input lin
-e 300.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1' on page 27 undefined on input l
-ine 303.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1.1' on page 27 undefined on input
- line 305.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1.2' on page 27 undefined on input
- line 307.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1.2' on page 27 undefined on input
- line 309.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1.2' on page 27 undefined on input
- line 311.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1.3' on page 27 undefined on input
- line 313.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.1.3' on page 27 undefined on input
- line 315.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.3' on page 27 undefined on input l
-ine 321.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.3' on page 27 undefined on input l
-ine 323.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.3' on page 27 undefined on input l
-ine 325.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.3' on page 27 undefined on input l
-ine 327.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.3' on page 27 undefined on input l
-ine 329.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4' on page 27 undefined on input l
-ine 332.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.1' on page 27 undefined on input
- line 334.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.2' on page 27 undefined on input
- line 336.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.3' on page 27 undefined on input
- line 338.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.4' on page 27 undefined on input
- line 340.
-
-
 Overfull \hbox (31.73192pt too wide) in alignment at lines 297--341
  [] [] [] 
  []
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.5' on page 27 undefined on input
- line 342.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.5' on page 27 undefined on input
- line 344.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.5' on page 27 undefined on input
- line 346.
-
-
-LaTeX Warning: Hyper reference `subsec:UC1.1.4.6' on page 27 undefined on input
- line 348.
 
 
 Overfull \hbox (31.73192pt too wide) in alignment at lines 341--352
@@ -2441,7 +2180,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 403--404
  []
 
 
-<immagini/tool1/Tool-1-Diagramma-Classi.png, id=475, 678.6153pt x 1100.1903pt>
+<immagini/tool1/Tool-1-Diagramma-Classi.png, id=869, 678.6153pt x 1100.1903pt>
 File: immagini/tool1/Tool-1-Diagramma-Classi.png Graphic file (type png)
 
 <use immagini/tool1/Tool-1-Diagramma-Classi.png>
@@ -2508,7 +2247,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33] <immagini/tool1/mfaErrorePath.png, id=523, 484.81125pt x 225.84375pt>
+[33] <immagini/tool1/mfaErrorePath.png, id=904, 484.81125pt x 225.84375pt>
 File: immagini/tool1/mfaErrorePath.png Graphic file (type png)
 
 <use immagini/tool1/mfaErrorePath.png>
@@ -2516,7 +2255,7 @@ Package pdftex.def Info: immagini/tool1/mfaErrorePath.png used on input line 50
 1.
 (pdftex.def)             Requested size: 369.88583pt x 172.315pt.
 
-<immagini/tool1/mfaRisultato.png, id=524, 651.93562pt x 583.42969pt>
+<immagini/tool1/mfaRisultato.png, id=905, 651.93562pt x 583.42969pt>
 File: immagini/tool1/mfaRisultato.png Graphic file (type png)
 
 <use immagini/tool1/mfaRisultato.png>
@@ -2565,15 +2304,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 
-LaTeX Warning: Reference `cap:multiplatform-file-analyzer' on page 37 undefined
- on input line 16.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-[37] <immagini/tool2/UC1.png, id=558, 748.7172pt x 869.1672pt>
+[37] <immagini/tool2/UC1.png, id=932, 748.7172pt x 869.1672pt>
 File: immagini/tool2/UC1.png Graphic file (type png)
 
 <use immagini/tool2/UC1.png>
@@ -2587,71 +2322,7 @@ Overfull \hbox (36.9852pt too wide) in paragraph at lines 38--39
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.1' on page 38 undefined on input l
-ine 48.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.2' on page 38 undefined on input l
-ine 50.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3' on page 38 undefined on input l
-ine 52.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.4' on page 38 undefined on input l
-ine 54.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.5' on page 38 undefined on input l
-ine 56.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.6' on page 38 undefined on input l
-ine 58.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7' on page 38 undefined on input l
-ine 60.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.8' on page 38 undefined on input l
-ine 62.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.9' on page 38 undefined on input l
-ine 64.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.10' on page 38 undefined on input 
-line 66.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11' on page 38 undefined on input 
-line 68.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.12' on page 38 undefined on input 
-line 70.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.13' on page 38 undefined on input 
-line 75.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.14' on page 38 undefined on input 
-line 77.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.15' on page 38 undefined on input 
-line 79.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.16' on page 38 undefined on input 
-line 81.
-
-<immagini/tool2/UC1-1.png, id=559, 405.4347pt x 166.7028pt>
+<immagini/tool2/UC1-1.png, id=949, 405.4347pt x 166.7028pt>
 File: immagini/tool2/UC1-1.png Graphic file (type png)
 
 <use immagini/tool2/UC1-1.png>
@@ -2660,10 +2331,6 @@ Package pdftex.def Info: immagini/tool2/UC1-1.png used on input line 91.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.1.1' on page 38 undefined on input
- line 101.
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
@@ -2695,12 +2362,8 @@ pdfTeX warning: pdflatex.exe (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/
 tesi-template/immagini/tool2/UC1.png): large interlaced PNG might cause out of 
 memory (use non-interlaced PNG to fix this)
 >]
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.1.2' on page 40 undefined on input
- line 102.
-
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
-<use immagini/logo-unipd.jpg>
+ <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 138.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
@@ -2711,7 +2374,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/U
-C1-1.png>] <immagini/tool2/UC1-3.png, id=599, 616.2222pt x 819.06pt>
+C1-1.png>] <immagini/tool2/UC1-3.png, id=986, 616.2222pt x 819.06pt>
 File: immagini/tool2/UC1-3.png Graphic file (type png)
 
 <use immagini/tool2/UC1-3.png>
@@ -2724,58 +2387,6 @@ Overfull \hbox (36.9852pt too wide) in paragraph at lines 145--146
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.1' on page 41 undefined on input
- line 155.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.3' on page 41 undefined on input
- line 157.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.4' on page 41 undefined on input
- line 159.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.5' on page 41 undefined on input
- line 161.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.6' on page 41 undefined on input
- line 163.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.7' on page 41 undefined on input
- line 165.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.8' on page 41 undefined on input
- line 167.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.9' on page 41 undefined on input
- line 169.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.10' on page 41 undefined on inpu
-t line 171.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.12' on page 41 undefined on inpu
-t line 173.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.13' on page 41 undefined on inpu
-t line 175.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.2' on page 41 undefined on input
- line 180.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.16' on page 41 undefined on input 
-line 182.
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
@@ -2809,7 +2420,7 @@ C1-3.png
 pdfTeX warning: pdflatex.exe (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/
 tesi-template/immagini/tool2/UC1-3.png): large interlaced PNG might cause out o
 f memory (use non-interlaced PNG to fix this)
->] <immagini/tool2/UC1-3-4.png, id=624, 405.4347pt x 287.1528pt>
+>] <immagini/tool2/UC1-3-4.png, id=1027, 405.4347pt x 287.1528pt>
 File: immagini/tool2/UC1-3-4.png Graphic file (type png)
 
 <use immagini/tool2/UC1-3-4.png>
@@ -2831,24 +2442,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [43]
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.4.1' on page 44 undefined on inp
-ut line 240.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.4.2' on page 44 undefined on inp
-ut line 242.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.4.3' on page 44 undefined on inp
-ut line 244.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.4.4' on page 44 undefined on inp
-ut line 246.
-
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
-<use immagini/logo-unipd.jpg>
+ <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 272.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
@@ -2895,23 +2490,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47] <immagini/tool2/UC1-6.png, id=668, 405.4347pt x 186.6975pt>
+[47] <immagini/tool2/UC1-6.png, id=1058, 405.4347pt x 186.6975pt>
 File: immagini/tool2/UC1-6.png Graphic file (type png)
 
 <use immagini/tool2/UC1-6.png>
 Package pdftex.def Info: immagini/tool2/UC1-6.png used on input line 428.
 (pdftex.def)             Requested size: 295.90979pt x 136.27094pt.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.6.1' on page 48 undefined on input
- line 438.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.6.2' on page 48 undefined on input
- line 440.
-
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
-<use immagini/logo-unipd.jpg>
+ <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 451.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
@@ -2922,19 +2508,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/U
-C1-6.png>] <immagini/tool2/UC1-7.png, id=679, 385.44pt x 246.9225pt>
+C1-6.png>] <immagini/tool2/UC1-7.png, id=1067, 385.44pt x 246.9225pt>
 File: immagini/tool2/UC1-7.png Graphic file (type png)
 
 <use immagini/tool2/UC1-7.png>
 Package pdftex.def Info: immagini/tool2/UC1-7.png used on input line 473.
 (pdftex.def)             Requested size: 295.90979pt x 189.56573pt.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.1' on page 49 undefined on input
- line 483.
-
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
-<use immagini/logo-unipd.jpg>
+ <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 485.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
@@ -2946,16 +2527,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [49 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/U
 C1-7.png>]
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.2' on page 50 undefined on input
- line 485.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.3' on page 50 undefined on input
- line 487.
-
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
-<use immagini/logo-unipd.jpg>
+ <use immagini/logo-unipd.jpg>
 Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 533.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
@@ -2965,7 +2538,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50] <immagini/tool2/UC1-11.png, id=698, 375.3222pt x 236.8047pt>
+[50] <immagini/tool2/UC1-11.png, id=1082, 375.3222pt x 236.8047pt>
 File: immagini/tool2/UC1-11.png Graphic file (type png)
 
 <use immagini/tool2/UC1-11.png>
@@ -2974,18 +2547,6 @@ Package pdftex.def Info: immagini/tool2/UC1-11.png used on input line 564.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11.1' on page 51 undefined on inpu
-t line 574.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11.2' on page 51 undefined on inpu
-t line 576.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11.3' on page 51 undefined on inpu
-t line 578.
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
@@ -3040,74 +2601,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [54]
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.1' on page 55 undefined on input l
-ine 732.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.1.1' on page 55 undefined on input
- line 734.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.1.2' on page 55 undefined on input
- line 736.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.2' on page 55 undefined on input l
-ine 742.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.2' on page 55 undefined on input l
-ine 744.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.2' on page 55 undefined on input l
-ine 746.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.2' on page 55 undefined on input l
-ine 748.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3' on page 55 undefined on input l
-ine 751.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.1' on page 55 undefined on input
- line 753.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.2' on page 55 undefined on input
- line 757.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.2' on page 55 undefined on input
- line 759.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.3' on page 55 undefined on input
- line 761.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.4' on page 55 undefined on input
- line 765.
-
-
 Underfull \hbox (badness 1009) in paragraph at lines 767--767
 []|\T1/cmr/m/n/10 (+20) Un uten-te può mo-di-fi-ca-re il va-lo-re
  []
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.4.1' on page 55 undefined on inp
-ut line 767.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.4.2' on page 55 undefined on inp
-ut line 769.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.4.3' on page 55 undefined on inp
-ut line 771.
 
 
 Overfull \hbox (31.73192pt too wide) in alignment at lines 729--772
@@ -3115,29 +2611,9 @@ Overfull \hbox (31.73192pt too wide) in alignment at lines 729--772
  []
 
 
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.4.4' on page 55 undefined on inp
-ut line 773.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.5' on page 55 undefined on input
- line 777.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.6' on page 55 undefined on input
- line 779.
-
-
 Underfull \hbox (badness 5331) in paragraph at lines 787--787
 []|\T1/cmr/m/n/10 (+20) Un uten-te può in-col-la-re il no-do
  []
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.7' on page 55 undefined on input
- line 787.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.8' on page 55 undefined on input
- line 789.
 
 
 Underfull \hbox (badness 4353) in paragraph at lines 793--793
@@ -3145,21 +2621,9 @@ Underfull \hbox (badness 4353) in paragraph at lines 793--793
  []
 
 
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.9' on page 55 undefined on input
- line 793.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.10' on page 55 undefined on inpu
-t line 795.
-
-
 Underfull \hbox (badness 2111) in paragraph at lines 801--801
 []|\T1/cmr/m/n/10 (+20) Il pro-gram-ma mo-stra gli even-tua-li
  []
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.11' on page 55 undefined on inpu
-t line 801.
 
 
 Underfull \hbox (badness 4621) in paragraph at lines 804--804
@@ -3167,25 +2631,9 @@ Underfull \hbox (badness 4621) in paragraph at lines 804--804
  []
 
 
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.12' on page 55 undefined on inpu
-t line 804.
-
-
 Underfull \hbox (badness 1281) in paragraph at lines 806--806
 []|\T1/cmr/m/n/10 (+20) Un uten-te può ri-pri-sti-na-re l'ul-ti-ma
  []
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.3.13' on page 55 undefined on inpu
-t line 806.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.4' on page 55 undefined on input l
-ine 813.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.4' on page 55 undefined on input l
-ine 815.
 
 
 Overfull \hbox (31.73192pt too wide) in alignment at lines 772--816
@@ -3204,11 +2652,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [55]
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.5' on page 56 undefined on input l
-ine 817.
-
-
 Underfull \hbox (badness 3250) in paragraph at lines 819--819
 []|\T1/cmr/m/n/10 (+20) Il va-lo-re in-se-ri-to dal-l'u-ten-te vie-ne
  []
@@ -3219,29 +2662,9 @@ Underfull \hbox (badness 1142) in paragraph at lines 819--819
  []
 
 
-LaTeX Warning: Hyper reference `subsec:XEUC1.5' on page 56 undefined on input l
-ine 819.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.6' on page 56 undefined on input l
-ine 821.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.6.1' on page 56 undefined on input
- line 823.
-
-
 Underfull \hbox (badness 3872) in paragraph at lines 825--825
 []|\T1/cmr/m/n/10 (+20) Un uten-te può ri-muo-ve-re un fi-le
  []
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.6.2' on page 56 undefined on input
- line 825.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.6' on page 56 undefined on input l
-ine 827.
 
 
 Underfull \hbox (badness 1558) in paragraph at lines 831--831
@@ -3252,42 +2675,6 @@ Underfull \hbox (badness 1558) in paragraph at lines 831--831
 Underfull \hbox (badness 1436) in paragraph at lines 831--831
 \T1/cmr/m/n/10 (+20) dei ti-pi di re-la-zio-ni co-no-sciu-te dal
  []
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7' on page 56 undefined on input l
-ine 831.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.1' on page 56 undefined on input
- line 833.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.1' on page 56 undefined on input
- line 835.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.1' on page 56 undefined on input
- line 837.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.1' on page 56 undefined on input
- line 839.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.1' on page 56 undefined on input
- line 841.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.1' on page 56 undefined on input
- line 843.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.2' on page 56 undefined on input
- line 846.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.7.3' on page 56 undefined on input
- line 848.
 
 
 Underfull \hbox (badness 1062) in paragraph at lines 850--850
@@ -3308,14 +2695,6 @@ Underfull \hbox (badness 4084) in paragraph at lines 855--855
 Underfull \hbox (badness 2318) in paragraph at lines 855--855
 \T1/cmr/m/n/10 (+20) di re-la-zio-ni pre-sen-ti in un fi-le di
  []
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.8' on page 56 undefined on input l
-ine 855.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.8' on page 56 undefined on input l
-ine 857.
 
 
 Overfull \hbox (31.73192pt too wide) in alignment at lines 816--858
@@ -3366,70 +2745,6 @@ Underfull \hbox (badness 2538) in paragraph at lines 859--859
 Underfull \hbox (badness 3803) in paragraph at lines 859--859
 \T1/cmr/m/n/10 (+20) con-te-nu-te, eli-mi-nan-do tut-te quel-le
  []
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.9' on page 58 undefined on input l
-ine 864.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.9' on page 58 undefined on input l
-ine 865.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.10' on page 58 undefined on input 
-line 870.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11' on page 58 undefined on input 
-line 872.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11.1' on page 58 undefined on inpu
-t line 874.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11.1' on page 58 undefined on inpu
-t line 876.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11.1' on page 58 undefined on inpu
-t line 878.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11.1' on page 58 undefined on inpu
-t line 880.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11.1' on page 58 undefined on inpu
-t line 882.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11.2' on page 58 undefined on inpu
-t line 884.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.11.3' on page 58 undefined on inpu
-t line 886.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.12' on page 58 undefined on input 
-line 889.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.13' on page 58 undefined on input 
-line 892.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.14' on page 58 undefined on input 
-line 894.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.15' on page 58 undefined on input 
-line 896.
-
-
-LaTeX Warning: Hyper reference `subsec:XEUC1.16' on page 58 undefined on input 
-line 898.
 
 
 Overfull \hbox (31.73192pt too wide) in alignment at lines 858--902
@@ -3593,7 +2908,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62] <immagini/tool2/diagramma1.png, id=852, 598.1547pt x 437.7153pt>
+[62] <immagini/tool2/diagramma1.png, id=1274, 598.1547pt x 437.7153pt>
 File: immagini/tool2/diagramma1.png Graphic file (type png)
 
 <use immagini/tool2/diagramma1.png>
@@ -3606,7 +2921,7 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 972--973
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 973.
-<immagini/tool2/diagramma2.png, id=853, 718.6047pt x 758.835pt>
+<immagini/tool2/diagramma2.png, id=1275, 718.6047pt x 758.835pt>
 File: immagini/tool2/diagramma2.png Graphic file (type png)
 
 <use immagini/tool2/diagramma2.png>
@@ -3758,7 +3073,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[69] <immagini/tool2/xeEditNode.png, id=942, 312.41719pt x 253.69781pt>
+[69] <immagini/tool2/xeEditNode.png, id=1355, 312.41719pt x 253.69781pt>
 File: immagini/tool2/xeEditNode.png Graphic file (type png)
 
 <use immagini/tool2/xeEditNode.png>
@@ -3766,7 +3081,7 @@ Package pdftex.def Info: immagini/tool2/xeEditNode.png used on input line 1160.
 
 (pdftex.def)             Requested size: 266.31824pt x 216.2674pt.
 
-<immagini/tool2/xeVisualizzazioneFile.png, id=943, 622.57594pt x 606.01407pt>
+<immagini/tool2/xeVisualizzazioneFile.png, id=1356, 622.57594pt x 606.01407pt>
 File: immagini/tool2/xeVisualizzazioneFile.png Graphic file (type png)
 
 <use immagini/tool2/xeVisualizzazioneFile.png>
@@ -3781,7 +3096,7 @@ Overfull \hbox (36.99083pt too wide) in paragraph at lines 1166--1167
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool2/xeTrascinatoFile.png, id=944, 623.32875pt x 606.01407pt>
+<immagini/tool2/xeTrascinatoFile.png, id=1357, 623.32875pt x 606.01407pt>
 File: immagini/tool2/xeTrascinatoFile.png Graphic file (type png)
 
 <use immagini/tool2/xeTrascinatoFile.png>
@@ -3796,7 +3111,7 @@ Overfull \hbox (36.99083pt too wide) in paragraph at lines 1172--1173
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool2/xeEditAssociateFile.png, id=945, 568.37344pt x 164.11313pt>
+<immagini/tool2/xeEditAssociateFile.png, id=1358, 568.37344pt x 164.11313pt>
 File: immagini/tool2/xeEditAssociateFile.png Graphic file (type png)
 
 <use immagini/tool2/xeEditAssociateFile.png>
@@ -3811,7 +3126,7 @@ Overfull \hbox (36.99083pt too wide) in paragraph at lines 1178--1179
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool2/xeEditRelations.png, id=946, 680.5425pt x 403.5075pt>
+<immagini/tool2/xeEditRelations.png, id=1359, 680.5425pt x 403.5075pt>
 File: immagini/tool2/xeEditRelations.png Graphic file (type png)
 
 <use immagini/tool2/xeEditRelations.png>
@@ -3826,7 +3141,7 @@ Overfull \hbox (36.99083pt too wide) in paragraph at lines 1184--1185
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool2/xeCheckRelation.png, id=947, 916.1728pt x 479.54156pt>
+<immagini/tool2/xeCheckRelation.png, id=1360, 916.1728pt x 479.54156pt>
 File: immagini/tool2/xeCheckRelation.png Graphic file (type png)
 
 <use immagini/tool2/xeCheckRelation.png>
@@ -3918,18 +3233,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
  []
 
 
-! Package glossaries Error: Glossary entry `LOD' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 ...cono il calcolo dei livelli di \gloss{LOD}
-                                                   per le moto ed i piloti. ...
-
-You need to define a glossary entry before you can use it.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
@@ -3944,7 +3247,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-<immagini/game/LODexample.jpg, id=984, 963.6pt x 542.025pt>
+<immagini/game/LODexample.jpg, id=1391, 963.6pt x 542.025pt>
 File: immagini/game/LODexample.jpg Graphic file (type jpg)
 
 <use immagini/game/LODexample.jpg>
@@ -3963,7 +3266,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-[75] <immagini/game/lodWritesBefore.png, id=994, 963.6pt x 540.51938pt>
+[75] <immagini/game/lodWritesBefore.png, id=1399, 963.6pt x 540.51938pt>
 File: immagini/game/lodWritesBefore.png Graphic file (type png)
 
 <use immagini/game/lodWritesBefore.png>
@@ -4028,7 +3331,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [77 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/lo
 dWritesBefore.png>]
-<immagini/game/lodWritesAfterBike.png, id=1031, 1028.34187pt x 578.16pt>
+<immagini/game/lodWritesAfterBike.png, id=1435, 1028.34187pt x 578.16pt>
 File: immagini/game/lodWritesAfterBike.png Graphic file (type png)
 
 <use immagini/game/lodWritesAfterBike.png>
@@ -4040,7 +3343,7 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 90--91
  []| [] 
  []
 
-<immagini/game/lodWritesAfterRider.png, id=1032, 1029.8475pt x 579.66562pt>
+<immagini/game/lodWritesAfterRider.png, id=1436, 1029.8475pt x 579.66562pt>
 File: immagini/game/lodWritesAfterRider.png Graphic file (type png)
 
 <use immagini/game/lodWritesAfterRider.png>
@@ -4060,7 +3363,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-<immagini/game/lodWritesBeholder.png, id=1033, 1071.25218pt x 703.12688pt>
+<immagini/game/lodWritesBeholder.png, id=1437, 1071.25218pt x 703.12688pt>
 File: immagini/game/lodWritesBeholder.png Graphic file (type png)
 
 <use immagini/game/lodWritesBeholder.png>
@@ -4074,10 +3377,6 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 104--105
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `code:printloddebuginformation' on page 78 undefined o
-n input line 112.
 
 
 Overfull \hbox (21.19981pt too wide) in paragraph at lines 112--113
@@ -4122,18 +3421,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-<immagini/game/gerarchiaDrawText.png, id=1065, 297.0297pt x 350.2686pt>
+<immagini/game/gerarchiaDrawText.png, id=1466, 297.0297pt x 350.2686pt>
 File: immagini/game/gerarchiaDrawText.png Graphic file (type png)
 
 <use immagini/game/gerarchiaDrawText.png>
 Package pdftex.def Info: immagini/game/gerarchiaDrawText.png used on input line
  118.
 (pdftex.def)             Requested size: 221.93375pt x 261.72273pt.
-
-
-LaTeX Warning: Reference `sec:stampa-del-nome-degli-spazi-di-riferimento' on pa
-ge 80 undefined on input line 122.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
@@ -4184,7 +3478,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
  []
 
 
-<immagini/game/BeholderDrawSceneAxis.png, id=1071, 1201.48875pt x 702.37407pt>
+<immagini/game/BeholderDrawSceneAxis.png, id=1472, 1201.48875pt x 702.37407pt>
 File: immagini/game/BeholderDrawSceneAxis.png Graphic file (type png)
 
 <use immagini/game/BeholderDrawSceneAxis.png>
@@ -4255,7 +3549,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [83])
-<immagini/game/menuDrawAxisText.png, id=1175, 1030.60031pt x 580.41844pt>
+<immagini/game/menuDrawAxisText.png, id=1574, 1030.60031pt x 580.41844pt>
 File: immagini/game/menuDrawAxisText.png Graphic file (type png)
 
 <use immagini/game/menuDrawAxisText.png>
@@ -4294,7 +3588,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [84]
-<immagini/game/beholderResourceManagerView.png, id=1219, 777.65532pt x 749.0484
+<immagini/game/beholderResourceManagerView.png, id=1617, 777.65532pt x 749.0484
 3pt>
 File: immagini/game/beholderResourceManagerView.png Graphic file (type png)
  <use immagini/game/beholderResourceManagerView.png>
@@ -4476,15 +3770,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--211
  []
 
 
-LaTeX Warning: Reference `fig:SkeletonTerminology' on page 95 undefined on inpu
-t line 212.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
-<immagini/game/SkeletonTerminology.jpg, id=1703, 501.875pt x 411.5375pt>
+<immagini/game/SkeletonTerminology.jpg, id=2099, 501.875pt x 411.5375pt>
 File: immagini/game/SkeletonTerminology.jpg Graphic file (type jpg)
 
 <use immagini/game/SkeletonTerminology.jpg>
@@ -4524,7 +3814,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
  []
 
 
-<immagini/game/BeholderActivateRiderSkeleton.png, id=1718, 985.43156pt x 606.76
+<immagini/game/BeholderActivateRiderSkeleton.png, id=2112, 985.43156pt x 606.76
 688pt>
 File: immagini/game/BeholderActivateRiderSkeleton.png Graphic file (type png)
  <use immagini/game/BeholderActivateRiderSkeleton.png>
@@ -4605,7 +3895,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--245
 
  []
 
-<immagini/game/skeletonRider1.png, id=1897, 1029.8475pt x 579.66562pt>
+<immagini/game/skeletonRider1.png, id=2289, 1029.8475pt x 579.66562pt>
 File: immagini/game/skeletonRider1.png Graphic file (type png)
 
 <use immagini/game/skeletonRider1.png>
@@ -4617,7 +3907,7 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 248--249
  []| [] 
  []
 
-<immagini/game/skeletonRider2.png, id=1898, 1028.34187pt x 578.91281pt>
+<immagini/game/skeletonRider2.png, id=2290, 1028.34187pt x 578.91281pt>
 File: immagini/game/skeletonRider2.png Graphic file (type png)
 
 <use immagini/game/skeletonRider2.png>
@@ -4674,11 +3964,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--267
  []
 
 
-LaTeX Warning: Reference `fig:resource-manager-tree-view' on page 101 undefined
- on input line 268.
-
-
-<immagini/game/SkeletonDebugDrawerManagerinBeholder.png, id=1922, 849.92531pt x
+<immagini/game/SkeletonDebugDrawerManagerinBeholder.png, id=2314, 849.92531pt x
  648.92438pt>
 File: immagini/game/SkeletonDebugDrawerManagerinBeholder.png Graphic file (type
  png)
@@ -4694,7 +3980,7 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 272--273
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/game/mechanicSkeleton.png, id=1923, 1028.34187pt x 578.16pt>
+<immagini/game/mechanicSkeleton.png, id=2315, 1028.34187pt x 578.16pt>
 File: immagini/game/mechanicSkeleton.png Graphic file (type png)
 
 <use immagini/game/mechanicSkeleton.png>
@@ -4885,10 +4171,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 142.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 
 Package biblatex Warning: Please rerun LaTeX.
@@ -4898,47 +4181,50 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 23399 strings out of 494045
- 369109 string characters out of 3148375
- 883280 words of memory out of 3000000
- 24395 multiletter control sequences out of 15000+200000
- 42976 words of font info for 176 fonts, out of 3000000 for 9000
+ 23706 strings out of 494045
+ 375583 string characters out of 3148375
+ 893940 words of memory out of 3000000
+ 24689 multiletter control sequences out of 15000+200000
+ 43095 words of font info for 177 fonts, out of 3000000 for 9000
  717 hyphenation exceptions out of 8191
  72i,16n,143p,1518b,2988s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Pr
-ogram Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/inconsolata/fi4-ec.enc}<C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/inconsolata/Inconsolata.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/cm-super/sfbi0700.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/cm-super/sfbi1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
-r/sfbx0700.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx080
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx0900.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/cm-super/sfbx2074.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/
-sfcc1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1200.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/cm-super/sfrm0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm
--super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sf
-si1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsl1000.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsl1200.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti0600.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/cm-super/sfti0700.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/cm-super/sfti0800.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (121 pages, 14478318 bytes).
+pdfTeX warning (dest): name{glo:LOD} has been referenced but does not exist, 
+replaced by a fixed one
+
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Prog
+ram Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Program Files
+/MiKTeX 2.9/fonts/enc/dvips/inconsolata/fi4-ec.enc}<C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/inconsolata/Inconsolata.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/cm-super/sfbi0700.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+cm-super/sfbi1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/
+sfbx0700.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx0800.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx0900.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/cm-super/sfbx2074.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm
+-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sf
+cc1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1200.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/cm-super/sfrm0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
+uper/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsi
+1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsl1000.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsl1200.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti0600.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/cm-super/sfti0700.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/cm-super/sfti0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/cm-super/sfti1200.pfb>
+Output written on tesi.pdf (125 pages, 14565698 bytes).
 PDF statistics:
- 3046 PDF objects out of 3580 (max. 8388607)
- 1571 named destinations out of 1728 (max. 500000)
+ 3430 PDF objects out of 3580 (max. 8388607)
+ 1576 named destinations out of 1728 (max. 500000)
  51014 words of extra memory for PDF output out of 51595 (max. 10000000)
 
