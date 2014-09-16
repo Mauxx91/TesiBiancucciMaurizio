@@ -28,11 +28,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Ruolo dei 3D programmer nel workflow}{8}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Configuration e data Management}{9}{section.2.6}
+\contentsline {section}{\numberline {2.6}Configuration e data Management}{10}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Asset}{9}{section.2.7}
+\contentsline {section}{\numberline {2.7}Asset}{11}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Code build}{11}{section.2.8}
+\contentsline {section}{\numberline {2.8}Code build}{12}{section.2.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.9}Metadati}{13}{section.2.9}
 \defcounter {refsection}{0}\relax 
@@ -372,9 +372,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.3}Stampa del nome degli spazi di riferimento}{81}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Vista gerarchica dei world nel Beholder}{85}{section.6.4}
+\contentsline {section}{\numberline {6.4}Vista gerarchica dei world nel Beholder}{84}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Disegno degli scheletri di animazione}{94}{section.6.5}
+\contentsline {section}{\numberline {6.5}Disegno degli scheletri di animazione}{95}{section.6.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Conclusioni}{107}{chapter.7}
 \defcounter {refsection}{0}\relax 
@@ -384,6 +384,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.3}Valutazione personale}{108}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossario}{109}{section*.108}
+\contentsline {chapter}{Glossario}{109}{section*.109}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{111}{appendix*.110}
+\contentsline {chapter}{Bibliografia}{111}{appendix*.111}

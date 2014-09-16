@@ -113,8 +113,11 @@ Prestando attenzione al metodo \texttt{PrintLodDebugInformation} presente nel li
 
 Avendo le due classi la maggior parte del codice in comune, si è provveduto ad effettuare un refactor creando una base astratta \texttt{UI\_GemScreenTextBase} dalla quale entrambe derivano e concretizzano implementando i metodi astratti. La classe \texttt{LodModuleDebug} è stata inoltre rinominata in \texttt{DebugTextDrawer} per meglio rispecchiare le sue funzionalità e rendere il codice più comprensibile.\\
 
-//todo immagine che mostra il diagramma UML della nuova gerarchia
-//Todo approfondire la trattazione della gerarchia ed eventualmente mettere un po di codice e dove vengono inizializzati\\
+\begin{figure}[h!] 
+	\centering 
+	\includegraphics[width=0.6\columnwidth]{game/gerarchiaDrawText.png} 
+	\caption{Diagramma UML della gerarchia di stampa del testo. Sono riportati solo i metodi più significativi}
+\end{figure}
 
 La classe \texttt{DebugTextDrawer3DPoint} verrà trattata successivamente nella sezione \ref{sec:stampa-del-nome-degli-spazi-di-riferimento}.\\
 
@@ -161,8 +164,6 @@ Una funzionalità già presente è la stampa degli assi di riferimento degli ogg
 \end{figure}
 
 \texttt{DebugTextDrawer} provvede ad ogni frame, tramite un puntatore alla camera attiva e una reference alla matrice della posizione, che può quindi essere aggiornata, ad effettuare il calcolo del punto 3D a partire dal punto 2D e lanciare la stampa ad ogni frame. L'appesa di un log a questa classe richiede quindi della camera attiva, del testo e della matrice che contiene la posizione 3D. In questo modo è possibile disegnare il nome dell'asse, e continuare a visualizzare il nome ad ogni frame, senza dover appendere il log ad ogni frame come con \texttt{DebugTextDrawer}. Questo si è reso necessario in quanto il submit degli oggetti 3D che rappresentano gli assi avviene una volta soltanto, rendendo quindi necessaria l'utilizzo di un meccanismo simile anche per il testo correlato.
-
-//todo include del codice significativo della classe
 
 Lo studente ha provveduto quindi a individuare i punti del codice in cui erano presenti le chiamate di disegno degli assi allo scopo di implementare la nuova funzionalità, scoprendo che il codice per disegnarli era duplicato molteplici volte.\\
 

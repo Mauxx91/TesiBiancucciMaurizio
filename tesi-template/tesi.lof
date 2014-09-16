@@ -6,11 +6,11 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Screenshot di EMotion Studio durante la visualizzazione dello skeleton di animazione di un meccanico in T-pose\relax }}{10}{figure.caption.13}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Screenshot di EMotion Studio durante la visualizzazione dello skeleton di animazione di un meccanico in T-pose\relax }}{9}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Screenshot di EMotion Studio durante la visualizzazione della gerarchia dei bone di animazione dello skeleton di un meccanico\relax }}{11}{figure.caption.14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Screenshot di EMotion Studio durante la visualizzazione della gerarchia dei bone di animazione dello skeleton di un meccanico\relax }}{10}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Screenshot di Perforce\relax }}{12}{figure.caption.15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Screenshot di Perforce\relax }}{11}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -74,23 +74,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Screenshot del Beholder nel quale \IeC {\`e} possibile vedere dove attivare e disattivare la stampa dei LOD delle moto\relax }}{79}{figure.caption.98}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Screenshot del Beholder nel quale \IeC {\`e} possibile lanciare il disegno degli assi tramite l'azione \textquotedblleft ToggleDraeAxes\textquotedblright dello \textquotedblleft SceneDirector\textquotedblright visibile in alto a sinistra\relax }}{81}{figure.caption.99}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Diagramma UML della gerarchia di stampa del testo. Sono riportati solo i metodi pi\IeC {\`u} significativi\relax }}{80}{figure.caption.99}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Screenshot di MotoGP 14 in cui nel main menu \IeC {\`e} possibile vedere gli assi dei punti in cui viene ancorata la camera e la stampa del nome corrispondente\relax }}{84}{figure.caption.100}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Screenshot del Beholder nel quale \IeC {\`e} possibile lanciare il disegno degli assi tramite l'azione \textquotedblleft ToggleDraeAxes\textquotedblright dello \textquotedblleft SceneDirector\textquotedblright visibile in alto a sinistra\relax }}{82}{figure.caption.100}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} possibile visualizzare la versione a lista piatta sopra e la versione ad albero sotto per la bike 306\relax }}{85}{figure.caption.101}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Screenshot di MotoGP 14 in cui nel main menu \IeC {\`e} possibile vedere gli assi dei punti in cui viene ancorata la camera e la stampa del nome corrispondente\relax }}{85}{figure.caption.101}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Una sintesi della terminologia appena introdotta. Tratto da \cite {site:skeleton-terminoligy}\relax }}{95}{figure.caption.102}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} possibile visualizzare la versione a lista piatta sopra e la versione ad albero sotto per la bike 306\relax }}{86}{figure.caption.102}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} possibile visualizzare dove \IeC {\`e} permesso attivare e disattivare il disegno dello skeleton del rider\relax }}{96}{figure.caption.103}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Una sintesi della terminologia appena introdotta. Tratto da \cite {site:skeleton-terminoligy}\relax }}{95}{figure.caption.103}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Screenshot n. 1 del disegno dello skeleton del rider\relax }}{100}{figure.caption.104}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} possibile visualizzare dove \IeC {\`e} permesso attivare e disattivare il disegno dello skeleton del rider\relax }}{96}{figure.caption.104}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Screenshot n. 2 del disegno dello skeleton del rider\relax }}{101}{figure.caption.105}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Screenshot n. 1 del disegno dello skeleton del rider\relax }}{100}{figure.caption.105}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} visibile lo \texttt {SkeletonDebugDrawerManager}\relax }}{102}{figure.caption.106}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Screenshot n. 2 del disegno dello skeleton del rider\relax }}{101}{figure.caption.106}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Screenshot di MotoGP 14 in cui \IeC {\`e} stato attivato il disegno degli scheletri di animazione di 2 meccanici\relax }}{102}{figure.caption.107}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} visibile lo \texttt {SkeletonDebugDrawerManager}\relax }}{102}{figure.caption.107}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Screenshot di MotoGP 14 in cui \IeC {\`e} stato attivato il disegno degli scheletri di animazione di 2 meccanici\relax }}{102}{figure.caption.108}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
