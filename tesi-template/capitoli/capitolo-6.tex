@@ -184,7 +184,7 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 \end{figure}
 
 \section{Vista gerarchica dei world nel Beholder}
-	Nel Beholder è possibile visualizzare tutte le risorse grafiche presenti nel \texttt{ResourcesManager}. Questa classe gestisce il caricamento e lo scaricamento in memoria di tutte le risorse grafiche utilizzate per costruire le scene 3D del gioco. Essa utilizza la strategia di reference couting per sapere quando un oggetto diviene inutilizzato e può essere quindi scaricato. Essa contiene quindi una collezione di world in cui sono presenti le varie risorse (mesh, texture, animazioni, ecc..). Per ogni tipo di risorsa presente nel word nel Beholder viene presentata come lista piatta. È possibile invece che queste risorse siano imparentate fra di loro, formando ad esempio delle gerarchie di oggetti 3D.\\
+	Nel Beholder è possibile visualizzare tutte le risorse grafiche presenti nel \texttt{ResourcesManager}. Questa classe gestisce il caricamento e lo scaricamento in memoria di tutte le risorse grafiche utilizzate per costruire le scene 3D del gioco. Essa utilizza la strategia di reference couting per sapere quando un oggetto diviene inutilizzato e può essere quindi scaricato. Essa contiene quindi una collezione di world in cui sono presenti le varie risorse (mesh, texture, animazioni, ecc..). Per ogni tipo di risorsa presente nel world nel Beholder viene presentata come lista piatta. È possibile invece che queste risorse siano imparentate fra di loro, formando ad esempio delle gerarchie di oggetti 3D.\\
 	
 	\begin{figure}[h!] 
 		\centering 
@@ -201,6 +201,8 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	
 	\lstinputlisting[style=maurizio-code, caption=ResourcesManagerDebug.h, label={code:ResourcesManagerDebug-h}]{code/ResourcesManagerDebug_new.h}
 	
+	\newpage
+	
 	\lstinputlisting[style=maurizio-code, caption=ResourcesManagerDebug.cpp, label={code:ResourcesManagerDebug-cpp}]{code/ResourcesManagerDebug_new.cpp}
 	
 	\lstinputlisting[style=maurizio-code, caption=ResourcesManagerDebug\_Metadata.cpp, label={code:ResourcesManagerDebug-Metadata-cpp}]{code/ResourcesManagerDebug_newMetadata.cpp}
@@ -214,7 +216,7 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	\begin{figure}[h!] 
 		\centering
 		\includegraphics[width=0.8\columnwidth]{game/SkeletonTerminology.jpg}
-		\caption{Una sintesi della terminologia appena introdotta. Tratto da \cite{site:skeleton-terminoligy}}
+		\caption[Sintesi della terminologia usata nelle animazioni scheletrali]{Sintesi della terminologia usata nelle animazioni scheletrali. Tratto da \cite{site:skeleton-terminoligy}}
 		\label{fig:SkeletonTerminology}
 	\end{figure}
 	

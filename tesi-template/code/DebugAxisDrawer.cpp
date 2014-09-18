@@ -1,11 +1,5 @@
 #include "DebugAxisDrawer.h"
 
-#include "../SharedGameSupport/Include/Render/MenuWorld.h"
-#include "../GameLib/GEM_GameWorld.h"
-#include "../GameLib/DebugTextDrawer3DPoint.h"
-
-#include "Ml_Common.h"
-
 DebugAxisDrawer* DebugAxisDrawer::s_pInstance(NULL);
 
 DebugAxisDrawer::DebugAxisDrawer():

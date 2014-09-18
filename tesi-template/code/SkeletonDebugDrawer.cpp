@@ -1,3 +1,4 @@
+#include "SkeletonDebugDrawer.h"
 
 SkeletonDebugDrawer::SkeletonDebugDrawer(void)
 {

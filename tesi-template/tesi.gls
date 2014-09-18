@@ -4,28 +4,27 @@
 \glossaryentryfield{AAA}{\glsnamefont{AAA}}{Nel mondo dei videogiochi i titoli \emph {AAA} (pronunciato \dq {tripla a}) definisco quei titoli di punta sviluppati dalle case più grandi con maggiori budget}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{7}}}%
 \glossaryentryfield{Alienbrain}{\glsnamefont{Alienbrain\textsuperscript {\textregistered }}}{Alienbrain\textsuperscript {\textregistered } è un sistema di versionamento proprietario (sito: \url {http://www.alienbrain.com/}) . Il suo punto di forza è la gestione efficiente dei formati non testuali, quali ad esempio gli asset grafici}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{9}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{10}}}\glsgroupskip
 \glsgroupheading{B}\relax \glsresetentrylist %
 \glossaryentryfield{ban}{\glsnamefont{Ban}}{In informatica con il termine \emph {ban} si intende l'esclusione, a tempo determinato o non, di un utente da un servizio di qualsivoglia genere}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{4}}}%
 \glossaryentryfield{bug}{\glsnamefont{Bug}}{In informatica con il termine \emph {bug} si definisce un problema presente in un codice che porta questo a mostrare comportamenti indesiderati, ad esempio crash improvvisi}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{5}}}%
 \glossaryentryfield{build}{\glsnamefont{Build}}{Con il termine \emph {build} si intende il processo di trasformazione di una qualche risorsa digitale. In questo caso si intende la compilazione/linking del codice e la conversione e compressione degli assetti}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{10}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{12}}}\glsgroupskip
 \glsgroupheading{D}\relax \glsresetentrylist %
 \glossaryentryfield{Day One}{\glsnamefont{Day One}}{Per \emph {day one} si intende il primo giorno in cui un gioco viene reso disponibile per l'acquisto}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{4}}}%
 \glossaryentryfield{debug}{\glsnamefont{Debug}}{In informatica con il termine \emph {debug} si intende la pratica dell'analisi del comportamento del codice, soprattutto a run-time, allo scopo di individuare e risolvere bug (difetti)}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{1}}}%
 \glossaryentryfield{delta}{\glsnamefont{Delta}}{Con \emph {delta} si vuole intendere la differenza fra due oggetti}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{9}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{10}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{engine}{\glsnamefont{Engine}}{In informatica con il termine \emph {engine} si intende un software che funge da base per altri. Nello specifico dei videogame, l'engine è spesso scambiato per il solo motore grafico. Invece questo comprende praticamente tutte le funzioni di base che poi vengono specializzate per la creazione di specifici video game}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{1}}}\glsgroupskip
 \glsgroupheading{F}\relax \glsresetentrylist %
-\glossaryentryfield{First Playable}{\glsnamefont{\glslink {First Playable}{First Playable}}}{Nel mondo dei videogiochi con \emph {Vertical Slice} si intende una versione di un game non ancora completa, in cui i livelli sono ancora delle bozze (draft) che rendono l'idea di come sarà il gioco. Lo scopo di queste versioni sono per la maggior parte il test del gameplay e la verifica del design}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{7}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{73}}}\glsgroupskip
+\glossaryentryfield{First Playable}{\glsnamefont{First Playable}}{Nel mondo dei videogiochi con \emph {Vertical Slice} si intende una versione di un game non ancora completa, in cui i livelli sono ancora delle bozze (draft) che rendono l'idea di come sarà il gioco. Lo scopo di queste versioni sono per la maggior parte il test del gameplay e la verifica del design}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{7}}}\glsgroupskip
 \glsgroupheading{H}\relax \glsresetentrylist %
 \glossaryentryfield{hackerate}{\glsnamefont{Hackerate}}{Nel contesto di questa tesi, il termine è stato usato per indicare la pratica di bucare il software delle console o dei videogiochi per poter giocare con copie non autorizzate}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{4}}}\glsgroupskip
@@ -35,18 +34,20 @@
 \glsgroupheading{L}\relax \glsresetentrylist %
 \glossaryentryfield{leaderboard}{\glsnamefont{Leaderboard}}{Nei videogiochi online, le \emph {leaderboard} sono delle classifiche sulle prestazioni dei giocatori}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{6}}}%
+\glossaryentryfield{LOD}{\glsnamefont{LOD}}{Con l'espressione level of detail (LOD), si intende la tecnica utilizzata nelle applicazioni di grafica 3D. Tale tecnica consiste nell'avere multiple versioni degli asset con livelli di dettaglio e quindi spesa computazionale differente e, al variare della visibilità degli oggetti utilizzare versioni progressivamente meno dettagliate. Si riesce in questo modo ad aumentare la qualità grafica complessiva in quanto il tempo di calcolo risparmiato per oggetti distanti e comunque poco visibili viene poi sfruttata per aggiungere dettagli e/o oggetti in posizioni che l'utilizzatore può notare di più}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{73}}}%
 \glossaryentryfield{LUA}{\glsnamefont{LUA}}{Lua è un linguaggio di programmazione dinamico, riflessivo, imperativo e procedurale, utilizzato come linguaggio di scripting di uso generico. È spesso usato nei videogame}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{9}}}\glsgroupskip
 \glsgroupheading{M}\relax \glsresetentrylist %
 \glossaryentryfield{mesh}{\glsnamefont{Mesh}}{Nel settore della grafica 3D, il termine \emph {mesh} indica l'insieme dei poligoni (triangoli) che compongono un oggetto tridimensionale}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{8}}}%
-\glossaryentryfield{Microsoft Project}{\glsnamefont{Microsoft Project}}{\emph {Microsoft Project} è un software per la gestione di progetti. Maggiori informazioni sono reperibili al seguente indirizzo: \url {http://office.microsoft.com/it-it/gestione-di-progetti-e-portfolio-microsoft-project-FX103472268.aspx}}{\relax }{\glossaryentrynumbers{\relax 
+\glossaryentryfield{Microsoft Project}{\glsnamefont{Microsoft Project}}{\emph {Microsoft Project} è un software per la gestione di progetti. Maggiori informazioni sono reperibili al seguente indirizzo: \url {http://office.microsoft.com/it-it/gestione-di-progetti-e-portfolio-microsoft-project-FX10\3472268.aspx}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{7}}}%
 \glossaryentryfield{middleware}{\glsnamefont{Middleware}}{In informatica con il termine \emph {middleware} si intende un insieme di programmi informatici che fungono da intermediari tra diverse applicazioni e componenti software. Fonte \url {http://it.wikipedia.org/wiki/Middleware}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{6}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossaryentryfield{Perforce}{\glsnamefont{Perforce\textsuperscript {\textregistered }}}{Perforce\textsuperscript {\textregistered } è un sistema di versionamento proprietario (sito: \url {http://http://www.perforce.com/}). Il suo punto di forza sono i branch intelligenti (stream)}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{9}}}%
+		\setentrycounter[]{page}\glsnumberformat{10}}}%
 \glossaryentryfield{PSN}{\glsnamefont{PSN\textsuperscript {\textregistered }}}{Il Playstation Network\textsuperscript {\textregistered } (PSN\textsuperscript {\textregistered }) è il servizio offerto da Sony agli utenti delle proprie console. Esso permette di giocare online con altri giocatori e l'acquisto di contenuti digitali (film, giochi ecc.)}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{4}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
@@ -56,18 +57,18 @@
 		\setentrycounter[]{page}\glsnumberformat{1}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{serializzazione}{\glsnamefont{Serializzazione}}{Con \emph {serializzazione} si intende il processo di trasformazione di una risorsa (tipicamente testuale) in formato binario}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{10}}}%
+		\setentrycounter[]{page}\glsnumberformat{11}}}%
 \glossaryentryfield{sistema di integrazione continua}{\glsnamefont{Sistema di integrazione continua}}{Un \emph {sistema di integrazione continua} permette di eseguire costantemente le build ogni volta che qualche dato viene aggiornato. Questo permette di avere un controllo continuo sul lavoro eseguito}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{10}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{12}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %
 \glossaryentryfield{team}{\glsnamefont{Team}}{In informatica con il termine \emph {team} si intende un gruppo di sviluppatori che collaborano in maniera organizzata per raggiungere un obbiettivo comune}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{1}}}%
-\glossaryentryfield{texture}{\glsnamefont{Texture}}{Nella conoscenza comune la texture è l'immagine 2D che viene applicata alle mesh per farle sembrare veri oggetti. Nell'ambito invece della programmazione il termine assume invece un contesto più generale, significando una matrice di punti (considerabile come un'immagine) in cui però viene utilizzata per contenere molti altre cose todo rivedere}{\relax }{\glossaryentrynumbers{\relax 
+\glossaryentryfield{texture}{\glsnamefont{Texture}}{Nella conoscenza comune la texture è l'immagine 2D che viene applicata alle mesh per farle sembrare veri oggetti. Nell'ambito invece della programmazione il termine assume invece un contesto più generale, significando una matrice di punti (considerabile come un'immagine) la quale però viene utilizzata per contenere molte altre cose}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{8}}}\glsgroupskip
 \glsgroupheading{V}\relax \glsresetentrylist %
-\glossaryentryfield{Vertical Slice}{\glsnamefont{Vertical Slice}}{Nel mondo dei videogiochi con \emph {Vertical Slice} si intende una versione di un game non ancora completa, ma presenta un assaggio completo di tutti gli strati che lo compongono. Gli esempi classico di vertical slice è ad esempio una demo in cui è permesso al giocatore di giocare un solo livello (su tanti che saranno) in maniera completa}{\relax }{\glossaryentrynumbers{\relax 
+\glossaryentryfield{Vertical Slice}{\glsnamefont{Vertical Slice}}{Nel mondo dei videogiochi con \emph {Vertical Slice} si intende una versione di un game non ancora completa, ma presenta un assaggio completo di tutti gli strati che lo compongono. L'esempio classico di vertical slice è una demo in cui è permesso al giocatore di giocare un solo livello (sui tanti che comporranno il gioco completo) in maniera completa}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{7}}}\glsgroupskip
 \glsgroupheading{X}\relax \glsresetentrylist %
 \glossaryentryfield{XML}{\glsnamefont{XML}}{eXtensible Markup Language (XML) è un linguaggio di markup basato su un meccanismo sintattico che consente di definire e controllare il significato degli elementi contenuti in un documento di testo sia human che machine readable}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{9}}}%
+		\setentrycounter[]{page}\glsnumberformat{8}}}%
 \end{theglossary}\glossarypostamble

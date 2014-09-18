@@ -116,6 +116,29 @@
 %\renewcommand{\labelitemiii}{$\diamond$}
 %\renewcommand{\labelitemiv}{$\ast$}
 
+%**************************************************************
+% Impostazioni di xcolor
+%**************************************************************
+\definecolor{webgreen}{rgb}{0,.5,0}
+\definecolor{webbrown}{rgb}{.6,0,0}
+
+%Visual studio 12 dark
+%\definecolor{KeywordColor}{RGB}{86,156,214}
+%\definecolor{TypeColor}{RGB}{78,201,176}
+%\definecolor{MacroColor}{RGB}{189,99,197}
+%\definecolor{StringColor}{RGB}{214,157,133}
+%\definecolor{CommentColor}{RGB}{96,139,78}
+%\definecolor{StaticColor}{RGB}{189,99,197}
+
+
+%Visual studio 12 light
+\definecolor{KeywordColor}{RGB}{0,0,255}
+\definecolor{TypeColor}{RGB}{43,145,175}
+\definecolor{MacroColor}{RGB}{111,0,138}
+\definecolor{StringColor}{RGB}{163,21,21}
+\definecolor{CommentColor}{RGB}{0,128,0}
+\definecolor{StaticColor}{RGB}{189,99,197}
+\definecolor{NumberColor}{RGB}{255,140,0}
 
 %**************************************************************
 % Impostazioni di listings
@@ -127,6 +150,7 @@
     commentstyle=\ttfamily\color{Green},
     numbers=none, %left,%
     numberstyle=\scriptsize, %\tiny
+    stringstyle=\ttfamily\color{StringColor},
     stepnumber=5,
     numbersep=8pt,
     showstringspaces=false,
@@ -177,7 +201,8 @@
 		GEM\_NEW,
 		SKELETON\_DEBUG\_DRAWER\_H,
 		RESOURCES\_MANAGER\_DEBUG,
-		DEBUG\_AXIS\_DRAWER\_H
+		DEBUG\_AXIS\_DRAWER\_H,
+		META\_NAMED\_GETTER
 	},
 	morekeywords={[3]
 		void,
@@ -201,6 +226,7 @@
 		CWorld,
 		GraphicComponentInfo,
 		FixedString256,
+		FixedString64,
 		GVector2,
 		DebugTextDrawer,
 		GemScreenLogger,
@@ -227,6 +253,7 @@
 		CObjects3dManager,
 		uintptr\_t,
 		uint32\_t,
+		uint\_t,
 		SkeletonDebugDrawer,
 		CSkeleton,
 		BufferController,
@@ -252,21 +279,8 @@
 		s\_instance,
 		AddEntry,
 		iterator
-	},
-	stringstyle=\fontfamily{Inconsolata}\color{StringColor}
+	}
 }
-
-%**************************************************************
-% Impostazioni di xcolor
-%**************************************************************
-\definecolor{webgreen}{rgb}{0,.5,0}
-\definecolor{webbrown}{rgb}{.6,0,0}
-\definecolor{KeywordColor}{RGB}{86,156,214}
-\definecolor{TypeColor}{RGB}{78,201,176}
-\definecolor{MacroColor}{RGB}{189,99,197}
-\definecolor{StringColor}{RGB}{214,157,133}
-\definecolor{CommentColor}{RGB}{96,139,78}
-\definecolor{StaticColor}{RGB}{189,99,197}
 
 %**************************************************************
 % Altro
@@ -288,7 +302,8 @@
 	\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
 	\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
 	\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
-	\do\Y\do\Z}
+	\do\Y\do\Z\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7%
+	\do\8\do\9}
 
 \newcommand{\sectionname}{sezione}
 \addto\captionsitalian{\renewcommand{\figurename}{figura}

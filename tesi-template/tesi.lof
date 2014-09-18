@@ -14,88 +14,88 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case - UC 1: Caso d'uso principale\relax }}{18}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Use Case - UC 1: Caso d'uso principale\relax }}{20}{figure.caption.16}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Use Case - UC 1.1: Analisi dei file di un gioco multipiattaforma\relax }}{19}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Use Case - UC 1.1: Analisi dei file di un gioco multipiattaforma\relax }}{21}{figure.caption.17}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Use Case - UC 1.1.1: Inserimento dei dati in input all'analisi\relax }}{20}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Use Case - UC 1.1.1: Inserimento dei dati in input all'analisi\relax }}{22}{figure.caption.18}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Use Case - UC 1.1.4: Visualizzazione dei risultati dell'analisi\relax }}{22}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Use Case - UC 1.1.4: Visualizzazione dei risultati dell'analisi\relax }}{24}{figure.caption.19}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagramma delle classi di Multiplatform File Analyzer\relax }}{29}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagramma delle classi di Multiplatform File Analyzer\relax }}{31}{figure.caption.20}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Screenshot di Multiplatform File Analyzer nel quale si pu\IeC {\`o} osservare la segnalazione di errori sui dati in input all'analisi\relax }}{32}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Screenshot di Multiplatform File Analyzer nel quale si pu\IeC {\`o} osservare la segnalazione di errori sui dati in input all'analisi\relax }}{34}{figure.caption.33}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Screenshot di Multiplatform File Analyzer nel quale si pu\IeC {\`o} osservare la presentazione dei risultati dell'analisi\relax }}{35}{figure.caption.34}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Screenshot di Multiplatform File Analyzer nel quale si pu\IeC {\`o} osservare la presentazione dei risultati dell'analisi\relax }}{33}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Use Case - UC 1: Caso d'uso principale\relax }}{39}{figure.caption.35}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Use Case - UC 1: Caso d'uso principale\relax }}{37}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Use Case - UC 1.1: Creazione di un nuovo file XML\relax }}{40}{figure.caption.36}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Use Case - UC 1.1: Creazione di un nuovo file XML\relax }}{38}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Use Case - UC 1.3 Editing del file XML correntemente aperto\relax }}{42}{figure.caption.37}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Use Case - UC 1.3 Editing del file XML correntemente aperto\relax }}{40}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Use Case - UC 1.3.4 Editing del nodo selezionato\relax }}{44}{figure.caption.38}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Use Case - UC 1.3.4 Editing del nodo selezionato\relax }}{42}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Use Case - UC 1.6 Editing dei file associati\relax }}{48}{figure.caption.39}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Use Case - UC 1.6 Editing dei file associati\relax }}{46}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Use Case - UC 1.7 Editing delle relazioni\relax }}{49}{figure.caption.40}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Use Case - UC 1.7 Editing delle relazioni\relax }}{47}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Use Case - UC 1.11 Visualizzazione del risultato del check sulle relazioni\relax }}{52}{figure.caption.41}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Use Case - UC 1.11 Visualizzazione del risultato del check sulle relazioni\relax }}{50}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagramma dell'integrazione delle classi model-view di Qt\textsuperscript {\textregistered } per la visualizzazione dell'albero XML.\relax }}{63}{figure.caption.43}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagramma dell'integrazione delle classi model-view di Qt\textsuperscript {\textregistered } per la visualizzazione dell'albero XML.\relax }}{61}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagramma delle classi usate per l'editing dei file XML.\relax }}{64}{figure.caption.45}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Diagramma delle classi usate per l'editing dei file XML.\relax }}{62}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog di edit di un nodo dell'albero XML\relax }}{70}{figure.caption.88}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog di edit di un nodo dell'albero XML\relax }}{68}{figure.caption.88}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la visualizzazione dei file XML come alberi\relax }}{71}{figure.caption.89}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la visualizzazione dei file XML come alberi\relax }}{69}{figure.caption.89}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che chiede all'utente come procedere dopo il drag \& drop di un file da Windows\relax }}{72}{figure.caption.90}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che chiede all'utente come procedere dopo il drag \& drop di un file da Windows\relax }}{70}{figure.caption.90}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che permette l'editing dei file associati\relax }}{72}{figure.caption.91}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che permette l'editing dei file associati\relax }}{70}{figure.caption.91}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che permette l'editing delle relazioni\relax }}{73}{figure.caption.92}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che permette l'editing delle relazioni\relax }}{71}{figure.caption.92}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che permette la visualizzazione dell'esito del risultato del check delle relazioni\relax }}{73}{figure.caption.93}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Screenshot di MotoGP 14}}{76}{figure.caption.94}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Screenshot di MotoGP 14 nel quale si pu\IeC {\`o} osservare la vecchia stampa dei livelli di LOD\relax }}{76}{figure.caption.95}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Screenshot di MotoGP 14 nel quale si pu\IeC {\`o} osservare la nuova stampa dei livelli di LOD per le moto\relax }}{78}{figure.caption.96}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Screenshot di MotoGP 14 nel quale si pu\IeC {\`o} osservare la nuova stampa dei livelli di LOD per i piloti\relax }}{79}{figure.caption.97}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Screenshot del Beholder nel quale \IeC {\`e} possibile vedere dove attivare e disattivare la stampa dei LOD delle moto\relax }}{79}{figure.caption.98}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Diagramma UML della gerarchia di stampa del testo. Sono riportati solo i metodi pi\IeC {\`u} significativi\relax }}{80}{figure.caption.99}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Screenshot del Beholder nel quale \IeC {\`e} possibile lanciare il disegno degli assi tramite l'azione \textquotedblleft ToggleDraeAxes\textquotedblright dello \textquotedblleft SceneDirector\textquotedblright visibile in alto a sinistra\relax }}{82}{figure.caption.100}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Screenshot di MotoGP 14 in cui nel main menu \IeC {\`e} possibile vedere gli assi dei punti in cui viene ancorata la camera e la stampa del nome corrispondente\relax }}{85}{figure.caption.101}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} possibile visualizzare la versione a lista piatta sopra e la versione ad albero sotto per la bike 306\relax }}{86}{figure.caption.102}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Una sintesi della terminologia appena introdotta. Tratto da \cite {site:skeleton-terminoligy}\relax }}{95}{figure.caption.103}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} possibile visualizzare dove \IeC {\`e} permesso attivare e disattivare il disegno dello skeleton del rider\relax }}{96}{figure.caption.104}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Screenshot n. 1 del disegno dello skeleton del rider\relax }}{100}{figure.caption.105}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Screenshot n. 2 del disegno dello skeleton del rider\relax }}{101}{figure.caption.106}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} visibile lo \texttt {SkeletonDebugDrawerManager}\relax }}{102}{figure.caption.107}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Screenshot di MotoGP 14 in cui \IeC {\`e} stato attivato il disegno degli scheletri di animazione di 2 meccanici\relax }}{102}{figure.caption.108}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Screenshot di XML Editor nel quale si pu\IeC {\`o} osservare la dialog che permette la visualizzazione dell'esito del risultato del check delle relazioni\relax }}{71}{figure.caption.93}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Istogramma del riepilogo ore a preventivo e consuntivo\relax }}{108}{figure.caption.109}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Screenshot di MotoGP 14}}{74}{figure.caption.94}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Screenshot di MotoGP 14 nel quale si pu\IeC {\`o} osservare la vecchia stampa dei livelli di LOD\relax }}{74}{figure.caption.95}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Screenshot di MotoGP 14 nel quale si pu\IeC {\`o} osservare la nuova stampa dei livelli di LOD per le moto\relax }}{76}{figure.caption.96}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Screenshot di MotoGP 14 nel quale si pu\IeC {\`o} osservare la nuova stampa dei livelli di LOD per i piloti\relax }}{77}{figure.caption.97}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Screenshot del Beholder nel quale \IeC {\`e} possibile vedere dove attivare e disattivare la stampa dei LOD delle moto\relax }}{77}{figure.caption.98}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagramma UML della gerarchia di stampa del testo. Sono riportati solo i metodi pi\IeC {\`u} significativi\relax }}{78}{figure.caption.99}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Screenshot del Beholder nel quale \IeC {\`e} possibile lanciare il disegno degli assi tramite l'azione \textquotedblleft ToggleDraeAxes\textquotedblright dello \textquotedblleft SceneDirector\textquotedblright visibile in alto a sinistra\relax }}{80}{figure.caption.100}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Screenshot di MotoGP 14 in cui nel main menu \IeC {\`e} possibile vedere gli assi dei punti in cui viene ancorata la camera e la stampa del nome corrispondente\relax }}{83}{figure.caption.101}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} possibile visualizzare la versione a lista piatta sopra e la versione ad albero sotto per la bike 306\relax }}{84}{figure.caption.102}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Sintesi della terminologia usata nelle animazioni scheletrali}}{93}{figure.caption.103}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} possibile visualizzare dove \IeC {\`e} permesso attivare e disattivare il disegno dello skeleton del rider\relax }}{94}{figure.caption.104}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Screenshot n. 1 del disegno dello skeleton del rider\relax }}{98}{figure.caption.105}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Screenshot n. 2 del disegno dello skeleton del rider\relax }}{99}{figure.caption.106}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Screenshot del Beholder in cui \IeC {\`e} visibile lo \texttt {SkeletonDebugDrawerManager}\relax }}{100}{figure.caption.107}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Screenshot di MotoGP 14 in cui \IeC {\`e} stato attivato il disegno degli scheletri di animazione di 2 meccanici\relax }}{100}{figure.caption.108}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Istogramma del riepilogo ore a preventivo e consuntivo\relax }}{106}{figure.caption.109}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2}{\ignorespaces Rappresentazione grafica di vertical e horizontal slice\relax }}{111}{figure.caption.112}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
