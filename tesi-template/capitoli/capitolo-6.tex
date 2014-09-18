@@ -49,7 +49,7 @@ void GetScreenPosition(const CCamera* i_pCamera, GVector3& o_position) const
 	o_position.TransformPoint(poCamera->GetViewMatrix());
 	o_position.TransformPoint(poCamera->GetProjMatrix());
 	
-	//Now the point is the range -1,1 for the x and y axis
+	//Now the point is in the range [-1,1] for the x and y axis
 	
 	//Tranform to the windows space
 	o_position.x = (o_position.x + 1) * poCamera->GetViewport().m_uiWidth;
@@ -59,9 +59,9 @@ void GetScreenPosition(const CCamera* i_pCamera, GVector3& o_position) const
 }
 \end{lstlisting}
 ~\\
-La funzione \texttt{GetScreenPosition} procede a calcolare le stesse trasformazioni che esegue la GPU per trasformare ogni pixel dell'oggetto nella scena 3D in un'immagine 2D\footnote{Il lettore potrà trovare un approfondimento in \cite[chp.~5]{inbook:directx-book}.}. Si ottengono quindi le coordinate x e y dello schermo nello spazio -1, 1. Si procede quindi a trasformarle in coordinate relative allo spazio della finestra di gioco (ad esempio 1366x768 px).\\
+La funzione \texttt{GetScreenPosition} procede a calcolare le stesse trasformazioni che esegue la GPU per trasformare ogni pixel dell'oggetto nella scena 3D in un'immagine 2D\footnote{Il lettore potrà trovare un approfondimento in \cite[chp.~5]{inbook:directx-book}.}. Si ottengono quindi le coordinate x e y dello schermo nel range [-1, 1]. Si procede quindi a trasformarle in coordinate relative allo spazio dell'intera finestra di gioco (ad esempio 1920x1080px).\\
 
-Con un'analisi più approfondita del codice si è successivamente scoperto la presenza di un metodo della classe \texttt{CCamera} che produceva esattamente gli stessi risultati. Si è quindi provveduto a scartare questa implementazione (seppur corretta) ed usare quella già presente allo scopo di evitare inutili duplicazioni di codice. Di seguito è presente la funzione della classe \texttt{LodSelectionModule} che lancia il disegno del LOD attivo. Questa funzione è lanciata per ogni oggetto gestito dalla classe.\\\vspace*{-0.3cm}
+Con un'analisi più approfondita del codice si è successivamente scoperta la presenza di un metodo della classe \texttt{CCamera} che produceva esattamente gli stessi risultati. Si è quindi provveduto a scartare questa implementazione (seppur corretta) ed usare quella già presente allo scopo di evitare inutili duplicazioni di codice. Di seguito è presente la funzione della classe \texttt{LodSelectionModule} che lancia il disegno del LOD attivo. Questa funzione è lanciata per ogni oggetto gestito dalla classe.\\\vspace*{-0.3cm}
 
 \begin{lstlisting}[style=maurizio-code, caption=Metodo per la stampa del LOD corrente, label={code:printloddebuginformation}]
 void LodSelectionModule::PrintLodDebugInformation(CWorld* iWorld, GraphicComponentInfo* i_pComponentInfo )
@@ -83,7 +83,7 @@ void LodSelectionModule::PrintLodDebugInformation(CWorld* iWorld, GraphicCompone
 }
 \end{lstlisting}
 ~\\
-Come si può facilmente capire dal codice l'invocazione del metodo \texttt{LodToString} compone la stringa che verrà stampata affianco all'oggetto 3D. Si è modificato tale metodo in modo tale che scrivesse come prima informazione il LOD e poi il nome dello scene actor. Questo perché se l'oggetto e nella parte destra della finestra e ha un nome lungo si corre il rischio che l'informazione più importante (il LOD) finisca fuori dal bordo e non sia visibile.
+Come si può facilmente capire dal codice l'invocazione del metodo \texttt{LodToString} compone la stringa che verrà stampata affianco all'oggetto 3D. Si è modificato tale metodo in modo tale che scrivesse come prima informazione il LOD e poi il nome dello scene actor. Questo perché se l'oggetto è nella parte destra della finestra e ha un nome lungo si corre il rischio che l'informazione più importante (il LOD) finisca fuori dal bordo e non sia visibile.
 
 \begin{figure}[h!] 
 	\centering 
@@ -109,7 +109,7 @@ Si è poi provveduto ad esporre nel Beholder una variabile membro per ogni istan
 
 \section{Rifattorizzazione della gerarchia di stampa}
 
-Prestando attenzione al metodo \texttt{PrintLodDebugInformation} presente nel listato \ref{code:printloddebuginformation} si può notare che la stampa a video della stringa è affidata alla classe singleton \texttt{DebugTextDrawer}. Inizialmente la stampa era affidata in gestione alla classe \texttt{LodModuleDebug}, la quale aveva un nome completamente diverso dal compito che svolgeva. Indagando sulle origini di tale classe si è scoperto che questa era stata originata dal copia e incolla della classe \texttt{GemScreenLogger}, la quale gestiva la stampa di stringhe in stile terminale, conservando e ristampando le ultime entry inserite e gestendo gli \dq{a capo} e non permettendo sovrapposizioni del testo.\\
+Prestando attenzione al metodo \texttt{PrintLodDebugInformation} presente nel listato \ref{code:printloddebuginformation} si può notare che la stampa a video della stringa è affidata alla classe singleton \texttt{DebugTextDrawer}. Inizialmente la stampa era affidata in gestione alla classe \texttt{LodModule-} \texttt{Debug}, la quale aveva un nome completamente diverso dal compito che svolgeva. Indagando sulle origini di tale classe si è scoperto che questa era stata originata dal \dq{copia e incolla} della classe \texttt{GemScreenLogger}, la quale gestiva la stampa di stringhe in stile terminale, conservando e ristampando le ultime entry inserite e gestendo gli \dq{a capo} e non permettendo sovrapposizioni del testo.\\
 
 Avendo le due classi la maggior parte del codice in comune, si è provveduto ad effettuare un refactor creando una base astratta \texttt{UI\_GemScreenTextBase} dalla quale entrambe derivano e concretizzano implementando i metodi astratti. La classe \texttt{LodModuleDebug} è stata inoltre rinominata in \texttt{DebugTextDrawer} per meglio rispecchiare le sue funzionalità e rendere il codice più comprensibile.\\
 
@@ -121,9 +121,9 @@ Avendo le due classi la maggior parte del codice in comune, si è provveduto ad 
 
 La classe \texttt{DebugTextDrawer3DPoint} verrà trattata successivamente nella sezione \ref{sec:stampa-del-nome-degli-spazi-di-riferimento}.\\
 
-Le differenze fra le due classi si mostra anche nei loro scenari di utilizzo. \texttt{GemScreenLogger} accetta dei log e continua a stamparli indipendentemente dai frame. \texttt{DebugTextDrawer} invece, ad ogni frame, stampa tutte le stringhe che possiede e le scarta, non stampandole più al frame successivo. Questo impone quindi che l'inserimento delle scritte sia costante e presente ad ogni frame. Questa caratteristica si adatta perfettamente alla stampa dei LOD, in quanto la posizione su schermo e la stessa informazione varia ad ogni frame e necessita di un costante aggiornamento.\\ 
+Le differenze fra le due classi si mostra anche nei loro scenari di utilizzo. \texttt{GemScreen-} \texttt{Logger} accetta dei log e continua a stamparli indipendentemente dai frame. \texttt{DebugText-} \texttt{Drawer} invece, ad ogni frame, stampa tutte le stringhe che possiede e le scarta, non stampandole più al frame successivo. Questo impone quindi che l'inserimento delle scritte sia costante e presente ad ogni frame. Questa caratteristica si adatta perfettamente alla stampa dei LOD, in quanto la posizione su schermo e la stessa informazione varia ad ogni frame e necessita di un costante aggiornamento.\\ 
 
-Come si nota dal diagramma (link diagramma) la gerarchia parte da \texttt{DebugWorldElement}, classe che rappresenta uno scene actor che può essere inserito in un world. I world sono dei contenitori di oggetti 3D che procedono, se attivi, ad ogni frame a disegnare ogni oggetto presente in essi.\\
+Come si nota dal diagramma (link diagramma) la gerarchia parte da \texttt{DebugWorld-} \texttt{Element}, classe che rappresenta uno scene actor che può essere inserito in un world. I world sono dei contenitori di oggetti 3D che procedono, se attivi, ad ogni frame a disegnare ogni oggetto presente in essi.\\
 
 Le istanze delle classi concrete della gerarchia vengono, durante la fasi di inizializzazione, inserite nel mondo di debug. Esso è stato creato appositamente per contenere oggetti di debug. Nel resto del gioco, sono presenti implementazioni più specifiche di world, le quali permettono quindi di fare assunzioni sugli oggetti presenti e conseguentemente implementare forti ottimizzazioni. In MotoGP 14 ad esempio sono presenti il \texttt{MenuWorld} ed il \texttt{GameWorld}, che gestiscono rispettivamente il mondo visibile nel menu di gioco ed il mondo visibile durante una gara, permettendone un disegno efficiente.\\
 
@@ -135,12 +135,13 @@ debugWorld->AddElement( UI::GemScreenLogger::GetInstance() );
 
 DebugTextDrawer::Create();
 DebugTextDrawer::Config config;
-config.m_fontName = "Linotype Univers 430 Regular20"; //"ZZapDefaultFont"; alternativa funzionante
+config.m_fontName = "Linotype Univers 430 Regular20";
 config.m_alphaValue = 255;
 config.m_timeBeforeFade = 500;
 config.m_includeContext = false;
 config.m_includeSourceFile = false;
 config.m_timestamp = false;
+
 DebugTextDrawer::GetInstance()->Init();
 DebugTextDrawer::GetInstance()->SetConfig( config );
 debugWorld->AddElement( DebugTextDrawer::GetInstance() );
@@ -169,7 +170,7 @@ Lo studente ha provveduto quindi a individuare i punti del codice in cui erano p
 
 Si è proceduto quindi ad eseguire un refactor creando una classe specializzata nel disegno di assi con l'etichetta del nome dell'oggetto, la classe \texttt{DebugAxisDrawer}.\\
 
-Essa provvede a incapsulare la funzione che si occupa del disegno degli assi e, eseguendo il codice necessario a ottenere la telecamera attiva, a lanciare lo stampa del nome dell'oggetto. Come accennato la funzionalità di disegno degli assi è lanciata durante un particolare stato in cui le geometrie disegnate, una volta eseguito il submit, vengono renderizzate ogni frame senza doverne richiederne la rappresentazione ad ogni frame. Si procede quindi allo stesso modo per il testo associato grazie alla classe \texttt{DebugTextDrawer3DPoint}.\\
+Essa provvede a incapsulare la funzione che si occupa del disegno degli assi e, eseguendo il codice necessario a ottenere la telecamera attiva, a lanciare la stampa del nome dell'oggetto. Come accennato, la funzionalità di disegno degli assi è lanciata durante un particolare stato in cui le geometrie disegnate, una volta eseguito il submit, vengono renderizzate ogni frame senza doverne richiedere la rappresentazione ad ogni frame. Si procede quindi allo stesso modo per il testo associato grazie alla classe \texttt{DebugTextDrawer3DPoint}.\\
 
 Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 
@@ -184,7 +185,7 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 \end{figure}
 
 \section{Vista gerarchica dei world nel Beholder}
-	Nel Beholder è possibile visualizzare tutte le risorse grafiche presenti nel \texttt{ResourcesManager}. Questa classe gestisce il caricamento e lo scaricamento in memoria di tutte le risorse grafiche utilizzate per costruire le scene 3D del gioco. Essa utilizza la strategia di reference couting per sapere quando un oggetto diviene inutilizzato e può essere quindi scaricato. Essa contiene quindi una collezione di world in cui sono presenti le varie risorse (mesh, texture, animazioni, ecc..). Per ogni tipo di risorsa presente nel world nel Beholder viene presentata come lista piatta. È possibile invece che queste risorse siano imparentate fra di loro, formando ad esempio delle gerarchie di oggetti 3D.\\
+	Nel Beholder è possibile visualizzare tutte le risorse grafiche presenti nel \texttt{Resour-} \texttt{cesManager}. Questa classe gestisce il caricamento e lo scaricamento in memoria di tutte le risorse grafiche utilizzate per costruire le scene 3D del gioco. Essa utilizza la strategia di reference couting per sapere quando un oggetto diviene inutilizzato e può essere quindi scaricato. Essa contiene quindi una collezione di world in cui sono presenti le varie risorse (mesh, texture, animazioni, ecc..). Per ogni tipo di risorsa presente nel world nel Beholder viene presentata come lista piatta. È possibile invece che queste risorse siano imparentate fra di loro, formando ad esempio delle gerarchie di oggetti 3D.\\
 	
 	\begin{figure}[h!] 
 		\centering 
