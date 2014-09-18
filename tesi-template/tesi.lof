@@ -14,13 +14,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case - UC 1: Caso d'uso principale\relax }}{18}{figure.caption.16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Multiplatform File Analyzer - UC 1: Caso d'uso principale}}{18}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Use Case - UC 1.1: Analisi dei file di un gioco multipiattaforma\relax }}{19}{figure.caption.17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Multiplatform File Analyzer - UC 1.1: Analisi dei file di un gioco multipiattaforma}}{19}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Use Case - UC 1.1.1: Inserimento dei dati in input all'analisi\relax }}{20}{figure.caption.18}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Multiplatform File Analyzer - UC 1.1.1: Inserimento dei dati in input all'analisi}}{20}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Use Case - UC 1.1.4: Visualizzazione dei risultati dell'analisi\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Multiplatform File Analyzer - UC 1.1.4: Visualizzazione dei risultati dell'analisi}}{22}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Diagramma delle classi di Multiplatform File Analyzer\relax }}{29}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
@@ -30,19 +30,19 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Use Case - UC 1: Caso d'uso principale\relax }}{37}{figure.caption.35}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces XML Editor - UC 1: Caso d'uso principale}}{37}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Use Case - UC 1.1: Creazione di un nuovo file XML\relax }}{38}{figure.caption.36}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces XML Editor - UC 1.1: Creazione di un nuovo file XML}}{38}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Use Case - UC 1.3 Editing del file XML correntemente aperto\relax }}{40}{figure.caption.37}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces XML Editor - UC 1.3 Editing del file XML correntemente aperto}}{40}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Use Case - UC 1.3.4 Editing del nodo selezionato\relax }}{42}{figure.caption.38}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces XML Editor - UC 1.3.4 Editing del nodo selezionato}}{42}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Use Case - UC 1.6 Editing dei file associati\relax }}{46}{figure.caption.39}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces XML Editor - UC 1.6 Editing dei file associati}}{46}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Use Case - UC 1.7 Editing delle relazioni\relax }}{47}{figure.caption.40}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces XML Editor - UC 1.7 Editing delle relazioni}}{47}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Use Case - UC 1.11 Visualizzazione del risultato del check sulle relazioni\relax }}{50}{figure.caption.41}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces XML Editor - UC 1.11 Visualizzazione del risultato del check sulle relazioni}}{50}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Diagramma dell'integrazione delle classi model-view di Qt\textsuperscript {\textregistered } per la visualizzazione dell'albero XML.\relax }}{61}{figure.caption.43}
 \defcounter {refsection}{0}\relax 

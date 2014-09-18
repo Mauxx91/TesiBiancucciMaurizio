@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  18 SEP 2014 16:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  18 SEP 2014 19:45
 entering extended mode
 **tesi.tex
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.tex
@@ -1405,7 +1405,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12] (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.lof
-Underfull \vbox (badness 6842) has occurred while \output is active []
+Underfull \vbox (badness 6493) has occurred while \output is active []
 
  [13
 
@@ -3329,13 +3329,6 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 104--105
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (21.19981pt too wide) in paragraph at lines 112--113
-\T1/fi4/m/n/10 DebugTextDrawer\T1/cmr/m/n/10 (-20) . Ini-zial-men-te la stam-pa
- era af-fi-da-ta in ge-stio-ne al-la clas-se \T1/fi4/m/n/10 LodModuleDebug\T1/c
-mr/m/n/10 (-20) ,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
@@ -3388,20 +3381,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
  []
 
 
-Overfull \hbox (19.88698pt too wide) in paragraph at lines 124--125
-[]\T1/cmr/m/n/10 (-20) Le dif-fe-ren-ze fra le due clas-si si mo-stra an-che ne
-i lo-ro sce-na-ri di uti-liz-zo. \T1/fi4/m/n/10 GemScreenLogger
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
- []
-
-
-Overfull \hbox (16.88336pt too wide) in paragraph at lines 126--127
-[]\T1/cmr/m/n/10 (-20) Come si no-ta dal dia-gram-ma (link dia-gram-ma) la ge-r
-ar-chia par-te da \T1/fi4/m/n/10 DebugWorldElement\T1/cmr/m/n/10 (-20) ,
  []
 
 
@@ -3427,7 +3408,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [78 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/ge
 rarchiaDrawText.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
@@ -3437,10 +3418,10 @@ File: immagini/game/BeholderDrawSceneAxis.png Graphic file (type png)
 
 <use immagini/game/BeholderDrawSceneAxis.png>
 Package pdftex.def Info: immagini/game/BeholderDrawSceneAxis.png used on input 
-line 162.
+line 163.
 (pdftex.def)             Requested size: 406.87666pt x 237.85017pt.
 
-Overfull \hbox (18.49542pt too wide) in paragraph at lines 162--163
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 163--164
  []| [] 
  []
 
@@ -3448,13 +3429,13 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 162--163
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 169.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 170.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -3464,12 +3445,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [79]
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
@@ -3503,15 +3484,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [81])
-<immagini/game/menuDrawAxisText.png, id=1575, 1030.60031pt x 580.41844pt>
+<immagini/game/menuDrawAxisText.png, id=1576, 1030.60031pt x 580.41844pt>
 File: immagini/game/menuDrawAxisText.png Graphic file (type png)
 
 <use immagini/game/menuDrawAxisText.png>
 Package pdftex.def Info: immagini/game/menuDrawAxisText.png used on input line 
-182.
+183.
 (pdftex.def)             Requested size: 406.87666pt x 229.1432pt.
 
-Overfull \hbox (18.49542pt too wide) in paragraph at lines 182--183
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 183--184
  []| [] 
  []
 
@@ -3519,27 +3500,20 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 182--183
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (12.46535pt too wide) in paragraph at lines 187--188
-\T1/cmr/m/n/10 (-20) Nel Be-hol-der è pos-si-bi-le vi-sua-liz-za-re tut-te le r
-i-sor-se gra-fi-che pre-sen-ti nel \T1/fi4/m/n/10 ResourcesManager\T1/cmr/m/n/1
-0 (-20) .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
-<immagini/game/beholderResourceManagerView.png, id=1576, 777.65532pt x 749.0484
+<immagini/game/beholderResourceManagerView.png, id=1577, 777.65532pt x 749.0484
 3pt>
 File: immagini/game/beholderResourceManagerView.png Graphic file (type png)
  <use immagini/game/beholderResourceManagerView.png>
 Package pdftex.def Info: immagini/game/beholderResourceManagerView.png used on 
-input line 191.
+input line 192.
 (pdftex.def)             Requested size: 406.87666pt x 391.91905pt.
 
-Overfull \hbox (18.49542pt too wide) in paragraph at lines 191--192
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 192--193
  []| [] 
  []
 
@@ -3547,12 +3521,12 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 191--192
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
-Overfull \hbox (6.28741pt too wide) in paragraph at lines 198--199
+Overfull \hbox (6.28741pt too wide) in paragraph at lines 199--200
 []\T1/cmr/m/n/10 (-20) Il con-te-nu-to del \T1/fi4/m/n/10 ResourcesManager \T1/
 cmr/m/n/10 (-20) è espo-sto nel Be-hol-der tra-mi-te la clas-se \T1/fi4/m/n/10 
 Resources-
@@ -3560,7 +3534,7 @@ Resources-
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 199.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 200.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -3618,7 +3592,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [85])
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 204.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 205.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -3704,7 +3678,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [91])
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
@@ -3714,7 +3688,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 213.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 214.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -3724,30 +3698,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [92]
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-<immagini/game/SkeletonTerminology.jpg, id=2094, 501.875pt x 411.5375pt>
+<immagini/game/SkeletonTerminology.jpg, id=2095, 501.875pt x 411.5375pt>
 File: immagini/game/SkeletonTerminology.jpg Graphic file (type jpg)
 
 <use immagini/game/SkeletonTerminology.jpg>
 Package pdftex.def Info: immagini/game/SkeletonTerminology.jpg used on input li
-ne 218.
+ne 219.
 (pdftex.def)             Requested size: 295.90979pt x 242.65431pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 228.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 229.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -3758,30 +3732,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [93 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/Sk
 eletonTerminology.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 
-<immagini/game/BeholderActivateRiderSkeleton.png, id=2108, 985.43156pt x 606.76
+<immagini/game/BeholderActivateRiderSkeleton.png, id=2109, 985.43156pt x 606.76
 688pt>
 File: immagini/game/BeholderActivateRiderSkeleton.png Graphic file (type png)
  <use immagini/game/BeholderActivateRiderSkeleton.png>
 Package pdftex.def Info: immagini/game/BeholderActivateRiderSkeleton.png used o
-n input line 234.
+n input line 235.
 (pdftex.def)             Requested size: 406.87666pt x 250.52588pt.
 
-Overfull \hbox (18.49542pt too wide) in paragraph at lines 234--235
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 235--236
  []| [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
@@ -3845,31 +3819,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [97])
-Underfull \hbox (badness 10000) in paragraph at lines 245--247
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
  []
 
-<immagini/game/skeletonRider1.png, id=2288, 1029.8475pt x 579.66562pt>
+<immagini/game/skeletonRider1.png, id=2289, 1029.8475pt x 579.66562pt>
 File: immagini/game/skeletonRider1.png Graphic file (type png)
 
 <use immagini/game/skeletonRider1.png>
 Package pdftex.def Info: immagini/game/skeletonRider1.png used on input line 25
-0.
+1.
 (pdftex.def)             Requested size: 406.87666pt x 229.01405pt.
 
-Overfull \hbox (18.49542pt too wide) in paragraph at lines 250--251
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 251--252
  []| [] 
  []
 
-<immagini/game/skeletonRider2.png, id=2289, 1028.34187pt x 578.91281pt>
+<immagini/game/skeletonRider2.png, id=2290, 1028.34187pt x 578.91281pt>
 File: immagini/game/skeletonRider2.png Graphic file (type png)
 
 <use immagini/game/skeletonRider2.png>
 Package pdftex.def Info: immagini/game/skeletonRider2.png used on input line 25
-6.
+7.
 (pdftex.def)             Requested size: 406.87666pt x 229.0523pt.
 
-Overfull \hbox (18.49542pt too wide) in paragraph at lines 256--257
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 257--258
  []| [] 
  []
 
@@ -3877,18 +3851,18 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 256--257
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 263.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 264.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -3899,46 +3873,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [98 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/sk
 eletonRider1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
 
-<immagini/game/SkeletonDebugDrawerManagerinBeholder.png, id=2311, 849.92531pt x
+<immagini/game/SkeletonDebugDrawerManagerinBeholder.png, id=2312, 849.92531pt x
  648.92438pt>
 File: immagini/game/SkeletonDebugDrawerManagerinBeholder.png Graphic file (type
  png)
  <use immagini/game/SkeletonDebugDrawerManagerinBeholder.png>
 Package pdftex.def Info: immagini/game/SkeletonDebugDrawerManagerinBeholder.png
- used on input line 274.
+ used on input line 275.
 (pdftex.def)             Requested size: 406.87666pt x 310.65831pt.
 
-Overfull \hbox (18.49542pt too wide) in paragraph at lines 274--275
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 275--276
  []| [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/game/mechanicSkeleton.png, id=2312, 1028.34187pt x 578.16pt>
+<immagini/game/mechanicSkeleton.png, id=2313, 1028.34187pt x 578.16pt>
 File: immagini/game/mechanicSkeleton.png Graphic file (type png)
 
 <use immagini/game/mechanicSkeleton.png>
 Package pdftex.def Info: immagini/game/mechanicSkeleton.png used on input line 
-280.
+281.
 (pdftex.def)             Requested size: 406.87666pt x 228.75446pt.
 
-Overfull \hbox (18.49542pt too wide) in paragraph at lines 280--281
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 281--282
  []| [] 
  []
 
@@ -4031,49 +4005,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-<immagini/bilancio.png, id=2485, 395.076pt x 245.11575pt>
+<immagini/bilancio.png, id=2486, 395.076pt x 245.11575pt>
 File: immagini/bilancio.png Graphic file (type png)
 
 <use immagini/bilancio.png>
-Package pdftex.def Info: immagini/bilancio.png used on input line 37.
+Package pdftex.def Info: immagini/bilancio.png used on input line 38.
 (pdftex.def)             Requested size: 369.88583pt x 229.4925pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-
- []
-
 [105]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 58.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 59.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -4084,7 +4053,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [106 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/bilanc
 io.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
@@ -4140,7 +4114,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning: pdflatex.exe (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/
 tesi-template/immagini/VerticalAndHorizontalSlice.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<immagini/VerticalAndHorizontalSlice.pdf, id=2552, 153.57375pt x 207.77625pt>
+<immagini/VerticalAndHorizontalSlice.pdf, id=2554, 153.57375pt x 207.77625pt>
 File: immagini/VerticalAndHorizontalSlice.pdf Graphic file (type pdf)
 
 <use immagini/VerticalAndHorizontalSlice.pdf>
@@ -4182,11 +4156,11 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
  ) 
 Here is how much of TeX's memory you used:
- 23724 strings out of 494045
- 375907 string characters out of 3148375
- 899969 words of memory out of 3000000
- 24704 multiletter control sequences out of 15000+200000
- 43214 words of font info for 178 fonts, out of 3000000 for 9000
+ 23728 strings out of 494045
+ 375965 string characters out of 3148375
+ 899985 words of memory out of 3000000
+ 24705 multiletter control sequences out of 15000+200000
+ 43333 words of font info for 179 fonts, out of 3000000 for 9000
  718 hyphenation exceptions out of 8191
  72i,16n,143p,1518b,2984s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Pr
@@ -4220,9 +4194,9 @@ s/MiKTeX 2.9/fonts/type1/public/cm-super/sfti0700.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/public/cm-super/sfti0800.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (129 pages, 14583190 bytes).
+Output written on tesi.pdf (129 pages, 14583363 bytes).
 PDF statistics:
- 3444 PDF objects out of 3580 (max. 8388607)
- 1577 named destinations out of 1728 (max. 500000)
+ 3446 PDF objects out of 3580 (max. 8388607)
+ 1578 named destinations out of 1728 (max. 500000)
  51016 words of extra memory for PDF output out of 51595 (max. 10000000)
 
