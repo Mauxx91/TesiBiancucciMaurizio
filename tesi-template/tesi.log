@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  18 SEP 2014 10:37
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  18 SEP 2014 14:52
 entering extended mode
 **tesi.tex
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.tex
@@ -1694,7 +1694,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-<immagini/game/emotionStudioSkeleton.png, id=589, 731.73375pt x 635.976pt>
+<immagini/game/emotionStudioSkeleton.png, id=593, 731.73375pt x 635.976pt>
 File: immagini/game/emotionStudioSkeleton.png Graphic file (type png)
 
 <use immagini/game/emotionStudioSkeleton.png>
@@ -1705,7 +1705,7 @@ line 122.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/game/emotionStudioHierarchy.png, id=591, 423.984pt x 511.9125pt>
+<immagini/game/emotionStudioHierarchy.png, id=595, 423.984pt x 511.9125pt>
 File: immagini/game/emotionStudioHierarchy.png Graphic file (type png)
 
 <use immagini/game/emotionStudioHierarchy.png>
@@ -1768,7 +1768,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/em
 otionStudioHierarchy.png>]
-<immagini/game/perforce.png, id=637, 855.195pt x 715.17188pt>
+<immagini/game/perforce.png, id=641, 855.195pt x 715.17188pt>
 File: immagini/game/perforce.png Graphic file (type png)
 
 <use immagini/game/perforce.png>
@@ -1914,14 +1914,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[19] <immagini/tool1/UC1.png, id=745, 335.3328pt x 166.7028pt>
+[19] <immagini/tool1/UC1.png, id=749, 335.3328pt x 166.7028pt>
 File: immagini/tool1/UC1.png Graphic file (type png)
 
 <use immagini/tool1/UC1.png>
 Package pdftex.def Info: immagini/tool1/UC1.png used on input line 38.
 (pdftex.def)             Requested size: 258.91895pt x 128.72273pt.
 
-<immagini/tool1/UC1-1.png, id=747, 435.5472pt x 447.5922pt>
+<immagini/tool1/UC1-1.png, id=751, 435.5472pt x 447.5922pt>
 File: immagini/tool1/UC1-1.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1.png>
@@ -1931,7 +1931,7 @@ Package pdftex.def Info: immagini/tool1/UC1-1.png used on input line 58.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool1/UC1-1-1.png, id=752, 445.665pt x 297.0297pt>
+<immagini/tool1/UC1-1-1.png, id=756, 445.665pt x 297.0297pt>
 File: immagini/tool1/UC1-1-1.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1-1.png>
@@ -1975,7 +1975,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool1/U
-C1-1-1.png>] <immagini/tool1/UC1-1-4.png, id=777, 445.665pt x 658.3797pt>
+C1-1-1.png>] <immagini/tool1/UC1-1-4.png, id=781, 445.665pt x 658.3797pt>
 File: immagini/tool1/UC1-1-4.png Graphic file (type png)
 
 <use immagini/tool1/UC1-1-4.png>
@@ -2173,7 +2173,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 403--404
  []
 
 
-<immagini/tool1/Tool-1-Diagramma-Classi.png, id=869, 678.6153pt x 1100.1903pt>
+<immagini/tool1/Tool-1-Diagramma-Classi.png, id=873, 678.6153pt x 1100.1903pt>
 File: immagini/tool1/Tool-1-Diagramma-Classi.png Graphic file (type png)
 
 <use immagini/tool1/Tool-1-Diagramma-Classi.png>
@@ -2240,7 +2240,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33] <immagini/tool1/mfaErrorePath.png, id=904, 484.81125pt x 225.84375pt>
+[33] <immagini/tool1/mfaErrorePath.png, id=908, 484.81125pt x 225.84375pt>
 File: immagini/tool1/mfaErrorePath.png Graphic file (type png)
 
 <use immagini/tool1/mfaErrorePath.png>
@@ -2248,7 +2248,7 @@ Package pdftex.def Info: immagini/tool1/mfaErrorePath.png used on input line 50
 1.
 (pdftex.def)             Requested size: 369.88583pt x 172.315pt.
 
-<immagini/tool1/mfaRisultato.png, id=905, 651.93562pt x 583.42969pt>
+<immagini/tool1/mfaRisultato.png, id=909, 651.93562pt x 583.42969pt>
 File: immagini/tool1/mfaRisultato.png Graphic file (type png)
 
 <use immagini/tool1/mfaRisultato.png>
@@ -2301,7 +2301,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-[37] <immagini/tool2/UC1.png, id=932, 748.7172pt x 869.1672pt>
+[37] <immagini/tool2/UC1.png, id=936, 748.7172pt x 869.1672pt>
 File: immagini/tool2/UC1.png Graphic file (type png)
 
 <use immagini/tool2/UC1.png>
@@ -2315,7 +2315,7 @@ Overfull \hbox (36.9852pt too wide) in paragraph at lines 38--39
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool2/UC1-1.png, id=949, 405.4347pt x 166.7028pt>
+<immagini/tool2/UC1-1.png, id=953, 405.4347pt x 166.7028pt>
 File: immagini/tool2/UC1-1.png Graphic file (type png)
 
 <use immagini/tool2/UC1-1.png>
@@ -2367,7 +2367,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/U
-C1-1.png>] <immagini/tool2/UC1-3.png, id=986, 616.2222pt x 819.06pt>
+C1-1.png>] <immagini/tool2/UC1-3.png, id=990, 616.2222pt x 819.06pt>
 File: immagini/tool2/UC1-3.png Graphic file (type png)
 
 <use immagini/tool2/UC1-3.png>
@@ -2413,7 +2413,7 @@ C1-3.png
 pdfTeX warning: pdflatex.exe (file C:/Users/Maurizio2/Documents/GitHub/TesiMau/
 tesi-template/immagini/tool2/UC1-3.png): large interlaced PNG might cause out o
 f memory (use non-interlaced PNG to fix this)
->] <immagini/tool2/UC1-3-4.png, id=1027, 405.4347pt x 287.1528pt>
+>] <immagini/tool2/UC1-3-4.png, id=1031, 405.4347pt x 287.1528pt>
 File: immagini/tool2/UC1-3-4.png Graphic file (type png)
 
 <use immagini/tool2/UC1-3-4.png>
@@ -2483,7 +2483,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47] <immagini/tool2/UC1-6.png, id=1058, 405.4347pt x 186.6975pt>
+[47] <immagini/tool2/UC1-6.png, id=1062, 405.4347pt x 186.6975pt>
 File: immagini/tool2/UC1-6.png Graphic file (type png)
 
 <use immagini/tool2/UC1-6.png>
@@ -2501,7 +2501,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/tool2/U
-C1-6.png>] <immagini/tool2/UC1-7.png, id=1067, 385.44pt x 246.9225pt>
+C1-6.png>] <immagini/tool2/UC1-7.png, id=1071, 385.44pt x 246.9225pt>
 File: immagini/tool2/UC1-7.png Graphic file (type png)
 
 <use immagini/tool2/UC1-7.png>
@@ -2531,7 +2531,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50] <immagini/tool2/UC1-11.png, id=1082, 375.3222pt x 236.8047pt>
+[50] <immagini/tool2/UC1-11.png, id=1086, 375.3222pt x 236.8047pt>
 File: immagini/tool2/UC1-11.png Graphic file (type png)
 
 <use immagini/tool2/UC1-11.png>
@@ -2901,7 +2901,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62] <immagini/tool2/diagramma1.png, id=1274, 598.1547pt x 437.7153pt>
+[62] <immagini/tool2/diagramma1.png, id=1278, 598.1547pt x 437.7153pt>
 File: immagini/tool2/diagramma1.png Graphic file (type png)
 
 <use immagini/tool2/diagramma1.png>
@@ -2914,7 +2914,7 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 972--973
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 973.
-<immagini/tool2/diagramma2.png, id=1275, 718.6047pt x 758.835pt>
+<immagini/tool2/diagramma2.png, id=1279, 718.6047pt x 758.835pt>
 File: immagini/tool2/diagramma2.png Graphic file (type png)
 
 <use immagini/tool2/diagramma2.png>
@@ -3033,7 +3033,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[69] <immagini/tool2/xeEditNode.png, id=1355, 312.41719pt x 253.69781pt>
+[69] <immagini/tool2/xeEditNode.png, id=1359, 312.41719pt x 253.69781pt>
 File: immagini/tool2/xeEditNode.png Graphic file (type png)
 
 <use immagini/tool2/xeEditNode.png>
@@ -3041,7 +3041,7 @@ Package pdftex.def Info: immagini/tool2/xeEditNode.png used on input line 1160.
 
 (pdftex.def)             Requested size: 266.31824pt x 216.2674pt.
 
-<immagini/tool2/xeVisualizzazioneFile.png, id=1356, 622.57594pt x 606.01407pt>
+<immagini/tool2/xeVisualizzazioneFile.png, id=1360, 622.57594pt x 606.01407pt>
 File: immagini/tool2/xeVisualizzazioneFile.png Graphic file (type png)
 
 <use immagini/tool2/xeVisualizzazioneFile.png>
@@ -3056,7 +3056,7 @@ Overfull \hbox (36.99083pt too wide) in paragraph at lines 1166--1167
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool2/xeTrascinatoFile.png, id=1357, 623.32875pt x 606.01407pt>
+<immagini/tool2/xeTrascinatoFile.png, id=1361, 623.32875pt x 606.01407pt>
 File: immagini/tool2/xeTrascinatoFile.png Graphic file (type png)
 
 <use immagini/tool2/xeTrascinatoFile.png>
@@ -3071,7 +3071,7 @@ Overfull \hbox (36.99083pt too wide) in paragraph at lines 1172--1173
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool2/xeEditAssociateFile.png, id=1358, 568.37344pt x 164.11313pt>
+<immagini/tool2/xeEditAssociateFile.png, id=1362, 568.37344pt x 164.11313pt>
 File: immagini/tool2/xeEditAssociateFile.png Graphic file (type png)
 
 <use immagini/tool2/xeEditAssociateFile.png>
@@ -3086,7 +3086,7 @@ Overfull \hbox (36.99083pt too wide) in paragraph at lines 1178--1179
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool2/xeEditRelations.png, id=1359, 680.5425pt x 403.5075pt>
+<immagini/tool2/xeEditRelations.png, id=1363, 680.5425pt x 403.5075pt>
 File: immagini/tool2/xeEditRelations.png Graphic file (type png)
 
 <use immagini/tool2/xeEditRelations.png>
@@ -3101,7 +3101,7 @@ Overfull \hbox (36.99083pt too wide) in paragraph at lines 1184--1185
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/tool2/xeCheckRelation.png, id=1360, 916.1728pt x 479.54156pt>
+<immagini/tool2/xeCheckRelation.png, id=1364, 916.1728pt x 479.54156pt>
 File: immagini/tool2/xeCheckRelation.png Graphic file (type png)
 
 <use immagini/tool2/xeCheckRelation.png>
@@ -3207,7 +3207,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-<immagini/game/LODexample.jpg, id=1391, 963.6pt x 542.025pt>
+<immagini/game/LODexample.jpg, id=1395, 963.6pt x 542.025pt>
 File: immagini/game/LODexample.jpg Graphic file (type jpg)
 
 <use immagini/game/LODexample.jpg>
@@ -3221,7 +3221,7 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 25--26
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[75] <immagini/game/lodWritesBefore.png, id=1399, 963.6pt x 540.51938pt>
+[75] <immagini/game/lodWritesBefore.png, id=1403, 963.6pt x 540.51938pt>
 File: immagini/game/lodWritesBefore.png Graphic file (type png)
 
 <use immagini/game/lodWritesBefore.png>
@@ -3277,7 +3277,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[77] <immagini/game/lodWritesAfterBike.png, id=1437, 1028.34187pt x 578.16pt>
+[77] <immagini/game/lodWritesAfterBike.png, id=1441, 1028.34187pt x 578.16pt>
 File: immagini/game/lodWritesAfterBike.png Graphic file (type png)
 
 <use immagini/game/lodWritesAfterBike.png>
@@ -3289,7 +3289,7 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 90--91
  []| [] 
  []
 
-<immagini/game/lodWritesAfterRider.png, id=1438, 1029.8475pt x 579.66562pt>
+<immagini/game/lodWritesAfterRider.png, id=1442, 1029.8475pt x 579.66562pt>
 File: immagini/game/lodWritesAfterRider.png Graphic file (type png)
 
 <use immagini/game/lodWritesAfterRider.png>
@@ -3309,7 +3309,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-<immagini/game/lodWritesBeholder.png, id=1439, 1071.25218pt x 703.12688pt>
+<immagini/game/lodWritesBeholder.png, id=1443, 1071.25218pt x 703.12688pt>
 File: immagini/game/lodWritesBeholder.png Graphic file (type png)
 
 <use immagini/game/lodWritesBeholder.png>
@@ -3371,7 +3371,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-<immagini/game/gerarchiaDrawText.png, id=1466, 297.0297pt x 350.2686pt>
+<immagini/game/gerarchiaDrawText.png, id=1470, 297.0297pt x 350.2686pt>
 File: immagini/game/gerarchiaDrawText.png Graphic file (type png)
 
 <use immagini/game/gerarchiaDrawText.png>
@@ -3428,7 +3428,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
  []
 
 
-<immagini/game/BeholderDrawSceneAxis.png, id=1472, 1201.48875pt x 702.37407pt>
+<immagini/game/BeholderDrawSceneAxis.png, id=1476, 1201.48875pt x 702.37407pt>
 File: immagini/game/BeholderDrawSceneAxis.png Graphic file (type png)
 
 <use immagini/game/BeholderDrawSceneAxis.png>
@@ -3499,7 +3499,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [83])
-<immagini/game/menuDrawAxisText.png, id=1575, 1030.60031pt x 580.41844pt>
+<immagini/game/menuDrawAxisText.png, id=1579, 1030.60031pt x 580.41844pt>
 File: immagini/game/menuDrawAxisText.png Graphic file (type png)
 
 <use immagini/game/menuDrawAxisText.png>
@@ -3538,7 +3538,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [84]
-<immagini/game/beholderResourceManagerView.png, id=1617, 777.65532pt x 749.0484
+<immagini/game/beholderResourceManagerView.png, id=1621, 777.65532pt x 749.0484
 3pt>
 File: immagini/game/beholderResourceManagerView.png Graphic file (type png)
  <use immagini/game/beholderResourceManagerView.png>
@@ -3724,7 +3724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
-<immagini/game/SkeletonTerminology.jpg, id=2099, 501.875pt x 411.5375pt>
+<immagini/game/SkeletonTerminology.jpg, id=2103, 501.875pt x 411.5375pt>
 File: immagini/game/SkeletonTerminology.jpg Graphic file (type jpg)
 
 <use immagini/game/SkeletonTerminology.jpg>
@@ -3764,7 +3764,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
  []
 
 
-<immagini/game/BeholderActivateRiderSkeleton.png, id=2112, 985.43156pt x 606.76
+<immagini/game/BeholderActivateRiderSkeleton.png, id=2116, 985.43156pt x 606.76
 688pt>
 File: immagini/game/BeholderActivateRiderSkeleton.png Graphic file (type png)
  <use immagini/game/BeholderActivateRiderSkeleton.png>
@@ -3845,7 +3845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--245
 
  []
 
-<immagini/game/skeletonRider1.png, id=2289, 1029.8475pt x 579.66562pt>
+<immagini/game/skeletonRider1.png, id=2293, 1029.8475pt x 579.66562pt>
 File: immagini/game/skeletonRider1.png Graphic file (type png)
 
 <use immagini/game/skeletonRider1.png>
@@ -3857,7 +3857,7 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 248--249
  []| [] 
  []
 
-<immagini/game/skeletonRider2.png, id=2290, 1028.34187pt x 578.91281pt>
+<immagini/game/skeletonRider2.png, id=2294, 1028.34187pt x 578.91281pt>
 File: immagini/game/skeletonRider2.png Graphic file (type png)
 
 <use immagini/game/skeletonRider2.png>
@@ -3914,7 +3914,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--267
  []
 
 
-<immagini/game/SkeletonDebugDrawerManagerinBeholder.png, id=2314, 849.92531pt x
+<immagini/game/SkeletonDebugDrawerManagerinBeholder.png, id=2318, 849.92531pt x
  648.92438pt>
 File: immagini/game/SkeletonDebugDrawerManagerinBeholder.png Graphic file (type
  png)
@@ -3930,7 +3930,7 @@ Overfull \hbox (18.49542pt too wide) in paragraph at lines 272--273
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/game/mechanicSkeleton.png, id=2315, 1028.34187pt x 578.16pt>
+<immagini/game/mechanicSkeleton.png, id=2319, 1028.34187pt x 578.16pt>
 File: immagini/game/mechanicSkeleton.png Graphic file (type png)
 
 <use immagini/game/mechanicSkeleton.png>
@@ -4031,33 +4031,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
+<immagini/bilancio.png, id=2492, 395.076pt x 245.11575pt>
+File: immagini/bilancio.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
+<use immagini/bilancio.png>
+Package pdftex.def Info: immagini/bilancio.png used on input line 37.
+(pdftex.def)             Requested size: 369.88583pt x 229.4925pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 [107]
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+File: immagini/logo-unipd.jpg Graphic file (type jpg)
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 58.
+(pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 39.16597pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[108 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/bilanc
+io.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
@@ -4073,9 +4100,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[108] (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.gls
-[109
+[109] [110
 
+] (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.gls [111
 
 
 ]
@@ -4099,13 +4126,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[110])
+[112])
 Overfull \hbox (3.74478pt too wide) in paragraph at lines 142--142
 $\T1/fi4/m/n/10 mastersdegree / workshops / technicalrequirementschecklists / T
 echnical %$
  []
 
-[111
+[113
 
 
 ]
@@ -4118,10 +4145,10 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 23710 strings out of 494045
- 375665 string characters out of 3148375
+ 23723 strings out of 494045
+ 375877 string characters out of 3148375
  894005 words of memory out of 3000000
- 24690 multiletter control sequences out of 15000+200000
+ 24698 multiletter control sequences out of 15000+200000
  43214 words of font info for 178 fonts, out of 3000000 for 9000
  718 hyphenation exceptions out of 8191
  72i,16n,143p,1518b,2986s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4159,9 +4186,9 @@ MiKTeX 2.9/fonts/type1/public/cm-super/sfti0700.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/cm-super/sfti0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (125 pages, 14562846 bytes).
+Output written on tesi.pdf (127 pages, 14578255 bytes).
 PDF statistics:
- 3430 PDF objects out of 3580 (max. 8388607)
- 1576 named destinations out of 1728 (max. 500000)
- 51014 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 3447 PDF objects out of 3580 (max. 8388607)
+ 1580 named destinations out of 1728 (max. 500000)
+ 51019 words of extra memory for PDF output out of 51595 (max. 10000000)
 
