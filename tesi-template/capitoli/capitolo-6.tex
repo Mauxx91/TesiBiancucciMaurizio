@@ -23,16 +23,18 @@ Il secondo metodo risulta quasi necessario in giochi racing come MotoGP poiché 
 \begin{figure}[h!] 
 	\centering 
 	\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/LODexample.jpg} 
-	\caption{Screenshot di MotoGP 14: con il primo metodo la torre sarebbe al lod più basso, invece con il secondo continua ad essere gradevole alla vista}
+	\caption[Screenshot di MotoGP 14]{Screenshot di MotoGP 14: con il primo metodo la torre sarebbe al lod più basso, invece con il secondo continua ad essere gradevole alla vista}
 \end{figure} 
 
-Come già accennato in MotoGP 14 i moduli che gestiscono i livelli di LOD per moto e piloti sono due istanze della classe \texttt{LodSelectionModule}. Essa fornisce, attivabile da Beholder, la funzionalità di stampa dei livelli di LOD correnti degli oggetti per i quali gestisce il livello di dettaglio, in questo caso di moto e piloti presenti al momento in pista. Il problema in questo modulo, era la stampa dei livelli di LOD in posizioni errate, non permettendo di associare il LOD stampato con il suo oggetto. L'obbiettivo era quindi quello di avere la stampa dell'informazione affiancata all'oggetto, allo scopo di rendere più agevole e veloce il debug e il tuning per ogni piattaforma dell'algoritmo di scelta del LOD.\\
+Come già accennato in MotoGP 14 i moduli che gestiscono i livelli di LOD per moto e piloti sono due istanze della classe \texttt{LodSelectionModule}. Essa fornisce, attivabile da Beholder, la funzionalità di stampa dei livelli di LOD correnti degli oggetti per i quali gestisce il livello di dettaglio, in questo caso di moto e piloti presenti al momento in pista. Il problema in questo modulo, era la stampa dei livelli di LOD in posizioni errate, non permettendo di associare il LOD stampato con il suo oggetto. 
 
 \begin{figure}[h!] 
 	\centering 
-	\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/lodWritesBefore.png} 
+	\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/lodWritesBefore.png}
 	\caption{Screenshot di MotoGP 14 nel quale si può osservare la vecchia stampa dei livelli di LOD}
 \end{figure}
+
+L'obbiettivo era quindi quello di avere la stampa dell'informazione affiancata all'oggetto, allo scopo di rendere più agevole e veloce il debug e il tuning per ogni piattaforma dell'algoritmo di scelta del LOD.\\
 
 Si parla di tuning dell'algoritmo per ciascuna piattaforma poiché, avendo caratteristiche hardware diverse, le varie piattaforme potranno gestire differenti combinazioni di oggetti con LOD alti. Esiste ad esempio un parametro che indica il massimo numero di bike con LOD 1\footnote{LOD 1 è il massimo livello di dettaglio.}. È compito del team 3D trovare i giusti parametri per permettere il miglior livello grafico possibile per ogni piattaforma.\\ 
 
@@ -59,9 +61,7 @@ void GetScreenPosition(const CCamera* i_pCamera, GVector3& o_position) const
 ~\\
 La funzione \texttt{GetScreenPosition} procede a calcolare le stesse trasformazioni che esegue la GPU per trasformare ogni pixel dell'oggetto nella scena 3D in un'immagine 2D\footnote{Il lettore potrà trovare un approfondimento in \cite[chp.~5]{inbook:directx-book}.}. Si ottengono quindi le coordinate x e y dello schermo nello spazio -1, 1. Si procede quindi a trasformarle in coordinate relative allo spazio della finestra di gioco (ad esempio 1366x768 px).\\
 
-Con un'analisi più approfondita del codice si è successivamente scoperto la presenza di un metodo della classe \texttt{CCamera} che produceva esattamente gli stessi risultati. Si è quindi provveduto a scartare questa implementazione (seppur corretta) ed usare quella già presente allo scopo di evitare inutili duplicazioni di codice.\\
-
-Di seguito è presente la funzione della classe \texttt{LodSelectionModule} che lancia il disegno del LOD attivo. Questa funzione è lanciata per ogni oggetto gestito dalla classe.\\
+Con un'analisi più approfondita del codice si è successivamente scoperto la presenza di un metodo della classe \texttt{CCamera} che produceva esattamente gli stessi risultati. Si è quindi provveduto a scartare questa implementazione (seppur corretta) ed usare quella già presente allo scopo di evitare inutili duplicazioni di codice. Di seguito è presente la funzione della classe \texttt{LodSelectionModule} che lancia il disegno del LOD attivo. Questa funzione è lanciata per ogni oggetto gestito dalla classe.\\\vspace*{-0.3cm}
 
 \begin{lstlisting}[style=maurizio-code, caption=Metodo per la stampa del LOD corrente, label={code:printloddebuginformation}]
 void LodSelectionModule::PrintLodDebugInformation(CWorld* iWorld, GraphicComponentInfo* i_pComponentInfo )
@@ -130,26 +130,26 @@ Le istanze delle classi concrete della gerarchia vengono, durante la fasi di ini
 Di seguito è presente la sezione di codice che inizializza gli oggetti della gerarchia in fase di avvio del gioco:
 
 \begin{lstlisting}[style=maurizio-code, caption=Inizializzazione delle classi responsabili della stampa di testo, label={code:initTextClasses}]
-UI::GemScreenLogger::Create();
+GemScreenLogger::Create();
 debugWorld->AddElement( UI::GemScreenLogger::GetInstance() );
 
-GraphicModule::DebugTextDrawer::Create();
-GraphicModule::DebugTextDrawer::Config config;
+DebugTextDrawer::Create();
+DebugTextDrawer::Config config;
 config.m_fontName = "Linotype Univers 430 Regular20"; //"ZZapDefaultFont"; alternativa funzionante
 config.m_alphaValue = 255;
 config.m_timeBeforeFade = 500;
 config.m_includeContext = false;
 config.m_includeSourceFile = false;
 config.m_timestamp = false;
-GraphicModule::DebugTextDrawer::GetInstance()->Init();
-GraphicModule::DebugTextDrawer::GetInstance()->SetConfig( config );
-debugWorld->AddElement( GraphicModule::DebugTextDrawer::GetInstance() );
+DebugTextDrawer::GetInstance()->Init();
+DebugTextDrawer::GetInstance()->SetConfig( config );
+debugWorld->AddElement( DebugTextDrawer::GetInstance() );
 
-GraphicModule::DebugTextDrawer3DPoint::Create();
-GraphicModule::DebugTextDrawer3DPoint::GetInstance()->Init();
+DebugTextDrawer3DPoint::Create();
+DebugTextDrawer3DPoint::GetInstance()->Init();
 config.m_timeBeforeFade = 9999999999;
-GraphicModule::DebugTextDrawer3DPoint::GetInstance()->SetConfig( config );
-debugWorld->AddElement( GraphicModule::DebugTextDrawer3DPoint::GetInstance() );
+DebugTextDrawer3DPoint::GetInstance()->SetConfig( config );
+debugWorld->AddElement( DebugTextDrawer3DPoint::GetInstance() );
 \end{lstlisting}
 
 \section{Stampa del nome degli spazi di riferimento}
@@ -195,7 +195,7 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	
 	Si è proceduto quindi a creare una versione ad albero per la categoria degli Object3D presenti nel world.\\
 	
-	Il contenuto del \texttt{ResourcesManager} è esposto nel Beholder tramite la classe \texttt{ResourcesManagerDebug} in cui si concentrano le modifiche effettuate per poter offrire la nuova funzionalità.
+	Il contenuto del \texttt{ResourcesManager} è esposto nel Beholder tramite la classe \texttt{Resources-} \texttt{ManagerDebug} in cui si concentrano le modifiche effettuate per poter offrire la nuova funzionalità.
 	
 	Di seguito vengono riportati alcune sezioni del codice della classe significative per la nuova funzionalità inserita.
 	

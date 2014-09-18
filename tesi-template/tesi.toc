@@ -28,11 +28,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Ruolo dei 3D programmer nel workflow}{8}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Configuration e data Management}{9}{section.2.6}
+\contentsline {section}{\numberline {2.6}Configuration e data Management}{10}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Asset}{9}{section.2.7}
+\contentsline {section}{\numberline {2.7}Asset}{11}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Code build}{11}{section.2.8}
+\contentsline {section}{\numberline {2.8}Code build}{12}{section.2.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.9}Metadati}{13}{section.2.9}
 \defcounter {refsection}{0}\relax 

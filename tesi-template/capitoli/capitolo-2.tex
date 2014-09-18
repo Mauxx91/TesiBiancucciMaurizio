@@ -117,14 +117,6 @@ Durante tutto lo sviluppo essi scrivono e/o aggiornano il codice necessario alla
 
 Caricare gli asset in memoria significa inoltre riassemblarli. Per non sprecare spazio, ogni componente degli asset che serve più di una volta, viene memorizzata una volta sola nei dati grezzi. Questo significa che per ricomporre un oggetto 3D, bisogna recuperare tutti i sotto componenti e ricomporre la struttura ad albero originale. Esiste ovviamente un database, nei giochi Milestone scritto in linguaggio \gloss{XML}, in cui è scritto come ricomporre le strutture originali degli asset.\\
 
-Altra responsabilità è l'utilizzo dell'engine GEM per disegnare le scene 3D richieste dal design del gioco. Il mondo di gioco viene gestito a \dq{World}, questo significa che tutti gli oggetti 3D sono contenuti all'interno di questo mondo. Compito del team è scrivere un'implementazione efficiente del World per disegnare tutti gli oggetti presenti.\\
-
-I World si dividono in ambienti di gara e non. Negli ambienti non di gara il team gestisce anche le cosiddette \textbf{cut-scene}, esse sono le scene in cui il giocatore è spettatore passivo della scena 3D. Un esempio è la sequenza animata che simula la cerimonia del podio alla fine di una gara. In Milestone S.r.l. esistono due sistemi di gestione delle cut-scene. Il primo, in ordine temporale di adozione, prevede la descrizione della scena in linguaggio XML (MotoGP 14), mentre il secondo utilizza degli script \gloss{LUA}\footnote{Per maggiori approfondimenti \cite{inbook:game-coding-complete} e \cite{site:lua-paper}} (MXGP).\\
-
-Ultimo ma non meno importante compito, è la gestione degli ambienti di gara. In essi il team gestisce il collegamento degli oggetti 3D con la simulazione fisica, la quale evolve i parametri degli oggetti di gioco. Tramite questi parametri si richiede l'esecuzione dell'animazione, la quale aggiorna i parametri visibili degli oggetti 3D, ad esempio la posizione.\\
-
-Per eseguire le animazioni il team utilizza il middleware EMotion FX 4\footnote{\url{http://www.mysticgd.com/website/index.php?id=17}} , il quale dato il blend tree sviluppato dagli artisti, esegue in real time le animazioni sugli oggetti 3D. Gli artisti, in Milestone, sviluppano i blend tree tramite il tool EMotion Studio fornito dalla stessa casa.
-
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1.0\columnwidth]{game/emotionStudioSkeleton.png}
@@ -136,29 +128,37 @@ Per eseguire le animazioni il team utilizza il middleware EMotion FX 4\footnote{
 	\centering
 	\includegraphics[width=1.0\columnwidth]{game/emotionStudioHierarchy.png}
 	\caption{Screenshot di EMotion Studio durante la visualizzazione della gerarchia dei bone di animazione dello skeleton di un meccanico}
-	\label{fig:screenshot-emotion-studio-1}
+	\label{fig:screenshot-emotion-studio-2}
 \end{figure}
+
+Altra responsabilità è l'utilizzo dell'engine GEM per disegnare le scene 3D richieste dal design del gioco. Il mondo di gioco viene gestito a \dq{World}, questo significa che tutti gli oggetti 3D sono contenuti all'interno di questo mondo. Compito del team è scrivere un'implementazione efficiente del World per disegnare tutti gli oggetti presenti.\\
+
+I World si dividono in ambienti di gara e non. Negli ambienti non di gara il team gestisce anche le cosiddette \textbf{cut-scene}, esse sono le scene in cui il giocatore è spettatore passivo della scena 3D. Un esempio è la sequenza animata che simula la cerimonia del podio alla fine di una gara. In Milestone S.r.l. esistono due sistemi di gestione delle cut-scene. Il primo, in ordine temporale di adozione, prevede la descrizione della scena in linguaggio XML (MotoGP 14), mentre il secondo utilizza degli script \gloss{LUA}\footnote{Per maggiori approfondimenti \cite{inbook:game-coding-complete} e \cite{site:lua-paper}} (MXGP).\\
+
+Ultimo ma non meno importante compito, è la gestione degli ambienti di gara. In essi il team gestisce il collegamento degli oggetti 3D con la simulazione fisica, la quale evolve i parametri degli oggetti di gioco. Tramite questi parametri si richiede l'esecuzione dell'animazione, la quale aggiorna i parametri visibili degli oggetti 3D, ad esempio la posizione.\\
+
+Per eseguire le animazioni il team utilizza il middleware EMotion FX 4\footnote{\url{http://www.mysticgd.com/website/index.php?id=17}} , il quale dato il blend tree sviluppato dagli artisti, esegue in real time le animazioni sugli oggetti 3D. Gli artisti, in Milestone, sviluppano i blend tree tramite il tool EMotion Studio fornito dalla stessa casa.
 
 \section{Configuration e data Management}
 
 Il software di versionamento utilizzato in Milestone è \gloss{Perforce}\footnote{Per il lettore appassionato è disponibile una semplice ma efficacie introduzione a Perforce\textsuperscript{\textregistered} al seguente link: \url{http://www.perforce.com/perforce/doc.current/manuals/intro/intro.pdf}}, che recentemente ha rimpiazzato \gloss{Alienbrain}. Un punto di forza che distingue Perforce\textsuperscript{\textregistered} dagli altri software di versionamento sono gli Stream. Questi sono dei branch intelligenti, in altre parole, al posto di effettuare una copia vera e propria per creare un branch, come fanno ad esempio Git\textsuperscript{\textregistered} ed SVN\textsuperscript{\textregistered}, qui sono gestiti interamente in termini di \gloss{delta} rispetto al branch master. Altra particolarità e la modalità di commit su shelve (scaffale). Tale modalità permette di eseguire il commit (check-in in Perforce\textsuperscript{\textregistered}) su uno spazio personale. Questo significa che un altro programmatore quando eseguirà la get (pull in Git\textsuperscript{\textregistered}, update in SVN\textsuperscript{\textregistered}) non otterrà la versione in shelve. Dovrà manualmente richiederla per poterla avere. Questa modalità risulta molto utile ad esempio per eseguire il commit di alcune modifiche che non sono ancora state testate, oppure sono una soluzione alternativa in attesa di approvazione.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{game/perforce.png}
-	\caption{Screenshot di Perforce}
-	\label{fig:perforce}
-\end{figure}
 
 \section{Asset}
 \label{sec:asset}
 
 Come già accennato, gli asset subiscono una serie di trasformazioni prima di arrivare nella forma che viene distribuita insieme al gioco. Essi possono essere trovati in uno dei seguenti stati:
 \begin{enumerate}
-	\item rough: i dati sono nella forma originale fornita dall'artista. Tipicamente sono nel formato nativo del programma con il quale sono stati sviluppati.
-	\item middle: i dati sono parzialmente ottimizzati, tramite compressione e \gloss{serializzazione} (se ad esempio il formato originale era XML).
-	\item final (mixed): i dati sono stati unificati in pochi file chiamati \dq{mixed}. Da migliaia di file si passa ad una manciata di grossi file con estensione \dq{.mix}.
+	\item \textbf{rough}: i dati sono nella forma originale fornita dall'artista. Tipicamente sono nel formato nativo del programma con il quale sono stati sviluppati.
+	\item \textbf{middle}: i dati sono parzialmente ottimizzati, tramite compressione e \gloss{serializzazione} (se ad esempio il formato originale era XML).
+	\item \textbf{final (mixed)}: i dati sono stati unificati in pochi file chiamati \dq{mixed}. Da migliaia di file si passa ad una manciata di grossi file con estensione \dq{.mix}.
 \end{enumerate}
+
+\begin{figure}[t]
+	\centering
+	\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/perforce.png}
+	\caption{Screenshot di Perforce}
+	\label{fig:perforce}
+\end{figure}
 
 La trasformazione degli asset nel formato finale ha un duplice scopo. Essendoci pochi ma grandi file le performance del gioco in fase di caricamento aumentano notevolmente\footnote{Si ricorda al lettore la lentezza degli hard disk tradizionali, o anche peggio dei CD, nel leggere tanti piccoli file, anche se fisicamente contigui}. Inoltre, avendo convertito gli asset in un formato proprietario (il \dq{.mix}), si corre meno il rischio che gli asset possano essere \dq{rubati} e riutilizzati senza il permesso dell'azienda.\\
 
@@ -170,16 +170,16 @@ Tutti i giochi Milestone sono sviluppati contemporaneamente per molte piattaform
 
 Sono state definiti diversi target di compilazione, i quali variano per quantità di ottimizzazione e capacità di interazione con i diversi stati degli asset:
 \begin{enumerate}
-	\item debug: build completamente non ottimizzata a totale scopo di debug;
-	\item release: non standard, è parzialmente ottimizzata ma contiene ancora i simboli per il debug;
-	\item official: build completamente ottimizzata. Si invita il lettore a prestare attenzione alla differenza con lo stato \dq{final} degli asset.
+	\item \textbf{debug}: build completamente non ottimizzata a totale scopo di debug;
+	\item \textbf{release}: non standard, è parzialmente ottimizzata ma contiene ancora i simboli per il debug;
+	\item \textbf{official}: build completamente ottimizzata. Si invita il lettore a prestare attenzione alla differenza con lo stato \dq{final} degli asset.
 \end{enumerate}
 
 I target debug e release hanno la capacità di leggere gli asset in tutti gli stati possibili. La official invece, può utilizzare solo le versioni final. Tipicamente le combinazioni utilizzate sono le seguenti:
 \begin{enumerate}
-	\item debug/release target + rough asset: per debug. Soffre della lentezza di caricamento determinata dagli asset divisi in tantissimi piccoli file. Date le limitate capacita di PS3\textsuperscript{\textregistered}, 256 MB di RAM, capita che verso le fasi finali di sviluppo non si riesca ad avviare questa combinazione.
-	\item official target + final asset: è la versione per l'utente finale e solitamente usata dal QA.
-	\item debug/release target + final asset: molto più veloce a caricarsi, è utilissima per testare una modifica sul codice che non coinvolge gli asset.
+	\item \textbf{debug/release target + rough asset}: per debug. Soffre della lentezza di caricamento determinata dagli asset divisi in tantissimi piccoli file. Date le limitate capacita di PS3\textsuperscript{\textregistered}, 256 MB di RAM, capita che verso le fasi finali di sviluppo non si riesca ad avviare questa combinazione.
+	\item \textbf{official target + final asset}: è la versione per l'utente finale e solitamente usata dal QA.
+	\item \textbf{debug/release target + final asset}: molto più veloce a caricarsi, è utilissima per testare una modifica sul codice che non coinvolge gli asset.
 \end{enumerate}
 
 Come il lettore può aver intuito, il codice di gioco si compone di moltissime librerie, le quali contengono complessivamente migliaia di file. Allo scopo di ridurre significativamente i tempi di compilazione, si è adottata la tecnica di compilazione \textbf{bulk}. Essa consiste semplicemente nel creare un unico file per libreria, nel quale si includono tutti i cpp. Altra tecnica usata è l'utilizzo delle \textbf{forward declaration} nei file header. Diminuendo gli include e sostituendoli con le dichiarazioni incomplete, si riesce a tenere sotto controllo l'esplosione dei tempi di compilazione.\\
@@ -190,9 +190,7 @@ Anche per il codice di gioco, è in atto un sistema di integrazione continua, il
 
 \section{Metadati}
 
-I giochi Milestone utilizzano il sistema dei metadati. Lo scopo è di ottenere delle funzionalità simili alla riflessione anche in C++. Queste funzionalità spaziano dal real-time editing delle variabili, update da e verso XML e/o binari.\\
-
-Questa tecnica permette uno scambio di dati disaccoppiando le due classi a discapito del controllo degli accessi. È infatti possibile esporre come metadati anche membri di classe privati.\\
+I giochi Milestone utilizzano il sistema dei metadati. Lo scopo è di ottenere delle funzionalità simili alla riflessione anche in C++. Queste funzionalità spaziano dal real-time editing delle variabili, update da e verso XML e/o binari. Questa tecnica permette uno scambio di dati disaccoppiando le due classi a discapito del controllo degli accessi. È infatti possibile esporre come metadati anche membri di classe privati.\\
 
 Tutti i metadati presenti sono esposti via rete, solo nei target debug e release, nel \textbf{Beholder}. Questo è un client che permette la visualizzazione e l'editing in tempo reale dei metadati. Un efficacie esempio di utilizzo è l'esposizione nel beholder di dati XML, seguito dal tuning in real time di codesti dati, e il salvataggio automatico dei nuovi valori se soddisfatti del risultato.\\
 
