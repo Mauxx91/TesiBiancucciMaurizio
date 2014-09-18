@@ -268,7 +268,9 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 	
 	Come già accennato tutte queste funzionalità sono disponibili da Beholder, in particolare per ogni oggetto visualizzato nel Beholder tramite il \texttt{ResourcesManagerDebug} è presente una proprietà che indica (true o false) se l'oggetto è animato, e quindi è possibile disegnarne lo scheletro.\\
 	
-	In figura \ref{fig:resource-manager-tree-view} è visibile sulla destra le proprietà di un oggetto 3D, tra le quali \texttt{isAnimated}. In alto a sinistra invece ci sono le azioni disponibili, tra le quali il disegno dello scheletro. Azione che verrà davvero eseguita solo se l'oggetto è animato.
+	In figura \ref{fig:resource-manager-tree-view} è visibile sulla destra le proprietà di un oggetto 3D, tra le quali \texttt{isAnimated}. In alto a sinistra invece ci sono le azioni disponibili, tra le quali il disegno dello scheletro. Azione che verrà davvero eseguita solo se l'oggetto è animato.\\
+	
+	Di seguito è presente il codice della classe \texttt{SkeletonDebugDrawerManager}.
 	
 	\begin{figure}[h!] 
 		\centering 
@@ -276,13 +278,11 @@ Di seguito si riporta il codice della classe \texttt{DebugAxisDrawer}.
 		\caption{Screenshot del Beholder in cui è visibile lo \texttt{SkeletonDebugDrawerManager}}
 	\end{figure}
 	
-	\begin{figure}[h!] 
-		\centering 
+	\begin{figure}[b!] 
+		\centering
 		\hspace*{-0.05\columnwidth}\includegraphics[width=1.1\columnwidth]{game/mechanicSkeleton.png} 
 		\caption{Screenshot di MotoGP 14 in cui è stato attivato il disegno degli scheletri di animazione di 2 meccanici}
 	\end{figure}
-	
-	Di seguito è presente il codice della classe \texttt{SkeletonDebugDrawerManager}.
 	
 	\lstinputlisting[style=maurizio-code, caption=SkeletonDebugDrawerManager.h, label={code:SkeletonDebugDrawerManager-h}]{code/SkeletonDebugDrawerManager.h}
 	

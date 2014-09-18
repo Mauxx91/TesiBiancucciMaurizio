@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  18 SEP 2014 19:46
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.1)  18 SEP 2014 20:00
 entering extended mode
 **tesi.tex
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\tesi.tex
@@ -3888,36 +3888,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--270
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+
 <immagini/game/SkeletonDebugDrawerManagerinBeholder.png, id=2312, 849.92531pt x
  648.92438pt>
 File: immagini/game/SkeletonDebugDrawerManagerinBeholder.png Graphic file (type
  png)
  <use immagini/game/SkeletonDebugDrawerManagerinBeholder.png>
 Package pdftex.def Info: immagini/game/SkeletonDebugDrawerManagerinBeholder.png
- used on input line 275.
+ used on input line 277.
 (pdftex.def)             Requested size: 406.87666pt x 310.65831pt.
 
-Overfull \hbox (18.49542pt too wide) in paragraph at lines 275--276
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 277--278
  []| [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/game/mechanicSkeleton.png, id=2313, 1028.34187pt x 578.16pt>
+<immagini/game/mechanicSkeleton.png, id=2313, 822.6735pt x 493.24275pt>
 File: immagini/game/mechanicSkeleton.png Graphic file (type png)
 
 <use immagini/game/mechanicSkeleton.png>
 Package pdftex.def Info: immagini/game/mechanicSkeleton.png used on input line 
-281.
-(pdftex.def)             Requested size: 406.87666pt x 228.75446pt.
+283.
+(pdftex.def)             Requested size: 406.87666pt x 243.94894pt.
 
-Overfull \hbox (18.49542pt too wide) in paragraph at lines 281--282
+Overfull \hbox (18.49542pt too wide) in paragraph at lines 283--284
  []| [] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 (C:\Users\Maurizio2\Documents\GitHub\TesiMau\tesi-template\code/SkeletonDebugDr
@@ -3935,9 +3937,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [99 <C:/Users/Maurizio2/Documents/GitHub/TesiMau/tesi-template/immagini/game/sk
 eletonRider2.png>]
+
+LaTeX Warning: Text page 100 contains only floats.
+
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
- <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 15.
+<use immagini/logo-unipd.jpg>
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 11.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -3953,7 +3958,7 @@ esiMau/tesi-template/immagini/game/mechanicSkeleton.png>])
 awerManager.cpp
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
  <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 30.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 25.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -3968,7 +3973,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: immagini/logo-unipd.jpg Graphic file (type jpg)
 
 <use immagini/logo-unipd.jpg>
-Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 85.
+Package pdftex.def Info: immagini/logo-unipd.jpg used on input line 80.
 (pdftex.def)             Requested size: 40.24815pt x 35.56593pt.
 
 
@@ -4194,7 +4199,7 @@ s/MiKTeX 2.9/fonts/type1/public/cm-super/sfti0700.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/public/cm-super/sfti0800.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (129 pages, 14583369 bytes).
+Output written on tesi.pdf (129 pages, 14582092 bytes).
 PDF statistics:
  3446 PDF objects out of 3580 (max. 8388607)
  1578 named destinations out of 1728 (max. 500000)
