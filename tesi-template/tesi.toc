@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Motivazioni all'attivazione dello stage}{1}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Obiettivi dello stage}{1}{section.1.3}
+\contentsline {section}{\numberline {1.3}Obbiettivi dello stage}{1}{section.1.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Scopo del documento}{2}{section.1.4}
 \defcounter {refsection}{0}\relax 
