@@ -376,7 +376,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Conclusioni}{105}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Raggiungimento degli obiettivi}{105}{section.6.1}
+\contentsline {section}{\numberline {6.1}Raggiungimento degli obbiettivi}{105}{section.6.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.2}Conoscenze acquisite e valutazione della preparazione accademica}{106}{section.6.2}
 \defcounter {refsection}{0}\relax 
